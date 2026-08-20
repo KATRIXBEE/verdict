@@ -33,3 +33,13 @@ next-env.d.ts
 # OS Files
 .DS_Store
 Thumbs.db
+
+# Python & Data Pipeline
+__pycache__/
+*.py[cod]
+*$py.class
+*.db
+*.sqlite
+*.sqlite3
+data-pipeline/logs/*.log
+data-pipeline/verdict_pipeline.db
