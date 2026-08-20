@@ -3,12 +3,15 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Scale, ShieldCheck, FileText, AlertTriangle } from "lucide-react";
 import { getPoliticianBySlug, MOCK_POLITICIANS } from "@/data/mock-politicians";
+import { getControversiesByPoliticianId } from "@/data/mock-controversies";
 import ProfileHeader from "@/features/politician-profile/ProfileHeader";
 import ParliamentStats from "@/features/politician-profile/ParliamentStats";
 import VerdictScoreGauge from "@/features/verdict-score/VerdictScoreGauge";
 import PartyHopperTimeline from "@/features/party-hopper/PartyHopperTimeline";
 import CriminalDossier from "@/features/criminal-dossier/CriminalDossier";
 import AssetGrowthChart from "@/features/asset-timeline/AssetGrowthChart";
+import ControversyTimeline from "@/features/controversies/ControversyTimeline";
+import GroundTruthWidget from "@/features/ground-truth/GroundTruthWidget";
 import CitizenRatingSection from "@/features/citizen-rating/CitizenRatingSection";
 import NewsSentimentStream from "@/features/news-sentiment/NewsSentimentStream";
 import BrutalistButton from "@/components/ui/BrutalistButton";
@@ -30,6 +33,8 @@ export default async function PoliticianPage({ params }: PoliticianPageProps) {
   if (!politician) {
     notFound();
   }
+
+  const controversies = getControversiesByPoliticianId(politician.id);
 
   return (
     <div className="space-y-8 font-mono">
@@ -82,7 +87,20 @@ export default async function PoliticianPage({ params }: PoliticianPageProps) {
         politicianName={politician.fullName}
       />
 
-      {/* 6. Anti-Brigading DigiLocker Citizen Ratings & News Sentiment Stream */}
+      {/* 6. Recent Controversies & Public Audits Timeline */}
+      <ControversyTimeline
+        controversies={controversies}
+        politicianName={politician.fullName}
+      />
+
+      {/* 7. Ground Truth Investigative Reports Widget */}
+      <GroundTruthWidget
+        politicianId={politician.id}
+        politicianSlug={politician.slug}
+        politicianName={politician.fullName}
+      />
+
+      {/* 8. Anti-Brigading DigiLocker Citizen Ratings & News Sentiment Stream */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         <div className="lg:col-span-7">
           <CitizenRatingSection

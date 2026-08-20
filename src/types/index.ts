@@ -4,6 +4,126 @@ export type CaseStatus = 'active' | 'bail_granted' | 'stayed' | 'acquitted' | 'c
 export type ConstituencyType = 'lok_sabha' | 'vidhan_sabha';
 export type ScoreBand = 'EXCELLENT' | 'GOOD' | 'AVERAGE' | 'POOR' | 'VERY POOR';
 
+// Controversy domain types
+export type ControversyStatus = 'Ongoing' | 'Resolved' | 'Unverified' | 'Under Investigation';
+export type ControversySeverity = 'Minor' | 'Moderate' | 'Serious' | 'Severe';
+export type SourceLinkType = 'News' | 'Court' | 'CAG' | 'Video';
+
+export interface ControversySource {
+  url: string;
+  sourceName: string;
+  type: SourceLinkType;
+}
+
+export interface Controversy {
+  id: string;
+  politicianId: string;
+  title: string;
+  date: string; // YYYY-MM-DD
+  status: ControversyStatus;
+  summary: string;
+  categories: string[];
+  severity: ControversySeverity;
+  sources: ControversySource[];
+  officialResponse?: string | null;
+  resolution?: string | null;
+}
+
+// Ground Truth Blog domain types
+export type GroundTruthCategory =
+  | 'Industrial & Environmental'
+  | 'Infrastructure & Contractor Fraud'
+  | 'Healthcare & Public Health'
+  | 'Education'
+  | 'Water & Sanitation'
+  | 'Agriculture & Farmers'
+  | 'Housing & Displacement'
+  | 'Electoral Malpractice'
+  | 'Financial Corruption'
+  | 'Police & Justice'
+  | 'Media Blackout Stories';
+
+export type AuthorBadgeType =
+  | 'Verified Journalist'
+  | 'Independent Reporter'
+  | 'Citizen Reporter'
+  | 'Video Investigation';
+
+export type GroundTruthStatus =
+  | 'Ongoing'
+  | 'Partially Resolved'
+  | 'Resolved'
+  | 'Government Action Pending';
+
+export type EvidenceType =
+  | 'RTI Response'
+  | 'Photo'
+  | 'Video'
+  | 'Official Document'
+  | 'Satellite Image';
+
+export interface EvidenceItem {
+  id: string;
+  title: string;
+  type: EvidenceType;
+  url: string;
+  previewUrl?: string;
+  fileSize?: string;
+  date?: string;
+  summary?: string;
+}
+
+export interface ImpactTimelineItem {
+  id: string;
+  date: string;
+  description: string;
+  sourceLink?: string;
+  sourceName?: string;
+}
+
+export interface RTITemplate {
+  subject: string;
+  publicAuthority: string;
+  pioAddress: string;
+  queries: string[];
+}
+
+export interface GroundTruthArticle {
+  id: string;
+  slug: string;
+  headline: string;
+  tagline?: string;
+  author: {
+    name: string;
+    avatarUrl?: string;
+    badge: AuthorBadgeType;
+    publication?: string;
+  };
+  date: string; // YYYY-MM-DD
+  location: {
+    state: string;
+    district: string;
+    block?: string;
+    coordinates?: [number, number]; // [lat, lng]
+  };
+  category: GroundTruthCategory;
+  affectedPeopleCount: number;
+  status: GroundTruthStatus;
+  summary: string;
+  thumbnailUrl?: string;
+  readTimeMinutes: number;
+  body: string; // Markdown / rich text
+  evidence: EvidenceItem[];
+  responsiblePoliticianIds: string[]; // Slug or ID matching Politician
+  responsibleOfficialNames: string[];
+  responsibleDepartments: string[];
+  impactTimeline: ImpactTimelineItem[];
+  demands: string; // "What needs to happen"
+  upvotes: number;
+  affectedVotes: number;
+  rtiTemplate?: RTITemplate;
+}
+
 export interface Constituency {
   id: string;
   name: string;
