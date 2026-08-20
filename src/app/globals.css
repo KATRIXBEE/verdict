@@ -1,0 +1,151 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --color-bg: #F5F3EF;
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #EBE8E1;
+  --color-border: #111111;
+  --color-primary-green: #00FF66;
+  --color-accent-yellow: #FFD028;
+  --color-alert-red: #FF4336;
+  --color-warning-orange: #FF8A00;
+  --color-accent-pink: #FFAEC9;
+  --color-accent-cyan: #70D6FF;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: #111111;
+  font-family: var(--font-plus-jakarta-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Dot matrix pattern overlay */
+.bg-dot-matrix {
+  background-image: radial-gradient(#111111 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.bg-dot-matrix-dense {
+  background-image: radial-gradient(#111111 0.75px, transparent 0.75px);
+  background-size: 8px 8px;
+}
+
+.bg-grid-matrix {
+  background-image: linear-gradient(to right, rgba(17, 17, 17, 0.08) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(17, 17, 17, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Scanline CRT subtle effect */
+.scanline {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0) 50%,
+    rgba(0, 0, 0, 0.03) 50%,
+    rgba(0, 0, 0, 0.03)
+  );
+  background-size: 100% 4px;
+}
+
+/* Tactile Neo-Brutalist shadow presets */
+.brutal-shadow {
+  box-shadow: 4px 4px 0px #111111;
+}
+
+.brutal-shadow-sm {
+  box-shadow: 2px 2px 0px #111111;
+}
+
+.brutal-shadow-lg {
+  box-shadow: 6px 6px 0px #111111;
+}
+
+.brutal-shadow-xl {
+  box-shadow: 8px 8px 0px #111111;
+}
+
+.brutal-shadow-green {
+  box-shadow: 4px 4px 0px #00FF66;
+}
+
+.brutal-shadow-red {
+  box-shadow: 4px 4px 0px #FF4336;
+}
+
+.brutal-shadow-yellow {
+  box-shadow: 4px 4px 0px #FFD028;
+}
+
+.brutal-shadow-cyan {
+  box-shadow: 4px 4px 0px #70D6FF;
+}
+
+/* Tactile button interaction */
+.brutal-btn-press {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.brutal-btn-press:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px #111111;
+}
+
+.brutal-btn-press:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #111111;
+}
+
+/* Custom brutal scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EBE8E1;
+  border-left: 2px solid #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #111111;
+  border: 2px solid #F5F3EF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF4336;
+}
+
+/* Monospace font tabular numbers */
+.font-mono-tabular {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Marquee infinite scroll */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee-smooth {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee-smooth:hover {
+  animation-play-state: paused;
+}
+
+/* Text stroke utility */
+.text-stroke-1 {
+  -webkit-text-stroke: 1.5px #111111;
+}
+
+.text-stroke-2 {
+  -webkit-text-stroke: 2.5px #111111;
+}
