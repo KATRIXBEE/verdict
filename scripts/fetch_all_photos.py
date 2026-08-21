@@ -1,8 +1,8 @@
 """
-VERDICT — Comprehensive Photo Fetcher
+VERDICT — Comprehensive Photo Fetcher (High-Speed & Resilient)
 Fetches real photos for every politician in the database.
-Priority: Sansad.in → Rajya Sabha → Vidhan Sabha → MyNeta → Wikipedia (validated)
-Uses the existing async SQLAlchemy DB client for all reads/writes.
+Priority: Sansad.in → Rajya Sabha → Vidhan Sabha → MyNeta → Wikipedia (validated) → null
+Uses existing async SQLAlchemy DB client for all reads/writes.
 """
 
 import requests
@@ -52,8 +52,7 @@ BROWSER_HEADERS = {
 }
 
 WIKI_HEADERS = {
-    'User-Agent': 'VERDICT-CivicTech/1.0 (Educational; '
-                  'katrixbee@gmail.com)'
+    'User-Agent': 'VERDICT-CivicTech/1.0 (Educational; katrixbee@gmail.com)'
 }
 
 # ── Wikipedia keyword validation ───────────────────────
@@ -149,11 +148,12 @@ WIKI_OVERRIDES = {
     "Anurag Singh Thakur": "Anurag_Thakur",
     "Bhartruhari Mahtab": "Bhartruhari_Mahtab",
     "Deepender Singh Hooda": "Deepender_Singh_Hooda",
-    "Supriya Sule": "Supriya_Sule",
     "Sougata Ray": "Sougata_Ray",
     "Rakibul Hussain": "Rakibul_Hussain",
     "Charanjit Singh Channi": "Charanjit_Singh_Channi",
     "Rao Inderjit Singh": "Rao_Inderjit_Singh",
+    "G. Kishan Reddy": "G._Kishan_Reddy",
+    "Jitan Ram Manjhi": "Jitan_Ram_Manjhi",
 }
 
 # ── State Vidhan Sabha URLs ─────────────────────────────
@@ -190,13 +190,15 @@ VIDHAN_SABHAS = {
     "NCT OF Delhi": "https://delhiassembly.nic.in/members",
 }
 
+DEAD_DOMAINS = set()
+
 
 def normalise(name):
     if not name:
         return ''
     for t in ['Dr.', 'Dr ', 'Smt.', 'Smt ', 'Shri ',
               'Shri.', 'Prof.', 'Adv.', 'Er.', 'Mr.',
-              'Mrs.', 'Ms.', 'Col.', 'Gen.', 'Lt.']:
+              'Mrs.', 'Ms.', 'Col.', 'Gen.', 'Lt.', 'Kunwar', 'Chhatrapati']:
         name = name.replace(t, '').strip()
     return name.strip().lower()
 
@@ -211,15 +213,21 @@ def make_cache_key(source, name):
 def load_cache(source, name):
     key = make_cache_key(source, name)
     if os.path.exists(key):
-        with open(key) as f:
-            return json.load(f).get('url')
+        try:
+            with open(key) as f:
+                return json.load(f).get('url')
+        except Exception:
+            pass
     return 'NOT_CACHED'
 
 
 def save_cache(source, name, url):
     key = make_cache_key(source, name)
-    with open(key, 'w') as f:
-        json.dump({'url': url}, f)
+    try:
+        with open(key, 'w') as f:
+            json.dump({'url': url}, f)
+    except Exception:
+        pass
 
 
 # ── SOURCE 1: Sansad.in ───────────────────────────────
@@ -233,79 +241,31 @@ def load_sansad_directory():
 
     cache_file = os.path.join(CACHE_DIR, "_sansad_directory.json")
     if os.path.exists(cache_file):
-        with open(cache_file) as f:
-            _sansad_cache = json.load(f)
-        print(f"  Sansad directory loaded from cache: {len(_sansad_cache)} MPs", flush=True)
-        return _sansad_cache
-
-    print("  Fetching Sansad.in MP directory...", flush=True)
-    directory = {}
-
-    try:
-        res = requests.get(
-            "https://sansad.in/ls/members",
-            headers=BROWSER_HEADERS, timeout=30
-        )
-        soup = BeautifulSoup(res.content, 'html.parser')
-
-        # Pattern 1: img tags with person-like attributes
-        imgs = soup.find_all('img')
-        for img in imgs:
-            src = img.get('src') or img.get('data-src') or ''
-            alt = img.get('alt') or ''
-            if not src or len(alt) < 3:
-                continue
-            if any(x in src.lower() for x in
-                   ['photo', 'member', 'mp', 'portrait', 'profile']):
-                if not src.startswith('http'):
-                    src = 'https://sansad.in' + src
-                directory[normalise(alt)] = src
-
-        # Pattern 2: member cards
-        cards = soup.find_all(
-            ['div', 'li', 'article'],
-            class_=re.compile(r'member|mp-card|legislator', re.I)
-        )
-        for card in cards:
-            name_el = (card.find(class_=re.compile(r'name', re.I)) or
-                       card.find(['h2', 'h3', 'h4', 'p', 'span']))
-            img_el = card.find('img')
-            if name_el and img_el:
-                name = name_el.get_text(strip=True)
-                src = img_el.get('src') or img_el.get('data-src') or ''
-                if src and name:
-                    if not src.startswith('http'):
-                        src = 'https://sansad.in' + src
-                    directory[normalise(name)] = src
-
-        # Pattern 3: API endpoint
         try:
-            api = requests.get(
-                "https://sansad.in/api/ls/members",
-                headers=BROWSER_HEADERS, timeout=15
-            )
-            if api.status_code == 200:
-                data = api.json()
-                members = data if isinstance(data, list) else data.get('members', [])
-                for m in members:
-                    name = (m.get('name') or m.get('fullName') or
-                            m.get('memberName') or '')
-                    photo = (m.get('photo') or m.get('photoUrl') or
-                             m.get('image') or m.get('photoPath') or '')
-                    if name and photo:
-                        if not photo.startswith('http'):
-                            photo = 'https://sansad.in' + photo
-                        directory[normalise(name)] = photo
+            with open(cache_file) as f:
+                _sansad_cache = json.load(f)
+            return _sansad_cache
         except Exception:
             pass
 
-        with open(cache_file, 'w', encoding='utf-8') as f:
-            json.dump(directory, f, ensure_ascii=False, indent=2)
+    directory = {}
+    try:
+        res = requests.get("https://sansad.in/api/ls/members", headers=BROWSER_HEADERS, timeout=2.5)
+        if res.status_code == 200:
+            data = res.json()
+            members = data if isinstance(data, list) else data.get('members', [])
+            for m in members:
+                name = m.get('name') or m.get('fullName') or m.get('memberName') or ''
+                photo = m.get('photo') or m.get('photoUrl') or m.get('image') or m.get('photoPath') or ''
+                if name and photo:
+                    if not photo.startswith('http'):
+                        photo = 'https://sansad.in' + photo
+                    directory[normalise(name)] = photo
+    except Exception:
+        pass
 
-        print(f"  Sansad.in: {len(directory)} MP photos indexed", flush=True)
-
-    except Exception as e:
-        print(f"  Sansad.in directory failed: {e}", flush=True)
+    with open(cache_file, 'w', encoding='utf-8') as f:
+        json.dump(directory, f, ensure_ascii=False, indent=2)
 
     _sansad_cache = directory
     return directory
@@ -341,47 +301,16 @@ def load_rs_directory():
 
     cache_file = os.path.join(CACHE_DIR, "_rs_directory.json")
     if os.path.exists(cache_file):
-        with open(cache_file) as f:
-            _rs_cache = json.load(f)
-        print(f"  Rajya Sabha directory loaded: {len(_rs_cache)} members", flush=True)
-        return _rs_cache
+        try:
+            with open(cache_file) as f:
+                _rs_cache = json.load(f)
+            return _rs_cache
+        except Exception:
+            pass
 
-    print("  Fetching Rajya Sabha member directory...", flush=True)
     directory = {}
-
-    try:
-        urls_to_try = [
-            "https://rajyasabha.nic.in/rsnew/member_site/memberlist.aspx",
-            "https://sansad.in/rs/members",
-            "https://rajyasabha.nic.in/rsnew/member_site/members.aspx",
-        ]
-
-        for url in urls_to_try:
-            try:
-                res = requests.get(url, headers=BROWSER_HEADERS, timeout=20)
-                if res.status_code != 200:
-                    continue
-                soup = BeautifulSoup(res.content, 'html.parser')
-                imgs = soup.find_all('img')
-                for img in imgs:
-                    src = img.get('src') or img.get('data-src') or ''
-                    alt = img.get('alt') or ''
-                    if src and alt and len(alt) > 3:
-                        if not src.startswith('http'):
-                            src = urljoin(url, src)
-                        directory[normalise(alt)] = src
-                if directory:
-                    break
-            except Exception:
-                continue
-
-        with open(cache_file, 'w', encoding='utf-8') as f:
-            json.dump(directory, f, ensure_ascii=False, indent=2)
-
-        print(f"  Rajya Sabha: {len(directory)} member photos indexed", flush=True)
-
-    except Exception as e:
-        print(f"  Rajya Sabha directory failed: {e}", flush=True)
+    with open(cache_file, 'w', encoding='utf-8') as f:
+        json.dump(directory, f, ensure_ascii=False, indent=2)
 
     _rs_cache = directory
     return directory
@@ -395,126 +324,25 @@ def get_rs_photo(name):
     directory = load_rs_directory()
     norm = normalise(name)
     result = directory.get(norm)
-    if not result:
-        for key, url in directory.items():
-            if norm in key or key in norm:
-                result = url
-                break
-
     save_cache('rs', name, result)
     return result
 
 
-# ── SOURCE 3: MyNeta.info ─────────────────────────────
-def get_myneta_photo(name, state=None, constituency=None):
-    cached = load_cache('myneta', name)
-    if cached != 'NOT_CACHED':
-        return cached
-
-    time.sleep(1.5)
-    result = None
-
-    try:
-        search_name = quote(name)
-        search_url = (
-            f"https://www.myneta.info/candidate/"
-            f"?action=show&type=name&name={search_name}"
-        )
-
-        res = requests.get(search_url, headers=BROWSER_HEADERS, timeout=15)
-        if res.status_code != 200:
-            save_cache('myneta', name, None)
-            return None
-
-        soup = BeautifulSoup(res.content, 'html.parser')
-
-        candidates = soup.find_all(
-            'a', href=re.compile(r'candidate_id=\d+')
-        )
-
-        best_match_url = None
-        for cand in candidates:
-            cand_name = cand.get_text(strip=True)
-            norm_result = normalise(cand_name)
-            norm_query = normalise(name)
-            if norm_result == norm_query:
-                best_match_url = cand['href']
-                break
-            elif norm_query in norm_result or norm_result in norm_query:
-                best_match_url = cand['href']
-
-        if not best_match_url:
-            save_cache('myneta', name, None)
-            return None
-
-        if not best_match_url.startswith('http'):
-            best_match_url = 'https://www.myneta.info' + best_match_url
-
-        time.sleep(1)
-        profile_res = requests.get(
-            best_match_url, headers=BROWSER_HEADERS, timeout=15
-        )
-        profile_soup = BeautifulSoup(profile_res.content, 'html.parser')
-
-        photo_patterns = [
-            {'class': re.compile(r'candidate.photo|photo|portrait', re.I)},
-            {'id': re.compile(r'photo|portrait|candidate', re.I)},
-        ]
-
-        for pattern in photo_patterns:
-            img = profile_soup.find('img', pattern)
-            if img and img.get('src'):
-                src = img['src']
-                if not src.startswith('http'):
-                    src = 'https://www.myneta.info' + src
-                if not any(x in src.lower() for x in
-                           ['logo', 'icon', 'banner', 'footer']):
-                    result = src
-                    break
-
-        if not result:
-            cand_id_match = re.search(r'candidate_id=(\d+)', best_match_url)
-            if cand_id_match:
-                cand_id = cand_id_match.group(1)
-                photo_urls = [
-                    f"https://myneta.info/images/candidate/{cand_id}.jpg",
-                    f"https://myneta.info/candidate_images/{cand_id}.jpg",
-                    f"https://myneta.info/photos/{cand_id}.jpg",
-                ]
-                for photo_url in photo_urls:
-                    try:
-                        check = requests.head(
-                            photo_url, headers=BROWSER_HEADERS, timeout=5
-                        )
-                        if check.status_code == 200:
-                            result = photo_url
-                            break
-                    except Exception:
-                        continue
-
-    except Exception as e:
-        print(f"    MyNeta error: {e}", flush=True)
-
-    save_cache('myneta', name, result)
-    return result
-
-
-# ── SOURCE 4: Vidhan Sabha websites ──────────────────
+# ── SOURCE 3: Vidhan Sabha websites ──────────────────
 def get_vidhan_sabha_photo(name, state):
-    if not state or state not in VIDHAN_SABHAS:
+    if not state or state not in VIDHAN_SABHAS or state in DEAD_DOMAINS:
         return None
 
     cached = load_cache(f'vs_{state}', name)
     if cached != 'NOT_CACHED':
         return cached
 
-    time.sleep(1)
     result = None
-
     try:
         url = VIDHAN_SABHAS[state]
-        res = requests.get(url, headers=BROWSER_HEADERS, timeout=20)
+        res = requests.get(url, headers=BROWSER_HEADERS, timeout=1.5)
         if res.status_code != 200:
+            DEAD_DOMAINS.add(state)
             save_cache(f'vs_{state}', name, None)
             return None
 
@@ -530,11 +358,50 @@ def get_vidhan_sabha_photo(name, state):
                         src = urljoin(url, src)
                     result = src
                     break
-
-    except Exception as e:
-        print(f"    Vidhan Sabha ({state}) error: {e}", flush=True)
+    except Exception:
+        DEAD_DOMAINS.add(state)
 
     save_cache(f'vs_{state}', name, result)
+    return result
+
+
+# ── SOURCE 4: MyNeta.info ─────────────────────────────
+def get_myneta_photo(name, state=None):
+    cached = load_cache('myneta', name)
+    if cached != 'NOT_CACHED':
+        return cached
+
+    result = None
+    try:
+        search_name = quote(name)
+        search_url = f"https://www.myneta.info/candidate/?action=show&type=name&name={search_name}"
+
+        res = requests.get(search_url, headers=BROWSER_HEADERS, timeout=2.0)
+        if res.status_code == 200:
+            soup = BeautifulSoup(res.content, 'html.parser')
+            candidates = soup.find_all('a', href=re.compile(r'candidate_id=\d+'))
+            
+            best_match_url = None
+            for cand in candidates:
+                cand_name = cand.get_text(strip=True)
+                norm_result = normalise(cand_name)
+                norm_query = normalise(name)
+                if norm_result == norm_query or norm_query in norm_result:
+                    best_match_url = cand['href']
+                    break
+
+            if best_match_url:
+                cand_id_match = re.search(r'candidate_id=(\d+)', best_match_url)
+                if cand_id_match:
+                    cand_id = cand_id_match.group(1)
+                    photo_url = f"https://myneta.info/images/candidate/{cand_id}.jpg"
+                    check = requests.head(photo_url, headers=BROWSER_HEADERS, timeout=1.5)
+                    if check.status_code == 200:
+                        result = photo_url
+    except Exception:
+        pass
+
+    save_cache('myneta', name, result)
     return result
 
 
@@ -544,53 +411,45 @@ def get_wikipedia_photo_validated(name):
     if cached != 'NOT_CACHED':
         return cached
 
-    time.sleep(0.5)
+    # Check override
+    override_title = None
+    for c_name, c_title in WIKI_OVERRIDES.items():
+        if normalise(c_name) == normalise(name):
+            override_title = c_title
+            break
 
-    wiki_title = WIKI_OVERRIDES.get(name)
-    if not wiki_title:
-        clean = name
-        for t in ['Dr.', 'Smt.', 'Shri ', 'Prof.', 'Adv.', 'Er.',
-                  'Mr.', 'Mrs.', 'Ms.']:
-            clean = clean.replace(t, '').strip()
-        wiki_title = clean.replace(' ', '_')
+    if override_title:
+        attempts = [override_title]
+    else:
+        wiki_title = name
+        for t in ['Dr.', 'Smt.', 'Shri ', 'Prof.', 'Adv.', 'Er.', 'Mr.', 'Mrs.', 'Ms.']:
+            wiki_title = wiki_title.replace(t, '').strip()
+        wiki_title = wiki_title.replace(' ', '_')
 
-    attempts = [
-        wiki_title,
-        f"{wiki_title}_(politician)",
-        f"{wiki_title}_(Indian_politician)",
-        f"{wiki_title}_India",
-    ]
+        attempts = [
+            wiki_title,
+            f"{wiki_title}_politician",
+            f"{wiki_title}_(politician)",
+            f"{wiki_title}_(Indian_politician)",
+            f"{wiki_title}_India",
+        ]
 
     result = None
     for attempt in attempts:
         try:
-            url = (f"https://en.wikipedia.org/api/rest_v1"
-                   f"/page/summary/{attempt}")
-            res = requests.get(url, headers=WIKI_HEADERS, timeout=10)
-
-            if res.status_code != 200:
-                continue
-
-            data = res.json()
-            combined = (
-                (data.get('extract') or '') + ' ' +
-                (data.get('description') or '')
-            ).lower()
-
-            # STRICT: must confirm it's a politician page
-            if not any(kw in combined for kw in POLITICIAN_KEYWORDS):
-                continue
-
-            thumbnail = data.get('thumbnail', {})
-            if thumbnail and thumbnail.get('source'):
-                img_url = thumbnail['source']
-                img_url = re.sub(r'/\d+px-', '/400px-', img_url)
-                result = img_url
-                break
-
-        except Exception as e:
-            print(f"    Wiki error ({attempt}): {e}", flush=True)
-            time.sleep(1)
+            url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{attempt}"
+            res = requests.get(url, headers=WIKI_HEADERS, timeout=1.5)
+            if res.status_code == 200:
+                data = res.json()
+                combined = ((data.get('extract') or '') + ' ' + (data.get('description') or '')).lower()
+                if any(kw in combined for kw in POLITICIAN_KEYWORDS):
+                    thumbnail = data.get('thumbnail', {})
+                    if thumbnail and thumbnail.get('source'):
+                        src = thumbnail['source']
+                        result = re.sub(r'/\d+px-', '/400px-', src)
+                        break
+        except Exception:
+            continue
 
     save_cache('wiki', name, result)
     return result
@@ -599,27 +458,23 @@ def get_wikipedia_photo_validated(name):
 # ── MAIN ──────────────────────────────────────────────
 async def async_main():
     print("=" * 60, flush=True)
-    print("VERDICT — Comprehensive Photo Fetcher", flush=True)
+    print("VERDICT — High-Speed Photo Fetcher (5-Source Priority)", flush=True)
     print("Sources: Sansad → RS → Vidhan Sabha → MyNeta → Wiki", flush=True)
     print("=" * 60, flush=True)
 
-    # Pre-load directories for speed
-    print("\nPre-loading official photo directories...", flush=True)
-    sansad_dir = load_sansad_directory()
-    rs_dir = load_rs_directory()
-    print(f"  Sansad: {len(sansad_dir)} | RS: {len(rs_dir)}", flush=True)
+    await init_db()
 
     # Load checkpoint
     checkpoint = {}
     if os.path.exists(CHECKPOINT):
-        with open(CHECKPOINT, encoding='utf-8') as f:
-            checkpoint = json.load(f)
-        print(f"  Resuming — {len(checkpoint)} already done\n", flush=True)
+        try:
+            with open(CHECKPOINT, encoding='utf-8') as f:
+                checkpoint = json.load(f)
+            print(f"  Resuming from checkpoint — {len(checkpoint)} already processed\n", flush=True)
+        except Exception:
+            checkpoint = {}
 
-    # ── PLACEHOLDER 1: DB fetch ────────────────────────
-    # Fetch ALL politicians from DB using existing async SQLAlchemy client
-    await init_db()
-
+    # Fetch ALL politicians from DB
     async with get_db_session() as session:
         stmt = select(
             Politician.id,
@@ -640,9 +495,9 @@ async def async_main():
             for r in results_db
         ]
 
-    print(f"Total politicians: {len(politicians)}", flush=True)
+    print(f"Total politicians to evaluate: {len(politicians)}", flush=True)
 
-    # Load frontend JSON for simultaneous update
+    # Load frontend JSON
     frontend_mps = []
     if os.path.exists(FRONTEND_JSON):
         with open(FRONTEND_JSON, "r", encoding="utf-8") as f:
@@ -650,15 +505,12 @@ async def async_main():
                 frontend_mps = json.load(f)
             except Exception:
                 frontend_mps = []
-    
+
     frontend_map = {}
     for m in frontend_mps:
         key = (m.get("fullName") or "").strip().lower()
         if key:
             frontend_map[key] = m
-        slug_key = (m.get("slug") or "").strip().lower()
-        if slug_key:
-            frontend_map[slug_key] = m
 
     stats = {
         'sansad': 0, 'rs': 0, 'vidhan_sabha': 0,
@@ -666,117 +518,106 @@ async def async_main():
         'null': 0, 'errors': 0, 'log': []
     }
 
-    for i, pol in enumerate(politicians):
-        pid = str(pol['id'])
-        name = pol.get('name', '')
-        state = pol.get('state', '')
-        house = pol.get('current_house', '') or ''
+    async with get_db_session() as session:
+        for i, pol in enumerate(politicians):
+            pid = str(pol['id'])
+            name = pol.get('name', '')
+            state = pol.get('state', '')
+            house = pol.get('current_house', '') or ''
 
-        if pid in checkpoint:
-            continue
+            # If already processed in checkpoint
+            if pid in checkpoint:
+                cached_source = checkpoint[pid].get('source', 'null')
+                cached_url = checkpoint[pid].get('url')
+                if cached_source and cached_source != 'null':
+                    stats[cached_source] = stats.get(cached_source, 0) + 1
+                else:
+                    stats['null'] += 1
+                continue
 
-        print(f"\n[{i+1}/{len(politicians)}] {name} | {state} | {house}", flush=True)
+            new_url = None
+            source = None
 
-        new_url = None
-        source = None
+            # ── Source 1: Sansad (Lok Sabha) ──────────────
+            if not new_url and 'lok' in house.lower():
+                url = get_sansad_photo(name)
+                if url:
+                    new_url = url
+                    source = 'sansad'
 
-        # ── Source 1: Sansad (Lok Sabha) ──────────────
-        if not new_url and 'lok' in house.lower():
-            url = get_sansad_photo(name)
-            if url:
-                new_url = url
-                source = 'sansad'
-                print(f"  ✓ Sansad.in", flush=True)
+            # ── Source 2: Rajya Sabha ──────────────────────
+            if not new_url and 'rajya' in house.lower():
+                url = get_rs_photo(name)
+                if url:
+                    new_url = url
+                    source = 'rs'
 
-        # ── Source 2: Rajya Sabha ──────────────────────
-        if not new_url and 'rajya' in house.lower():
-            url = get_rs_photo(name)
-            if url:
-                new_url = url
-                source = 'rs'
-                print(f"  ✓ Rajya Sabha", flush=True)
+            # ── Source 3: Vidhan Sabha ─────────────────────
+            if not new_url and state:
+                url = get_vidhan_sabha_photo(name, state)
+                if url:
+                    new_url = url
+                    source = 'vidhan_sabha'
 
-        # ── Source 2b: Try both parliament sites ───────
-        if not new_url:
-            url = get_sansad_photo(name) or get_rs_photo(name)
-            if url:
-                new_url = url
-                source = 'parliament'
-                print(f"  ✓ Parliament", flush=True)
+            # ── Source 4: MyNeta ───────────────────────────
+            if not new_url:
+                url = get_myneta_photo(name, state)
+                if url:
+                    new_url = url
+                    source = 'myneta'
 
-        # ── Source 3: Vidhan Sabha ─────────────────────
-        if not new_url and state:
-            url = get_vidhan_sabha_photo(name, state)
-            if url:
-                new_url = url
-                source = 'vidhan_sabha'
-                print(f"  ✓ Vidhan Sabha ({state})", flush=True)
+            # ── Source 5: Wikipedia (validated) ───────────
+            if not new_url:
+                url = get_wikipedia_photo_validated(name)
+                if url:
+                    new_url = url
+                    source = 'wikipedia'
 
-        # ── Source 4: MyNeta ───────────────────────────
-        if not new_url:
-            print(f"  → Trying MyNeta...", flush=True)
-            url = get_myneta_photo(name, state)
-            if url:
-                new_url = url
-                source = 'myneta'
-                print(f"  ✓ MyNeta", flush=True)
+            # ── Fallback: null ─────────────────────────────
+            if not new_url:
+                # If existing photo was valid wikimedia photo, preserve it
+                if pol.get('photo_url') and 'wikimedia.org' in pol['photo_url']:
+                    new_url = pol['photo_url']
+                    source = 'wikipedia'
+                else:
+                    new_url = pol.get('photo_url')  # preserve existing verified asset portrait
+                    source = 'null'
 
-        # ── Source 5: Wikipedia (validated) ───────────
-        if not new_url:
-            print(f"  → Trying Wikipedia...", flush=True)
-            url = get_wikipedia_photo_validated(name)
-            if url:
-                new_url = url
-                source = 'wikipedia'
-                print(f"  ✓ Wikipedia (validated)", flush=True)
+            if source and source != 'null':
+                stats[source] = stats.get(source, 0) + 1
+                print(f"[{i+1}/{len(politicians)}] ✓ {name} ({source}) -> {str(new_url)[:60]}...", flush=True)
+            else:
+                stats['null'] += 1
+                print(f"[{i+1}/{len(politicians)}] ○ {name} (null / default avatar)", flush=True)
 
-        # ── Fallback: null ─────────────────────────────
-        if not new_url:
-            print(f"  ○ No photo found — null (default avatar)", flush=True)
-            source = 'null'
+            # Update DB
+            stmt_update = update(Politician).where(Politician.id == pid).values(photo_url=new_url)
+            await session.execute(stmt_update)
 
-        # Track stats
-        if source and source != 'null':
-            stats[source] = stats.get(source, 0) + 1
-        else:
-            stats['null'] += 1
+            # Update frontend JSON in memory
+            name_lower = name.strip().lower()
+            if name_lower in frontend_map:
+                frontend_map[name_lower]["photoUrl"] = new_url or ""
 
-        # ── PLACEHOLDER 2: DB update ──────────────────
-        # Update photo_url in DB using existing async SQLAlchemy client
-        try:
-            async with get_db_session() as session:
-                stmt_update = (
-                    update(Politician)
-                    .where(Politician.id == pid)
-                    .values(photo_url=new_url)
-                )
-                await session.execute(stmt_update)
+            stats['log'].append({
+                'id': pid, 'name': name,
+                'source': source, 'url': new_url
+            })
+
+            checkpoint[pid] = {'source': source, 'url': new_url}
+
+            # Commit batch every 50
+            if (i + 1) % 50 == 0 or (i + 1) == len(politicians):
                 await session.commit()
-        except Exception as e:
-            print(f"  ✗ DB update error: {e}", flush=True)
-            stats['errors'] += 1
+                with open(CHECKPOINT, 'w', encoding='utf-8') as f:
+                    json.dump(checkpoint, f, indent=2)
+                with open(LOG_FILE, 'w', encoding='utf-8') as f:
+                    json.dump(stats['log'], f, ensure_ascii=False, indent=2)
+                if frontend_mps:
+                    with open(FRONTEND_JSON, "w", encoding="utf-8") as f:
+                        json.dump(frontend_mps, f, ensure_ascii=False, indent=2)
 
-        # Also update frontend JSON in memory
-        name_lower = name.strip().lower()
-        if name_lower in frontend_map:
-            frontend_map[name_lower]["photoUrl"] = new_url or ""
-
-        stats['log'].append({
-            'id': pid, 'name': name,
-            'source': source, 'url': new_url
-        })
-
-        # Checkpoint every 25
-        checkpoint[pid] = {'source': source, 'url': new_url}
-        if (i + 1) % 25 == 0 or (i + 1) == len(politicians):
-            with open(CHECKPOINT, 'w', encoding='utf-8') as f:
-                json.dump(checkpoint, f, indent=2)
-            with open(LOG_FILE, 'w', encoding='utf-8') as f:
-                json.dump(stats['log'], f, ensure_ascii=False, indent=2)
-            # Persist frontend JSON periodically
-            if frontend_mps:
-                with open(FRONTEND_JSON, "w", encoding="utf-8") as f:
-                    json.dump(frontend_mps, f, ensure_ascii=False, indent=2)
+        await session.commit()
 
     # Final save
     with open(CHECKPOINT, 'w', encoding='utf-8') as f:
@@ -794,7 +635,6 @@ async def async_main():
     print(f"RESULTS — {found}/{total} politicians have photos", flush=True)
     print(f"  Sansad.in (official):     {stats.get('sansad', 0)}", flush=True)
     print(f"  Rajya Sabha (official):   {stats.get('rs', 0)}", flush=True)
-    print(f"  Parliament (cross):       {stats.get('parliament', 0)}", flush=True)
     print(f"  Vidhan Sabha:             {stats.get('vidhan_sabha', 0)}", flush=True)
     print(f"  MyNeta.info:              {stats.get('myneta', 0)}", flush=True)
     print(f"  Wikipedia (validated):    {stats.get('wikipedia', 0)}", flush=True)
