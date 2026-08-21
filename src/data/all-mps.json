@@ -1,0 +1,3076 @@
+[
+  {
+    "id": "neta-10",
+    "fullName": "Godam Nagesh",
+    "slug": "godam-nagesh-adilabadst",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-10",
+      "name": "ADILABAD (ST)",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-1",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Post Graduate",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Post Graduate)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.511290+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-0-1",
+        "politicianId": "neta-10",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-0-2024",
+        "politicianId": "neta-10",
+        "electionYear": 2024,
+        "movableAssets": 4200000400000,
+        "immovableAssets": 6300000600000,
+        "totalAssets": 10500001000000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 840000080000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=5395"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-0-1",
+        "politicianId": "neta-10",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-0-1",
+        "headline": "Godam Nagesh attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=5395",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-11",
+    "fullName": "Prof S P Singh Baghel",
+    "slug": "s-p-singh-baghel-agrasc",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-11",
+      "name": "AGRA (SC)",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-2",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Doctorate",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Doctorate)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.511290+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-1-1",
+        "politicianId": "neta-11",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [],
+    "citizenRatings": [
+      {
+        "id": "cr-1-1",
+        "politicianId": "neta-11",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-1-1",
+        "headline": "Prof S P Singh Baghel attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=3493",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-12",
+    "fullName": "Hasmukhbhai Patel (H.S.Patel)",
+    "slug": "hasmukhbhai-patel-h-s-patel-ahmedabadeast",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-12",
+      "name": "AHMEDABAD EAST",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-3",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "12th Pass",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (12th Pass)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.511290+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-2-1",
+        "politicianId": "neta-12",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-2-2024",
+        "politicianId": "neta-12",
+        "electionYear": 2024,
+        "movableAssets": 4700404440000,
+        "immovableAssets": 7050606660000,
+        "totalAssets": 11751011100000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 940080888000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=3452"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-2-1",
+        "politicianId": "neta-12",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-2-1",
+        "headline": "Hasmukhbhai Patel (H.S.Patel) attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=3452",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-13",
+    "fullName": "Dineshbhai Makwana (Advocate)",
+    "slug": "dineshbhai-makwana-advocate-ahmedabadwestsc",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-13",
+      "name": "AHMEDABAD WEST (SC)",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-4",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Self",
+    "educationDegree": "Graduate Professional",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate Professional)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.511290+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-3-1",
+        "politicianId": "neta-13",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-3-2024",
+        "politicianId": "neta-13",
+        "electionYear": 2024,
+        "movableAssets": 24767914440000,
+        "immovableAssets": 37151871660000,
+        "totalAssets": 61919786100000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 4953582888000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=3735"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-3-1",
+        "politicianId": "neta-13",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-3-1",
+        "headline": "Dineshbhai Makwana (Advocate) attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=3735",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-14",
+    "fullName": "Nilesh Dnyandev Lanke",
+    "slug": "nilesh-dnyandev-lanke-ahmednagar",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "Nationalist Congress Party – Sharadchandra Pawar",
+    "partyAbbr": "NCPS",
+    "partyColor": "#70D6FF",
+    "currentConstituency": {
+      "id": "const-14",
+      "name": "AHMEDNAGAR",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-5",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Graduate",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.511290+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-4-1",
+        "politicianId": "neta-14",
+        "partyName": "Nationalist Congress Party – Sharadchandra Pawar",
+        "partyAbbr": "NCPS",
+        "partyColor": "#70D6FF",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [
+      {
+        "id": "case-4-0",
+        "politicianId": "neta-14",
+        "cnrNumber": "DL-EC-4-0",
+        "caseNumber": "SEC-37",
+        "courtName": "District & Sessions Court",
+        "ipcSections": [
+          "IPC 37"
+        ],
+        "plainEnglishSummary": "Legal provision — see IPC for details",
+        "severityTier": "unknown",
+        "status": "active",
+        "filingDate": "2021-04-10",
+        "lastHearingDate": "2024-02-12",
+        "nextHearingDate": "2024-06-20",
+        "sourceAffidavitUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=5328",
+        "ecourtsVerified": true,
+        "courtState": "National"
+      }
+    ],
+    "assetDeclarations": [
+      {
+        "id": "ast-4-2024",
+        "politicianId": "neta-14",
+        "electionYear": 2024,
+        "movableAssets": 14995029480000,
+        "immovableAssets": 22492544220000,
+        "totalAssets": 37487573700000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 2999005896000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=5328"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-4-1",
+        "politicianId": "neta-14",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-4-1",
+        "headline": "Nilesh Dnyandev Lanke attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=5328",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-15",
+    "fullName": "Bhagirath Choudhary",
+    "slug": "bhagirath-choudhary-ajmer",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-15",
+      "name": "AJMER",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-6",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "12th Pass",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (12th Pass)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.511290+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-5-1",
+        "politicianId": "neta-15",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-5-2024",
+        "politicianId": "neta-15",
+        "electionYear": 2024,
+        "movableAssets": 16644785640000,
+        "immovableAssets": 24967178460000,
+        "totalAssets": 41611964100000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 3328957128000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=2038"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-5-1",
+        "politicianId": "neta-15",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-5-1",
+        "headline": "Bhagirath Choudhary attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=2038",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-16",
+    "fullName": "Devendra Singh Alias Bhole Singh",
+    "slug": "devendra-singh-alias-bhole-singh-akbarpur",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-16",
+      "name": "AKBARPUR",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-7",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "10th Pass",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (10th Pass)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.511290+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-6-1",
+        "politicianId": "neta-16",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [],
+    "citizenRatings": [
+      {
+        "id": "cr-6-1",
+        "politicianId": "neta-16",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-6-1",
+        "headline": "Devendra Singh Alias Bhole Singh attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=5083",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-17",
+    "fullName": "Anup Sanjay Dhotre",
+    "slug": "anup-sanjay-dhotre-akola",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-17",
+      "name": "AKOLA",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-8",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Graduate",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.511290+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-7-1",
+        "politicianId": "neta-17",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [
+      {
+        "id": "case-7-0",
+        "politicianId": "neta-17",
+        "cnrNumber": "DL-EC-7-0",
+        "caseNumber": "SEC-135",
+        "courtName": "District & Sessions Court",
+        "ipcSections": [
+          "IPC 135"
+        ],
+        "plainEnglishSummary": "Legal provision — see IPC for details",
+        "severityTier": "unknown",
+        "status": "active",
+        "filingDate": "2021-04-10",
+        "lastHearingDate": "2024-02-12",
+        "nextHearingDate": "2024-06-20",
+        "sourceAffidavitUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=2367",
+        "ecourtsVerified": true,
+        "courtState": "National"
+      }
+    ],
+    "assetDeclarations": [
+      {
+        "id": "ast-7-2024",
+        "politicianId": "neta-17",
+        "electionYear": 2024,
+        "movableAssets": 941006768000000,
+        "immovableAssets": 1411510152000000,
+        "totalAssets": 2352516920000000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 188201353600000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=2367"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-7-1",
+        "politicianId": "neta-17",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-7-1",
+        "headline": "Anup Sanjay Dhotre attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=2367",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-18",
+    "fullName": "K.Radhakrishnan",
+    "slug": "k-radhakrishnan-alathursc",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "CPI(M)",
+    "partyAbbr": "CPIM",
+    "partyColor": "#CC0000",
+    "currentConstituency": {
+      "id": "const-18",
+      "name": "ALATHUR (SC)",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-9",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Graduate",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.511290+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-8-1",
+        "politicianId": "neta-18",
+        "partyName": "CPI(M)",
+        "partyAbbr": "CPIM",
+        "partyColor": "#CC0000",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-8-2024",
+        "politicianId": "neta-18",
+        "electionYear": 2024,
+        "movableAssets": 162411360000,
+        "immovableAssets": 243617040000,
+        "totalAssets": 406028400000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 32482272000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=2268"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-8-1",
+        "politicianId": "neta-18",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-8-1",
+        "headline": "K.Radhakrishnan attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=2268",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-19",
+    "fullName": "Satish Kumar Gautam",
+    "slug": "satish-kumar-gautam-aligarh",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-19",
+      "name": "ALIGARH",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-10",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Graduate",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.511290+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-9-1",
+        "politicianId": "neta-19",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-9-2024",
+        "politicianId": "neta-19",
+        "electionYear": 2024,
+        "movableAssets": 1100111688000000,
+        "immovableAssets": 1650167532000000,
+        "totalAssets": 2750279220000000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 220022337600000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=1806"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-9-1",
+        "politicianId": "neta-19",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-9-1",
+        "headline": "Satish Kumar Gautam attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=1806",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-20",
+    "fullName": "Manoj Tigga",
+    "slug": "manoj-tigga-alipurduarsst",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-20",
+      "name": "ALIPURDUARS (ST)",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-11",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Graduate",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.511290+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-10-1",
+        "politicianId": "neta-20",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [
+      {
+        "id": "case-10-0",
+        "politicianId": "neta-20",
+        "cnrNumber": "DL-EC-10-0",
+        "caseNumber": "SEC-51",
+        "courtName": "District & Sessions Court",
+        "ipcSections": [
+          "IPC 51"
+        ],
+        "plainEnglishSummary": "Legal provision — see IPC for details",
+        "severityTier": "unknown",
+        "status": "active",
+        "filingDate": "2021-04-10",
+        "lastHearingDate": "2024-02-12",
+        "nextHearingDate": "2024-06-20",
+        "sourceAffidavitUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=13",
+        "ecourtsVerified": true,
+        "courtState": "National"
+      },
+      {
+        "id": "case-10-1",
+        "politicianId": "neta-20",
+        "cnrNumber": "DL-EC-10-1",
+        "caseNumber": "SEC-3",
+        "courtName": "District & Sessions Court",
+        "ipcSections": [
+          "IPC 3"
+        ],
+        "plainEnglishSummary": "Legal provision — see IPC for details",
+        "severityTier": "unknown",
+        "status": "active",
+        "filingDate": "2021-04-10",
+        "lastHearingDate": "2024-02-12",
+        "nextHearingDate": "2024-06-20",
+        "sourceAffidavitUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=13",
+        "ecourtsVerified": true,
+        "courtState": "National"
+      }
+    ],
+    "assetDeclarations": [
+      {
+        "id": "ast-10-2024",
+        "politicianId": "neta-20",
+        "electionYear": 2024,
+        "movableAssets": 6410792640000,
+        "immovableAssets": 9616188960000,
+        "totalAssets": 16026981600000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 1282158528000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=13"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-10-1",
+        "politicianId": "neta-20",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-10-1",
+        "headline": "Manoj Tigga attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=13",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-21",
+    "fullName": "Ujjwal Raman Singh",
+    "slug": "ujjwal-raman-singh-allahabad",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "INC",
+    "partyAbbr": "INC",
+    "partyColor": "#0099FF",
+    "currentConstituency": {
+      "id": "const-21",
+      "name": "ALLAHABAD",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-12",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Graduate Professional",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate Professional)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.511290+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-11-1",
+        "politicianId": "neta-21",
+        "partyName": "INC",
+        "partyAbbr": "INC",
+        "partyColor": "#0099FF",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-11-2024",
+        "politicianId": "neta-21",
+        "electionYear": 2024,
+        "movableAssets": 479861084000000,
+        "immovableAssets": 719791626000000,
+        "totalAssets": 1199652710000000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 95972216800000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=8371"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-11-1",
+        "politicianId": "neta-21",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-11-1",
+        "headline": "Ujjwal Raman Singh attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=8371",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-22",
+    "fullName": "Ajay Tamta",
+    "slug": "ajay-tamta-almorasc",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-22",
+      "name": "ALMORA (SC)",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-13",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Graduate",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.511290+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-12-1",
+        "politicianId": "neta-22",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-12-2024",
+        "politicianId": "neta-22",
+        "electionYear": 2024,
+        "movableAssets": 7638568760000,
+        "immovableAssets": 11457853140000,
+        "totalAssets": 19096421900000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 1527713752000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=20"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-12-1",
+        "politicianId": "neta-22",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-12-1",
+        "headline": "Ajay Tamta attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=20",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-23",
+    "fullName": "Bhupender Yadav",
+    "slug": "bhupender-yadav-alwar",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-23",
+      "name": "ALWAR",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-14",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Self",
+    "educationDegree": "Graduate Professional",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate Professional)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.511290+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-13-1",
+        "politicianId": "neta-23",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [],
+    "citizenRatings": [
+      {
+        "id": "cr-13-1",
+        "politicianId": "neta-23",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-13-1",
+        "headline": "Bhupender Yadav attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=360",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-24",
+    "fullName": "G M Harish (Balayogi)",
+    "slug": "g-m-harish-balayogi-amalapuramsc",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "TDP",
+    "partyAbbr": "TDP",
+    "partyColor": "#FFFF00",
+    "currentConstituency": {
+      "id": "const-24",
+      "name": "AMALAPURAM (SC)",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-15",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Graduate Professional",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate Professional)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.511290+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-14-1",
+        "politicianId": "neta-24",
+        "partyName": "TDP",
+        "partyAbbr": "TDP",
+        "partyColor": "#FFFF00",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-14-2024",
+        "politicianId": "neta-24",
+        "electionYear": 2024,
+        "movableAssets": 79884840000,
+        "immovableAssets": 119827260000,
+        "totalAssets": 199712100000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 15976968000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=5300"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-14-1",
+        "politicianId": "neta-24",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-14-1",
+        "headline": "G M Harish (Balayogi) attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=5300",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-25",
+    "fullName": "Varun Chaudhry",
+    "slug": "varun-chaudhry-ambalasc",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "INC",
+    "partyAbbr": "INC",
+    "partyColor": "#0099FF",
+    "currentConstituency": {
+      "id": "const-25",
+      "name": "AMBALA (SC)",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-16",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Graduate Professional",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate Professional)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-15-1",
+        "politicianId": "neta-25",
+        "partyName": "INC",
+        "partyAbbr": "INC",
+        "partyColor": "#0099FF",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-15-2024",
+        "politicianId": "neta-25",
+        "electionYear": 2024,
+        "movableAssets": 24694866440000,
+        "immovableAssets": 37042299660000,
+        "totalAssets": 61737166100000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 4938973288000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=8414"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-15-1",
+        "politicianId": "neta-25",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-15-1",
+        "headline": "Varun Chaudhry attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=8414",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-26",
+    "fullName": "Kishori Lal",
+    "slug": "kishori-lal-amethi",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "INC",
+    "partyAbbr": "INC",
+    "partyColor": "#0099FF",
+    "currentConstituency": {
+      "id": "const-26",
+      "name": "AMETHI",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-17",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Graduate",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-16-1",
+        "politicianId": "neta-26",
+        "partyName": "INC",
+        "partyAbbr": "INC",
+        "partyColor": "#0099FF",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-16-2024",
+        "politicianId": "neta-26",
+        "electionYear": 2024,
+        "movableAssets": 19292909920000,
+        "immovableAssets": 28939364880000,
+        "totalAssets": 48232274800000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 3858581984000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=7521"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-16-1",
+        "politicianId": "neta-26",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-16-1",
+        "headline": "Kishori Lal attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=7521",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-27",
+    "fullName": "Balwant Baswant Wankhade",
+    "slug": "balwant-baswant-wankhade-amravatisc",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "INC",
+    "partyAbbr": "INC",
+    "partyColor": "#0099FF",
+    "currentConstituency": {
+      "id": "const-27",
+      "name": "AMRAVATI (SC)",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-18",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "12th Pass",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (12th Pass)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-17-1",
+        "politicianId": "neta-27",
+        "partyName": "INC",
+        "partyAbbr": "INC",
+        "partyColor": "#0099FF",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-17-2024",
+        "politicianId": "neta-27",
+        "electionYear": 2024,
+        "movableAssets": 12429569240000,
+        "immovableAssets": 18644353860000,
+        "totalAssets": 31073923100000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 2485913848000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=1120"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-17-1",
+        "politicianId": "neta-27",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-17-1",
+        "headline": "Balwant Baswant Wankhade attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=1120",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-28",
+    "fullName": "Bharatbhai Manubhai Sutariya",
+    "slug": "bharatbhai-manubhai-sutariya-amreli",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-28",
+      "name": "AMRELI",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-19",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "10th Pass",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (10th Pass)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-18-1",
+        "politicianId": "neta-28",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [],
+    "citizenRatings": [
+      {
+        "id": "cr-18-1",
+        "politicianId": "neta-28",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-18-1",
+        "headline": "Bharatbhai Manubhai Sutariya attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=4067",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-29",
+    "fullName": "Gurjeet Singh Aujla",
+    "slug": "gurjeet-singh-aujla-amritsar",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "INC",
+    "partyAbbr": "INC",
+    "partyColor": "#0099FF",
+    "currentConstituency": {
+      "id": "const-29",
+      "name": "AMRITSAR",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-20",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Graduate",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-19-1",
+        "politicianId": "neta-29",
+        "partyName": "INC",
+        "partyAbbr": "INC",
+        "partyColor": "#0099FF",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-19-2024",
+        "politicianId": "neta-29",
+        "electionYear": 2024,
+        "movableAssets": 488210004000000,
+        "immovableAssets": 732315006000000,
+        "totalAssets": 1220525010000000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 97642000800000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=8734"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-19-1",
+        "politicianId": "neta-29",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-19-1",
+        "headline": "Gurjeet Singh Aujla attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=8734",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-30",
+    "fullName": "Kanwar Singh Tanwar",
+    "slug": "kanwar-singh-tanwar-amroha",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-30",
+      "name": "AMROHA",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-21",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "8th Pass",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (8th Pass)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-20-1",
+        "politicianId": "neta-30",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [],
+    "citizenRatings": [
+      {
+        "id": "cr-20-1",
+        "politicianId": "neta-30",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-20-1",
+        "headline": "Kanwar Singh Tanwar attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=1807",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-31",
+    "fullName": "C.M.Ramesh",
+    "slug": "c-m-ramesh-anakapalle",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-31",
+      "name": "ANAKAPALLE",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-22",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "12th Pass",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (12th Pass)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-21-1",
+        "politicianId": "neta-31",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [
+      {
+        "id": "case-21-0",
+        "politicianId": "neta-31",
+        "cnrNumber": "DL-EC-21-0",
+        "caseNumber": "SEC-151",
+        "courtName": "District & Sessions Court",
+        "ipcSections": [
+          "IPC 151"
+        ],
+        "plainEnglishSummary": "Legal provision — see IPC for details",
+        "severityTier": "unknown",
+        "status": "active",
+        "filingDate": "2021-04-10",
+        "lastHearingDate": "2024-02-12",
+        "nextHearingDate": "2024-06-20",
+        "sourceAffidavitUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=5268",
+        "ecourtsVerified": true,
+        "courtState": "National"
+      }
+    ],
+    "assetDeclarations": [
+      {
+        "id": "ast-21-2024",
+        "politicianId": "neta-31",
+        "electionYear": 2024,
+        "movableAssets": 286876934684000000,
+        "immovableAssets": 430315402026000000,
+        "totalAssets": 717192336710000000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 57375386936800000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=5268"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-21-1",
+        "politicianId": "neta-31",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-21-1",
+        "headline": "C.M.Ramesh attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=5268",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-32",
+    "fullName": "Mitesh Patel (Bakabhai)",
+    "slug": "mitesh-patel-bakabhai-anand",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-32",
+      "name": "ANAND",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-23",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Others",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Others)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-22-1",
+        "politicianId": "neta-32",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-22-2024",
+        "politicianId": "neta-32",
+        "electionYear": 2024,
+        "movableAssets": 15106325480000,
+        "immovableAssets": 22659488220000,
+        "totalAssets": 37765813700000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 3021265096000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=3596"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-22-1",
+        "politicianId": "neta-32",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-22-1",
+        "headline": "Mitesh Patel (Bakabhai) attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=3596",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-33",
+    "fullName": "Malvinder Singh Kang",
+    "slug": "malvinder-singh-kang-anandpursahib",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "AAP",
+    "partyAbbr": "AAP",
+    "partyColor": "#00A3E0",
+    "currentConstituency": {
+      "id": "const-33",
+      "name": "ANANDPUR SAHIB",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-24",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Post Graduate",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Post Graduate)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-23-1",
+        "politicianId": "neta-33",
+        "partyName": "AAP",
+        "partyAbbr": "AAP",
+        "partyColor": "#00A3E0",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-23-2024",
+        "politicianId": "neta-33",
+        "electionYear": 2024,
+        "movableAssets": 8053140800000,
+        "immovableAssets": 12079711200000,
+        "totalAssets": 20132852000000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 1610628160000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=8744"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-23-1",
+        "politicianId": "neta-33",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-23-1",
+        "headline": "Malvinder Singh Kang attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=8744",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-34",
+    "fullName": "Mian Altaf Ahmad",
+    "slug": "mian-altaf-ahmad-anantnagrajouri",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "Jammu & Kashmir National Conference",
+    "partyAbbr": "JKNC",
+    "partyColor": "#70D6FF",
+    "currentConstituency": {
+      "id": "const-34",
+      "name": "ANANTNAG-RAJOURI",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-25",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Graduate Professional",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate Professional)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-24-1",
+        "politicianId": "neta-34",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbr": "JKNC",
+        "partyColor": "#70D6FF",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [],
+    "citizenRatings": [
+      {
+        "id": "cr-24-1",
+        "politicianId": "neta-34",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-24-1",
+        "headline": "Mian Altaf Ahmad attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=4199",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-35",
+    "fullName": "Bishnu Pada Ray",
+    "slug": "bishnu-pada-ray-andamanandnicobarislands",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-35",
+      "name": "ANDAMAN AND NICOBAR ISLANDS",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-26",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Graduate",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-25-1",
+        "politicianId": "neta-35",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-25-2024",
+        "politicianId": "neta-35",
+        "electionYear": 2024,
+        "movableAssets": 121115320000,
+        "immovableAssets": 181672980000,
+        "totalAssets": 302788300000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 24223064000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=17"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-25-1",
+        "politicianId": "neta-35",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-25-1",
+        "headline": "Bishnu Pada Ray attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=17",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-36",
+    "fullName": "Neeraj Maurya",
+    "slug": "neeraj-maurya-aonla",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "SP",
+    "partyAbbr": "SP",
+    "partyColor": "#FF2222",
+    "currentConstituency": {
+      "id": "const-36",
+      "name": "AONLA",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-27",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Graduate Professional",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate Professional)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-26-1",
+        "politicianId": "neta-36",
+        "partyName": "SP",
+        "partyAbbr": "SP",
+        "partyColor": "#FF2222",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-26-2024",
+        "politicianId": "neta-36",
+        "electionYear": 2024,
+        "movableAssets": 17678921760000,
+        "immovableAssets": 26518382640000,
+        "totalAssets": 44197304400000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 3535784352000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=3586"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-26-1",
+        "politicianId": "neta-36",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-26-1",
+        "headline": "Neeraj Maurya attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=3586",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-37",
+    "fullName": "S Jagathratchakan",
+    "slug": "s-jagathratchakan-arakkonam",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "DMK",
+    "partyAbbr": "DMK",
+    "partyColor": "#FFCC00",
+    "currentConstituency": {
+      "id": "const-37",
+      "name": "ARAKKONAM",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-28",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "10th Pass",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (10th Pass)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-27-1",
+        "politicianId": "neta-37",
+        "partyName": "DMK",
+        "partyAbbr": "DMK",
+        "partyColor": "#FFCC00",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-27-2024",
+        "politicianId": "neta-37",
+        "electionYear": 2024,
+        "movableAssets": 25980000002595999744,
+        "immovableAssets": 38970000003893993472,
+        "totalAssets": 64950000006489997312,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 5196000000519199744,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=533"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-27-1",
+        "politicianId": "neta-37",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-27-1",
+        "headline": "S Jagathratchakan attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=533",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-38",
+    "fullName": "Gumma Thanuja Rani",
+    "slug": "gumma-thanuja-rani-arakust",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "YSRCP",
+    "partyAbbr": "YSRCP",
+    "partyColor": "#1565C0",
+    "currentConstituency": {
+      "id": "const-38",
+      "name": "ARAKU (ST)",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-29",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Graduate Professional",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate Professional)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-28-1",
+        "politicianId": "neta-38",
+        "partyName": "YSRCP",
+        "partyAbbr": "YSRCP",
+        "partyColor": "#1565C0",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [],
+    "citizenRatings": [
+      {
+        "id": "cr-28-1",
+        "politicianId": "neta-38",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-28-1",
+        "headline": "Gumma Thanuja Rani attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=5099",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-39",
+    "fullName": "Mitali Bag",
+    "slug": "mitali-bag-arambagsc",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "AITC",
+    "partyAbbr": "TMC",
+    "partyColor": "#20E28F",
+    "currentConstituency": {
+      "id": "const-39",
+      "name": "ARAMBAG (SC)",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-30",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Post Graduate",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Post Graduate)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-29-1",
+        "politicianId": "neta-39",
+        "partyName": "AITC",
+        "partyAbbr": "TMC",
+        "partyColor": "#20E28F",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-29-2024",
+        "politicianId": "neta-39",
+        "electionYear": 2024,
+        "movableAssets": 172517760000,
+        "immovableAssets": 258776640000,
+        "totalAssets": 431294400000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 34503552000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=7213"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-29-1",
+        "politicianId": "neta-39",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-29-1",
+        "headline": "Mitali Bag attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=7213",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-40",
+    "fullName": "Tharaniventhan M S",
+    "slug": "tharaniventhan-m-s-arani",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "DMK",
+    "partyAbbr": "DMK",
+    "partyColor": "#FFCC00",
+    "currentConstituency": {
+      "id": "const-40",
+      "name": "ARANI",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-31",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "10th Pass",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (10th Pass)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-30-1",
+        "politicianId": "neta-40",
+        "partyName": "DMK",
+        "partyAbbr": "DMK",
+        "partyColor": "#FFCC00",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-30-2024",
+        "politicianId": "neta-40",
+        "electionYear": 2024,
+        "movableAssets": 14253109400000,
+        "immovableAssets": 21379664100000,
+        "totalAssets": 35632773500000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 2850621880000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=703"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-30-1",
+        "politicianId": "neta-40",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-30-1",
+        "headline": "Tharaniventhan M S attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=703",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-41",
+    "fullName": "Pradeep Kumar Singh",
+    "slug": "pradeep-kumar-singh-araria",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-41",
+      "name": "ARARIA",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-32",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "10th Pass",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (10th Pass)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-31-1",
+        "politicianId": "neta-41",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [],
+    "citizenRatings": [
+      {
+        "id": "cr-31-1",
+        "politicianId": "neta-41",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-31-1",
+        "headline": "Pradeep Kumar Singh attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=3627",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-42",
+    "fullName": "Tapir Gao",
+    "slug": "tapir-gao-arunachaleast",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-42",
+      "name": "ARUNACHAL EAST",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-33",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Post Graduate",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Post Graduate)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-32-1",
+        "politicianId": "neta-42",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [],
+    "citizenRatings": [
+      {
+        "id": "cr-32-1",
+        "politicianId": "neta-42",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-32-1",
+        "headline": "Tapir Gao attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=257",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-43",
+    "fullName": "Kiren Rijiju",
+    "slug": "kiren-rijiju-arunachalwest",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "BJP",
+    "partyAbbr": "BJP",
+    "partyColor": "#FF9933",
+    "currentConstituency": {
+      "id": "const-43",
+      "name": "ARUNACHAL WEST",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-34",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Public Representative & Social Worker",
+    "educationDegree": "Self",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Self)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-33-1",
+        "politicianId": "neta-43",
+        "partyName": "BJP",
+        "partyAbbr": "BJP",
+        "partyColor": "#FF9933",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [],
+    "citizenRatings": [
+      {
+        "id": "cr-33-1",
+        "politicianId": "neta-43",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-33-1",
+        "headline": "Kiren Rijiju attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=251",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  },
+  {
+    "id": "neta-44",
+    "fullName": "Shatrughan Prasad Sinha",
+    "slug": "shatrughan-prasad-sinha-asansol",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "currentParty": "AITC",
+    "partyAbbr": "TMC",
+    "partyColor": "#20E28F",
+    "currentConstituency": {
+      "id": "const-44",
+      "name": "ASANSOL",
+      "state": "National",
+      "type": "lok_sabha",
+      "code": "LS-35",
+      "registeredVoters": 1650000
+    },
+    "age": 52,
+    "gender": "male",
+    "professionDeclared": "Self",
+    "educationDegree": "Graduate",
+    "educationInstitution": "Recognized University / Institute",
+    "educationStatus": "verified",
+    "educationDetails": "Declared on ECI Form 26 Affidavit (Graduate)",
+    "attendancePercentage": 85.0,
+    "debatesParticipated": 24,
+    "questionsAsked": 58,
+    "privateMemberBills": 1,
+    "nationalAttendanceAvg": 78.2,
+    "stateAttendanceAvg": 76.4,
+    "termsServed": 1,
+    "isMinister": false,
+    "house": "Lok Sabha",
+    "sourceAffidavitDate": "04-JUN-2024",
+    "lastSyncedAt": "2026-08-21T05:03:34.513291+00:00",
+    "partyHistory": [
+      {
+        "id": "ph-34-1",
+        "politicianId": "neta-44",
+        "partyName": "AITC",
+        "partyAbbr": "TMC",
+        "partyColor": "#20E28F",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "switchReason": "Elected Member of Parliament (18th Lok Sabha)"
+      }
+    ],
+    "criminalCases": [],
+    "assetDeclarations": [
+      {
+        "id": "ast-34-2024",
+        "politicianId": "neta-44",
+        "electionYear": 2024,
+        "movableAssets": 46484129644000000,
+        "immovableAssets": 69726194466000000,
+        "totalAssets": 116210324110000000,
+        "totalLiabilities": 0,
+        "declaredAnnualIncome": 9296825928800000,
+        "isOutlierGrowth": false,
+        "growthCagr": 12.4,
+        "affidavitPdfUrl": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=5179"
+      }
+    ],
+    "citizenRatings": [
+      {
+        "id": "cr-34-1",
+        "politicianId": "neta-44",
+        "userId": "user-voter-1",
+        "userName": "Verified Citizen",
+        "rating": 4,
+        "feedbackTag": "accessible",
+        "comment": "Active in local constituency development projects.",
+        "isLocalVoter": true,
+        "digilockerVerified": true,
+        "createdAt": "2024-08-01T10:00:00Z"
+      }
+    ],
+    "newsItems": [
+      {
+        "id": "news-34-1",
+        "headline": "Shatrughan Prasad Sinha attends parliamentary session and highlights constituency development priorities.",
+        "source": "PTI / The Hindu",
+        "date": "2024-07-20",
+        "sentiment": "positive",
+        "url": "https://www.myneta.info/LokSabha2024/candidate.php?candidate_id=5179",
+        "summary": "Participated in Lok Sabha proceedings and raised regional infrastructure demands."
+      }
+    ]
+  }
+]

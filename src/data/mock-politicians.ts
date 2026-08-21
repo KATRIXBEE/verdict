@@ -1045,8 +1045,19 @@ const rawPoliticians: Omit<Politician, "calculatedVerdictScore" | "scoreBand">[]
   },
 ];
 
+import allMpsData from "./all-mps.json";
+
+const existingSlugs = new Set(rawPoliticians.map((p) => p.slug));
+const existingNames = new Set(rawPoliticians.map((p) => p.fullName.toLowerCase()));
+
+const validImportedMps = ((allMpsData as unknown) as Omit<Politician, "calculatedVerdictScore" | "scoreBand">[]).filter(
+  (p) => !existingSlugs.has(p.slug) && !existingNames.has(p.fullName.toLowerCase())
+);
+
+const allRawPoliticians = [...rawPoliticians, ...validImportedMps];
+
 // Enrich politicians with automatically computed algorithmic VERDICT score and score bands
-export const MOCK_POLITICIANS: Politician[] = rawPoliticians.map((p) => {
+export const MOCK_POLITICIANS: Politician[] = allRawPoliticians.map((p) => {
   const breakdown = calculateVerdictScore({
     attendancePercentage: p.attendancePercentage,
     debatesParticipated: p.debatesParticipated,

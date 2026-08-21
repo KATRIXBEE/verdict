@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "scrape:mps": "python scripts/scrape_mps.py",
+    "import:mps": "python scripts/import_mps.py",
+    "populate:db": "python scripts/scrape_mps.py && python scripts/import_mps.py"
   },
   "dependencies": {
     "clsx": "^2.1.1",

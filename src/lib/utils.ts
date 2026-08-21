@@ -101,8 +101,9 @@ export function getScoreColor(score: number): {
   };
 }
 
-export function getSeverityBadge(tier: SeverityTier): { label: string; classNames: string } {
-  switch (tier) {
+export function getSeverityBadge(tier?: string | SeverityTier): { label: string; classNames: string } {
+  const normalized = (tier || "minor").toLowerCase();
+  switch (normalized) {
     case "minor":
       return { label: "MINOR", classNames: "bg-blue-100 text-blue-900 border-blue-900" };
     case "moderate":
@@ -111,11 +112,14 @@ export function getSeverityBadge(tier: SeverityTier): { label: string; className
       return { label: "SERIOUS", classNames: "bg-orange-300 text-orange-950 border-black" };
     case "severe":
       return { label: "SEVERE", classNames: "bg-[#FF4336] text-white border-black font-bold" };
+    default:
+      return { label: (tier || "MODERATE").toUpperCase(), classNames: "bg-gray-200 text-gray-900 border-black" };
   }
 }
 
-export function getCaseStatusBadge(status: CaseStatus): { label: string; classNames: string } {
-  switch (status) {
+export function getCaseStatusBadge(status?: string | CaseStatus): { label: string; classNames: string } {
+  const normalized = (status || "active").toLowerCase();
+  switch (normalized) {
     case "active":
       return { label: "ACTIVE CHARGES", classNames: "bg-[#FF4336] text-white border-black" };
     case "bail_granted":
@@ -126,16 +130,21 @@ export function getCaseStatusBadge(status: CaseStatus): { label: string; classNa
       return { label: "ACQUITTED", classNames: "bg-[#00FF66] text-black border-black" };
     case "convicted":
       return { label: "CONVICTED", classNames: "bg-black text-white border-black underline decoration-[#FF4336]" };
+    default:
+      return { label: (status || "ACTIVE CHARGES").toUpperCase(), classNames: "bg-[#FF4336] text-white border-black" };
   }
 }
 
-export function getEducationBadge(status: EducationStatus): { label: string; classNames: string; symbol: string } {
-  switch (status) {
+export function getEducationBadge(status?: string | EducationStatus): { label: string; classNames: string; symbol: string } {
+  const normalized = (status || "unverified").toLowerCase();
+  switch (normalized) {
     case "verified":
       return { label: "UGC / AICTE VERIFIED", classNames: "bg-[#00FF66] text-black border-black", symbol: "■" };
     case "unverified":
       return { label: "UNVERIFIED ARCHIVE", classNames: "bg-[#FFD028] text-black border-black", symbol: "▲" };
     case "suspicious":
       return { label: "FLAGGED / SUSPICIOUS", classNames: "bg-[#FF4336] text-white border-black animate-pulse", symbol: "✕" };
+    default:
+      return { label: "UNVERIFIED ARCHIVE", classNames: "bg-[#FFD028] text-black border-black", symbol: "▲" };
   }
 }
