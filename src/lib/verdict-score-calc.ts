@@ -2,26 +2,26 @@ import { Politician, ScoreBreakdown, ScoreBand } from "@/types";
 import { getScoreBand } from "@/lib/utils";
 
 export function calculateVerdictScore(politician: {
-  attendancePercentage: number;
-  debatesParticipated?: number;
-  questionsAsked?: number;
-  privateMemberBills?: number;
-  nationalAttendanceAvg?: number;
-  assetDeclarations: {
+  attendancePercentage?: number | null;
+  debatesParticipated?: number | null;
+  questionsAsked?: number | null;
+  privateMemberBills?: number | null;
+  nationalAttendanceAvg?: number | null;
+  assetDeclarations?: {
     electionYear: number;
     totalAssets: number;
     isOutlierGrowth?: boolean;
     growthCagr?: number;
   }[];
-  criminalCases: {
-    severityTier: "minor" | "moderate" | "serious" | "severe";
-    status: "active" | "bail_granted" | "stayed" | "acquitted" | "convicted";
+  criminalCases?: {
+    severityTier?: string;
+    status?: string;
   }[];
-  educationStatus: "verified" | "unverified" | "suspicious";
-  partyHistory: {
+  educationStatus?: "verified" | "unverified" | "suspicious" | string;
+  partyHistory?: {
     isCurrent: boolean;
   }[];
-  citizenRatings: {
+  citizenRatings?: {
     rating: number;
     isLocalVoter: boolean;
   }[];
@@ -29,152 +29,127 @@ export function calculateVerdictScore(politician: {
     sentiment: "positive" | "neutral" | "critical";
   }[];
 }): ScoreBreakdown {
-  // 1. Attendance & Parliamentary Activity (Max 2.0 pts)
-  let attendanceScore = 0.5;
-  const att = politician.attendancePercentage || 0;
-  if (att >= 90) {
-    attendanceScore = 2.0;
-  } else if (att >= 75) {
-    attendanceScore = 1.5;
-  } else if (att >= 50) {
-    attendanceScore = 1.0;
+  // BASE SCORE: 5.0 for every politician
+  const baseScore = 5.0;
+
+  // 1. ATTENDANCE (add to base)
+  let attendanceScore = 0.0;
+  const att = politician.attendancePercentage;
+  if (att !== undefined && att !== null) {
+    if (att >= 80.0) {
+      attendanceScore = 2.0;
+    } else if (att >= 60.0) {
+      attendanceScore = 1.0;
+    } else if (att >= 40.0) {
+      attendanceScore = 0.0;
+    } else {
+      attendanceScore = -1.0;
+    }
   } else {
-    attendanceScore = 0.5;
+    attendanceScore = 0.0; // Missing data = neutral 0.0
   }
 
-  // 2. Asset Growth Trajectory (Max 2.0 pts)
-  let assetGrowthScore = 2.0;
-  const sortedAssets = [...(politician.assetDeclarations || [])].sort((a, b) => a.electionYear - b.electionYear);
-  let hasOutlier = false;
-  let growthRatio = 1.0;
+  // 2. CRIMINAL CASES (add to base)
+  let crimeImpact = 0.0;
+  let criminalDeduction = 0.0;
+  if (politician.criminalCases !== undefined && politician.criminalCases !== null) {
+    const activeCases = politician.criminalCases.filter(
+      (c) => !["acquit", "dismiss", "withdrawn"].some((k) => (c.status || "").toLowerCase().includes(k))
+    );
+    if (activeCases.length === 0) {
+      crimeImpact = 1.0; // Confirmed 0 cases
+    } else {
+      const severities = activeCases.map((c) => (c.severityTier || "moderate").toLowerCase());
+      if (severities.includes("severe")) {
+        crimeImpact = -4.0;
+      } else if (severities.includes("serious")) {
+        crimeImpact = -2.5;
+      } else if (severities.includes("moderate")) {
+        crimeImpact = -1.5;
+      } else if (severities.every((s) => s === "minor")) {
+        crimeImpact = activeCases.length <= 2 ? -0.5 : -1.5;
+      } else {
+        crimeImpact = -1.5;
+      }
+      criminalDeduction = Math.abs(crimeImpact);
+    }
+  } else {
+    crimeImpact = 0.0; // Missing case data = 0.0
+  }
+
+  // 3. ASSET GROWTH (add to base, only if 2+ years of data)
+  let assetGrowthScore = 0.0;
+  const sortedAssets = [...(politician.assetDeclarations || [])]
+    .filter((a) => a.totalAssets !== undefined && a.totalAssets > 0)
+    .sort((a, b) => a.electionYear - b.electionYear);
 
   if (sortedAssets.length >= 2) {
     const oldest = sortedAssets[0].totalAssets;
     const latest = sortedAssets[sortedAssets.length - 1].totalAssets;
     if (oldest > 0) {
-      growthRatio = (latest - oldest) / oldest;
+      const growthPct = ((latest - oldest) / oldest) * 100.0;
+      if (growthPct < 200.0) {
+        assetGrowthScore = 1.0;
+      } else if (growthPct <= 400.0) {
+        assetGrowthScore = 0.0;
+      } else {
+        assetGrowthScore = -2.0;
+      }
     }
-    hasOutlier = sortedAssets.some((a) => a.isOutlierGrowth) || growthRatio > 5.0; // >500%
-  }
-
-  if (hasOutlier) {
-    assetGrowthScore = 0.0;
-  } else if (growthRatio > 2.0) { // 200% - 500%
-    assetGrowthScore = 1.0;
   } else {
-    assetGrowthScore = 2.0;
+    assetGrowthScore = 0.0; // 1 year or no asset data = 0.0
   }
 
-  // 3. Education UGC Verification (Max 0.5 pts)
-  let educationScore = 0.2;
-  if (politician.educationStatus === "verified") {
+  // 4. EDUCATION VERIFICATION (add to base)
+  let educationScore = 0.0;
+  const edu = (politician.educationStatus || "").toLowerCase();
+  if (edu === "verified") {
     educationScore = 0.5;
-  } else if (politician.educationStatus === "suspicious") {
-    educationScore = 0.0;
+  } else if (edu === "suspicious") {
+    educationScore = -0.5;
   } else {
-    educationScore = 0.2;
+    educationScore = 0.0; // Unverified / missing = 0.0
   }
 
-  // 4. Citizen Ratings (Max 2.5 pts) - Anti-Brigading Weighted
-  let citizenRatingScore = 1.75; // baseline default for no ratings
-  if (politician.citizenRatings && politician.citizenRatings.length > 0) {
-    const localRatings = politician.citizenRatings.filter((r) => r.isLocalVoter);
-    const nationalRatings = politician.citizenRatings.filter((r) => !r.isLocalVoter);
-
-    let weightedAvg = 3.5;
-    if (localRatings.length > 0 && nationalRatings.length > 0) {
-      const localAvg = localRatings.reduce((acc, r) => acc + r.rating, 0) / localRatings.length;
-      const nationalAvg = nationalRatings.reduce((acc, r) => acc + r.rating, 0) / nationalRatings.length;
-      // 70% weight to verified local constituency residents, 30% national
-      weightedAvg = localAvg * 0.7 + nationalAvg * 0.3;
-    } else if (localRatings.length > 0) {
-      weightedAvg = localRatings.reduce((acc, r) => acc + r.rating, 0) / localRatings.length;
-    } else if (nationalRatings.length > 0) {
-      weightedAvg = nationalRatings.reduce((acc, r) => acc + r.rating, 0) / nationalRatings.length;
-    }
-    citizenRatingScore = Number(((weightedAvg / 5.0) * 2.5).toFixed(2));
-  }
-
-  // 5. AI News Sentiment (Max 1.0 pts)
-  let newsSentimentScore = 0.5;
-  if (politician.newsItems && politician.newsItems.length > 0) {
-    const pos = politician.newsItems.filter((n) => n.sentiment === "positive").length;
-    const crit = politician.newsItems.filter((n) => n.sentiment === "critical").length;
-    if (pos > crit) {
-      newsSentimentScore = 1.0;
-    } else if (crit > pos) {
-      newsSentimentScore = 0.0;
+  // 5. QUESTIONS ASKED IN PARLIAMENT (add to base)
+  let questionsScore = 0.0;
+  const questions = politician.questionsAsked;
+  if (questions !== undefined && questions !== null) {
+    if (questions > 100) {
+      questionsScore = 0.5;
+    } else if (questions >= 50) {
+      questionsScore = 0.25;
     } else {
-      newsSentimentScore = 0.5;
+      questionsScore = 0.0;
     }
+  } else {
+    questionsScore = 0.0;
   }
 
-  // 6. Party Loyalty / Switch Penalty (Max 0.5 pts)
-  let partyLoyaltyScore = 0.5;
-  const partySwitches = (politician.partyHistory?.length || 1) - 1;
-  if (partySwitches === 0) {
-    partyLoyaltyScore = 0.5;
-  } else if (partySwitches === 1) {
-    partyLoyaltyScore = 0.3;
+  // 6. PARTY SWITCHES (add to base)
+  let partyLoyaltyScore = 0.0;
+  if (politician.partyHistory && politician.partyHistory.length > 0) {
+    const partySwitches = Math.max(0, politician.partyHistory.length - 1);
+    if (partySwitches === 0) {
+      partyLoyaltyScore = 0.5;
+    } else if (partySwitches === 1) {
+      partyLoyaltyScore = 0.0;
+    } else {
+      partyLoyaltyScore = -0.5;
+    }
   } else {
     partyLoyaltyScore = 0.0;
   }
 
-  // 7. Legislative Engagement Bonus (Max 1.0 pts)
-  let legislativeBonus = 0.0;
-  const debates = politician.debatesParticipated || 0;
-  const questions = politician.questionsAsked || 0;
-  if (debates >= 40 || questions >= 100) {
-    legislativeBonus = 1.0;
-  } else if (debates >= 15 || questions >= 30) {
-    legislativeBonus = 0.5;
-  }
-
-  // 8. Criminal Deductions (Max deduction -4.0 pts)
-  let criminalDeduction = 0.0;
-  if (politician.criminalCases && politician.criminalCases.length > 0) {
-    for (const c of politician.criminalCases) {
-      if (c.status === "acquitted") {
-        continue; // Acquitted cases carry 0 deduction
-      }
-      
-      let baseDeduction = 0;
-      switch (c.severityTier) {
-        case "minor":
-          baseDeduction = 0.5;
-          break;
-        case "moderate":
-          baseDeduction = 1.0;
-          break;
-        case "serious":
-          baseDeduction = 2.0;
-          break;
-        case "severe":
-          baseDeduction = 3.5;
-          break;
-      }
-
-      // Conviction doubles the penalty
-      if (c.status === "convicted") {
-        baseDeduction *= 2.0;
-      }
-
-      criminalDeduction += baseDeduction;
-    }
-  }
-  // Clamp criminal deduction to max 4.0 pts
-  criminalDeduction = Math.min(4.0, Number(criminalDeduction.toFixed(2)));
-
   // Calculate final score
   const rawScore =
+    baseScore +
     attendanceScore +
+    crimeImpact +
     assetGrowthScore +
     educationScore +
-    citizenRatingScore +
-    newsSentimentScore +
-    partyLoyaltyScore +
-    legislativeBonus -
-    criminalDeduction;
+    questionsScore +
+    partyLoyaltyScore;
 
   const finalScore = Number(Math.max(0.0, Math.min(10.0, rawScore)).toFixed(1));
   const scoreBand: ScoreBand = getScoreBand(finalScore);
@@ -182,31 +157,35 @@ export function calculateVerdictScore(politician: {
   return {
     attendanceScore: Number(attendanceScore.toFixed(2)),
     assetGrowthScore: Number(assetGrowthScore.toFixed(2)),
-    citizenRatingScore: Number(citizenRatingScore.toFixed(2)),
-    newsSentimentScore: Number(newsSentimentScore.toFixed(2)),
+    citizenRatingScore: 0.0,
+    newsSentimentScore: 0.0,
     educationScore: Number(educationScore.toFixed(2)),
     partyLoyaltyScore: Number(partyLoyaltyScore.toFixed(2)),
     criminalDeduction: Number(criminalDeduction.toFixed(2)),
     finalScore,
     scoreBand,
     details: {
-      attendanceText: `${att}% attendance in Parliament (${attendanceScore}/2.0 pts)`,
-      assetText: hasOutlier
-        ? "Unusual multi-term asset spike >500% (0.0/2.0 pts)"
-        : `Normal growth within lawful limits (${assetGrowthScore}/2.0 pts)`,
-      criminalText:
-        criminalDeduction > 0
-          ? `-${criminalDeduction} pts deduction across active/declared penal cases`
-          : "Clean record / Zero active criminal deductions (0.0 deduction)",
-      educationText:
-        politician.educationStatus === "verified"
-          ? "Degree verified against UGC database (+0.5 pts)"
-          : politician.educationStatus === "suspicious"
-          ? "Unaccredited / Suspicious declaration (0.0 pts)"
-          : "Unverified digital archive (+0.2 pts)",
-      citizenText: `DigiLocker verified community trust score (${citizenRatingScore}/2.5 pts)`,
-      partyText: `${partySwitches} party switch(es) recorded (${partyLoyaltyScore}/0.5 pts)`,
-      newsText: `90-day AI media coverage sentiment index (${newsSentimentScore}/1.0 pts)`,
+      attendanceText: att !== undefined && att !== null
+        ? `${att}% attendance in Parliament (${attendanceScore >= 0 ? "+" : ""}${attendanceScore.toFixed(1)} pts)`
+        : "No official attendance records on file (0.0 pts neutral)",
+      assetText: sortedAssets.length >= 2
+        ? `Multi-term asset growth (${assetGrowthScore >= 0 ? "+" : ""}${assetGrowthScore.toFixed(1)} pts)`
+        : "Single term / baseline asset declaration (0.0 pts neutral)",
+      criminalText: crimeImpact < 0
+        ? `${crimeImpact.toFixed(1)} pts deduction across declared criminal cases`
+        : crimeImpact > 0
+        ? "Confirmed 0 criminal cases declared (+1.0 pt bonus)"
+        : "No criminal records on file (0.0 pts neutral)",
+      educationText: edu === "verified"
+        ? "Degree verified against UGC / AICTE records (+0.5 pts)"
+        : edu === "suspicious"
+        ? "Unaccredited institution flag (-0.5 pts)"
+        : "Unverified educational declaration (0.0 pts neutral)",
+      citizenText: "Verified citizen trust index (0.0 pts neutral)",
+      partyText: politician.partyHistory && politician.partyHistory.length > 1
+        ? `${politician.partyHistory.length - 1} party switch(es) recorded (${partyLoyaltyScore >= 0 ? "+" : ""}${partyLoyaltyScore.toFixed(1)} pts)`
+        : "Zero party switches recorded (+0.5 pts loyalty)",
+      newsText: "Media coverage sentiment audit index (0.0 pts neutral)",
     },
   };
 }
