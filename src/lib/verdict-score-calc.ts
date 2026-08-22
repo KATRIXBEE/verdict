@@ -1,4 +1,4 @@
-import { Politician, ScoreBreakdown, ScoreBand } from "@/types";
+import { ScoreBreakdown, ScoreBand } from "@/types";
 import { getScoreBand } from "@/lib/utils";
 
 export function calculateVerdictScore(politician: {

@@ -179,6 +179,8 @@ export interface AssetDeclaration {
   affidavitPdfUrl?: string;
 }
 
+export type FeedbackCategory = 'responsive' | 'absentee' | 'infrastructure' | 'integrity' | 'reformist' | 'communal' | 'accessible';
+
 export interface CitizenRating {
   id: string;
   politicianId: string;
@@ -186,7 +188,7 @@ export interface CitizenRating {
   userName: string;
   userConstituency?: string;
   rating: number; // 1 - 5
-  feedbackTag?: 'responsive' | 'absentee' | 'infrastructure' | 'integrity' | 'reformist' | 'communal' | 'accessible';
+  feedbackTag?: FeedbackCategory;
   comment?: string;
   isLocalVoter: boolean;
   digilockerVerified: boolean;

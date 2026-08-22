@@ -28,7 +28,7 @@ export default function Ticker() {
                 <div key={idx} className="flex items-center space-x-2 text-surface">
                   <Icon className="w-3.5 h-3.5 text-brand-green shrink-0" />
                   <span className="tracking-wider">{item.text}</span>
-                  <span className="text-brand-yellow font-black">///</span>
+                  <span className="text-brand-yellow font-black">{"///"}</span>
                 </div>
               );
             })}

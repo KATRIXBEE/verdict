@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Sliders, RefreshCw, Calculator, ShieldAlert, Sparkles, CheckCircle2 } from "lucide-react";
+import { RefreshCw } from "lucide-react";
 import Modal from "@/components/ui/Modal";
 import BrutalistButton from "@/components/ui/BrutalistButton";
 import { getScoreBand, getScoreColor } from "@/lib/utils";
@@ -28,8 +28,8 @@ export default function ScoreSimulatorModal({
   initialSwitches = 0,
   initialSeriousCases = 0,
   initialSevereCases = 0,
-  initialAssetGrowth = 150,
-  initialCitizenRating = 4.0,
+  initialAssetGrowth = 120,
+  initialCitizenRating = 4.2,
 }: ScoreSimulatorModalProps) {
   const [attendance, setAttendance] = useState(initialAttendance);
   const [education, setEducation] = useState<"verified" | "unverified" | "suspicious">(initialEducation);
@@ -40,13 +40,13 @@ export default function ScoreSimulatorModal({
   const [citizenRating, setCitizenRating] = useState(initialCitizenRating);
 
   // Compute live simulated score
-  let attScore = attendance >= 90 ? 2.0 : attendance >= 75 ? 1.5 : attendance >= 50 ? 1.0 : 0.5;
-  let assetScore = assetGrowth > 500 ? 0.0 : assetGrowth > 200 ? 1.0 : 2.0;
-  let eduScore = education === "verified" ? 0.5 : education === "suspicious" ? 0.0 : 0.2;
-  let citizenScore = (citizenRating / 5.0) * 2.5;
-  let partyScore = switches === 0 ? 0.5 : switches === 1 ? 0.3 : 0.0;
-  let newsScore = 0.5; // baseline neutral
-  let crimDeduction = Math.min(4.0, seriousCases * 2.0 + severeCases * 3.5);
+  const attScore = attendance >= 90 ? 2.0 : attendance >= 75 ? 1.5 : attendance >= 50 ? 1.0 : 0.5;
+  const assetScore = assetGrowth > 500 ? 0.0 : assetGrowth > 200 ? 1.0 : 2.0;
+  const eduScore = education === "verified" ? 0.5 : education === "suspicious" ? 0.0 : 0.2;
+  const citizenScore = (citizenRating / 5.0) * 2.5;
+  const partyScore = switches === 0 ? 0.5 : switches === 1 ? 0.3 : 0.0;
+  const newsScore = 0.5; // baseline neutral
+  const crimDeduction = Math.min(4.0, seriousCases * 2.0 + severeCases * 3.5);
 
   const rawSimulated = attScore + assetScore + eduScore + citizenScore + partyScore + newsScore - crimDeduction;
   const simFinalScore = Number(Math.max(0.0, Math.min(10.0, rawSimulated)).toFixed(1));

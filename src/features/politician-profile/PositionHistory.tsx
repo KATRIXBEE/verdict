@@ -1,16 +1,16 @@
 "use client";
 
 import React from "react";
-import { Briefcase, Building2, Calendar, CheckCircle2, Award } from "lucide-react";
+import { Building2, Calendar } from "lucide-react";
 import { PortfolioEntry } from "@/types";
 import BrutalistCard from "@/components/ui/BrutalistCard";
 
 interface PositionHistoryProps {
   portfolioHistory?: PortfolioEntry[];
-  politicianName: string;
+  politicianName?: string;
 }
 
-export default function PositionHistory({ portfolioHistory, politicianName }: PositionHistoryProps) {
+export default function PositionHistory({ portfolioHistory }: PositionHistoryProps) {
   if (!portfolioHistory || portfolioHistory.length === 0) {
     return null;
   }

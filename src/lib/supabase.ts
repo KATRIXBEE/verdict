@@ -1,12 +1,10 @@
-import { MOCK_POLITICIANS, getPoliticianBySlug, searchPoliticians } from "@/data/mock-politicians";
-import { Politician } from "@/types";
+import { MOCK_POLITICIANS, getPoliticianBySlug } from "@/data/mock-politicians";
+import { Politician, CitizenRating, FeedbackCategory } from "@/types";
 
 // In-memory ratings store to support real-time user ratings in demo session
-const inMemoryRatings: Record<string, any[]> = {};
+const inMemoryRatings: Record<string, CitizenRating[]> = {};
 
 export async function fetchPoliticiansList(): Promise<Politician[]> {
-  // If Supabase credentials exist, we can fetch from Supabase.
-  // Otherwise, return comprehensive mock politicians.
   return MOCK_POLITICIANS;
 }
 
@@ -30,23 +28,23 @@ export async function addCitizenRating(data: {
   rating: number;
   userName: string;
   userConstituency?: string;
-  feedbackTag?: any;
+  feedbackTag?: FeedbackCategory;
   comment?: string;
   isLocalVoter: boolean;
   digilockerVerified: boolean;
-}) {
+}): Promise<CitizenRating> {
   if (!inMemoryRatings[data.politicianId]) {
     inMemoryRatings[data.politicianId] = [];
   }
 
-  const newRating = {
+  const newRating: CitizenRating = {
     id: `cr-session-${Date.now()}`,
     politicianId: data.politicianId,
     userId: `user-session-${Math.random().toString(36).substring(2, 8)}`,
     userName: data.userName || "Verified Citizen",
     userConstituency: data.userConstituency || "Constituency Voter",
     rating: data.rating,
-    feedbackTag: data.feedbackTag,
+    feedbackTag: data.feedbackTag || "infrastructure",
     comment: data.comment,
     isLocalVoter: data.isLocalVoter,
     digilockerVerified: data.digilockerVerified,

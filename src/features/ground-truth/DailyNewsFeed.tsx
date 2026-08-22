@@ -1,9 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { Newspaper, ExternalLink, Clock, Tag, Flame, ShieldAlert, ArrowRight } from "lucide-react";
+import { Newspaper, ExternalLink, Clock } from "lucide-react";
 import rawNewsData from "@/data/ground-truth-news.json";
-import BrutalistCard from "@/components/ui/BrutalistCard";
 
 interface NewsItem {
   id: string;

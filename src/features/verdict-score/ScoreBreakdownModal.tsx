@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Calculator, CheckCircle2, AlertOctagon, Info, ShieldCheck, Scale } from "lucide-react";
+import { CheckCircle2, AlertOctagon, Scale } from "lucide-react";
 import { Politician } from "@/types";
 import { calculateVerdictScore } from "@/lib/verdict-score-calc";
 import { getScoreColor } from "@/lib/utils";

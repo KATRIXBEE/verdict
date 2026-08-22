@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Scale, Sliders, FileSpreadsheet, ShieldAlert, Sparkles, CheckCircle2, ChevronRight } from "lucide-react";
+import { Sliders, FileSpreadsheet, ChevronRight } from "lucide-react";
 import { Politician } from "@/types";
 import { calculateVerdictScore } from "@/lib/verdict-score-calc";
 import { getScoreColor } from "@/lib/utils";
