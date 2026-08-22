@@ -29,7 +29,7 @@ import EngagementBar from "@/features/ground-truth/EngagementBar";
 import ArticleCard from "@/features/ground-truth/ArticleCard";
 import BrutalistCard from "@/components/ui/BrutalistCard";
 import BrutalistButton from "@/components/ui/BrutalistButton";
-import { cn } from "@/lib/utils";
+import { cn, getProxiedImageUrl } from "@/lib/utils";
 
 interface ArticleDetailPageProps {
   params: Promise<{ slug: string }>;
@@ -230,9 +230,12 @@ export default async function GroundTruthDetailPage({ params }: ArticleDetailPag
                     <div className="flex items-center space-x-3 truncate">
                       <div className="w-10 h-10 border border-black bg-gray-200 overflow-hidden shrink-0">
                         <img
-                          src={p.photoUrl}
+                          src={getProxiedImageUrl(p.photoUrl)}
                           alt={p.fullName}
                           className="w-full h-full object-cover grayscale"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).src = "/images/default-politician.svg";
+                          }}
                         />
                       </div>
                       <div className="truncate">

@@ -14,6 +14,7 @@ import ControversyTimeline from "@/features/controversies/ControversyTimeline";
 import GroundTruthWidget from "@/features/ground-truth/GroundTruthWidget";
 import CitizenRatingSection from "@/features/citizen-rating/CitizenRatingSection";
 import NewsSentimentStream from "@/features/news-sentiment/NewsSentimentStream";
+import PositionHistory from "@/features/politician-profile/PositionHistory";
 import BrutalistButton from "@/components/ui/BrutalistButton";
 
 interface PoliticianPageProps {
@@ -68,6 +69,12 @@ export default async function PoliticianPage({ params }: PoliticianPageProps) {
           <ParliamentStats politician={politician} />
         </div>
       </div>
+
+      {/* 2.5 Position & Ministerial Portfolio History (if applicable) */}
+      <PositionHistory
+        portfolioHistory={politician.portfolioHistory}
+        politicianName={politician.fullName}
+      />
 
       {/* 3. "Aaya Ram Gaya Ram" Party-Hopper Subway Map */}
       <PartyHopperTimeline

@@ -7,7 +7,7 @@ import { UserCheck, MapPin, Building, Award, ArrowRight } from "lucide-react";
 import { Politician } from "@/types";
 import Modal from "@/components/ui/Modal";
 import BrutalistButton from "@/components/ui/BrutalistButton";
-import { getScoreColor } from "@/lib/utils";
+import { getScoreColor, getProxiedImageUrl } from "@/lib/utils";
 
 interface DisambiguationModalProps {
   isOpen: boolean;
@@ -57,9 +57,12 @@ export default function DisambiguationModal({
                   {/* Portrait thumbnail */}
                   <div className="w-14 h-14 border-2 border-ink bg-gray-200 overflow-hidden relative shrink-0">
                     <img
-                      src={c.photoUrl}
+                      src={getProxiedImageUrl(c.photoUrl)}
                       alt={c.fullName}
                       className="w-full h-full object-cover grayscale contrast-125"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = "/images/default-politician.svg";
+                      }}
                     />
                   </div>
 

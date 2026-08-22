@@ -51,6 +51,9 @@ class Politician(Base):
     official_website = Column(Text, nullable=True)
     social_twitter = Column(String(255), nullable=True)
     social_facebook = Column(String(255), nullable=True)
+    email = Column(String(255), nullable=True)
+    mp_code = Column(String(100), nullable=True)
+    portfolio_history = Column(JSON, default=list, nullable=True)
     verdict_score = Column(Numeric(4, 2), default=5.0)
     data_completeness_percent = Column(Integer, default=0)
     data_sources = Column(JSON, default=list)  # List of contributing sources

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Scale, Search, GitCompare, BookOpen, Newspaper, Menu, X, ShieldAlert, CheckCircle2 } from "lucide-react";
+import { Scale, Search, GitCompare, BookOpen, Newspaper, Menu, X, ShieldAlert, CheckCircle2, Coins } from "lucide-react";
 import { cn } from "@/lib/utils";
 import BrutalistButton from "@/components/ui/BrutalistButton";
 
@@ -14,6 +14,7 @@ export default function Header() {
   const navLinks = [
     { href: "/", label: "DASHBOARD", icon: Scale },
     { href: "/ground-truth", label: "GROUND TRUTH", icon: Newspaper },
+    { href: "/tax-money", label: "TAX MONEY", icon: Coins },
     { href: "/compare", label: "NETA FACE-OFF", icon: GitCompare },
     { href: "/method", label: "METHODOLOGY & IPC", icon: BookOpen },
   ];

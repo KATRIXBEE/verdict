@@ -23,6 +23,7 @@ import { MOCK_GROUND_TRUTH_ARTICLES, filterGroundTruthArticles } from "@/data/mo
 import { MOCK_POLITICIANS } from "@/data/mock-politicians";
 import ArticleCard from "@/features/ground-truth/ArticleCard";
 import GroundTruthMap from "@/features/ground-truth/GroundTruthMap";
+import DailyNewsFeed from "@/features/ground-truth/DailyNewsFeed";
 import BrutalistButton from "@/components/ui/BrutalistButton";
 
 function GroundTruthListingContent() {
@@ -322,6 +323,9 @@ function GroundTruthListingContent() {
           ))}
         </div>
       )}
+
+      {/* Daily Investigative News Desk from Verified RSS Outlets */}
+      <DailyNewsFeed />
     </div>
   );
 }

@@ -14,7 +14,8 @@ export default function ParliamentStats({ politician }: ParliamentStatsProps) {
   const natAvg = politician.nationalAttendanceAvg || 78.2;
   const stateAvg = politician.stateAttendanceAvg || 75.0;
 
-  const isAboveNat = att >= natAvg;
+  const hasAttendance = att !== undefined && att !== null;
+  const isAboveNat = hasAttendance ? att >= natAvg : false;
 
   return (
     <BrutalistCard
@@ -36,25 +37,31 @@ export default function ParliamentStats({ politician }: ParliamentStatsProps) {
             </div>
             <div className="flex items-center space-x-2">
               <span className="font-display font-black text-2xl text-ink">
-                {att.toFixed(1)}%
+                {hasAttendance ? `${att.toFixed(1)}%` : "N/A"}
               </span>
-              <span
-                className={`text-[10px] font-bold px-1.5 py-0.5 border border-ink flex items-center space-x-1 ${
-                  isAboveNat ? "bg-brand-green text-black" : "bg-brand-orange text-white"
-                }`}
-              >
-                {isAboveNat ? (
-                  <>
-                    <TrendingUp className="w-3 h-3" />
-                    <span>+{(att - natAvg).toFixed(1)}% vs NAT</span>
-                  </>
-                ) : (
-                  <>
-                    <TrendingDown className="w-3 h-3" />
-                    <span>-{(natAvg - att).toFixed(1)}% vs NAT</span>
-                  </>
-                )}
-              </span>
+              {hasAttendance ? (
+                <span
+                  className={`text-[10px] font-bold px-1.5 py-0.5 border border-ink flex items-center space-x-1 ${
+                    isAboveNat ? "bg-brand-green text-black" : "bg-brand-orange text-white"
+                  }`}
+                >
+                  {isAboveNat ? (
+                    <>
+                      <TrendingUp className="w-3 h-3" />
+                      <span>+{(att - natAvg).toFixed(1)}% vs NAT</span>
+                    </>
+                  ) : (
+                    <>
+                      <TrendingDown className="w-3 h-3" />
+                      <span>-{(natAvg - att).toFixed(1)}% vs NAT</span>
+                    </>
+                  )}
+                </span>
+              ) : (
+                <span className="text-[10px] font-bold px-1.5 py-0.5 border border-ink bg-gray-200 text-gray-700">
+                  OFFICIAL LOG PENDING
+                </span>
+              )}
             </div>
           </div>
 
@@ -62,9 +69,9 @@ export default function ParliamentStats({ politician }: ParliamentStatsProps) {
           <div className="relative h-6 bg-surface-muted border-2 border-ink overflow-hidden">
             <div
               className={`h-full border-r-2 border-ink transition-all duration-500 ${
-                att >= 85 ? "bg-brand-green" : att >= 65 ? "bg-brand-yellow" : "bg-brand-red"
+                !hasAttendance ? "bg-gray-300" : att >= 85 ? "bg-brand-green" : att >= 65 ? "bg-brand-yellow" : "bg-brand-red"
               }`}
-              style={{ width: `${Math.min(100, Math.max(0, att))}%` }}
+              style={{ width: `${hasAttendance ? Math.min(100, Math.max(0, att)) : 0}%` }}
             />
             {/* National Benchmark Line */}
             <div

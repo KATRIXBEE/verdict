@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 import { Politician } from "@/types";
 import { MOCK_POLITICIANS } from "@/data/mock-politicians";
-import { formatINR, getScoreColor, getEducationBadge } from "@/lib/utils";
+import { formatINR, getScoreColor, getEducationBadge, getProxiedImageUrl } from "@/lib/utils";
 import BrutalistCard from "@/components/ui/BrutalistCard";
 import BrutalistButton from "@/components/ui/BrutalistButton";
 
@@ -129,9 +129,12 @@ export default function CompareMatrix({
             <div className="flex items-center space-x-4">
               <div className="w-20 h-20 border-2.5 border-ink bg-gray-200 overflow-hidden shrink-0 shadow-hard-xs">
                 <img
-                  src={neta1.photoUrl}
+                  src={getProxiedImageUrl(neta1.photoUrl)}
                   alt={neta1.fullName}
                   className="w-full h-full object-cover grayscale contrast-125"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "/images/default-politician.svg";
+                  }}
                 />
               </div>
               <div className="truncate">
@@ -226,9 +229,12 @@ export default function CompareMatrix({
             <div className="flex items-center space-x-4">
               <div className="w-20 h-20 border-2.5 border-ink bg-gray-200 overflow-hidden shrink-0 shadow-hard-xs">
                 <img
-                  src={neta2.photoUrl}
+                  src={getProxiedImageUrl(neta2.photoUrl)}
                   alt={neta2.fullName}
                   className="w-full h-full object-cover grayscale contrast-125"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "/images/default-politician.svg";
+                  }}
                 />
               </div>
               <div className="truncate">

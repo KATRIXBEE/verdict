@@ -2,13 +2,11 @@
 VERDICT Score & Data Completeness Engine
 Calculates the 0.0–10.0 algorithmic VERDICT Score according to exact civic rules:
 - Base Score: 5.0
-- Attendance: >=80% (+2.0), 60-79% (+1.0), 40-59% (+0.0), <40% (-1.0), Missing (+0.0)
-- Criminal Cases: Confirmed 0 (+1.0), 1-2 Minor (-0.5), Moderate (-1.5), Serious (-2.5), Severe (-4.0), Missing (+0.0)
-- Asset Growth (2+ years): <200% (+1.0), 200-400% (+0.0), >400% (-2.0), 1 year / Missing (+0.0)
-- Education: Verified (+0.5), Unverified (+0.0), Suspicious (-0.5), Missing (+0.0)
-- Questions Asked: >100 (+0.5), 50-100 (+0.25), <50 / Missing (+0.0)
-- Party Switches: 0 switches (+0.5), 1 switch (+0.0), 2+ switches (-0.5), Missing (+0.0)
-- Missing data always = 0.0 impact. Final score clamped 0.0 - 10.0, rounded to 1 decimal place.
+- Attendance: >=80% (+2.0), 60-79% (+1.0), 40-59% (+0.0), <40% (-1.0), Missing / null (+0.0)
+- Criminal Cases: Confirmed 0 (+1.0), 1-2 Minor (-0.5), Moderate (-1.5), Serious (-2.5), Severe (-4.0), Missing / no data (+0.0)
+- Asset Growth (2+ years): <200% (+1.0), 200-400% (+0.0), >400% (-2.0), Insufficient data (+0.0)
+- Education: Verified (+0.5), Unverified (+0.0), Suspicious (-0.5), Missing / no data (+0.0)
+- Clamp: min 0.0, max 10.0, rounded to 1 decimal place.
 """
 
 from typing import Dict, Any, List, Optional
@@ -39,7 +37,7 @@ class ScoreCalculator:
         # BASE SCORE: 5.0 for every politician
         base_score = 5.0
 
-        # 1. ATTENDANCE (add to base)
+        # 1. ATTENDANCE (only if attendance_percent is NOT null)
         attendance_impact = 0.0
         if parl_records and len(parl_records) > 0 and parl_records[0].attendance_percent is not None:
             att = float(parl_records[0].attendance_percent)
@@ -52,20 +50,18 @@ class ScoreCalculator:
             else:
                 attendance_impact = -1.0
         else:
-            attendance_impact = 0.0  # Missing data = neutral 0.0
+            attendance_impact = 0.0  # null -> +0.0 (neutral)
 
-        # 2. CRIMINAL CASES (add to base)
+        # 2. CRIMINAL CASES
         crime_impact = 0.0
-        # Check if case data is tracked/present
         if cases is not None:
             active_cases = [
                 c for c in cases
                 if not any(k in (c.current_status or "").lower() for k in ["acquit", "dismiss", "withdrawn"])
             ]
             if len(active_cases) == 0:
-                crime_impact = 1.0  # 0 cases confirmed
+                crime_impact = 1.0  # Confirmed 0 cases -> +1.0
             else:
-                # Find worst case severity
                 severities = [(c.severity or "Moderate").capitalize() for c in active_cases]
                 if any(s == "Severe" for s in severities):
                     crime_impact = -4.0
@@ -74,16 +70,13 @@ class ScoreCalculator:
                 elif any(s == "Moderate" for s in severities):
                     crime_impact = -1.5
                 elif all(s == "Minor" for s in severities):
-                    if len(active_cases) <= 2:
-                        crime_impact = -0.5
-                    else:
-                        crime_impact = -1.5
+                    crime_impact = -0.5 if len(active_cases) <= 2 else -1.5
                 else:
                     crime_impact = -1.5
         else:
-            crime_impact = 0.0  # No case data at all = neutral 0.0
+            crime_impact = 0.0  # No case data -> +0.0 (neutral)
 
-        # 3. ASSET GROWTH (add to base, only if 2+ years of data)
+        # 3. ASSET GROWTH (only if 2+ years of data exist)
         asset_impact = 0.0
         if assets and len(assets) >= 2:
             valid_assets = sorted(
@@ -101,64 +94,21 @@ class ScoreCalculator:
                         asset_impact = 0.0
                     else:
                         asset_impact = -2.0
-                else:
-                    asset_impact = 0.0
-            else:
-                asset_impact = 0.0
         else:
-            asset_impact = 0.0  # 1 year or no asset data = 0.0
+            asset_impact = 0.0  # Insufficient data -> +0.0
 
-        # 4. EDUCATION VERIFICATION (add to base)
+        # 4. EDUCATION
         edu_impact = 0.0
         edu_status = (politician.education_verification_status or "").capitalize()
         if edu_status == "Verified":
             edu_impact = 0.5
         elif edu_status == "Suspicious":
             edu_impact = -0.5
-        elif edu_status == "Unverified":
-            edu_impact = 0.0
         else:
-            edu_impact = 0.0  # Not checked / no data = 0.0
+            edu_impact = 0.0  # Unverified / no data -> +0.0
 
-        # 5. QUESTIONS ASKED IN PARLIAMENT (add to base)
-        questions_impact = 0.0
-        if parl_records and len(parl_records) > 0:
-            rec = parl_records[0]
-            starred = rec.questions_asked_starred or 0
-            unstarred = rec.questions_asked_unstarred or 0
-            total_q = starred + unstarred
-            if total_q > 100:
-                questions_impact = 0.5
-            elif total_q >= 50:
-                questions_impact = 0.25
-            else:
-                questions_impact = 0.0
-        else:
-            questions_impact = 0.0
-
-        # 6. PARTY SWITCHES (add to base)
-        party_impact = 0.0
-        if party_records and len(party_records) > 0:
-            switches = max(0, len(party_records) - 1)
-            if switches == 0:
-                party_impact = 0.5
-            elif switches == 1:
-                party_impact = 0.0
-            else:
-                party_impact = -0.5
-        else:
-            party_impact = 0.0
-
-        # Sum and Clamp between 0.0 and 10.0, rounded to 1 decimal place
-        raw_total = (
-            base_score
-            + attendance_impact
-            + crime_impact
-            + asset_impact
-            + edu_impact
-            + questions_impact
-            + party_impact
-        )
+        # Sum and clamp between 0.0 and 10.0, rounded to 1 decimal place
+        raw_total = base_score + attendance_impact + crime_impact + asset_impact + edu_impact
         final_score = max(0.0, min(10.0, raw_total))
         return round(final_score, 1)
 

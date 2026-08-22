@@ -21,9 +21,10 @@ import {
 import SearchBar from "@/features/search/SearchBar";
 import { MOCK_POLITICIANS } from "@/data/mock-politicians";
 import { Politician } from "@/types";
-import { formatINR, getScoreColor, getEducationBadge } from "@/lib/utils";
+import { formatINR, getScoreColor, getEducationBadge, getProxiedImageUrl } from "@/lib/utils";
 import BrutalistCard from "@/components/ui/BrutalistCard";
 import BrutalistButton from "@/components/ui/BrutalistButton";
+import CrimeCounter from "@/components/CrimeCounter";
 
 export default function HomePage() {
   const [filteredPoliticians, setFilteredPoliticians] = useState<Politician[]>(MOCK_POLITICIANS);
@@ -186,9 +187,12 @@ export default function HomePage() {
                     <div className="flex items-start space-x-3">
                       <div className="w-16 h-20 border-2 border-ink bg-gray-200 overflow-hidden relative shrink-0 shadow-hard-xs">
                         <img
-                          src={p.photoUrl}
+                          src={getProxiedImageUrl(p.photoUrl)}
                           alt={p.fullName}
                           className="w-full h-full object-cover grayscale contrast-125"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).src = "/images/default-politician.svg";
+                          }}
                         />
                       </div>
 
@@ -301,9 +305,12 @@ export default function HomePage() {
                     <div className="flex items-center space-x-3">
                       <div className="w-12 h-12 border-2 border-ink bg-gray-200 overflow-hidden shrink-0">
                         <img
-                          src={p.photoUrl}
+                          src={getProxiedImageUrl(p.photoUrl)}
                           alt={p.fullName}
                           className="w-full h-full object-cover grayscale"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).src = "/images/default-politician.svg";
+                          }}
                         />
                       </div>
                       <div>
@@ -341,6 +348,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Crime Counter Section */}
+      <CrimeCounter />
     </div>
   );
 }

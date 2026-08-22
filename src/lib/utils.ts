@@ -148,3 +148,14 @@ export function getEducationBadge(status?: string | EducationStatus): { label: s
       return { label: "UNVERIFIED ARCHIVE", classNames: "bg-[#FFD028] text-black border-black", symbol: "▲" };
   }
 }
+
+/**
+ * Wraps external government and media image URLs through the server-side image proxy
+ * with fallback to the dark-themed default politician avatar.
+ */
+export function getProxiedImageUrl(originalUrl?: string | null): string {
+  if (!originalUrl) return "/images/default-politician.svg";
+  if (originalUrl.startsWith("/") || originalUrl.startsWith("data:")) return originalUrl;
+  return `/api/proxy-image?url=${encodeURIComponent(originalUrl)}`;
+}
+

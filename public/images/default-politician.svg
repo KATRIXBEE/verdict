@@ -1,0 +1,24 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#1A1A1A"/>
+  
+  <!-- Person silhouette -->
+  <!-- Head -->
+  <circle cx="200" cy="145" r="65" fill="#2E2E2E"/>
+  
+  <!-- Body/shoulders -->
+  <ellipse cx="200" cy="320" rx="110" ry="85" fill="#2E2E2E"/>
+  
+  <!-- Subtle accent line at bottom -->
+  <rect x="0" y="390" width="400" height="10" fill="#FF4545" opacity="0.6"/>
+  
+  <!-- Small text -->
+  <text x="200" y="375" 
+        font-family="monospace" 
+        font-size="11" 
+        fill="#555555" 
+        text-anchor="middle"
+        letter-spacing="2">
+    PHOTO PENDING
+  </text>
+</svg>

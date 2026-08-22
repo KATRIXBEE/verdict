@@ -6,7 +6,7 @@ import { Search, MapPin, Building, ArrowRight, UserCheck, Sparkles, Filter, X } 
 import { Politician } from "@/types";
 import { searchPoliticians, MOCK_POLITICIANS } from "@/data/mock-politicians";
 import DisambiguationModal from "./DisambiguationModal";
-import { getScoreColor } from "@/lib/utils";
+import { getScoreColor, getProxiedImageUrl } from "@/lib/utils";
 
 interface SearchBarProps {
   initialQuery?: string;
@@ -238,9 +238,12 @@ export default function SearchBar({
                       {/* Photo Thumbnail */}
                       <div className="w-10 h-10 border-2 border-ink bg-gray-200 overflow-hidden shrink-0">
                         <img
-                          src={p.photoUrl}
+                          src={getProxiedImageUrl(p.photoUrl)}
                           alt={p.fullName}
                           className="w-full h-full object-cover grayscale contrast-125"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).src = "/images/default-politician.svg";
+                          }}
                         />
                       </div>
 

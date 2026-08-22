@@ -232,6 +232,7 @@ export interface Politician {
   termsServed: number;
   isMinister: boolean;
   portfolio?: string;
+  portfolioHistory?: PortfolioEntry[];
   house: 'Lok Sabha' | 'Rajya Sabha' | 'Vidhan Sabha';
 
   // Sub-modules
@@ -246,6 +247,14 @@ export interface Politician {
   scoreBand: ScoreBand;
   lastSyncedAt: string;
   sourceAffidavitDate: string;
+}
+
+export interface PortfolioEntry {
+  role: string;
+  ministry: string | null;
+  from_date: string;
+  to_date: string | null; // null = current / Present
+  government: string;
 }
 
 export interface ScoreBreakdown {

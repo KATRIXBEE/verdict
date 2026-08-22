@@ -17,7 +17,7 @@ import {
   Info
 } from "lucide-react";
 import { Politician } from "@/types";
-import { getEducationBadge, getScoreColor } from "@/lib/utils";
+import { getEducationBadge, getScoreColor, getProxiedImageUrl } from "@/lib/utils";
 import BrutalistCard from "@/components/ui/BrutalistCard";
 import BrutalistButton from "@/components/ui/BrutalistButton";
 import Badge from "@/components/ui/Badge";
@@ -69,9 +69,12 @@ export default function ProfileHeader({ politician }: ProfileHeaderProps) {
           <div className="w-full md:w-56 shrink-0 flex flex-col items-center">
             <div className="w-48 sm:w-56 h-56 sm:h-64 border-3 border-ink bg-gray-200 overflow-hidden relative shadow-hard-md group">
               <img
-                src={politician.photoUrl}
+                src={getProxiedImageUrl(politician.photoUrl)}
                 alt={politician.fullName}
                 className="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 transition-all duration-300"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = "/images/default-politician.svg";
+                }}
               />
               <div className="absolute bottom-0 inset-x-0 bg-ink/90 text-white text-[10px] font-bold py-1 text-center tracking-widest border-t-2 border-ink">
                 ECI VERIFIED PHOTO

@@ -100,18 +100,19 @@ export default function EvidenceSection({ evidence }: EvidenceSectionProps) {
                   )}
                 </div>
 
-                <div className="pt-2 border-t border-gray-200 flex items-center justify-between">
+                <div className="pt-2 border-t border-gray-200 flex flex-wrap items-center justify-between gap-2">
                   <span className="text-[10px] text-gray-500 font-bold">
-                    DATE: {item.date || "2026"}
+                    DATE: {item.date || "2026"} {item.url.includes("youtube") ? "• External Archive" : ""}
                   </span>
 
                   <a
-                    href={item.url}
+                    href={item.url.includes("youtube.com") && !item.url.includes("watch") && !item.url.includes("search") ? `https://www.youtube.com/results?search_query=${encodeURIComponent(item.title)}` : item.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center space-x-1.5 bg-ink text-white px-2.5 py-1 text-[11px] font-bold border border-ink hover:bg-brand-red transition-colors shadow-hard-xs"
+                    title="Opens in new tab"
                   >
-                    <span>INSPECT DOCUMENT</span>
+                    <span>{item.type === "Video" ? "WATCH INVESTIGATION" : "INSPECT DOCKET"}</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
                 </div>

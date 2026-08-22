@@ -29,10 +29,10 @@ export function calculateVerdictScore(politician: {
     sentiment: "positive" | "neutral" | "critical";
   }[];
 }): ScoreBreakdown {
-  // BASE SCORE: 5.0 for every politician
+  // BASE SCORE: 5.0
   const baseScore = 5.0;
 
-  // 1. ATTENDANCE (add to base)
+  // 1. ATTENDANCE (only if attendancePercentage is NOT null)
   let attendanceScore = 0.0;
   const att = politician.attendancePercentage;
   if (att !== undefined && att !== null) {
@@ -46,10 +46,10 @@ export function calculateVerdictScore(politician: {
       attendanceScore = -1.0;
     }
   } else {
-    attendanceScore = 0.0; // Missing data = neutral 0.0
+    attendanceScore = 0.0; // null -> +0.0 (neutral)
   }
 
-  // 2. CRIMINAL CASES (add to base)
+  // 2. CRIMINAL CASES
   let crimeImpact = 0.0;
   let criminalDeduction = 0.0;
   if (politician.criminalCases !== undefined && politician.criminalCases !== null) {
@@ -57,7 +57,7 @@ export function calculateVerdictScore(politician: {
       (c) => !["acquit", "dismiss", "withdrawn"].some((k) => (c.status || "").toLowerCase().includes(k))
     );
     if (activeCases.length === 0) {
-      crimeImpact = 1.0; // Confirmed 0 cases
+      crimeImpact = 1.0; // Confirmed 0 cases -> +1.0
     } else {
       const severities = activeCases.map((c) => (c.severityTier || "moderate").toLowerCase());
       if (severities.includes("severe")) {
@@ -74,10 +74,10 @@ export function calculateVerdictScore(politician: {
       criminalDeduction = Math.abs(crimeImpact);
     }
   } else {
-    crimeImpact = 0.0; // Missing case data = 0.0
+    crimeImpact = 0.0; // No case data -> +0.0 (neutral)
   }
 
-  // 3. ASSET GROWTH (add to base, only if 2+ years of data)
+  // 3. ASSET GROWTH (only if 2+ years of data exist)
   let assetGrowthScore = 0.0;
   const sortedAssets = [...(politician.assetDeclarations || [])]
     .filter((a) => a.totalAssets !== undefined && a.totalAssets > 0)
@@ -97,10 +97,10 @@ export function calculateVerdictScore(politician: {
       }
     }
   } else {
-    assetGrowthScore = 0.0; // 1 year or no asset data = 0.0
+    assetGrowthScore = 0.0; // Insufficient data -> +0.0
   }
 
-  // 4. EDUCATION VERIFICATION (add to base)
+  // 4. EDUCATION
   let educationScore = 0.0;
   const edu = (politician.educationStatus || "").toLowerCase();
   if (edu === "verified") {
@@ -108,49 +108,11 @@ export function calculateVerdictScore(politician: {
   } else if (edu === "suspicious") {
     educationScore = -0.5;
   } else {
-    educationScore = 0.0; // Unverified / missing = 0.0
+    educationScore = 0.0; // Unverified / no data -> +0.0
   }
 
-  // 5. QUESTIONS ASKED IN PARLIAMENT (add to base)
-  let questionsScore = 0.0;
-  const questions = politician.questionsAsked;
-  if (questions !== undefined && questions !== null) {
-    if (questions > 100) {
-      questionsScore = 0.5;
-    } else if (questions >= 50) {
-      questionsScore = 0.25;
-    } else {
-      questionsScore = 0.0;
-    }
-  } else {
-    questionsScore = 0.0;
-  }
-
-  // 6. PARTY SWITCHES (add to base)
-  let partyLoyaltyScore = 0.0;
-  if (politician.partyHistory && politician.partyHistory.length > 0) {
-    const partySwitches = Math.max(0, politician.partyHistory.length - 1);
-    if (partySwitches === 0) {
-      partyLoyaltyScore = 0.5;
-    } else if (partySwitches === 1) {
-      partyLoyaltyScore = 0.0;
-    } else {
-      partyLoyaltyScore = -0.5;
-    }
-  } else {
-    partyLoyaltyScore = 0.0;
-  }
-
-  // Calculate final score
-  const rawScore =
-    baseScore +
-    attendanceScore +
-    crimeImpact +
-    assetGrowthScore +
-    educationScore +
-    questionsScore +
-    partyLoyaltyScore;
-
+  // Final score summation & clamping
+  const rawScore = baseScore + attendanceScore + crimeImpact + assetGrowthScore + educationScore;
   const finalScore = Number(Math.max(0.0, Math.min(10.0, rawScore)).toFixed(1));
   const scoreBand: ScoreBand = getScoreBand(finalScore);
 
@@ -160,7 +122,7 @@ export function calculateVerdictScore(politician: {
     citizenRatingScore: 0.0,
     newsSentimentScore: 0.0,
     educationScore: Number(educationScore.toFixed(2)),
-    partyLoyaltyScore: Number(partyLoyaltyScore.toFixed(2)),
+    partyLoyaltyScore: 0.0,
     criminalDeduction: Number(criminalDeduction.toFixed(2)),
     finalScore,
     scoreBand,
@@ -182,9 +144,7 @@ export function calculateVerdictScore(politician: {
         ? "Unaccredited institution flag (-0.5 pts)"
         : "Unverified educational declaration (0.0 pts neutral)",
       citizenText: "Verified citizen trust index (0.0 pts neutral)",
-      partyText: politician.partyHistory && politician.partyHistory.length > 1
-        ? `${politician.partyHistory.length - 1} party switch(es) recorded (${partyLoyaltyScore >= 0 ? "+" : ""}${partyLoyaltyScore.toFixed(1)} pts)`
-        : "Zero party switches recorded (+0.5 pts loyalty)",
+      partyText: "Party loyalty index (0.0 pts neutral)",
       newsText: "Media coverage sentiment audit index (0.0 pts neutral)",
     },
   };
