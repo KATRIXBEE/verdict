@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export const NCRB_DATA = {
+const NCRB_DATA = {
   source: "National Crime Records Bureau (NCRB) 2022",
   source_url: "https://ncrb.gov.in/en/crime-in-india-table-addtional-table-and-chapter-contents",
   last_updated: "2023-12-01",

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="72" fill="#FF4545" />
+  
+  <!-- Subtle Brutalist Border / Inner Frame -->
+  <rect x="16" y="16" width="480" height="480" rx="56" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="8" />
+
+  <!-- Scales of Justice Icon (Center) -->
+  <g transform="translate(0, -20)" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Center Mast -->
+    <line x1="256" y1="110" x2="256" y2="300" stroke-width="16" />
+    <circle cx="256" cy="100" r="14" fill="#FFFFFF" />
+    
+    <!-- Base Platform -->
+    <path d="M200 330 L312 330" stroke-width="18" />
+    <path d="M220 300 L292 300 L300 330 L212 330 Z" fill="#FFFFFF" />
+    
+    <!-- Balance Beam -->
+    <path d="M120 160 Q256 140 392 160" stroke-width="14" />
+    
+    <!-- Left Scale strings & pan -->
+    <line x1="120" y1="160" x2="80" y2="240" stroke-width="6" />
+    <line x1="120" y1="160" x2="160" y2="240" stroke-width="6" />
+    <path d="M70 240 Q120 280 170 240 Z" fill="#FFFFFF" stroke-width="6" />
+
+    <!-- Right Scale strings & pan -->
+    <line x1="392" y1="160" x2="352" y2="240" stroke-width="6" />
+    <line x1="392" y1="160" x2="432" y2="240" stroke-width="6" />
+    <path d="M342 240 Q392 280 442 240 Z" fill="#FFFFFF" stroke-width="6" />
+  </g>
+
+  <!-- Typography "VERDICT" -->
+  <text 
+    x="256" 
+    y="410" 
+    text-anchor="middle" 
+    fill="#FFFFFF" 
+    font-family="system-ui, -apple-system, sans-serif, 'Arial Black', Impact" 
+    font-size="62" 
+    font-weight="900" 
+    letter-spacing="6"
+  >VERDICT</text>
+
+  <text 
+    x="256" 
+    y="445" 
+    text-anchor="middle" 
+    fill="#FFFFFF" 
+    fill-opacity="0.85" 
+    font-family="monospace, 'Courier New', monospace" 
+    font-size="16" 
+    font-weight="700" 
+    letter-spacing="3"
+  >CIVIC ACCOUNTABILITY</text>
+</svg>

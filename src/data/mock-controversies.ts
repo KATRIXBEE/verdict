@@ -410,8 +410,10 @@ export const MOCK_CONTROVERSIES: Controversy[] = [
   },
 ];
 
-export function getControversiesByPoliticianId(politicianId: string): Controversy[] {
+export function getControversiesByPoliticianId(politicianId?: string): Controversy[] {
+  if (!politicianId) return [];
+  const target = politicianId.toLowerCase();
   return MOCK_CONTROVERSIES.filter(
-    (c) => c.politicianId === politicianId || c.politicianId.toLowerCase() === politicianId.toLowerCase()
+    (c) => (c.politicianId || "").toLowerCase() === target
   ).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }

@@ -233,9 +233,6 @@ export default async function GroundTruthDetailPage({ params }: ArticleDetailPag
                           src={getProxiedImageUrl(p.photoUrl)}
                           alt={p.fullName}
                           className="w-full h-full object-cover grayscale"
-                          onError={(e) => {
-                            (e.target as HTMLImageElement).src = "/images/default-politician.svg";
-                          }}
                         />
                       </div>
                       <div className="truncate">

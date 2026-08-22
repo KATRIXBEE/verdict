@@ -1073,6 +1073,7 @@ export const MOCK_POLITICIANS: Politician[] = allRawPoliticians.map((p) => {
 
   return {
     ...p,
+    id: p.id || `neta-${p.slug}`,
     calculatedVerdictScore: breakdown.finalScore,
     scoreBand: breakdown.scoreBand,
   };
