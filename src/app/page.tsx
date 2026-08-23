@@ -42,7 +42,7 @@ export default function HomePage() {
 
   // High Case or Outlier Candidates
   const alertCases = [...MOCK_POLITICIANS]
-    .filter((p) => p.criminalCases.length > 0 || p.assetDeclarations.some((a) => a.isOutlierGrowth))
+    .filter((p) => (p.criminalCases?.length || 0) > 0 || p.assetDeclarations.some((a) => a.isOutlierGrowth))
     .slice(0, 3);
 
   return (
@@ -168,7 +168,7 @@ export default function HomePage() {
             {filteredPoliticians.map((p) => {
               const scoreColor = getScoreColor(p.calculatedVerdictScore);
               const eduBadge = getEducationBadge(p.educationStatus);
-              const activeCases = p.criminalCases.filter((c) => c.status !== "acquitted").length;
+              const activeCases = (p.criminalCases || []).filter((c) => c.status !== "acquitted").length;
               const switches = Math.max(0, p.partyHistory.length - 1);
 
               return (

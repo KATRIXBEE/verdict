@@ -20,7 +20,7 @@ import BrutalistButton from "@/components/ui/BrutalistButton";
 import IPCTranslatorModal from "./IPCTranslatorModal";
 
 interface CriminalDossierProps {
-  cases: CriminalCase[];
+  cases?: CriminalCase[] | null;
   politicianName: string;
 }
 
@@ -28,9 +28,10 @@ export default function CriminalDossier({ cases, politicianName }: CriminalDossi
   const [selectedIPC, setSelectedIPC] = useState<string>("IPC 420");
   const [translatorOpen, setTranslatorOpen] = useState(false);
 
-  const activeCases = cases.filter((c) => c.status !== "acquitted");
-  const severeCases = cases.filter((c) => c.severityTier === "severe" && c.status !== "acquitted");
-  const hasCases = cases.length > 0;
+  const safeCases = cases || [];
+  const activeCases = safeCases.filter((c) => c.status !== "acquitted");
+  const severeCases = safeCases.filter((c) => c.severityTier === "severe" && c.status !== "acquitted");
+  const hasCases = safeCases.length > 0;
 
   const handleOpenIPC = (ipc: string) => {
     setSelectedIPC(ipc);

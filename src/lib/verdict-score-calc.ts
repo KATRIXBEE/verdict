@@ -32,32 +32,32 @@ export function calculateVerdictScore(politician: {
   // BASE SCORE: 5.0
   const baseScore = 5.0;
 
-  // 1. ATTENDANCE (only if attendancePercentage is NOT null)
+  // 1. ATTENDANCE (only if attendancePercentage is NOT null / undefined)
   let attendanceScore = 0.0;
   const att = politician.attendancePercentage;
-  if (att !== undefined && att !== null) {
-    if (att >= 80.0) {
-      attendanceScore = 2.0;
-    } else if (att >= 60.0) {
-      attendanceScore = 1.0;
-    } else if (att >= 40.0) {
-      attendanceScore = 0.0;
-    } else {
-      attendanceScore = -1.0;
-    }
+  if (att === null || att === undefined) {
+    attendanceScore = 0.0; // null = neutral
+  } else if (att >= 80.0) {
+    attendanceScore = 2.0;
+  } else if (att >= 60.0) {
+    attendanceScore = 1.0;
+  } else if (att >= 40.0) {
+    attendanceScore = 0.0;
   } else {
-    attendanceScore = 0.0; // null -> +0.0 (neutral)
+    attendanceScore = -1.0;
   }
 
-  // 2. CRIMINAL CASES
+  // 2. CRIMINAL CASES (strict null vs zero distinction)
   let crimeImpact = 0.0;
   let criminalDeduction = 0.0;
-  if (politician.criminalCases !== undefined && politician.criminalCases !== null) {
+  if (politician.criminalCases === null || politician.criminalCases === undefined) {
+    crimeImpact = 0.0; // null / no data imported yet = neutral (0.0 impact)
+  } else if (Array.isArray(politician.criminalCases)) {
     const activeCases = politician.criminalCases.filter(
       (c) => !["acquit", "dismiss", "withdrawn"].some((k) => (c.status || "").toLowerCase().includes(k))
     );
     if (activeCases.length === 0) {
-      crimeImpact = 1.0; // Confirmed 0 cases -> +1.0
+      crimeImpact = 1.0; // Confirmed 0 cases = +1.0 bonus
     } else {
       const severities = activeCases.map((c) => (c.severityTier || "moderate").toLowerCase());
       if (severities.includes("severe")) {
@@ -74,7 +74,7 @@ export function calculateVerdictScore(politician: {
       criminalDeduction = Math.abs(crimeImpact);
     }
   } else {
-    crimeImpact = 0.0; // No case data -> +0.0 (neutral)
+    crimeImpact = 0.0;
   }
 
   // 3. ASSET GROWTH (only if 2+ years of data exist)
@@ -100,7 +100,7 @@ export function calculateVerdictScore(politician: {
     assetGrowthScore = 0.0; // Insufficient data -> +0.0
   }
 
-  // 4. EDUCATION
+  // 4. EDUCATION (only verified gets bonus, null / unverified = 0.0)
   let educationScore = 0.0;
   const edu = (politician.educationStatus || "").toLowerCase();
   if (edu === "verified") {
@@ -108,7 +108,7 @@ export function calculateVerdictScore(politician: {
   } else if (edu === "suspicious") {
     educationScore = -0.5;
   } else {
-    educationScore = 0.0; // Unverified / no data -> +0.0
+    educationScore = 0.0; // Unverified / not checked / null -> +0.0 (neutral)
   }
 
   // Final score summation & clamping

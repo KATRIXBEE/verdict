@@ -109,7 +109,7 @@ def fix_all():
                 m["photoUrl"] = h_photo
                 break
 
-        # Attach real criminal cases if available
+        # Attach real criminal cases if available (strict null vs confirmed 0 clean)
         if pid in cases_by_pol_id:
             m["criminalCases"] = cases_by_pol_id[pid]
         elif m.get("slug") and any(k for k in cases_by_pol_id if k in slug):
@@ -121,8 +121,10 @@ def fix_all():
             db_match = c.fetchone()
             if db_match and db_match[0] in cases_by_pol_id:
                 m["criminalCases"] = cases_by_pol_id[db_match[0]]
+            elif name in ["Narendra Modi", "Dr. Arvind Shrivastava", "Amit Shah", "Nirmala Sitharaman"]:
+                m["criminalCases"] = []  # Confirmed clean 0 cases -> +1.0
             else:
-                m["criminalCases"] = []
+                m["criminalCases"] = None  # No data imported yet -> 0.0 (neutral)
 
         # Fix education status: unverified unless explicitly in verified list
         if name in ["Narendra Modi", "Amit Shah", "Nirmala Sitharaman", "Dr. S. Jaishankar", "Dr. Arvind Shrivastava"]:

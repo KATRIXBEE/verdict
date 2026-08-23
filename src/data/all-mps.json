@@ -48,7 +48,7 @@
         "constituencyContested": "AMBALA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-1",
@@ -139,7 +139,7 @@
         "constituencyContested": "Adilabad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-2",
@@ -230,7 +230,7 @@
         "constituencyContested": "Andaman & Nicobar Islands"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-3",
@@ -321,7 +321,7 @@
         "constituencyContested": "Araku"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-4",
@@ -412,7 +412,7 @@
         "constituencyContested": "Arunachal West"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-5",
@@ -817,7 +817,7 @@
         "constituencyContested": "Chandigarh"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-8",
@@ -908,7 +908,7 @@
         "constituencyContested": "Chandni Chowk"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-9",
@@ -999,7 +999,7 @@
         "constituencyContested": "Chikkodi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-10",
@@ -1090,7 +1090,7 @@
         "constituencyContested": "Coochbehar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-11",
@@ -1299,7 +1299,7 @@
         "constituencyContested": "GANGANAGAR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-13",
@@ -1390,7 +1390,7 @@
         "constituencyContested": "Gurdaspur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-14",
@@ -1481,7 +1481,7 @@
         "constituencyContested": "Inner Manipur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-15",
@@ -1572,7 +1572,7 @@
         "constituencyContested": "KANGRA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-16",
@@ -1663,7 +1663,7 @@
         "constituencyContested": "Kachchh"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-17",
@@ -1754,7 +1754,7 @@
         "constituencyContested": "Kasaragod"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-18",
@@ -1845,7 +1845,7 @@
         "constituencyContested": "Kokrajhar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-19",
@@ -1936,7 +1936,7 @@
         "constituencyContested": "Ladakh"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-20",
@@ -2027,7 +2027,7 @@
         "constituencyContested": "Lakshadweep"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-21",
@@ -2118,7 +2118,7 @@
         "constituencyContested": "MIZORAM"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-22",
@@ -2209,7 +2209,7 @@
         "constituencyContested": "MORENA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-23",
@@ -2300,7 +2300,7 @@
         "constituencyContested": "Nagaland"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-24",
@@ -2391,7 +2391,7 @@
         "constituencyContested": "Nandurbar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-25",
@@ -2482,7 +2482,7 @@
         "constituencyContested": "North Goa"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-26",
@@ -2573,7 +2573,7 @@
         "constituencyContested": "PUDUCHERRY"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-27",
@@ -2664,7 +2664,7 @@
         "constituencyContested": "Rajmahal"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-28",
@@ -2755,7 +2755,7 @@
         "constituencyContested": "SURGUJA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-29",
@@ -2846,7 +2846,7 @@
         "constituencyContested": "Saharanpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-30",
@@ -2937,7 +2937,7 @@
         "constituencyContested": "Shillong"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-31",
@@ -3028,7 +3028,7 @@
         "constituencyContested": "Sikkim"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-32",
@@ -3119,7 +3119,7 @@
         "constituencyContested": "TIRUVALLUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-33",
@@ -3210,7 +3210,7 @@
         "constituencyContested": "Tehri Garhwal"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-34",
@@ -3301,7 +3301,7 @@
         "constituencyContested": "Tripura West"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-35",
@@ -3392,7 +3392,7 @@
         "constituencyContested": "Valmiki Nagar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-36",
@@ -3483,7 +3483,7 @@
         "constituencyContested": "BASTAR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-37",
@@ -3574,7 +3574,7 @@
         "constituencyContested": "Baharampur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-38",
@@ -3665,7 +3665,7 @@
         "constituencyContested": "Bolangir"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-39",
@@ -3874,7 +3874,7 @@
         "constituencyContested": "DHARMAPURI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-41",
@@ -3965,7 +3965,7 @@
         "constituencyContested": "Eluru"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-42",
@@ -4056,7 +4056,7 @@
         "constituencyContested": "FARIDABAD"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-43",
@@ -4147,7 +4147,7 @@
         "constituencyContested": "Firozpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-44",
@@ -4238,7 +4238,7 @@
         "constituencyContested": "Haveri"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-45",
@@ -4329,7 +4329,7 @@
         "constituencyContested": "DHOLPUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-46",
@@ -4420,7 +4420,7 @@
         "constituencyContested": "Kaziranga"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-47",
@@ -4511,7 +4511,7 @@
         "constituencyContested": "Kishanganj"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-48",
@@ -4602,7 +4602,7 @@
         "constituencyContested": "Meerut"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-49",
@@ -4693,7 +4693,7 @@
         "constituencyContested": "Nagpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-50",
@@ -4784,7 +4784,7 @@
         "constituencyContested": "REWA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-51",
@@ -4875,7 +4875,7 @@
         "constituencyContested": "Rajkot"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-52",
@@ -4966,7 +4966,7 @@
         "constituencyContested": "Singhbhum"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-53",
@@ -5057,7 +5057,7 @@
         "constituencyContested": "Thrissur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-54",
@@ -5148,7 +5148,7 @@
         "constituencyContested": "Baghpat"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-55",
@@ -5239,7 +5239,7 @@
         "constituencyContested": "Bathinda"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-56",
@@ -5330,7 +5330,7 @@
         "constituencyContested": "Bhandara Gondiya"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-57",
@@ -5421,7 +5421,7 @@
         "constituencyContested": "Chalakudy"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-58",
@@ -5512,7 +5512,7 @@
         "constituencyContested": "DAUSA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-59",
@@ -5603,7 +5603,7 @@
         "constituencyContested": "Dharwad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-60",
@@ -5694,7 +5694,7 @@
         "constituencyContested": "KANKER"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-61",
@@ -5785,7 +5785,7 @@
         "constituencyContested": "Kalahandi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-62",
@@ -5876,7 +5876,7 @@
         "constituencyContested": "Katihar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-63",
@@ -5967,7 +5967,7 @@
         "constituencyContested": "Khunti"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-64",
@@ -6058,7 +6058,7 @@
         "constituencyContested": "Machilipatnam"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-65",
@@ -6149,7 +6149,7 @@
         "constituencyContested": "Mahbubnagar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-66",
@@ -6240,7 +6240,7 @@
         "constituencyContested": "Murshidabad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-67",
@@ -6331,7 +6331,7 @@
         "constituencyContested": "Porbandar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-68",
@@ -6422,7 +6422,7 @@
         "constituencyContested": "SIDHI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-69",
@@ -6513,7 +6513,7 @@
         "constituencyContested": "Sonitpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-70",
@@ -6604,7 +6604,7 @@
         "constituencyContested": "TIRUVANNAMALAI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-71",
@@ -6695,7 +6695,7 @@
         "constituencyContested": "ARANI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-72",
@@ -6786,7 +6786,7 @@
         "constituencyContested": "Ernakulam"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-73",
@@ -6877,7 +6877,7 @@
         "constituencyContested": "Chimur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-74",
@@ -6968,7 +6968,7 @@
         "constituencyContested": "Ghaziabad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-75",
@@ -7059,7 +7059,7 @@
         "constituencyContested": "Jamnagar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-76",
@@ -7150,7 +7150,7 @@
         "constituencyContested": "Krishnanagar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-77",
@@ -7241,7 +7241,7 @@
         "constituencyContested": "Lakhimpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-78",
@@ -7332,7 +7332,7 @@
         "constituencyContested": "Lohardaga"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-79",
@@ -7423,7 +7423,7 @@
         "constituencyContested": "Nabarangpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-80",
@@ -7514,7 +7514,7 @@
         "constituencyContested": "Nagarkurnool"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-81",
@@ -7605,7 +7605,7 @@
         "constituencyContested": "Purnia"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-82",
@@ -7696,7 +7696,7 @@
         "constituencyContested": "SHAHDOL"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-83",
@@ -7787,7 +7787,7 @@
         "constituencyContested": "Sangrur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-84",
@@ -7878,7 +7878,7 @@
         "constituencyContested": "SAWAI MADHOPUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-85",
@@ -7969,7 +7969,7 @@
         "constituencyContested": "Uttara Kannada"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-86",
@@ -8060,7 +8060,7 @@
         "constituencyContested": "Vijayawada"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-87",
@@ -8151,7 +8151,7 @@
         "constituencyContested": "AJMER"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-88",
@@ -8242,7 +8242,7 @@
         "constituencyContested": "Chandrapur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-89",
@@ -8333,7 +8333,7 @@
         "constituencyContested": "Davanagere"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-90",
@@ -8424,7 +8424,7 @@
         "constituencyContested": "Dibrugarh"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-91",
@@ -8515,7 +8515,7 @@
         "constituencyContested": "Gautam Buddha Nagar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-92",
@@ -8606,7 +8606,7 @@
         "constituencyContested": "Guntur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-93",
@@ -8697,7 +8697,7 @@
         "constituencyContested": "Idukki"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-94",
@@ -8788,7 +8788,7 @@
         "constituencyContested": "JABALPUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-95",
@@ -8879,7 +8879,7 @@
         "constituencyContested": "Junagadh"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-96",
@@ -8970,7 +8970,7 @@
         "constituencyContested": "Kandhamal"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-97",
@@ -9061,7 +9061,7 @@
         "constituencyContested": "Madhepura"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-98",
@@ -9152,7 +9152,7 @@
         "constituencyContested": "Nalgonda"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-99",
@@ -9243,7 +9243,7 @@
         "constituencyContested": "Palamau"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-100",
@@ -9334,7 +9334,7 @@
         "constituencyContested": "Patiala"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-101",
@@ -9425,7 +9425,7 @@
         "constituencyContested": "Ranaghat"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-102",
@@ -9516,7 +9516,7 @@
         "constituencyContested": "VILUPPURAM"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-103",
@@ -9607,7 +9607,7 @@
         "constituencyContested": "Amreli"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-104",
@@ -9894,7 +9894,7 @@
         "constituencyContested": "Bhongir"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-106",
@@ -9985,7 +9985,7 @@
         "constituencyContested": "Bulandshahr"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-107",
@@ -10076,7 +10076,7 @@
         "constituencyContested": "Cuttack"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-108",
@@ -10167,7 +10167,7 @@
         "constituencyContested": "Darbhanga"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-109",
@@ -10258,7 +10258,7 @@
         "constituencyContested": "Hazaribagh"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-110",
@@ -10349,7 +10349,7 @@
         "constituencyContested": "Jorhat"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-111",
@@ -10440,7 +10440,7 @@
         "constituencyContested": "KALLAKURICHI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-112",
@@ -10531,7 +10531,7 @@
         "constituencyContested": "Kottayam"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-113",
@@ -10622,7 +10622,7 @@
         "constituencyContested": "MANDLA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-114",
@@ -10713,7 +10713,7 @@
         "constituencyContested": "NAGAUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-115",
@@ -10804,7 +10804,7 @@
         "constituencyContested": "Narsaraopet"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-116",
@@ -10895,7 +10895,7 @@
         "constituencyContested": "Shimoga"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-117",
@@ -10986,7 +10986,7 @@
         "constituencyContested": "Washim"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-118",
@@ -11077,7 +11077,7 @@
         "constituencyContested": "Alappuzha"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-119",
@@ -11168,7 +11168,7 @@
         "constituencyContested": "Aligarh"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-120",
@@ -11259,7 +11259,7 @@
         "constituencyContested": "BALAGHAT"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-121",
@@ -11350,7 +11350,7 @@
         "constituencyContested": "Bapatla"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-122",
@@ -11441,7 +11441,7 @@
         "constituencyContested": "Barrackpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-123",
@@ -11532,7 +11532,7 @@
         "constituencyContested": "Bhavnagar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-124",
@@ -11623,7 +11623,7 @@
         "constituencyContested": "Hingoli"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-125",
@@ -11714,7 +11714,7 @@
         "constituencyContested": "Kendrapara"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-126",
@@ -11805,7 +11805,7 @@
         "constituencyContested": "Muzaffarpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-127",
@@ -11896,7 +11896,7 @@
         "constituencyContested": "PALI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-128",
@@ -11987,7 +11987,7 @@
         "constituencyContested": "SALEM"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-129",
@@ -12078,7 +12078,7 @@
         "constituencyContested": "Udupi Chikmagalur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-130",
@@ -12169,7 +12169,7 @@
         "constituencyContested": "Warangal"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-131",
@@ -12260,7 +12260,7 @@
         "constituencyContested": "Anand"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-132",
@@ -12351,7 +12351,7 @@
         "constituencyContested": "CHHINDWARA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-133",
@@ -12547,7 +12547,7 @@
         "constituencyContested": "Hassan"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-135",
@@ -12638,7 +12638,7 @@
         "constituencyContested": "Hathras"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-136",
@@ -12729,7 +12729,7 @@
         "constituencyContested": "JODHPUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-137",
@@ -12820,7 +12820,7 @@
         "constituencyContested": "Jagatsinghpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-138",
@@ -12911,7 +12911,7 @@
         "constituencyContested": "Mahabubabad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-139",
@@ -13002,7 +13002,7 @@
         "constituencyContested": "Mavelikkara"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-140",
@@ -13093,7 +13093,7 @@
         "constituencyContested": "NAMAKKAL"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-141",
@@ -13184,7 +13184,7 @@
         "constituencyContested": "Nanded"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-142",
@@ -13275,7 +13275,7 @@
         "constituencyContested": "Ongole"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-143",
@@ -13366,7 +13366,7 @@
         "constituencyContested": "Vaishali"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-144",
@@ -13457,7 +13457,7 @@
         "constituencyContested": "BARMER"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-145",
@@ -13771,7 +13771,7 @@
         "constituencyContested": "ERODE"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-148",
@@ -13862,7 +13862,7 @@
         "constituencyContested": "Gopalganj"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-149",
@@ -13953,7 +13953,7 @@
         "constituencyContested": "HOSHANGABAD"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-150",
@@ -14044,7 +14044,7 @@
         "constituencyContested": "Khammam"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-151",
@@ -14135,7 +14135,7 @@
         "constituencyContested": "Kheda"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-152",
@@ -14226,7 +14226,7 @@
         "constituencyContested": "Mathura"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-153",
@@ -14317,7 +14317,7 @@
         "constituencyContested": "Nandyal"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-154",
@@ -14408,7 +14408,7 @@
         "constituencyContested": "Parbhani"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-155",
@@ -14499,7 +14499,7 @@
         "constituencyContested": "Pathanamthitta"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-156",
@@ -14590,7 +14590,7 @@
         "constituencyContested": "Puri"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-157",
@@ -14681,7 +14681,7 @@
         "constituencyContested": "Agra"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-158",
@@ -14772,7 +14772,7 @@
         "constituencyContested": "Basirhat"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-159",
@@ -15007,7 +15007,7 @@
         "constituencyContested": "Chitradurga"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-161",
@@ -15098,7 +15098,7 @@
         "constituencyContested": "JALORE"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-162",
@@ -15189,7 +15189,7 @@
         "constituencyContested": "Jalna"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-163",
@@ -15280,7 +15280,7 @@
         "constituencyContested": "Kollam"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-164",
@@ -15371,7 +15371,7 @@
         "constituencyContested": "Kurnoolu"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-165",
@@ -15462,7 +15462,7 @@
         "constituencyContested": "Panchmahal"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-166",
@@ -15553,7 +15553,7 @@
         "constituencyContested": "Siwan"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-167",
@@ -15644,7 +15644,7 @@
         "constituencyContested": "TIRUPPUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-168",
@@ -15735,7 +15735,7 @@
         "constituencyContested": "VIDISHA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-169",
@@ -15826,7 +15826,7 @@
         "constituencyContested": "Ananthapur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-170",
@@ -15917,7 +15917,7 @@
         "constituencyContested": "Aska"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-171",
@@ -16452,7 +16452,7 @@
         "constituencyContested": "BHOPAL"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-174",
@@ -16543,7 +16543,7 @@
         "constituencyContested": "Dahod"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-175",
@@ -16634,7 +16634,7 @@
         "constituencyContested": "Fatehpur Sikri"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-176",
@@ -16725,7 +16725,7 @@
         "constituencyContested": "Joynagar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-177",
@@ -16816,7 +16816,7 @@
         "constituencyContested": "Maharajganj"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-178",
@@ -16907,7 +16907,7 @@
         "constituencyContested": "NILGIRIS"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-179",
@@ -16998,7 +16998,7 @@
         "constituencyContested": "Tumkur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-180",
@@ -17089,7 +17089,7 @@
         "constituencyContested": "UDAIPUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-181",
@@ -17402,7 +17402,7 @@
         "constituencyContested": "Amritsar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-183",
@@ -17493,7 +17493,7 @@
         "constituencyContested": "Arunachal East"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-184",
@@ -17584,7 +17584,7 @@
         "constituencyContested": "BHIND"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-185",
@@ -17675,7 +17675,7 @@
         "constituencyContested": "BIKANER"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-186",
@@ -17766,7 +17766,7 @@
         "constituencyContested": "Banaskantha"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-187",
@@ -17857,7 +17857,7 @@
         "constituencyContested": "Belgaum"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-188",
@@ -17948,7 +17948,7 @@
         "constituencyContested": "CHENNAI NORTH"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-189",
@@ -18039,7 +18039,7 @@
         "constituencyContested": "Dadar & Nagar Haveli"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-190",
@@ -18130,7 +18130,7 @@
         "constituencyContested": "Dhubri"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-191",
@@ -18470,7 +18470,7 @@
         "constituencyContested": "Garhwal"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-194",
@@ -18561,7 +18561,7 @@
         "constituencyContested": "KURUKSHETRA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-195",
@@ -18652,7 +18652,7 @@
         "constituencyContested": "Kairana"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-196",
@@ -18743,7 +18743,7 @@
         "constituencyContested": "Kannur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-197",
@@ -18834,7 +18834,7 @@
         "constituencyContested": "MANDI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-198",
@@ -18925,7 +18925,7 @@
         "constituencyContested": "East Delhi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-199",
@@ -19016,7 +19016,7 @@
         "constituencyContested": "Outer Manipur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-200",
@@ -19107,7 +19107,7 @@
         "constituencyContested": "Paschim Champaran"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-201",
@@ -19198,7 +19198,7 @@
         "constituencyContested": "Peddapalle"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-202",
@@ -19289,7 +19289,7 @@
         "constituencyContested": "RAIGARH"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-203",
@@ -19380,7 +19380,7 @@
         "constituencyContested": "SRINAGAR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-204",
@@ -19471,7 +19471,7 @@
         "constituencyContested": "South Goa"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-205",
@@ -19562,7 +19562,7 @@
         "constituencyContested": "Srikakulam"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-206",
@@ -19653,7 +19653,7 @@
         "constituencyContested": "Sundargarh"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-207",
@@ -19744,7 +19744,7 @@
         "constituencyContested": "Tripura East"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-208",
@@ -19835,7 +19835,7 @@
         "constituencyContested": "Tura"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-209",
@@ -20188,7 +20188,7 @@
         "constituencyContested": "COIMBATORE"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-212",
@@ -20279,7 +20279,7 @@
         "constituencyContested": "Dindori"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-213",
@@ -20370,7 +20370,7 @@
         "constituencyContested": "Firozabad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-214",
@@ -20461,7 +20461,7 @@
         "constituencyContested": "Hindupur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-215",
@@ -20552,7 +20552,7 @@
         "constituencyContested": "Mandya"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-216",
@@ -20643,7 +20643,7 @@
         "constituencyContested": "Mathurapur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-217",
@@ -20734,7 +20734,7 @@
         "constituencyContested": "RAJGARH"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-218",
@@ -20825,7 +20825,7 @@
         "constituencyContested": "Saran"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-219",
@@ -20916,7 +20916,7 @@
         "constituencyContested": "Thiruvananthapuram"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-220",
@@ -21007,7 +21007,7 @@
         "constituencyContested": "Vadodara"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-221",
@@ -21098,7 +21098,7 @@
         "constituencyContested": "CHITTORGARH"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-222",
@@ -21189,7 +21189,7 @@
         "constituencyContested": "Chhota Udaipur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-223",
@@ -21398,7 +21398,7 @@
         "constituencyContested": "Diamond harbour"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-225",
@@ -21489,7 +21489,7 @@
         "constituencyContested": "Hajipur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-226",
@@ -21580,7 +21580,7 @@
         "constituencyContested": "Kadapa"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-227",
@@ -21671,7 +21671,7 @@
         "constituencyContested": "Koraput"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-228",
@@ -21762,7 +21762,7 @@
         "constituencyContested": "Mainpuri"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-229",
@@ -21853,7 +21853,7 @@
         "constituencyContested": "Mysore"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-230",
@@ -21944,7 +21944,7 @@
         "constituencyContested": "Nashik"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-231",
@@ -22035,7 +22035,7 @@
         "constituencyContested": "POLLACHI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-232",
@@ -22126,7 +22126,7 @@
         "constituencyContested": "Bharuch"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-233",
@@ -22217,7 +22217,7 @@
         "constituencyContested": "Chamarajanagar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-234",
@@ -22413,7 +22413,7 @@
         "constituencyContested": "Etah"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-236",
@@ -22504,7 +22504,7 @@
         "constituencyContested": "Jadavpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-237",
@@ -22595,7 +22595,7 @@
         "constituencyContested": "Nellore"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-238",
@@ -22686,7 +22686,7 @@
         "constituencyContested": "Palghar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-239",
@@ -22777,7 +22777,7 @@
         "constituencyContested": "RAJSAMAND"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-240",
@@ -22868,7 +22868,7 @@
         "constituencyContested": "UJJAIN"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-241",
@@ -22959,7 +22959,7 @@
         "constituencyContested": "Ujiarpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-242",
@@ -23050,7 +23050,7 @@
         "constituencyContested": "BHILWARA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-243",
@@ -23141,7 +23141,7 @@
         "constituencyContested": "Badaun"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-244",
@@ -23232,7 +23232,7 @@
         "constituencyContested": "Bangalore Rural"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-245",
@@ -23323,7 +23323,7 @@
         "constituencyContested": "Bardoli"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-246",
@@ -23414,7 +23414,7 @@
         "constituencyContested": "Bhiwandi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-247",
@@ -23505,7 +23505,7 @@
         "constituencyContested": "KARUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-248",
@@ -23596,7 +23596,7 @@
         "constituencyContested": "Kolkata Dakshin"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-249",
@@ -23687,7 +23687,7 @@
         "constituencyContested": "MANDSOUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-250",
@@ -23778,7 +23778,7 @@
         "constituencyContested": "Samastipur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-251",
@@ -23869,7 +23869,7 @@
         "constituencyContested": "Thirupathi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-252",
@@ -23960,7 +23960,7 @@
         "constituencyContested": "Aonla"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-253",
@@ -24391,7 +24391,7 @@
         "constituencyContested": "KOTA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-256",
@@ -24482,7 +24482,7 @@
         "constituencyContested": "Kalyan"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-257",
@@ -24573,7 +24573,7 @@
         "constituencyContested": "Kolkata Uttar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-258",
@@ -24664,7 +24664,7 @@
         "constituencyContested": "RATLAM"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-259",
@@ -24755,7 +24755,7 @@
         "constituencyContested": "Rajampet"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-260",
@@ -24846,7 +24846,7 @@
         "constituencyContested": "Surat"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-261",
@@ -24937,7 +24937,7 @@
         "constituencyContested": "TIRUCHIRAPPALLI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-262",
@@ -25146,7 +25146,7 @@
         "constituencyContested": "Bareilly"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-264",
@@ -25237,7 +25237,7 @@
         "constituencyContested": "Chittoor"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-265",
@@ -25328,7 +25328,7 @@
         "constituencyContested": "DHAR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-266",
@@ -25419,7 +25419,7 @@
         "constituencyContested": "Howrah"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-267",
@@ -25510,7 +25510,7 @@
         "constituencyContested": "BARAN"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-268",
@@ -25601,7 +25601,7 @@
         "constituencyContested": "Khagaria"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-269",
@@ -25692,7 +25692,7 @@
         "constituencyContested": "Navsari"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-270",
@@ -25783,7 +25783,7 @@
         "constituencyContested": "PERAMBALUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-271",
@@ -25874,7 +25874,7 @@
         "constituencyContested": "Thane"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-272",
@@ -25965,7 +25965,7 @@
         "constituencyContested": "Bangalore South"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-273",
@@ -26056,7 +26056,7 @@
         "constituencyContested": "Bhagalpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-274",
@@ -26252,7 +26252,7 @@
         "constituencyContested": "INDORE"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-276",
@@ -26343,7 +26343,7 @@
         "constituencyContested": "Mumbai North"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-277",
@@ -26434,7 +26434,7 @@
         "constituencyContested": "Pilibhit"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-278",
@@ -26525,7 +26525,7 @@
         "constituencyContested": "Uluberia"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-279",
@@ -26616,7 +26616,7 @@
         "constituencyContested": "Valsad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-280",
@@ -26969,7 +26969,7 @@
         "constituencyContested": "Chikkballapur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-283",
@@ -27060,7 +27060,7 @@
         "constituencyContested": "KHARGONE"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-284",
@@ -27151,7 +27151,7 @@
         "constituencyContested": "Mumbai North West"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-285",
@@ -27242,7 +27242,7 @@
         "constituencyContested": "Shahjahanpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-286",
@@ -27333,7 +27333,7 @@
         "constituencyContested": "Srerampur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-287",
@@ -27424,7 +27424,7 @@
         "constituencyContested": "Hooghly"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-288",
@@ -27515,7 +27515,7 @@
         "constituencyContested": "KHANDWA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-289",
@@ -27606,7 +27606,7 @@
         "constituencyContested": "Kheri"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-290",
@@ -27697,7 +27697,7 @@
         "constituencyContested": "Kolar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-291",
@@ -27788,7 +27788,7 @@
         "constituencyContested": "MAYILADUTHURAI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-292",
@@ -27879,7 +27879,7 @@
         "constituencyContested": "Mumbai North East"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-293",
@@ -27970,7 +27970,7 @@
         "constituencyContested": "Munger"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-294",
@@ -28061,7 +28061,7 @@
         "constituencyContested": "Arambagh"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-295",
@@ -28152,7 +28152,7 @@
         "constituencyContested": "BETUL"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-296",
@@ -28348,7 +28348,7 @@
         "constituencyContested": "Mumbai North Central"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-298",
@@ -28439,7 +28439,7 @@
         "constituencyContested": "NAGAPATTINAM"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-299",
@@ -28530,7 +28530,7 @@
         "constituencyContested": "Nalanda"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-300",
@@ -28621,7 +28621,7 @@
         "constituencyContested": "RAJOURI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-301",
@@ -28712,7 +28712,7 @@
         "constituencyContested": "Almora"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-302",
@@ -28803,7 +28803,7 @@
         "constituencyContested": "Bagalkot"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-303",
@@ -28894,7 +28894,7 @@
         "constituencyContested": "Barpeta"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-304",
@@ -28985,7 +28985,7 @@
         "constituencyContested": "CHENNAI SOUTH"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-305",
@@ -29076,7 +29076,7 @@
         "constituencyContested": "CHURU"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-306",
@@ -29167,7 +29167,7 @@
         "constituencyContested": "East Delhi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-307",
@@ -29258,7 +29258,7 @@
         "constituencyContested": "GWALIOR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-308",
@@ -29349,7 +29349,7 @@
         "constituencyContested": "Godda"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-309",
@@ -29440,7 +29440,7 @@
         "constituencyContested": "HAMIRPUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-310",
@@ -29531,7 +29531,7 @@
         "constituencyContested": "CHAMPA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-311",
@@ -29622,7 +29622,7 @@
         "constituencyContested": "Jalgaon"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-312",
@@ -29713,7 +29713,7 @@
         "constituencyContested": "Jalpaiguri"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-313",
@@ -29804,7 +29804,7 @@
         "constituencyContested": "Karimnagar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-314",
@@ -29895,7 +29895,7 @@
         "constituencyContested": "Khadoor Sahib"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-315",
@@ -29986,7 +29986,7 @@
         "constituencyContested": "Muzaffarnagar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-316",
@@ -30077,7 +30077,7 @@
         "constituencyContested": "Patan"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-317",
@@ -30168,7 +30168,7 @@
         "constituencyContested": "Purvi Champaran"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-318",
@@ -30259,7 +30259,7 @@
         "constituencyContested": "SIRSA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-319",
@@ -30350,7 +30350,7 @@
         "constituencyContested": "Sambalpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-320",
@@ -30441,7 +30441,7 @@
         "constituencyContested": "Vadakara"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-321",
@@ -30532,7 +30532,7 @@
         "constituencyContested": "Vizianagaram"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-322",
@@ -30623,7 +30623,7 @@
         "constituencyContested": "Mumbai South Central"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-323",
@@ -30714,7 +30714,7 @@
         "constituencyContested": "Patna Sahib"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-324",
@@ -30805,7 +30805,7 @@
         "constituencyContested": "Sitapur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-325",
@@ -30896,7 +30896,7 @@
         "constituencyContested": "THANJAVUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-326",
@@ -30987,7 +30987,7 @@
         "constituencyContested": "Tamluk"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-327",
@@ -31078,7 +31078,7 @@
         "constituencyContested": "Hardoi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-328",
@@ -31169,7 +31169,7 @@
         "constituencyContested": "Kanthi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-329",
@@ -31260,7 +31260,7 @@
         "constituencyContested": "Mumbai South"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-330",
@@ -31351,7 +31351,7 @@
         "constituencyContested": "Patliputra"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-331",
@@ -31442,7 +31442,7 @@
         "constituencyContested": "SIVAGANGA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-332",
@@ -31533,7 +31533,7 @@
         "constituencyContested": "Arrah"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-333",
@@ -31624,7 +31624,7 @@
         "constituencyContested": "Ghatal"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-334",
@@ -31715,7 +31715,7 @@
         "constituencyContested": "MADURAI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-335",
@@ -31806,7 +31806,7 @@
         "constituencyContested": "Misrikh"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-336",
@@ -31897,7 +31897,7 @@
         "constituencyContested": "Raigad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-337",
@@ -31988,7 +31988,7 @@
         "constituencyContested": "Buxar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-338",
@@ -32079,7 +32079,7 @@
         "constituencyContested": "Jhargram"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-339",
@@ -32170,7 +32170,7 @@
         "constituencyContested": "Maval"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-340",
@@ -32261,7 +32261,7 @@
         "constituencyContested": "THENI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-341",
@@ -32352,7 +32352,7 @@
         "constituencyContested": "Unnao"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-342",
@@ -32443,7 +32443,7 @@
         "constituencyContested": "Medinipur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-343",
@@ -32534,7 +32534,7 @@
         "constituencyContested": "Mohanlalganj"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-344",
@@ -32625,7 +32625,7 @@
         "constituencyContested": "Pune"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-345",
@@ -32716,7 +32716,7 @@
         "constituencyContested": "Sasaram"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-346",
@@ -32807,7 +32807,7 @@
         "constituencyContested": "VIRUDHUNAGAR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-347",
@@ -32898,7 +32898,7 @@
         "constituencyContested": "Baramati"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-348",
@@ -32989,7 +32989,7 @@
         "constituencyContested": "Karakat"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-349",
@@ -33080,7 +33080,7 @@
         "constituencyContested": "Lucknow"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-350",
@@ -33187,7 +33187,7 @@
         "constituencyContested": "Purulia"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-351",
@@ -33278,7 +33278,7 @@
         "constituencyContested": "RAMANATHAPURAM"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-352",
@@ -33369,7 +33369,7 @@
         "constituencyContested": "Bankura"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-353",
@@ -33460,7 +33460,7 @@
         "constituencyContested": "Jahanabad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-354",
@@ -33551,7 +33551,7 @@
         "constituencyContested": "Rae Bareli"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-355",
@@ -33642,7 +33642,7 @@
         "constituencyContested": "Shirur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-356",
@@ -33733,7 +33733,7 @@
         "constituencyContested": "THOOTHUKKUDI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-357",
@@ -33981,7 +33981,7 @@
         "constituencyContested": "Amethi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-359",
@@ -34438,7 +34438,7 @@
         "constituencyContested": "TENKASI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-362",
@@ -34529,7 +34529,7 @@
         "constituencyContested": "Bardhaman Purba"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-363",
@@ -34620,7 +34620,7 @@
         "constituencyContested": "Gaya"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-364",
@@ -34711,7 +34711,7 @@
         "constituencyContested": "Shirdi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-365",
@@ -34802,7 +34802,7 @@
         "constituencyContested": "Sultanpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-366",
@@ -34893,7 +34893,7 @@
         "constituencyContested": "TIRUNELVELI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-367",
@@ -35102,7 +35102,7 @@
         "constituencyContested": "Beed"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-369",
@@ -35193,7 +35193,7 @@
         "constituencyContested": "KANNIYAKUMARI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-370",
@@ -35284,7 +35284,7 @@
         "constituencyContested": "Nawada"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-371",
@@ -35375,7 +35375,7 @@
         "constituencyContested": "Pratapgarh"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-372",
@@ -35466,7 +35466,7 @@
         "constituencyContested": "Bijapur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-373",
@@ -35701,7 +35701,7 @@
         "constituencyContested": "CHENNAI CENTRAL"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-375",
@@ -35988,7 +35988,7 @@
         "constituencyContested": "Darjeeling"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-377",
@@ -36079,7 +36079,7 @@
         "constituencyContested": "Udalguri"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-378",
@@ -36170,7 +36170,7 @@
         "constituencyContested": "GUNA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-379",
@@ -36261,7 +36261,7 @@
         "constituencyContested": "HISAR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-380",
@@ -36352,7 +36352,7 @@
         "constituencyContested": "JHUNJHUNU"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-381",
@@ -36443,7 +36443,7 @@
         "constituencyContested": "Jalandhar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-382",
@@ -36534,7 +36534,7 @@
         "constituencyContested": "KORBA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-383",
@@ -36625,7 +36625,7 @@
         "constituencyContested": "Keonjhar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-384",
@@ -36716,7 +36716,7 @@
         "constituencyContested": "Mahesana"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-385",
@@ -36807,7 +36807,7 @@
         "constituencyContested": "Udhamsingh Nagar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-386",
@@ -36898,7 +36898,7 @@
         "constituencyContested": "New Delhi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-387",
@@ -36989,7 +36989,7 @@
         "constituencyContested": "Nizamabad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-388",
@@ -37080,7 +37080,7 @@
         "constituencyContested": "Raver"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-389",
@@ -37171,7 +37171,7 @@
         "constituencyContested": "SHIMLA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-390",
@@ -37262,7 +37262,7 @@
         "constituencyContested": "Sheohar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-391",
@@ -37353,7 +37353,7 @@
         "constituencyContested": "UDHAMPUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-392",
@@ -37444,7 +37444,7 @@
         "constituencyContested": "Visakhapatnam"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-393",
@@ -37535,7 +37535,7 @@
         "constituencyContested": "Wayanad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-394",
@@ -37626,7 +37626,7 @@
         "constituencyContested": "Asansol"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-395",
@@ -37717,7 +37717,7 @@
         "constituencyContested": "Farrukhabad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-396",
@@ -37808,7 +37808,7 @@
         "constituencyContested": "Jamui"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-397",
@@ -37899,7 +37899,7 @@
         "constituencyContested": "Osmanabad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-398",
@@ -37990,7 +37990,7 @@
         "constituencyContested": "Bolpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-399",
@@ -38081,7 +38081,7 @@
         "constituencyContested": "Etawah"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-400",
@@ -38172,7 +38172,7 @@
         "constituencyContested": "Latur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-401",
@@ -38263,7 +38263,7 @@
         "constituencyContested": "Birbhum"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-402",
@@ -38354,7 +38354,7 @@
         "constituencyContested": "Kannauj"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-403",
@@ -38445,7 +38445,7 @@
         "constituencyContested": "Solapur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-404",
@@ -38536,7 +38536,7 @@
         "constituencyContested": "Kanpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-405",
@@ -38627,7 +38627,7 @@
         "constituencyContested": "Madha"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-406",
@@ -38718,7 +38718,7 @@
         "constituencyContested": "Akbarpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-407",
@@ -38809,7 +38809,7 @@
         "constituencyContested": "Sangli"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-408",
@@ -38900,7 +38900,7 @@
         "constituencyContested": "Jalaun"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-409",
@@ -38991,7 +38991,7 @@
         "constituencyContested": "Satara"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-410",
@@ -39082,7 +39082,7 @@
         "constituencyContested": "Jhansi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-411",
@@ -39173,7 +39173,7 @@
         "constituencyContested": "Sindhudurg"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-412",
@@ -39264,7 +39264,7 @@
         "constituencyContested": "Hamirpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-413",
@@ -39355,7 +39355,7 @@
         "constituencyContested": "Kolhapur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-414",
@@ -39446,7 +39446,7 @@
         "constituencyContested": "Banda"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-415",
@@ -39537,7 +39537,7 @@
         "constituencyContested": "Hatkanangale"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-416",
@@ -39628,7 +39628,7 @@
         "constituencyContested": "Fatehpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-417",
@@ -39876,7 +39876,7 @@
         "constituencyContested": "BILASPUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-419",
@@ -40111,7 +40111,7 @@
         "constituencyContested": "Gulbarga"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-421",
@@ -40202,7 +40202,7 @@
         "constituencyContested": "Guwahati"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-422",
@@ -40293,7 +40293,7 @@
         "constituencyContested": "Haridwar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-423",
@@ -40384,7 +40384,7 @@
         "constituencyContested": "Hoshiarpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-424",
@@ -40475,7 +40475,7 @@
         "constituencyContested": "JAMMU"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-425",
@@ -40566,7 +40566,7 @@
         "constituencyContested": "KARNAL"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-426",
@@ -40657,7 +40657,7 @@
         "constituencyContested": "Kodarma"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-427",
@@ -40748,7 +40748,7 @@
         "constituencyContested": "Kozhikode"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-428",
@@ -40839,7 +40839,7 @@
         "constituencyContested": "Mayurbhanj"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-429",
@@ -40930,7 +40930,7 @@
         "constituencyContested": "Nagina"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-430",
@@ -41021,7 +41021,7 @@
         "constituencyContested": "West Delhi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-431",
@@ -41112,7 +41112,7 @@
         "constituencyContested": "Raiganj"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-432",
@@ -41203,7 +41203,7 @@
         "constituencyContested": "SAGAR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-433",
@@ -41294,7 +41294,7 @@
         "constituencyContested": "SIKAR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-434",
@@ -41385,7 +41385,7 @@
         "constituencyContested": "SRIPERUMBUDUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-435",
@@ -41476,7 +41476,7 @@
         "constituencyContested": "Sabarkantha"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-436",
@@ -41567,7 +41567,7 @@
         "constituencyContested": "Sitamarhi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-437",
@@ -41658,7 +41658,7 @@
         "constituencyContested": "Zahirabad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-438",
@@ -41749,7 +41749,7 @@
         "constituencyContested": "Kaushambi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-439",
@@ -41840,7 +41840,7 @@
         "constituencyContested": "Phulpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-440",
@@ -41931,7 +41931,7 @@
         "constituencyContested": "Allahabad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-441",
@@ -42140,7 +42140,7 @@
         "constituencyContested": "Faizabad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-443",
@@ -42231,7 +42231,7 @@
         "constituencyContested": "Ambedkar Nagar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-444",
@@ -42322,7 +42322,7 @@
         "constituencyContested": "Baharaich"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-445",
@@ -42413,7 +42413,7 @@
         "constituencyContested": "Kaiserganj"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-446",
@@ -42504,7 +42504,7 @@
         "constituencyContested": "Shrawasti"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-447",
@@ -42595,7 +42595,7 @@
         "constituencyContested": "Gonda"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-448",
@@ -42843,7 +42843,7 @@
         "constituencyContested": "Anandpur Sahib"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-450",
@@ -43378,7 +43378,7 @@
         "constituencyContested": "Diphu"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-453",
@@ -43576,7 +43576,7 @@
         "constituencyContested": "Giridih"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-455",
@@ -43667,7 +43667,7 @@
         "constituencyContested": "JAIPUR RURAL"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-456",
@@ -43758,7 +43758,7 @@
         "constituencyContested": "KANCHEEPURAM"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-457",
@@ -43849,7 +43849,7 @@
         "constituencyContested": "Kakinada"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-458",
@@ -43940,7 +43940,7 @@
         "constituencyContested": "Madhubani"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-459",
@@ -44031,7 +44031,7 @@
         "constituencyContested": "Malappuram"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-460",
@@ -44122,7 +44122,7 @@
         "constituencyContested": "Medak"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-461",
@@ -44213,7 +44213,7 @@
         "constituencyContested": "Moradabad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-462",
@@ -44304,7 +44304,7 @@
         "constituencyContested": "RAJNANDGAON"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-463",
@@ -44395,7 +44395,7 @@
         "constituencyContested": "Raichur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-464",
@@ -44486,7 +44486,7 @@
         "constituencyContested": "SONIPAT"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-465",
@@ -44577,7 +44577,7 @@
         "constituencyContested": "TIKAMGARH"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-466",
@@ -44668,7 +44668,7 @@
         "constituencyContested": "West Delhi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-467",
@@ -44982,7 +44982,7 @@
         "constituencyContested": "Sant Kabir Nagar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-470",
@@ -45073,7 +45073,7 @@
         "constituencyContested": "Maharajganj"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-471",
@@ -45164,7 +45164,7 @@
         "constituencyContested": "Gorakhpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-472",
@@ -45255,7 +45255,7 @@
         "constituencyContested": "Kushi Nagar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-473",
@@ -45346,7 +45346,7 @@
         "constituencyContested": "Deoria"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-474",
@@ -45437,7 +45437,7 @@
         "constituencyContested": "Bansgaon"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-475",
@@ -45528,7 +45528,7 @@
         "constituencyContested": "Lalganj"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-476",
@@ -45789,7 +45789,7 @@
         "constituencyContested": "ARAKKONAM"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-478",
@@ -45880,7 +45880,7 @@
         "constituencyContested": "Ahmedabad East"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-479",
@@ -45971,7 +45971,7 @@
         "constituencyContested": "Amalapuram"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-480",
@@ -46062,7 +46062,7 @@
         "constituencyContested": "Amravati"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-481",
@@ -46153,7 +46153,7 @@
         "constituencyContested": "Bhadrak"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-482",
@@ -46244,7 +46244,7 @@
         "constituencyContested": "Bidar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-483",
@@ -46335,7 +46335,7 @@
         "constituencyContested": "DAMOH"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-484",
@@ -46426,7 +46426,7 @@
         "constituencyContested": "DURG"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-485",
@@ -46661,7 +46661,7 @@
         "constituencyContested": "JAIPUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-487",
@@ -46752,7 +46752,7 @@
         "constituencyContested": "Jhanjharpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-488",
@@ -46843,7 +46843,7 @@
         "constituencyContested": "Karimganj"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-489",
@@ -46934,7 +46934,7 @@
         "constituencyContested": "Ludhiana"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-490",
@@ -47025,7 +47025,7 @@
         "constituencyContested": "Maldaha Uttar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-491",
@@ -47116,7 +47116,7 @@
         "constituencyContested": "Malkajgiri"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-492",
@@ -47207,7 +47207,7 @@
         "constituencyContested": "Ponnani"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-493",
@@ -47298,7 +47298,7 @@
         "constituencyContested": "ROHTAK"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-494",
@@ -47389,7 +47389,7 @@
         "constituencyContested": "Rampur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-495",
@@ -47480,7 +47480,7 @@
         "constituencyContested": "South Delhi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-496",
@@ -47571,7 +47571,7 @@
         "constituencyContested": "Ghosi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-497",
@@ -47662,7 +47662,7 @@
         "constituencyContested": "Salempur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-498",
@@ -47871,7 +47871,7 @@
         "constituencyContested": "Jaunpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-500",
@@ -47962,7 +47962,7 @@
         "constituencyContested": "Machhlishahr"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-501",
@@ -48053,7 +48053,7 @@
         "constituencyContested": "Ghazipur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-502",
@@ -48144,7 +48144,7 @@
         "constituencyContested": "Chandauli"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-503",
@@ -48349,7 +48349,7 @@
         "constituencyContested": "Bhadohi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-505",
@@ -48440,7 +48440,7 @@
         "constituencyContested": "Mirzapur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-506",
@@ -48531,7 +48531,7 @@
         "constituencyContested": "ALWAR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-507",
@@ -48622,7 +48622,7 @@
         "constituencyContested": "Ahmedabad West"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-508",
@@ -48713,7 +48713,7 @@
         "constituencyContested": "MAHENDRAGARH"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-509",
@@ -48804,7 +48804,7 @@
         "constituencyContested": "Fatehgarh Sahib"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-510",
@@ -48895,7 +48895,7 @@
         "constituencyContested": "Jajpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-511",
@@ -48986,7 +48986,7 @@
         "constituencyContested": "KHAJURAHO"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-512",
@@ -49077,7 +49077,7 @@
         "constituencyContested": "Koppal"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-513",
@@ -49168,7 +49168,7 @@
         "constituencyContested": "Maldaha Dakshin"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-514",
@@ -49259,7 +49259,7 @@
         "constituencyContested": "Palakkad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-515",
@@ -49350,7 +49350,7 @@
         "constituencyContested": "RAIPUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-516",
@@ -49441,7 +49441,7 @@
         "constituencyContested": "Rajahmundry"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-517",
@@ -49532,7 +49532,7 @@
         "constituencyContested": "Ranchi"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-518",
@@ -49623,7 +49623,7 @@
         "constituencyContested": "Sambhal"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-519",
@@ -49714,7 +49714,7 @@
         "constituencyContested": "Secunderabad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-520",
@@ -49805,7 +49805,7 @@
         "constituencyContested": "Silchar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-521",
@@ -49896,7 +49896,7 @@
         "constituencyContested": "Supaul"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-522",
@@ -49987,7 +49987,7 @@
         "constituencyContested": "VELLORE"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-523",
@@ -50078,7 +50078,7 @@
         "constituencyContested": "Wardha"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-524",
@@ -50169,7 +50169,7 @@
         "constituencyContested": "Robertsganj"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-525",
@@ -50260,7 +50260,7 @@
         "constituencyContested": "Alathur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-526",
@@ -50351,7 +50351,7 @@
         "constituencyContested": "Amroha"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-527",
@@ -50442,7 +50442,7 @@
         "constituencyContested": "Araria"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-528",
@@ -50533,7 +50533,7 @@
         "constituencyContested": "BHARATPUR"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-529",
@@ -50624,7 +50624,7 @@
         "constituencyContested": "Bellary"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-530",
@@ -50859,7 +50859,7 @@
         "constituencyContested": "Faridkot"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-532",
@@ -50950,7 +50950,7 @@
         "constituencyContested": "GURGAON"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-533",
@@ -51041,7 +51041,7 @@
         "constituencyContested": "Hyderabad"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-534",
@@ -51132,7 +51132,7 @@
         "constituencyContested": "Jamshedpur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-535",
@@ -51223,7 +51223,7 @@
         "constituencyContested": "Jangipur"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-536",
@@ -51314,7 +51314,7 @@
         "constituencyContested": "KRISHNAGIRI"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-537",
@@ -51405,7 +51405,7 @@
         "constituencyContested": "MAHASAMUND"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-538",
@@ -51496,7 +51496,7 @@
         "constituencyContested": "Nagaon"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-539",
@@ -51587,7 +51587,7 @@
         "constituencyContested": "Narsapuram"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-540",
@@ -51678,7 +51678,7 @@
         "constituencyContested": "Ramtek"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-541",
@@ -51769,7 +51769,7 @@
         "constituencyContested": "SATNA"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-542",
@@ -51860,7 +51860,7 @@
         "constituencyContested": "Surendranagar"
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "ast-2024-543",
@@ -52028,7 +52028,7 @@
         "isCurrent": true
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "as-si-1",
@@ -52112,7 +52112,7 @@
         "isCurrent": true
       }
     ],
-    "criminalCases": [],
+    "criminalCases": null,
     "assetDeclarations": [
       {
         "id": "as-sj-1",

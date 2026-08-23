@@ -223,12 +223,12 @@ export interface Politician {
   educationDetails?: string;
   
   // Legislative metrics
-  attendancePercentage: number;
-  debatesParticipated: number;
-  questionsAsked: number;
-  privateMemberBills: number;
-  nationalAttendanceAvg: number;
-  stateAttendanceAvg: number;
+  attendancePercentage?: number | null;
+  debatesParticipated?: number | null;
+  questionsAsked?: number | null;
+  privateMemberBills?: number | null;
+  nationalAttendanceAvg?: number | null;
+  stateAttendanceAvg?: number | null;
 
   // Parliamentary role
   termsServed: number;
@@ -239,7 +239,7 @@ export interface Politician {
 
   // Sub-modules
   partyHistory: PartyTenure[];
-  criminalCases: CriminalCase[];
+  criminalCases?: CriminalCase[] | null;
   assetDeclarations: AssetDeclaration[];
   citizenRatings: CitizenRating[];
   newsItems: NewsSentimentItem[];

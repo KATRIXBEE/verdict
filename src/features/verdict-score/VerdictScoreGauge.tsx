@@ -34,10 +34,10 @@ export default function VerdictScoreGauge({ politician }: VerdictScoreGaugeProps
   const scoreColor = getScoreColor(breakdown.finalScore);
 
   // Derive parameters for simulator initial values
-  const activeSerious = politician.criminalCases.filter(
+  const activeSerious = (politician.criminalCases || []).filter(
     (c) => (c.severityTier === "serious" || c.severityTier === "moderate") && c.status !== "acquitted"
   ).length;
-  const activeSevere = politician.criminalCases.filter(
+  const activeSevere = (politician.criminalCases || []).filter(
     (c) => c.severityTier === "severe" && c.status !== "acquitted"
   ).length;
 

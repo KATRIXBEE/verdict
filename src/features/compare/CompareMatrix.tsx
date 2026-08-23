@@ -47,8 +47,8 @@ export default function CompareMatrix({
   const latestAsset1 = neta1.assetDeclarations[neta1.assetDeclarations.length - 1]?.totalAssets || 0;
   const latestAsset2 = neta2.assetDeclarations[neta2.assetDeclarations.length - 1]?.totalAssets || 0;
 
-  const activeCases1 = neta1.criminalCases.filter((c) => c.status !== "acquitted").length;
-  const activeCases2 = neta2.criminalCases.filter((c) => c.status !== "acquitted").length;
+  const activeCases1 = (neta1.criminalCases || []).filter((c) => c.status !== "acquitted").length;
+  const activeCases2 = (neta2.criminalCases || []).filter((c) => c.status !== "acquitted").length;
 
   const switches1 = Math.max(0, neta1.partyHistory.length - 1);
   const switches2 = Math.max(0, neta2.partyHistory.length - 1);
