@@ -150,12 +150,17 @@ export function getEducationBadge(status?: string | EducationStatus): { label: s
 }
 
 /**
- * Wraps external government and media image URLs through the server-side image proxy
- * with fallback to the dark-themed default politician avatar.
+ * Resolves the image source for a politician photo:
+ * - Local static files (/static/ or /public/): served directly by Next.js (no proxy)
+ * - External URLs (http/https): proxied through /api/proxy-image
+ * - Null / empty: default brutalist SVG avatar (/images/default-politician.svg)
  */
-export function getProxiedImageUrl(originalUrl?: string | null): string {
-  if (!originalUrl) return "/images/default-politician.svg";
-  if (originalUrl.startsWith("/") || originalUrl.startsWith("data:")) return originalUrl;
-  return `/api/proxy-image?url=${encodeURIComponent(originalUrl)}`;
+export function getImageSrc(photoUrl?: string | null): string {
+  if (!photoUrl) return "/images/default-politician.svg";
+  if (photoUrl.startsWith("/") || photoUrl.startsWith("data:")) return photoUrl;
+  return `/api/proxy-image?url=${encodeURIComponent(photoUrl)}`;
 }
+
+export const getProxiedImageUrl = getImageSrc;
+
 
