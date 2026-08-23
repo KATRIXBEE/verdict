@@ -1046,18 +1046,46 @@ const rawPoliticians: Omit<Politician, "calculatedVerdictScore" | "scoreBand">[]
 ];
 
 import allMpsData from "./all-mps.json";
+import { getPoliticianPhoto } from "@/lib/utils";
 
-const existingSlugs = new Set(rawPoliticians.map((p) => p.slug));
-const existingNames = new Set(rawPoliticians.map((p) => p.fullName.toLowerCase()));
+const seenIds = new Set<string>();
+const seenSlugs = new Set<string>();
 
-const validImportedMps = ((allMpsData as unknown) as Omit<Politician, "calculatedVerdictScore" | "scoreBand">[]).filter(
-  (p) => !existingSlugs.has(p.slug) && !existingNames.has(p.fullName.toLowerCase())
-);
+const uniquePoliticians: Omit<Politician, "calculatedVerdictScore" | "scoreBand">[] = [];
 
-const allRawPoliticians = [...rawPoliticians, ...validImportedMps];
+// First add raw seeded politicians
+for (const p of rawPoliticians) {
+  const finalId = p.id || `neta-${p.slug}`;
+  if (!seenIds.has(finalId) && !seenSlugs.has(p.slug)) {
+    seenIds.add(finalId);
+    seenSlugs.add(p.slug);
+    uniquePoliticians.push({
+      ...p,
+      id: finalId,
+      photoUrl: getPoliticianPhoto(p.fullName, p.photoUrl),
+    });
+  }
+}
+
+// Next add imported MPs, ensuring zero duplicate IDs or slugs
+for (const p of ((allMpsData as unknown) as Omit<Politician, "calculatedVerdictScore" | "scoreBand">[])) {
+  let finalId = p.id || `mp-${p.slug}`;
+  if (seenIds.has(finalId)) {
+    finalId = `mp-${p.slug}-${p.currentConstituency?.name?.toLowerCase().replace(/\s+/g, "-") || "const"}`;
+  }
+  if (!seenSlugs.has(p.slug) && !seenIds.has(finalId)) {
+    seenIds.add(finalId);
+    seenSlugs.add(p.slug);
+    uniquePoliticians.push({
+      ...p,
+      id: finalId,
+      photoUrl: getPoliticianPhoto(p.fullName, p.photoUrl),
+    });
+  }
+}
 
 // Enrich politicians with automatically computed algorithmic VERDICT score and score bands
-export const MOCK_POLITICIANS: Politician[] = allRawPoliticians.map((p) => {
+export const MOCK_POLITICIANS: Politician[] = uniquePoliticians.map((p) => {
   const breakdown = calculateVerdictScore({
     attendancePercentage: p.attendancePercentage,
     debatesParticipated: p.debatesParticipated,
@@ -1073,7 +1101,8 @@ export const MOCK_POLITICIANS: Politician[] = allRawPoliticians.map((p) => {
 
   return {
     ...p,
-    id: p.id || `neta-${p.slug}`,
+    id: p.id,
+    photoUrl: getPoliticianPhoto(p.fullName, p.photoUrl),
     calculatedVerdictScore: breakdown.finalScore,
     scoreBand: breakdown.scoreBand,
   };
@@ -1082,6 +1111,7 @@ export const MOCK_POLITICIANS: Politician[] = allRawPoliticians.map((p) => {
 export function getPoliticianBySlug(slug: string): Politician | undefined {
   return MOCK_POLITICIANS.find((p) => p.slug === slug);
 }
+
 
 export function getPoliticianById(id: string): Politician | undefined {
   return MOCK_POLITICIANS.find((p) => p.id === id);

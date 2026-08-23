@@ -149,6 +149,47 @@ export function getEducationBadge(status?: string | EducationStatus): { label: s
   }
 }
 
+export const HARDCODED_PHOTOS: Record<string, string> = {
+  "Rahul Gandhi": "/static/data/leaders/rahul-gandhi.jpg",
+  "Sonia Gandhi": "/static/data/leaders/sonia-gandhi.jpg",
+  "Arvind Kejriwal": "/static/data/leaders/arvind-kejriwal.jpg",
+  "Mamata Banerjee": "/static/data/leaders/mamata-banerjee.jpg",
+  "Manmohan Singh": "/static/data/leaders/manmohan-singh.jpg",
+  "Akhilesh Yadav": "/static/data/leaders/akhilesh-yadav.jpg",
+  "Shashi Tharoor": "/static/data/leaders/shashi-tharoor.jpg",
+  "Asaduddin Owaisi": "/static/data/leaders/asaduddin-owaisi.jpg",
+  "Omar Abdullah": "/static/data/leaders/omar-abdullah.jpg",
+  "Lalu Prasad Yadav": "/static/data/leaders/lalu-prasad-yadav.jpg",
+  "Tejashwi Yadav": "/static/data/leaders/tejashwi-yadav.jpg",
+  "Chirag Paswan": "/static/data/leaders/chirag-paswan.jpg",
+  "Smriti Irani": "/static/data/leaders/smriti-irani.jpg",
+  "Priyanka Gandhi": "/static/data/leaders/priyanka-gandhi.jpg",
+  "Supriya Sule": "/static/data/leaders/supriya-sule.jpg",
+  "Dimple Yadav": "/static/data/leaders/dimple-yadav.jpg",
+  "Farooq Abdullah": "/static/data/leaders/farooq-abdullah.jpg",
+  "Sharad Pawar": "/static/data/leaders/sharad-pawar.jpg",
+  "Chandrababu Naidu": "/static/data/leaders/chandrababu-naidu.jpg",
+  "N. Chandrababu Naidu": "/static/data/leaders/chandrababu-naidu.jpg",
+};
+
+/**
+ * Returns the verified photo for a politician, checking hardcoded official portraits first.
+ */
+export function getPoliticianPhoto(name?: string | null, photoUrl?: string | null): string {
+  if (name && HARDCODED_PHOTOS[name]) {
+    return HARDCODED_PHOTOS[name];
+  }
+  // Try partial name match
+  if (name) {
+    for (const [key, val] of Object.entries(HARDCODED_PHOTOS)) {
+      if (name.toLowerCase().includes(key.toLowerCase())) {
+        return val;
+      }
+    }
+  }
+  return getImageSrc(photoUrl);
+}
+
 /**
  * Resolves the image source for a politician photo:
  * - Local static files (/static/ or /public/): served directly by Next.js (no proxy)
@@ -162,5 +203,6 @@ export function getImageSrc(photoUrl?: string | null): string {
 }
 
 export const getProxiedImageUrl = getImageSrc;
+
 
 
