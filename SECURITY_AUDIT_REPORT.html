@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VERDICT — Enterprise Security Audit Report</title>
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --surface: #171717;
+      --border: #333333;
+      --text: #f5f5f5;
+      --text-muted: #a3a3a3;
+      --accent-red: #ff4545;
+      --accent-yellow: #ffc837;
+      --accent-green: #00d26a;
+      --accent-cyan: #00e5ff;
+      --font-mono: "JetBrains Mono", "Courier New", monospace;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 3px solid var(--border);
+      box-shadow: 10px 10px 0px #000;
+      padding: 40px;
+    }
+
+    .header {
+      border-bottom: 3px solid var(--border);
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .badge-bar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border: 2px solid #000;
+      letter-spacing: 1px;
+    }
+
+    .badge-red { background: var(--accent-red); color: #fff; }
+    .badge-yellow { background: var(--accent-yellow); color: #000; }
+    .badge-green { background: var(--accent-green); color: #000; }
+    .badge-cyan { background: var(--accent-cyan); color: #000; }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-family: var(--font-mono);
+    }
+
+    h2 {
+      font-size: 20px;
+      text-transform: uppercase;
+      margin: 35px 0 15px 0;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h3 {
+      font-size: 16px;
+      text-transform: uppercase;
+      margin: 20px 0 10px 0;
+      color: var(--accent-yellow);
+    }
+
+    p {
+      margin-bottom: 14px;
+      font-size: 14px;
+      color: #d4d4d4;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 13px;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+    }
+
+    th {
+      background: #262626;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    tr:nth-child(even) {
+      background: #1c1c1c;
+    }
+
+    .severity-pill {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 2px;
+      text-transform: uppercase;
+    }
+
+    .sev-high { background: #5c1414; color: #ff8e8e; border: 1px solid #ff4545; }
+    .sev-medium { background: #523f00; color: #ffe17d; border: 1px solid #ffc837; }
+    .sev-low { background: #133824; color: #7affb8; border: 1px solid #00d26a; }
+
+    pre, code {
+      font-family: var(--font-mono);
+      background: #0d0d0d;
+      border: 1px solid #2a2a2a;
+      color: #00e5ff;
+    }
+
+    code {
+      padding: 2px 6px;
+      font-size: 12px;
+    }
+
+    pre {
+      padding: 16px;
+      border-radius: 4px;
+      overflow-x: auto;
+      margin: 15px 0;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .finding-card {
+      background: #1f1f1f;
+      border-left: 4px solid var(--accent-red);
+      padding: 18px;
+      margin: 20px 0;
+      border-top: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .finding-card.medium {
+      border-left-color: var(--accent-yellow);
+    }
+
+    .finding-card.low {
+      border-left-color: var(--accent-green);
+    }
+
+    .finding-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .finding-title {
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .footer {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 2px solid var(--border);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .print-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--accent-yellow);
+      color: #000;
+      font-family: var(--font-mono);
+      font-weight: 800;
+      padding: 10px 18px;
+      border: 2px solid #000;
+      box-shadow: 4px 4px 0px #000;
+      cursor: pointer;
+      z-index: 1000;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    .print-btn:hover {
+      background: #ffd666;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+        padding: 0;
+      }
+      .print-btn {
+        display: none;
+      }
+      .container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        background: #fff;
+        max-width: 100%;
+      }
+      p, td, th {
+        color: #111;
+      }
+      pre, code {
+        background: #f0f0f0;
+        color: #000;
+        border: 1px solid #ccc;
+      }
+      .finding-card {
+        background: #fafafa;
+        border: 1px solid #ddd;
+        border-left: 4px solid #cc0000;
+        page-break-inside: avoid;
+      }
+      .header, h2 {
+        border-bottom-color: #000;
+      }
+      tr:nth-child(even) {
+        background: #f9f9f9;
+      }
+      th {
+        background: #e5e5e5;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="print-btn" onclick="window.print()">Print to PDF / Save</button>
+
+  <div class="container">
+    <header class="header">
+      <div class="badge-bar">
+        <span class="badge badge-red">CONFIDENTIAL // SECURITY AUDIT</span>
+        <span class="badge badge-yellow">OWASP TOP 10 (2021)</span>
+        <span class="badge badge-cyan">DOC-ID: SEC-AUDIT-VERDICT-2026-01</span>
+      </div>
+      <h1>VERDICT — Application Security Audit Report</h1>
+      <p class="subtitle">Target: katrixbee/verdict | Stack: Next.js 15, TypeScript, SQLite/Postgres | Date: August 25, 2026</p>
+    </header>
+
+    <section>
+      <h2>1. Executive Summary & Posture Rating</h2>
+      <p>An exhaustive, non-destructive application security assessment was conducted across all endpoints, configuration files, and data pipelines of the <strong>VERDICT</strong> platform. The application is evaluated as <strong>HIGH RISK</strong> for production deployment due to missing perimeter controls and client-side privilege trust in citizen voting features.</p>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Security Domain</th>
+            <th>Status</th>
+            <th>CVSS Base</th>
+            <th>Assessment Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Input Validation & SSRF</strong></td>
+            <td><span class="severity-pill sev-high">High Risk</span></td>
+            <td>7.5</td>
+            <td>Flawed suffix match allows SSRF bypass in <code>/api/proxy-image</code></td>
+          </tr>
+          <tr>
+            <td><strong>Authentication & Identity</strong></td>
+            <td><span class="severity-pill sev-high">High Risk</span></td>
+            <td>7.2</td>
+            <td>Unauthenticated citizen ratings; client-asserted DigiLocker trust</td>
+          </tr>
+          <tr>
+            <td><strong>State Management & Memory</strong></td>
+            <td><span class="severity-pill sev-high">High Risk</span></td>
+            <td>7.0</td>
+            <td>Unbounded in-memory heap storage susceptible to Out-Of-Memory DoS</td>
+          </tr>
+          <tr>
+            <td><strong>Edge Hardening & Rate Limiting</strong></td>
+            <td><span class="severity-pill sev-medium">Medium Risk</span></td>
+            <td>6.5</td>
+            <td>No global rate-limiting middleware on public or expensive APIs</td>
+          </tr>
+          <tr>
+            <td><strong>Security Headers & CSP</strong></td>
+            <td><span class="severity-pill sev-medium">Medium Risk</span></td>
+            <td>6.1</td>
+            <td>Missing Content-Security-Policy, HSTS, and X-Frame-Options</td>
+          </tr>
+          <tr>
+            <td><strong>Information Disclosure</strong></td>
+            <td><span class="severity-pill sev-low">Low Risk</span></td>
+            <td>4.3</td>
+            <td>Raw runtime exception string leakage in API 500 error responses</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>2. Discovered Vulnerability Details</h2>
+
+      <!-- Finding 1 -->
+      <div class="finding-card">
+        <div class="finding-header">
+          <span class="finding-title">SEC-01: Server-Side Request Forgery via Suffix Match Bypass</span>
+          <span class="severity-pill sev-high">CVSS 7.5 — High</span>
+        </div>
+        <p><strong>File:</strong> <code>src/app/api/proxy-image/route.ts:53</code></p>
+        <p><strong>Mechanics:</strong> Domain validation uses <code>allowedDomains.some(d => hostname.endsWith(d))</code>. An attacker can register <code>attackerwikipedia.org</code> or <code>maliciouseci.gov.in</code>. Because the hostname ends with the whitelisted string, the check passes. Furthermore, missing protocol checks and unmetered memory buffering allow large-payload memory exhaustion.</p>
+        <pre><code>// Current Vulnerable Code:
+const isAllowed = allowedDomains.some((domain) => hostname.endsWith(domain));
+
+// Recommended Defensive Fix:
+const isAllowed = allowedDomains.some(
+  (domain) => hostname === domain || hostname.endsWith(`.${domain}`)
+);</code></pre>
+      </div>
+
+      <!-- Finding 2 -->
+      <div class="finding-card">
+        <div class="finding-header">
+          <span class="finding-title">SEC-02: Unauthenticated State Mutation & Client Claim Spoofing</span>
+          <span class="severity-pill sev-high">CVSS 7.2 — High</span>
+        </div>
+        <p><strong>File:</strong> <code>src/app/api/ratings/route.ts:20-22</code></p>
+        <p><strong>Mechanics:</strong> <code>POST /api/ratings</code> accepts ratings without requiring session tokens. The Zod schema accepts client-submitted booleans <code>{ isLocalVoter: true, digilockerVerified: true }</code> without verifying digital signatures with the DigiLocker API. An automated botnet can skew politician trust ratings en masse.</p>
+      </div>
+
+      <!-- Finding 3 -->
+      <div class="finding-card">
+        <div class="finding-header">
+          <span class="finding-title">SEC-03: In-Memory Heap State & Memory Exhaustion DoS</span>
+          <span class="severity-pill sev-high">CVSS 7.0 — High</span>
+        </div>
+        <p><strong>File:</strong> <code>src/lib/supabase.ts:5</code></p>
+        <p><strong>Mechanics:</strong> Ratings are held in a global JavaScript object in memory (<code>inMemoryRatings</code>). Continuous submissions will crash Node.js via heap exhaustion. Data is entirely lost on container restart. A persistent database with Row Level Security (RLS) is required.</p>
+      </div>
+
+      <!-- Finding 4 -->
+      <div class="finding-card medium">
+        <div class="finding-header">
+          <span class="finding-title">SEC-04: Missing Global Rate Limiting & Abuse Controls</span>
+          <span class="severity-pill sev-medium">CVSS 6.5 — Medium</span>
+        </div>
+        <p><strong>File:</strong> <code>src/middleware.ts (Missing)</code></p>
+        <p><strong>Mechanics:</strong> The API perimeter has no token-bucket or sliding-window rate limiters. Search endpoints, image proxies, and profile queries can be scraped or flooded without friction.</p>
+      </div>
+
+      <!-- Finding 5 -->
+      <div class="finding-card medium">
+        <div class="finding-header">
+          <span class="finding-title">SEC-05: Missing Enterprise HTTP Defensive Headers</span>
+          <span class="severity-pill sev-medium">CVSS 6.1 — Medium</span>
+        </div>
+        <p><strong>File:</strong> <code>next.config.js</code></p>
+        <p><strong>Mechanics:</strong> Response headers lack <code>Content-Security-Policy</code>, <code>Strict-Transport-Security</code>, <code>X-Frame-Options: DENY</code>, and <code>X-Content-Type-Options: nosniff</code>, leaving the site susceptible to clickjacking, MIME sniffing, and unauthorized asset execution.</p>
+      </div>
+
+      <!-- Finding 6 -->
+      <div class="finding-card low">
+        <div class="finding-header">
+          <span class="finding-title">SEC-06: Internal Exception String Disclosure in API 500s</span>
+          <span class="severity-pill sev-low">CVSS 4.3 — Low</span>
+        </div>
+        <p><strong>File:</strong> <code>src/app/api/politicians/route.ts:65</code></p>
+        <p><strong>Mechanics:</strong> Catch blocks serialize raw error objects directly to clients via <code>String(error)</code>, potentially disclosing file paths, database schemas, and stack traces.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Prioritized Remediation Roadmap</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Phase</th>
+            <th>Action Item</th>
+            <th>Target Files</th>
+            <th>Effort</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Phase 1 (Immediate)</strong></td>
+            <td>Patch SSRF (exact domain match + HTTPS enforcement + 5MB cap)</td>
+            <td><code>src/app/api/proxy-image/route.ts</code></td>
+            <td>1 Day</td>
+          </tr>
+          <tr>
+            <td><strong>Phase 1 (Immediate)</strong></td>
+            <td>Inject Security Headers (CSP, HSTS, X-Frame-Options)</td>
+            <td><code>next.config.js</code></td>
+            <td>1 Day</td>
+          </tr>
+          <tr>
+            <td><strong>Phase 1 (Immediate)</strong></td>
+            <td>Sanitize API error responses to opaque error objects</td>
+            <td><code>src/app/api/*</code></td>
+            <td>0.5 Day</td>
+          </tr>
+          <tr>
+            <td><strong>Phase 2 (Identity)</strong></td>
+            <td>Implement Server-Side Authentication & Session Cookies</td>
+            <td><code>src/lib/supabase.ts</code></td>
+            <td>3 Days</td>
+          </tr>
+          <tr>
+            <td><strong>Phase 2 (Identity)</strong></td>
+            <td>Verify DigiLocker Signatures on Backend (Server-to-Server)</td>
+            <td><code>src/app/api/ratings/route.ts</code></td>
+            <td>2 Days</td>
+          </tr>
+          <tr>
+            <td><strong>Phase 2 (Database)</strong></td>
+            <td>Deploy PostgreSQL Schema with Strict Row Level Security (RLS)</td>
+            <td><code>supabase/migrations/</code></td>
+            <td>2 Days</td>
+          </tr>
+          <tr>
+            <td><strong>Phase 3 (Edge)</strong></td>
+            <td>Deploy Edge Rate Limiting Middleware (Upstash / Redis)</td>
+            <td><code>src/middleware.ts</code></td>
+            <td>2 Days</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer class="footer">
+      <span>VERDICT Security Engineering & Compliance Audit</span>
+      <span>Confidential // Product Security Review 2026</span>
+    </footer>
+  </div>
+
+</body>
+</html>
