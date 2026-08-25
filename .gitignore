@@ -34,6 +34,11 @@ next-env.d.ts
 .DS_Store
 Thumbs.db
 
+# User data & ratings storage
+scripts/data/citizen_ratings.json
+scripts/data/citizen_ratings.json.tmp
+scripts/data/citizen_ratings.json.lock
+
 # Python & Data Pipeline
 __pycache__/
 *.py[cod]
