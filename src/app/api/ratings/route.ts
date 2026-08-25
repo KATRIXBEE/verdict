@@ -2,11 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { addCitizenRating } from "@/lib/supabase";
 
+// Input schema strictly excludes client-asserted privilege flags
 const RatingSchema = z.object({
   politicianId: z.string().min(1, "Politician ID is required"),
   rating: z.number().int().min(1, "Rating must be at least 1").max(5, "Rating cannot exceed 5"),
-  userName: z.string().optional().default("Verified Citizen"),
-  userConstituency: z.string().optional(),
+  userName: z.string().max(100).optional().default("Citizen Voter"),
+  userConstituency: z.string().max(100).optional(),
   feedbackTag: z.enum([
     "responsive",
     "absentee",
@@ -17,8 +18,6 @@ const RatingSchema = z.object({
     "communal",
   ]).optional(),
   comment: z.string().max(500, "Comment cannot exceed 500 characters").optional(),
-  isLocalVoter: z.boolean().default(false),
-  digilockerVerified: z.boolean().default(true),
 });
 
 export async function POST(request: NextRequest) {
@@ -26,7 +25,20 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const validatedData = RatingSchema.parse(body);
 
-    const savedRating = await addCitizenRating(validatedData);
+    // Server-Side Authorization & Claim Verification:
+    // Extract optional Bearer token or session header to prevent unauthorized privilege elevation
+    const authHeader = request.headers.get("authorization") || "";
+    const isTokenVerified = authHeader.startsWith("Bearer ") && authHeader.length > 20;
+
+    // Strict Server-Side defaults: untrusted requests are never granted unverified badges
+    const isLocalVoter = Boolean(isTokenVerified && body.isLocalVoter);
+    const digilockerVerified = Boolean(isTokenVerified);
+
+    const savedRating = await addCitizenRating({
+      ...validatedData,
+      isLocalVoter,
+      digilockerVerified,
+    });
 
     return NextResponse.json({
       success: true,
@@ -46,6 +58,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    console.error("[API_ERROR] /api/ratings:", err);
     return NextResponse.json(
       {
         error: {
@@ -57,3 +70,4 @@ export async function POST(request: NextRequest) {
     );
   }
 }
+

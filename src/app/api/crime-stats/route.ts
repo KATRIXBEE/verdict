@@ -44,8 +44,8 @@ const NCRB_DATA = {
 export async function GET() {
   return NextResponse.json(NCRB_DATA, {
     headers: {
-      "Cache-Control": "public, max-age=86400",
-      "Access-Control-Allow-Origin": "*",
-    }
+      "Cache-Control": "public, max-age=86400, stale-while-revalidate=43200",
+      "X-Content-Type-Options": "nosniff",
+    },
   });
 }

@@ -201,7 +201,7 @@ export default function VerdictScoreGauge({ politician }: VerdictScoreGaugeProps
         isOpen={simulatorModalOpen}
         onClose={() => setSimulatorModalOpen(false)}
         politicianName={politician.fullName}
-        initialAttendance={politician.attendancePercentage}
+        initialAttendance={politician.attendancePercentage ?? 85}
         initialEducation={politician.educationStatus}
         initialSwitches={Math.max(0, politician.partyHistory.length - 1)}
         initialSeriousCases={activeSerious}

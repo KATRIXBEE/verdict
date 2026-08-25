@@ -16,7 +16,7 @@ export function calculateVerdictScore(politician: {
   criminalCases?: {
     severityTier?: string;
     status?: string;
-  }[];
+  }[] | null;
   educationStatus?: "verified" | "unverified" | "suspicious" | string;
   partyHistory?: {
     isCurrent: boolean;

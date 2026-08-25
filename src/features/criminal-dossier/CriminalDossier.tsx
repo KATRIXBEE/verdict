@@ -45,7 +45,7 @@ export default function CriminalDossier({ cases, politicianName }: CriminalDossi
         badge={
           !hasCases
             ? "CLEAN RECORD (0 CASES)"
-            : `${cases.length} DECLARED CASES (${activeCases.length} ACTIVE)`
+            : `${safeCases.length} DECLARED CASES (${activeCases.length} ACTIVE)`
         }
         badgeColor={!hasCases ? "green" : severeCases.length > 0 ? "red" : "orange"}
         statusLight={hasCases ? "red" : "green"}
@@ -92,7 +92,7 @@ export default function CriminalDossier({ cases, politicianName }: CriminalDossi
           ) : (
             /* Case List */
             <div className="space-y-4">
-              {cases.map((c) => {
+              {safeCases.map((c) => {
                 const statusBadge = getCaseStatusBadge(c.status);
                 const severityBadge = getSeverityBadge(c.severityTier);
 

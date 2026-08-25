@@ -28,6 +28,7 @@ export async function GET(request: NextRequest) {
       data: results,
     });
   } catch (error) {
+    console.error("[API_ERROR] /api/search:", error);
     return NextResponse.json(
       { error: { code: "SEARCH_FAILED", message: "Failed to query politician records." } },
       { status: 500 }

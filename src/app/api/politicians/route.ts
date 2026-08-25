@@ -61,8 +61,9 @@ export async function GET(request: NextRequest) {
       data: paginated,
     });
   } catch (error) {
+    console.error("[API_ERROR] /api/politicians:", error);
     return NextResponse.json(
-      { success: false, error: { code: "SERVER_ERROR", message: String(error) } },
+      { success: false, error: { code: "SERVER_ERROR", message: "Internal server error occurred while retrieving politician records." } },
       { status: 500 }
     );
   }

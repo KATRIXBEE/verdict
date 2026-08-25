@@ -24,6 +24,7 @@ export async function GET(request: NextRequest) {
       data: articles,
     });
   } catch (error) {
+    console.error("[API_ERROR] /api/ground-truth:", error);
     return NextResponse.json(
       { error: { code: "FETCH_FAILED", message: "Failed to query ground truth articles." } },
       { status: 500 }

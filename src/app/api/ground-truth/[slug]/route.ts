@@ -22,6 +22,7 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
       data: article,
     });
   } catch (error) {
+    console.error("[API_ERROR] /api/ground-truth/[slug]:", error);
     return NextResponse.json(
       { error: { code: "SERVER_ERROR", message: "Failed to retrieve article details." } },
       { status: 500 }

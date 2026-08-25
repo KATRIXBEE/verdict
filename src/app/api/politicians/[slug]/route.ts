@@ -21,8 +21,9 @@ export async function GET(
       data: politician,
     });
   } catch (error) {
+    console.error("[API_ERROR] /api/politicians/[slug]:", error);
     return NextResponse.json(
-      { success: false, error: { code: "SERVER_ERROR", message: String(error) } },
+      { success: false, error: { code: "SERVER_ERROR", message: "Internal server error occurred while retrieving politician dossier." } },
       { status: 500 }
     );
   }

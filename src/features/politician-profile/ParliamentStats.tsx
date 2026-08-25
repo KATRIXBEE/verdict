@@ -106,10 +106,10 @@ export default function ParliamentStats({ politician }: ParliamentStatsProps) {
               <span className="text-gray-400">Avg: 32</span>
             </div>
             <div className="font-display font-black text-2xl text-ink">
-              {politician.debatesParticipated}
+              {politician.debatesParticipated ?? 0}
             </div>
             <p className="text-[10px] text-gray-500">
-              {politician.debatesParticipated >= 32 ? "Above House Average" : "Below House Average"}
+              {(politician.debatesParticipated ?? 0) >= 32 ? "Above House Average" : "Below House Average"}
             </p>
           </div>
 
@@ -123,10 +123,10 @@ export default function ParliamentStats({ politician }: ParliamentStatsProps) {
               <span className="text-gray-400">Avg: 65</span>
             </div>
             <div className="font-display font-black text-2xl text-ink">
-              {politician.questionsAsked}
+              {politician.questionsAsked ?? 0}
             </div>
             <p className="text-[10px] text-gray-500">
-              {politician.questionsAsked >= 65 ? "High Legislative Activity" : "Moderate Activity"}
+              {(politician.questionsAsked ?? 0) >= 65 ? "High Legislative Activity" : "Moderate Activity"}
             </p>
           </div>
 
@@ -140,10 +140,10 @@ export default function ParliamentStats({ politician }: ParliamentStatsProps) {
               <span className="text-gray-400">Avg: 1.2</span>
             </div>
             <div className="font-display font-black text-2xl text-ink">
-              {politician.privateMemberBills}
+              {politician.privateMemberBills ?? 0}
             </div>
             <p className="text-[10px] text-gray-500">
-              {politician.privateMemberBills > 0 ? "Policy Innovation Tabled" : "No Independent Bills"}
+              {(politician.privateMemberBills ?? 0) > 0 ? "Policy Innovation Tabled" : "No Independent Bills"}
             </p>
           </div>
         </div>
