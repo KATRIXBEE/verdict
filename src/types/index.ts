@@ -240,6 +240,13 @@ export interface Politician {
   // Sub-modules
   partyHistory: PartyTenure[];
   criminalCases?: CriminalCase[] | null;
+  criminalCaseCount?: number | null;
+  worstCaseSeverity?: string | null;
+  partySwitchCount?: number | null;
+  assetGrowthPercent?: number | null;
+  mpladsAllocated?: number | null;
+  mpladsUtilised?: number | null;
+  mpladsUtilisationPercent?: number | null;
   assetDeclarations: AssetDeclaration[];
   citizenRatings: CitizenRating[];
   newsItems: NewsSentimentItem[];

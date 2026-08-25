@@ -107,8 +107,28 @@ class ScoreCalculator:
         else:
             edu_impact = 0.0  # Unverified / no data -> +0.0
 
+        # 5. PARTY SWITCHES
+        switch_impact = 0.0
+        if getattr(politician, "party_switch_count", None) is not None:
+            sw = politician.party_switch_count
+            if sw == 0:
+                switch_impact = 0.5
+            elif sw == 1:
+                switch_impact = 0.0
+            else:
+                switch_impact = -0.5
+
+        # 6. MPLADS UTILISATION
+        mplads_impact = 0.0
+        if getattr(politician, "mplads_utilisation_percent", None) is not None:
+            mu = float(politician.mplads_utilisation_percent)
+            if mu > 80.0:
+                mplads_impact = 0.5
+            elif mu < 30.0:
+                mplads_impact = -0.5
+
         # Sum and clamp between 0.0 and 10.0, rounded to 1 decimal place
-        raw_total = base_score + attendance_impact + crime_impact + asset_impact + edu_impact
+        raw_total = base_score + attendance_impact + crime_impact + asset_impact + edu_impact + switch_impact + mplads_impact
         final_score = max(0.0, min(10.0, raw_total))
         return round(final_score, 1)
 

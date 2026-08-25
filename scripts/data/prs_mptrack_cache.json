@@ -1,0 +1,4898 @@
+{
+  "abhay-kumar-sinha": {
+    "slug": "abhay-kumar-sinha",
+    "name": "Abhay Kumar Sinha",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 51,
+    "questions_asked": 50
+  },
+  "abhishek-banerjee": {
+    "slug": "abhishek-banerjee",
+    "name": "Abhishek Banerjee",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 28.0,
+    "debates_count": 4,
+    "questions_asked": 69
+  },
+  "abdul-rashid-sheikh": {
+    "slug": "abdul-rashid-sheikh",
+    "name": "Abdul Rashid Sheikh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 45.0,
+    "debates_count": 29,
+    "questions_asked": 20
+  },
+  "aashtikar-patil-nagesh-bapurao": {
+    "slug": "aashtikar-patil-nagesh-bapurao",
+    "name": "Aashtikar Patil Nagesh Bapurao",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 64.0,
+    "debates_count": 0,
+    "questions_asked": 88
+  },
+  "abu-taher-khan": {
+    "slug": "abu-taher-khan",
+    "name": "Abu Taher Khan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 81.0,
+    "debates_count": 5,
+    "questions_asked": 70
+  },
+  "adhikari-soumendu": {
+    "slug": "adhikari-soumendu",
+    "name": "Adhikari Soumendu",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 84.0,
+    "debates_count": 0,
+    "questions_asked": 38
+  },
+  "deepak-dev-adhikari": {
+    "slug": "deepak-dev-adhikari",
+    "name": "Adhikari Deepak Dev",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 8.0,
+    "debates_count": 0,
+    "questions_asked": 97
+  },
+  "abhijit-gangopadhyay": {
+    "slug": "abhijit-gangopadhyay",
+    "name": "Abhijit Gangopadhyay",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 87.0,
+    "debates_count": 6,
+    "questions_asked": 0
+  },
+  "aditya-yadav": {
+    "slug": "aditya-yadav",
+    "name": "Aditya Yadav",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 19,
+    "questions_asked": 104
+  },
+  "afzal-ansari": {
+    "slug": "afzal-ansari",
+    "name": "Afzal Ansari",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 81.0,
+    "debates_count": 3,
+    "questions_asked": 0
+  },
+  "aga-syed-ruhullah-mehdi": {
+    "slug": "aga-syed-ruhullah-mehdi",
+    "name": "Aga Syed Ruhullah Mehdi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 93.0,
+    "debates_count": 21,
+    "questions_asked": 16
+  },
+  "ajendra-singh-lodhi": {
+    "slug": "ajendra-singh-lodhi",
+    "name": "Ajendra Singh Lodhi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 63.0,
+    "debates_count": 5,
+    "questions_asked": 23
+  },
+  "ajay-tamta": {
+    "slug": "ajay-tamta",
+    "name": "Ajay Tamta",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "ajay-bhatt": {
+    "slug": "ajay-bhatt",
+    "name": "Ajay Bhatt",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 21,
+    "questions_asked": 67
+  },
+  "ajay-kumar-mandal": {
+    "slug": "ajay-kumar-mandal",
+    "name": "Ajay Kumar Mandal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 43.0,
+    "debates_count": 1,
+    "questions_asked": 111
+  },
+  "adoor-prakash": {
+    "slug": "adoor-prakash",
+    "name": "Adoor Prakash",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 81.0,
+    "debates_count": 31,
+    "questions_asked": 194
+  },
+  "akhilesh-yadav": {
+    "slug": "akhilesh-yadav",
+    "name": "Akhilesh Yadav",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 45.0,
+    "debates_count": 18,
+    "questions_asked": 0
+  },
+  "akshay-yadav": {
+    "slug": "akshay-yadav",
+    "name": "Akshay Yadav",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 81.0,
+    "debates_count": 1,
+    "questions_asked": 7
+  },
+  "alfred-kanngam-s-arthur": {
+    "slug": "alfred-kanngam-s-arthur",
+    "name": "Alfred Kanngam S Arthur",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 70.0,
+    "debates_count": 4,
+    "questions_asked": 0
+  },
+  "alok-kumar-suman": {
+    "slug": "alok-kumar-suman",
+    "name": "Alok Kumar Suman",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 51,
+    "questions_asked": 159
+  },
+  "amar-sharadrao-kale": {
+    "slug": "amar-sharadrao-kale",
+    "name": "Amar Sharadrao Kale",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 10,
+    "questions_asked": 136
+  },
+  "alok-sharma": {
+    "slug": "alok-sharma",
+    "name": "Alok Sharma",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 87.0,
+    "debates_count": 12,
+    "questions_asked": 245
+  },
+  "amar-singh": {
+    "slug": "amar-singh",
+    "name": "Amar Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 19,
+    "questions_asked": 151
+  },
+  "amarsing-tisso": {
+    "slug": "amarsing-tisso",
+    "name": "Amarsing Tisso",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 1,
+    "questions_asked": 75
+  },
+  "amit-anil-chandra-shah": {
+    "slug": "amit-anil-chandra-shah",
+    "name": "Amit Shah",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "amraram": {
+    "slug": "amraram",
+    "name": "Amra Ram",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 89.0,
+    "debates_count": 37,
+    "questions_asked": 148
+  },
+  "amol-ramsing-kolhe": {
+    "slug": "amol-ramsing-kolhe",
+    "name": "Amol Ramsing Kolhe",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 73.0,
+    "debates_count": 18,
+    "questions_asked": 247
+  },
+  "amritpal-singh": {
+    "slug": "amritpal-singh",
+    "name": "Amritpal Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 1.0,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "anand-bhadauriya": {
+    "slug": "anand-bhadauriya",
+    "name": "Anand Bhadauria",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 43,
+    "questions_asked": 132
+  },
+  "angomcha-bimol-akoijam": {
+    "slug": "angomcha-bimol-akoijam",
+    "name": "Angomcha Bimol Akoijam",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 16,
+    "questions_asked": 61
+  },
+  "anand-kumar": {
+    "slug": "anand-kumar",
+    "name": "Anand Kumar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 17,
+    "questions_asked": 93
+  },
+  "amrinder-singh-raja-warring": {
+    "slug": "amrinder-singh-raja-warring",
+    "name": "Amrinder Singh Raja Warring",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 66.0,
+    "debates_count": 18,
+    "questions_asked": 85
+  },
+  "ananta-nayak": {
+    "slug": "ananta-nayak",
+    "name": "Ananta Nayak",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 20,
+    "questions_asked": 123
+  },
+  "anil-firojiya": {
+    "slug": "anil-firojiya",
+    "name": "Anil Firojiya",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 11,
+    "questions_asked": 139
+  },
+  "anil-baluni": {
+    "slug": "anil-baluni",
+    "name": "Anil Baluni",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 3,
+    "questions_asked": 14
+  },
+  "anil-yeshwant-desai": {
+    "slug": "anil-yeshwant-desai",
+    "name": "Anil Yeshwant Desai",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 25,
+    "questions_asked": 129
+  },
+  "anita-nagarsingh-chouhan": {
+    "slug": "anita-nagarsingh-chouhan",
+    "name": "Anita Nagarsingh Chouhan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 23,
+    "questions_asked": 91
+  },
+  "annpurna-devi": {
+    "slug": "annpurna-devi",
+    "name": "Annpurna Devi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "anita-subhadarshini": {
+    "slug": "anita-subhadarshini",
+    "name": "Anita Subhadarshini",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 91.0,
+    "debates_count": 32,
+    "questions_asked": 33
+  },
+  "anoop-pradhan-balmiki": {
+    "slug": "anoop-pradhan-balmiki",
+    "name": "Anoop Pradhan Valmiki",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 12,
+    "questions_asked": 69
+  },
+  "anto-antony": {
+    "slug": "anto-antony",
+    "name": "Anto Antony",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 78.0,
+    "debates_count": 29,
+    "questions_asked": 194
+  },
+  "anup-sanjay-dhotre": {
+    "slug": "anup-sanjay-dhotre",
+    "name": "Anup Sanjay Dhotre",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 100.0,
+    "debates_count": 35,
+    "questions_asked": 188
+  },
+  "anupriya-patel": {
+    "slug": "anupriya-patel",
+    "name": "Anupriya Patel",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "anurag-sharma": {
+    "slug": "anurag-sharma",
+    "name": "Anurag Sharma",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 31,
+    "questions_asked": 217
+  },
+  "aparajita-sarangi": {
+    "slug": "aparajita-sarangi",
+    "name": "Aparajita Sarangi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 12,
+    "questions_asked": 185
+  },
+  "anurag-singh-thakur": {
+    "slug": "anurag-singh-thakur",
+    "name": "Anurag Singh Thakur",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 36,
+    "questions_asked": 182
+  },
+  "arjun-ram-meghwal": {
+    "slug": "arjun-ram-meghwal",
+    "name": "Arjun Ram Meghwal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "appalanaidu-kalisetti": {
+    "slug": "appalanaidu-kalisetti",
+    "name": "Appalanaidu Kalisetti",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 21,
+    "questions_asked": 180
+  },
+  "arun-govil": {
+    "slug": "arun-govil",
+    "name": "Arun Govil",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 32,
+    "questions_asked": 183
+  },
+  "arun-bharti": {
+    "slug": "arun-bharti",
+    "name": "Arun Bharti",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 22,
+    "questions_asked": 180
+  },
+  "arun-kumar-sagar": {
+    "slug": "arun-kumar-sagar",
+    "name": "Arun Kumar Sagar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 39,
+    "questions_asked": 147
+  },
+  "arun-nehru": {
+    "slug": "arun-nehru",
+    "name": "Arun Nehru",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 84.0,
+    "debates_count": 32,
+    "questions_asked": 90
+  },
+  "arup-chakraborty": {
+    "slug": "arup-chakraborty",
+    "name": "Arup Chakraborty",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 45.0,
+    "debates_count": 2,
+    "questions_asked": 24
+  },
+  "arvind-dharmapuri": {
+    "slug": "arvind-dharmapuri",
+    "name": "Arvind Dharmapuri",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 79.0,
+    "debates_count": 4,
+    "questions_asked": 140
+  },
+  "asaduddin-owaisi": {
+    "slug": "asaduddin-owaisi",
+    "name": "Asaduddin Owaisi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 34,
+    "questions_asked": 127
+  },
+  "ashok-kumar-rawat": {
+    "slug": "ashok-kumar-rawat",
+    "name": "Ashok Kumar Rawat",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 34,
+    "questions_asked": 122
+  },
+  "ashish-dubey": {
+    "slug": "ashish-dubey",
+    "name": "Ashish Dubey",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 23,
+    "questions_asked": 87
+  },
+  "arvind-sawant": {
+    "slug": "arvind-sawant",
+    "name": "Arvind Ganpat Sawant",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 59,
+    "questions_asked": 208
+  },
+  "ashok-kumar-yadav": {
+    "slug": "ashok-kumar-yadav",
+    "name": "Ashok Kumar Yadav",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 98.0,
+    "debates_count": 2,
+    "questions_asked": 12
+  },
+  "asit-kumar-mal": {
+    "slug": "asit-kumar-mal",
+    "name": "Asit Kumar Mal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 7,
+    "questions_asked": 0
+  },
+  "atul-garg": {
+    "slug": "atul-garg",
+    "name": "Atul Garg",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 10,
+    "questions_asked": 110
+  },
+  "avimanyu-sethi": {
+    "slug": "avimanyu-sethi",
+    "name": "Avimanyu Sethi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 9,
+    "questions_asked": 94
+  },
+  "awadhesh-prasad": {
+    "slug": "awadhesh-prasad",
+    "name": "Awadhesh Prasad",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 15,
+    "questions_asked": 0
+  },
+  "b-k-parthasarathi": {
+    "slug": "b-k-parthasarathi",
+    "name": "B K Parthasarathi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 74.0,
+    "debates_count": 2,
+    "questions_asked": 192
+  },
+  "azad-kirti-jha": {
+    "slug": "azad-kirti-jha",
+    "name": "Azad Kirti Jha",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 26,
+    "questions_asked": 125
+  },
+  "bachhav-shobha-dinesh": {
+    "slug": "bachhav-shobha-dinesh",
+    "name": "Bachhav Shobha Dinesh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 29,
+    "questions_asked": 150
+  },
+  "b-y-raghavendra": {
+    "slug": "b-y-raghavendra",
+    "name": "B Y Raghavendra",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 75.0,
+    "debates_count": 7,
+    "questions_asked": 88
+  },
+  "babu-singh-kushwaha": {
+    "slug": "babu-singh-kushwaha",
+    "name": "Babu Singh Kushwaha",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 87.0,
+    "debates_count": 16,
+    "questions_asked": 131
+  },
+  "baijayant-panda": {
+    "slug": "baijayant-panda",
+    "name": "Baijayant Panda",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 76.0,
+    "debates_count": 3,
+    "questions_asked": 153
+  },
+  "bajrang-manohar-sonwane": {
+    "slug": "bajrang-manohar-sonwane",
+    "name": "Bajrang Manohar Sonwane",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 43,
+    "questions_asked": 185
+  },
+  "balabhadra-majhi": {
+    "slug": "balabhadra-majhi",
+    "name": "Balabhadra Majhi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 87.0,
+    "debates_count": 16,
+    "questions_asked": 220
+  },
+  "balram-naik-porika": {
+    "slug": "balram-naik-porika",
+    "name": "Balram Naik Porika",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 64.0,
+    "debates_count": 6,
+    "questions_asked": 38
+  },
+  "balashowry-vallabhaneni": {
+    "slug": "balashowry-vallabhaneni",
+    "name": "Balashowry Vallabhaneni",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 28,
+    "questions_asked": 156
+  },
+  "suresh-gopinath-mhatre": {
+    "slug": "suresh-gopinath-mhatre",
+    "name": "Balya Mama Suresh Gopinath Mhatre",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 66.0,
+    "debates_count": 11,
+    "questions_asked": 153
+  },
+  "sanjay-kumar-bandi": {
+    "slug": "sanjay-kumar-bandi",
+    "name": "Bandi Sanjay Kumar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "bapi-haldar": {
+    "slug": "bapi-haldar",
+    "name": "Bapi Haldar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 79.0,
+    "debates_count": 9,
+    "questions_asked": 74
+  },
+  "bansuri-swaraj": {
+    "slug": "bansuri-swaraj",
+    "name": "Bansuri Swaraj",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 17,
+    "questions_asked": 41
+  },
+  "balwant-baswant-wankhade": {
+    "slug": "balwant-baswant-wankhade",
+    "name": "Balwant Baswant Wankhade",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 28,
+    "questions_asked": 143
+  },
+  "basavaraj-bommai": {
+    "slug": "basavaraj-bommai",
+    "name": "Basavaraj Bommai",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 80.0,
+    "debates_count": 3,
+    "questions_asked": 136
+  },
+  "nagaraju": {
+    "slug": "nagaraju",
+    "name": "Bastipati Nagaraju",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 16,
+    "questions_asked": 179
+  },
+  "benny-behanan": {
+    "slug": "benny-behanan",
+    "name": "Benny Behanan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 84.0,
+    "debates_count": 30,
+    "questions_asked": 173
+  },
+  "bhagirath-choudhary": {
+    "slug": "bhagirath-choudhary",
+    "name": "Bhagirath Choudhary",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "bhajan-lal-jatav": {
+    "slug": "bhajan-lal-jatav",
+    "name": "Bhajan Lal Jatav",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 11,
+    "questions_asked": 51
+  },
+  "bharatbhai-manubhai-sutariya": {
+    "slug": "bharatbhai-manubhai-sutariya",
+    "name": "Bharatbhai Manubhai Sutariya",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 3,
+    "questions_asked": 9
+  },
+  "dabhi-bharatsinhji-shankarji": {
+    "slug": "dabhi-bharatsinhji-shankarji",
+    "name": "Bharatsinhji Shankarji Dabhi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 4,
+    "questions_asked": 60
+  },
+  "bharat-singh-kushwah": {
+    "slug": "bharat-singh-kushwah",
+    "name": "Bharat Singh Kushwah",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 8,
+    "questions_asked": 52
+  },
+  "bharti-pardhi": {
+    "slug": "bharti-pardhi",
+    "name": "Bharti Pardhi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 47,
+    "questions_asked": 249
+  },
+  "bhaskar-murlidhar-bhagare": {
+    "slug": "bhaskar-murlidhar-bhagare",
+    "name": "Bhaskar Murlidhar Bhagare",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 40,
+    "questions_asked": 230
+  },
+  "bhartruhari-mahtab": {
+    "slug": "bhartruhari-mahtab",
+    "name": "Bhartruhari Mahtab",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 55,
+    "questions_asked": 299
+  },
+  "bhausaheb-rajaram-wakchaure": {
+    "slug": "bhausaheb-rajaram-wakchaure",
+    "name": "Bhausaheb Rajaram Wakchaure",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 91.0,
+    "debates_count": 11,
+    "questions_asked": 153
+  },
+  "bhojraj-nag": {
+    "slug": "bhojraj-nag",
+    "name": "Bhojraj Nag",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 2,
+    "questions_asked": 219
+  },
+  "bhupathi-raju-srinivasa-varma": {
+    "slug": "bhupathi-raju-srinivasa-varma",
+    "name": "Bhupathiraju Srinivasa Varma",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "bhupender-yadav": {
+    "slug": "bhupender-yadav",
+    "name": "Bhupender Yadav",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "bhumare-sandipanrao-asaram": {
+    "slug": "bhumare-sandipanrao-asaram",
+    "name": "Bhumare Sandipanrao Asaram",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 75.0,
+    "debates_count": 8,
+    "questions_asked": 237
+  },
+  "bhola-singh": {
+    "slug": "bhola-singh",
+    "name": "Bhola Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 13,
+    "questions_asked": 224
+  },
+  "bibhu-prasad-tarai": {
+    "slug": "bibhu-prasad-tarai",
+    "name": "Bibhu Prasad Tarai",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 18,
+    "questions_asked": 210
+  },
+  "biplab-kumar-deb": {
+    "slug": "biplab-kumar-deb",
+    "name": "Biplab Kumar Deb",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 84.0,
+    "debates_count": 9,
+    "questions_asked": 131
+  },
+  "bijuli-kalita-medhi": {
+    "slug": "bijuli-kalita-medhi",
+    "name": "Bijuli Kalita Medhi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 8,
+    "questions_asked": 72
+  },
+  "bidyut-baran-mahato": {
+    "slug": "bidyut-baran-mahato",
+    "name": "Bidyut Baran Mahato",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 43,
+    "questions_asked": 307
+  },
+  "brijendra-singh-ola": {
+    "slug": "brijendra-singh-ola",
+    "name": "Brijendra Singh Ola",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 100.0,
+    "debates_count": 27,
+    "questions_asked": 122
+  },
+  "bishnu-pada-ray": {
+    "slug": "bishnu-pada-ray",
+    "name": "Bishnu Pada Ray",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 9,
+    "questions_asked": 29
+  },
+  "brijmohan-agrawal": {
+    "slug": "brijmohan-agrawal",
+    "name": "Brijmohan Agrawal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 84.0,
+    "debates_count": 26,
+    "questions_asked": 159
+  },
+  "captain-brijesh-chowta": {
+    "slug": "captain-brijesh-chowta",
+    "name": "Brijesh Chowta",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 37,
+    "questions_asked": 214
+  },
+  "bunty-vivek-sahu": {
+    "slug": "bunty-vivek-sahu",
+    "name": "Bunty Vivek Sahu",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 79.0,
+    "debates_count": 8,
+    "questions_asked": 94
+  },
+  "byreddy-shabari": {
+    "slug": "byreddy-shabari",
+    "name": "Byreddy Shabari",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 24,
+    "questions_asked": 179
+  },
+  "c-n-annadurai": {
+    "slug": "c-n-annadurai",
+    "name": "C N Annadurai",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 74.0,
+    "debates_count": 37,
+    "questions_asked": 262
+  },
+  "c-m-ramesh": {
+    "slug": "c-m-ramesh",
+    "name": "C M Ramesh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 19,
+    "questions_asked": 138
+  },
+  "dr-c-n-manjunath": {
+    "slug": "dr-c-n-manjunath",
+    "name": "C N Manjunath",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 13,
+    "questions_asked": 25
+  },
+  "chamala-kiran-kumar-reddy": {
+    "slug": "chamala-kiran-kumar-reddy",
+    "name": "Chamala Kiran Kumar Reddy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 32,
+    "questions_asked": 161
+  },
+  "chandra-prakash-choudhary": {
+    "slug": "chandra-prakash-choudhary",
+    "name": "Chandra Prakash Choudhary",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 89.0,
+    "debates_count": 23,
+    "questions_asked": 125
+  },
+  "chandan-chauhan": {
+    "slug": "chandan-chauhan",
+    "name": "Chandan Chauhan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 38,
+    "questions_asked": 88
+  },
+  "chandra-prakash-joshi": {
+    "slug": "chandra-prakash-joshi",
+    "name": "Chandra Prakash Joshi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 43,
+    "questions_asked": 159
+  },
+  "chandra-sekhar-pemmasani": {
+    "slug": "chandra-sekhar-pemmasani",
+    "name": "Chandra Sekhar Pemmasani",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "chandrashekhar": {
+    "slug": "chandrashekhar",
+    "name": "Chandra Shekhar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 73,
+    "questions_asked": 110
+  },
+  "c-r-patil": {
+    "slug": "c-r-patil",
+    "name": "Chandrakant Raghunath Patil",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "chandubhai-chhaganbhai-shihora": {
+    "slug": "chandubhai-chhaganbhai-shihora",
+    "name": "Chandubhai Chhaganbhai Shihora",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 2,
+    "questions_asked": 7
+  },
+  "charanjit-singh-channi": {
+    "slug": "charanjit-singh-channi",
+    "name": "Charanjit Singh Channi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 70.0,
+    "debates_count": 10,
+    "questions_asked": 130
+  },
+  "chavan-vasantrao-balwantrao": {
+    "slug": "chavan-vasantrao-balwantrao",
+    "name": "Chavan Vasantrao Balwantrao",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 68.0,
+    "debates_count": 0,
+    "questions_asked": 17
+  },
+  "chavan-ravindra-vasantrao": {
+    "slug": "chavan-ravindra-vasantrao",
+    "name": "Chavan Ravindra Vasantrao",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 72.0,
+    "debates_count": 10,
+    "questions_asked": 184
+  },
+  "chavda-vinod-lakhamashi": {
+    "slug": "chavda-vinod-lakhamashi",
+    "name": "Chavda Vinod Lakhamshi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 5,
+    "questions_asked": 203
+  },
+  "shrimant-chh-udyanraje-pratapsinhmaharaj-bhonsle": {
+    "slug": "shrimant-chh-udyanraje-pratapsinhmaharaj-bhonsle",
+    "name": "Chh. Udayanraje Pratapsinha Maharaj Bhonsle",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 42.0,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "chhatra-pal-singh-gangwar": {
+    "slug": "chhatra-pal-singh-gangwar",
+    "name": "Chhatrapal Singh Gangwar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 4,
+    "questions_asked": 72
+  },
+  "chhatrapati-shahu-shahaji": {
+    "slug": "chhatrapati-shahu-shahaji",
+    "name": "Chhatrapati Shahu Shahaji",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 54.0,
+    "debates_count": 4,
+    "questions_asked": 31
+  },
+  "chhotelal": {
+    "slug": "chhotelal",
+    "name": "Chhotelal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 26,
+    "questions_asked": 52
+  },
+  "chintamani-maharaj": {
+    "slug": "chintamani-maharaj",
+    "name": "Chintamani Maharaj",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 84.0,
+    "debates_count": 2,
+    "questions_asked": 110
+  },
+  "chirag-paswan": {
+    "slug": "chirag-paswan",
+    "name": "Chirag Paswan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "chudasama-rajeshbhai-naranbhai": {
+    "slug": "chudasama-rajeshbhai-naranbhai",
+    "name": "Chudasama Rajeshbhai Naranbhai",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 2,
+    "questions_asked": 187
+  },
+  "aruna-d-k": {
+    "slug": "aruna-d-k",
+    "name": "D K Aruna",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 84.0,
+    "debates_count": 27,
+    "questions_asked": 167
+  },
+  "d-m-kathir-anand": {
+    "slug": "d-m-kathir-anand",
+    "name": "D M Kathir Anand",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 80.0,
+    "debates_count": 45,
+    "questions_asked": 163
+  },
+  "d-ravikumar": {
+    "slug": "d-ravikumar",
+    "name": "D Ravi Kumar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 60.0,
+    "debates_count": 21,
+    "questions_asked": 130
+  },
+  "daggubati-purandheshwari": {
+    "slug": "daggubati-purandheshwari",
+    "name": "Daggubati Purandeswari",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 24,
+    "questions_asked": 195
+  },
+  "daggumalla-prasada-rao": {
+    "slug": "daggumalla-prasada-rao",
+    "name": "Daggumalla Prasada Rao",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 11,
+    "questions_asked": 165
+  },
+  "damodar-agarwal": {
+    "slug": "damodar-agarwal",
+    "name": "Damodar Agrawal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 29,
+    "questions_asked": 265
+  },
+  "daroga-prasad-saroj": {
+    "slug": "daroga-prasad-saroj",
+    "name": "Daroga Prasad Saroj",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 91.0,
+    "debates_count": 12,
+    "questions_asked": 46
+  },
+  "darshan-singh-choudhary": {
+    "slug": "darshan-singh-choudhary",
+    "name": "Darshan Singh Choudhary",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 44,
+    "questions_asked": 140
+  },
+  "dayanidhi-maran": {
+    "slug": "dayanidhi-maran",
+    "name": "Dayanidhi Maran",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 69.0,
+    "debates_count": 6,
+    "questions_asked": 103
+  },
+  "deepender-singh-hooda": {
+    "slug": "deepender-singh-hooda",
+    "name": "Deepender Singh Hooda",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 18,
+    "questions_asked": 86
+  },
+  "dean-kuriakose": {
+    "slug": "dean-kuriakose",
+    "name": "Dean Kuriakose",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 81.0,
+    "debates_count": 49,
+    "questions_asked": 170
+  },
+  "kalaben-mohanbhai-delkar": {
+    "slug": "kalaben-mohanbhai-delkar",
+    "name": "Delkar Kalaben Mohanbhai",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 33,
+    "questions_asked": 257
+  },
+  "devesh-chandra-thakur": {
+    "slug": "devesh-chandra-thakur",
+    "name": "Devesh Chandra Thakur",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 75.0,
+    "debates_count": 4,
+    "questions_asked": 19
+  },
+  "devendra-singh-alias-bhole-singh": {
+    "slug": "devendra-singh-alias-bhole-singh",
+    "name": "Devendra Singh Alias Bhole Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 89.0,
+    "debates_count": 5,
+    "questions_asked": 10
+  },
+  "devusinh-chauhan": {
+    "slug": "devusinh-chauhan",
+    "name": "Devusinh Chauhan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 1,
+    "questions_asked": 76
+  },
+  "devesh-shakya": {
+    "slug": "devesh-shakya",
+    "name": "Devesh Shakya",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 35,
+    "questions_asked": 134
+  },
+  "dhanorkar-pratibha-suresh-alias-balubhau": {
+    "slug": "dhanorkar-pratibha-suresh-alias-balubhau",
+    "name": "Dhanorkar Pratibha Suresh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 24,
+    "questions_asked": 65
+  },
+  "dhairyasheel-sambhajirao-mane": {
+    "slug": "dhairyasheel-sambhajirao-mane",
+    "name": "Dhairyasheel Sambhajirao Mane",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 77.0,
+    "debates_count": 23,
+    "questions_asked": 239
+  },
+  "dharambir-singh": {
+    "slug": "dharambir-singh",
+    "name": "Dharambir Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 21,
+    "questions_asked": 173
+  },
+  "dharmendra-yadav": {
+    "slug": "dharmendra-yadav",
+    "name": "Dharmendra Yadav",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 36,
+    "questions_asked": 134
+  },
+  "dharamvira-gandhi": {
+    "slug": "dharamvira-gandhi",
+    "name": "Dharamvira Gandhi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 78.0,
+    "debates_count": 12,
+    "questions_asked": 49
+  },
+  "dharmendra-pradhan": {
+    "slug": "dharmendra-pradhan",
+    "name": "Dharmendra Pradhan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 0.0,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "dhaval-laxmanbhai-patel": {
+    "slug": "dhaval-laxmanbhai-patel",
+    "name": "Dhaval Laxmanbhai Patel",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 8,
+    "questions_asked": 92
+  },
+  "dimple-yadav": {
+    "slug": "dimple-yadav",
+    "name": "Dimple Yadav",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 10,
+    "questions_asked": 23
+  },
+  "dileshwar-kamait": {
+    "slug": "dileshwar-kamait",
+    "name": "Dileshwar Kamait",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 42,
+    "questions_asked": 161
+  },
+  "dilip-saikia": {
+    "slug": "dilip-saikia",
+    "name": "Dilip Saikia",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 57,
+    "questions_asked": 278
+  },
+  "dinesh-chandra-yadav": {
+    "slug": "dinesh-chandra-yadav",
+    "name": "Dinesh Chandra Yadav",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 91.0,
+    "debates_count": 26,
+    "questions_asked": 133
+  },
+  "dineshbhai-makwana": {
+    "slug": "dineshbhai-makwana",
+    "name": "Dineshbhai Makwana",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 98.0,
+    "debates_count": 8,
+    "questions_asked": 272
+  },
+  "durga-das-d-d-uikey": {
+    "slug": "durga-das-d-d-uikey",
+    "name": "Durgadas D D Uikey",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "durai-vaiko": {
+    "slug": "durai-vaiko",
+    "name": "Durai Vaiko",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 85.0,
+    "debates_count": 24,
+    "questions_asked": 103
+  },
+  "dulu-mahato": {
+    "slug": "dulu-mahato",
+    "name": "Dulu Mahato",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 85.0,
+    "debates_count": 30,
+    "questions_asked": 214
+  },
+  "e-t-mohammed-basheer": {
+    "slug": "e-t-mohammed-basheer",
+    "name": "E T Mohammed Basheer",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 41,
+    "questions_asked": 113
+  },
+  "dushyant-singh": {
+    "slug": "dushyant-singh",
+    "name": "Dushyant Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 22,
+    "questions_asked": 171
+  },
+  "e-tukaram": {
+    "slug": "e-tukaram",
+    "name": "E Tukaram",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 58.0,
+    "debates_count": 2,
+    "questions_asked": 57
+  },
+  "eatala-rajender": {
+    "slug": "eatala-rajender",
+    "name": "Eatala Rajender",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 84.0,
+    "debates_count": 23,
+    "questions_asked": 190
+  },
+  "eswarasamy-k": {
+    "slug": "eswarasamy-k",
+    "name": "Eswarasamy K",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 83.0,
+    "debates_count": 19,
+    "questions_asked": 143
+  },
+  "faggan-singh-kulaste": {
+    "slug": "faggan-singh-kulaste",
+    "name": "Faggan Singh Kulaste",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 5,
+    "questions_asked": 23
+  },
+  "g-kishan-reddy": {
+    "slug": "g-kishan-reddy",
+    "name": "G Kishan Reddy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "p-c-gaddigoudar": {
+    "slug": "p-c-gaddigoudar",
+    "name": "Gaddigoudar Parvatagouda Chandanagouda",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 1,
+    "questions_asked": 16
+  },
+  "ambica-g-lakshminarayana-valmiki": {
+    "slug": "ambica-g-lakshminarayana-valmiki",
+    "name": "G Lakshminarayana",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 16,
+    "questions_asked": 171
+  },
+  "g-kumar-naik": {
+    "slug": "g-kumar-naik",
+    "name": "G Kumar Naik",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 14,
+    "questions_asked": 88
+  },
+  "ganti-harish-madhur": {
+    "slug": "ganti-harish-madhur",
+    "name": "G M Harish Balayogi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 29,
+    "questions_asked": 200
+  },
+  "gaikwad-varsha-eknath": {
+    "slug": "gaikwad-varsha-eknath",
+    "name": "Gaikwad Varsha Eknath",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 49,
+    "questions_asked": 257
+  },
+  "gajendra-umrao-singh-patel": {
+    "slug": "gajendra-umrao-singh-patel",
+    "name": "Gajendra Singh Patel",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 13,
+    "questions_asked": 81
+  },
+  "gajendra-singh-shekhawat": {
+    "slug": "gajendra-singh-shekhawat",
+    "name": "Gajendra Singh Shekhawat",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "ganapathy-rajkumar-p": {
+    "slug": "ganapathy-rajkumar-p",
+    "name": "Ganapathy Rajkumar P",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 91.0,
+    "debates_count": 14,
+    "questions_asked": 134
+  },
+  "ganesh-singh": {
+    "slug": "ganesh-singh",
+    "name": "Ganesh Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 38,
+    "questions_asked": 138
+  },
+  "geniben-nagaji-thakor": {
+    "slug": "geniben-nagaji-thakor",
+    "name": "Geniben Nagaji Thakor",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 29,
+    "questions_asked": 110
+  },
+  "gaurav-gogoi": {
+    "slug": "gaurav-gogoi",
+    "name": "Gaurav Gogoi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 77.0,
+    "debates_count": 33,
+    "questions_asked": 147
+  },
+  "giriraj-singh": {
+    "slug": "giriraj-singh",
+    "name": "Giriraj Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "govind-makthappa-karjol": {
+    "slug": "govind-makthappa-karjol",
+    "name": "Govind Makthappa Karjol",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 73.0,
+    "debates_count": 2,
+    "questions_asked": 87
+  },
+  "giridhari-yadav": {
+    "slug": "giridhari-yadav",
+    "name": "Giridhari Yadav",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 75.0,
+    "debates_count": 3,
+    "questions_asked": 128
+  },
+  "gopal-jee-thakur": {
+    "slug": "gopal-jee-thakur",
+    "name": "Gopal Jee Thakur",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 23,
+    "questions_asked": 115
+  },
+  "godam-nagesh": {
+    "slug": "godam-nagesh",
+    "name": "Godam Nagesh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 10,
+    "questions_asked": 154
+  },
+  "adv-gowaal-kagada-padavi": {
+    "slug": "adv-gowaal-kagada-padavi",
+    "name": "Gowaal Kagada Padavi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 51,
+    "questions_asked": 156
+  },
+  "gurjeet-singh-aujla": {
+    "slug": "gurjeet-singh-aujla",
+    "name": "Gurjeet Singh Aujla",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 87.0,
+    "debates_count": 28,
+    "questions_asked": 80
+  },
+  "gumma-thanuja-rani": {
+    "slug": "gumma-thanuja-rani",
+    "name": "Gumma Thanuja Rani",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 91.0,
+    "debates_count": 17,
+    "questions_asked": 102
+  },
+  "hanuman-beniwal": {
+    "slug": "hanuman-beniwal",
+    "name": "Hanuman Beniwal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 76,
+    "questions_asked": 167
+  },
+  "h-d-kumaraswamy": {
+    "slug": "h-d-kumaraswamy",
+    "name": "H D Kumaraswamy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "harendra-singh-malik": {
+    "slug": "harendra-singh-malik",
+    "name": "Harendra Singh Malik",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 33,
+    "questions_asked": 63
+  },
+  "harsh-malhotra": {
+    "slug": "harsh-malhotra",
+    "name": "Harsh Malhotra",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "gurmeet-singh-meet-hayer": {
+    "slug": "gurmeet-singh-meet-hayer",
+    "name": "Gurmeet Singh Meet Hayer",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 83.0,
+    "debates_count": 31,
+    "questions_asked": 100
+  },
+  "gyaneshwar-patil": {
+    "slug": "gyaneshwar-patil",
+    "name": "Gyaneshwar Patil",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 15,
+    "questions_asked": 244
+  },
+  "haribhai-patel": {
+    "slug": "haribhai-patel",
+    "name": "Haribhai Patel",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 16,
+    "questions_asked": 153
+  },
+  "harish-chandra-meena": {
+    "slug": "harish-chandra-meena",
+    "name": "Harish Chandra Meena",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 98.0,
+    "debates_count": 19,
+    "questions_asked": 121
+  },
+  "hasmukhbhai-patel": {
+    "slug": "hasmukhbhai-patel",
+    "name": "Hasmukhbhai Somabhai Patel",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 98.0,
+    "debates_count": 13,
+    "questions_asked": 99
+  },
+  "harsimrat-kaur-badal": {
+    "slug": "harsimrat-kaur-badal",
+    "name": "Harsimrat Kaur Badal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 69.0,
+    "debates_count": 29,
+    "questions_asked": 90
+  },
+  "hemang-joshi": {
+    "slug": "hemang-joshi",
+    "name": "Hemang Joshi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 6,
+    "questions_asked": 103
+  },
+  "hema-malini": {
+    "slug": "hema-malini",
+    "name": "Hemamalini Dharmendra Deol",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 38.0,
+    "debates_count": 7,
+    "questions_asked": 25
+  },
+  "hibi-eden": {
+    "slug": "hibi-eden",
+    "name": "Hibi Eden",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 85.0,
+    "debates_count": 46,
+    "questions_asked": 125
+  },
+  "imran-masood": {
+    "slug": "imran-masood",
+    "name": "Imran Masood",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 19,
+    "questions_asked": 121
+  },
+  "himadri-singh": {
+    "slug": "himadri-singh",
+    "name": "Himadri Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 7,
+    "questions_asked": 172
+  },
+  "hemant-vishnu-savara": {
+    "slug": "hemant-vishnu-savara",
+    "name": "Hemant Vishnu Savara",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 98.0,
+    "debates_count": 43,
+    "questions_asked": 283
+  },
+  "indra-hang-subba": {
+    "slug": "indra-hang-subba",
+    "name": "Indra Hang Subba",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 16,
+    "questions_asked": 48
+  },
+  "iqra-choudhary": {
+    "slug": "iqra-choudhary",
+    "name": "Iqra Choudhary",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 38,
+    "questions_asked": 147
+  },
+  "isha-khan-choudhury": {
+    "slug": "isha-khan-choudhury",
+    "name": "Isha Khan Choudhury",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 80.0,
+    "debates_count": 8,
+    "questions_asked": 19
+  },
+  "jagadish-chandra-barma-basunia": {
+    "slug": "jagadish-chandra-barma-basunia",
+    "name": "Jagadish Chandra Barma Basunia",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 51.0,
+    "debates_count": 6,
+    "questions_asked": 34
+  },
+  "jagadish-shettar": {
+    "slug": "jagadish-shettar",
+    "name": "Jagadish Shettar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 85.0,
+    "debates_count": 3,
+    "questions_asked": 45
+  },
+  "jagannath-sarkar": {
+    "slug": "jagannath-sarkar",
+    "name": "Jagannath Sarkar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 81.0,
+    "debates_count": 2,
+    "questions_asked": 106
+  },
+  "jai-parkash": {
+    "slug": "jai-parkash",
+    "name": "Jai Parkash",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 5,
+    "questions_asked": 73
+  },
+  "jagdambika-pal": {
+    "slug": "jagdambika-pal",
+    "name": "Jagdambika Pal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 100.0,
+    "debates_count": 131,
+    "questions_asked": 198
+  },
+  "jai-prakash": {
+    "slug": "jai-prakash",
+    "name": "Jai Prakash",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 85.0,
+    "debates_count": 10,
+    "questions_asked": 83
+  },
+  "janardan-mishra": {
+    "slug": "janardan-mishra",
+    "name": "Janardan Mishra",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 100.0,
+    "debates_count": 18,
+    "questions_asked": 194
+  },
+  "jashubhai-bhilubhai-rathva": {
+    "slug": "jashubhai-bhilubhai-rathva",
+    "name": "Jashubhai Bhilubhai Rathva",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 4,
+    "questions_asked": 149
+  },
+  "janardan-singh-sigriwal": {
+    "slug": "janardan-singh-sigriwal",
+    "name": "Janardan Singh Sigriwal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 100.0,
+    "debates_count": 39,
+    "questions_asked": 168
+  },
+  "jayanta-kumar-roy": {
+    "slug": "jayanta-kumar-roy",
+    "name": "Jayanta Kumar Roy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 11,
+    "questions_asked": 79
+  },
+  "jasvantsinh-sumanbhai-bhabhor": {
+    "slug": "jasvantsinh-sumanbhai-bhabhor",
+    "name": "Jaswantsinh Sumanbhai Bhabhor",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 8,
+    "questions_asked": 201
+  },
+  "jitan-ram-manjhi": {
+    "slug": "jitan-ram-manjhi",
+    "name": "Jitan Ram Manjhi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "jitendra-kumar-dohare": {
+    "slug": "jitendra-kumar-dohare",
+    "name": "Jitendra Kumar Dohare",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 13,
+    "questions_asked": 25
+  },
+  "jitendra-singh": {
+    "slug": "jitendra-singh",
+    "name": "Jitendra Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "jitin-prasada": {
+    "slug": "jitin-prasada",
+    "name": "Jitin Prasada",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "joba-majhi": {
+    "slug": "joba-majhi",
+    "name": "Joba Majhi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 79.0,
+    "debates_count": 9,
+    "questions_asked": 28
+  },
+  "joyanta-basumatary": {
+    "slug": "joyanta-basumatary",
+    "name": "Joyanta Basumatary",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 24,
+    "questions_asked": 86
+  },
+  "jual-oram": {
+    "slug": "jual-oram",
+    "name": "Jual Oram",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "jyotiraditya-madhavrao-scindia": {
+    "slug": "jyotiraditya-madhavrao-scindia",
+    "name": "Jyotiraditya M Scindia",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "june-maliah": {
+    "slug": "june-maliah",
+    "name": "June Maliah",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 79.0,
+    "debates_count": 31,
+    "questions_asked": 53
+  },
+  "jugal-kishore": {
+    "slug": "jugal-kishore",
+    "name": "Jugal Kishore",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 33,
+    "questions_asked": 199
+  },
+  "jyotirmay-singh-mahato": {
+    "slug": "jyotirmay-singh-mahato",
+    "name": "Jyotirmay Singh Mahato",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 71.0,
+    "debates_count": 2,
+    "questions_asked": 43
+  },
+  "jyotsna-charandas-mahant": {
+    "slug": "jyotsna-charandas-mahant",
+    "name": "Jyotsna Charandas Mahant",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 89.0,
+    "debates_count": 12,
+    "questions_asked": 88
+  },
+  "gopinath-k": {
+    "slug": "gopinath-k",
+    "name": "K Gopinath",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 77.0,
+    "debates_count": 6,
+    "questions_asked": 61
+  },
+  "k-e-prakash": {
+    "slug": "k-e-prakash",
+    "name": "K E Prakash",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 17,
+    "questions_asked": 102
+  },
+  "k-c-venugopal": {
+    "slug": "k-c-venugopal",
+    "name": "K C Venugopal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 83.0,
+    "debates_count": 44,
+    "questions_asked": 153
+  },
+  "k-rajashekar-basavaraj-hitnal": {
+    "slug": "k-rajashekar-basavaraj-hitnal",
+    "name": "K Rajashekar Basavaraj Hitnal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 66.0,
+    "debates_count": 1,
+    "questions_asked": 0
+  },
+  "k-radhakrishnan": {
+    "slug": "k-radhakrishnan",
+    "name": "K Radhakrishnan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 81.0,
+    "debates_count": 20,
+    "questions_asked": 143
+  },
+  "kumbakudi-sudhakaran": {
+    "slug": "kumbakudi-sudhakaran",
+    "name": "K Sudhakaran",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 58.0,
+    "debates_count": 8,
+    "questions_asked": 150
+  },
+  "k-sudhakar": {
+    "slug": "k-sudhakar",
+    "name": "K Sudhakar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 37,
+    "questions_asked": 224
+  },
+  "k-francis-george": {
+    "slug": "k-francis-george",
+    "name": "K. Francis George",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 79.0,
+    "debates_count": 36,
+    "questions_asked": 58
+  },
+  "kali-charan-singh": {
+    "slug": "kali-charan-singh",
+    "name": "Kali Charan Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 0,
+    "questions_asked": 97
+  },
+  "kakoli-ghosh-dastidar": {
+    "slug": "kakoli-ghosh-dastidar",
+    "name": "Kakoli Ghosh Dastidar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 62.0,
+    "debates_count": 6,
+    "questions_asked": 26
+  },
+  "kali-charan-munda": {
+    "slug": "kali-charan-munda",
+    "name": "Kali Charan Munda",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 23,
+    "questions_asked": 4
+  },
+  "veeraswamy-kalanidhi": {
+    "slug": "veeraswamy-kalanidhi",
+    "name": "Kalanidhi Veeraswamy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 85.0,
+    "debates_count": 23,
+    "questions_asked": 151
+  },
+  "kadiyam-kavya": {
+    "slug": "kadiyam-kavya",
+    "name": "Kadiyam Kavya",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 17,
+    "questions_asked": 106
+  },
+  "kalyan-banerjee": {
+    "slug": "kalyan-banerjee",
+    "name": "Kalyan Banerjee",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 75.0,
+    "debates_count": 25,
+    "questions_asked": 72
+  },
+  "kalyan-vaijinathrao-kale": {
+    "slug": "kalyan-vaijinathrao-kale",
+    "name": "Kalyan Vaijinathrao Kale",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 8,
+    "questions_asked": 75
+  },
+  "kamakhya-prasad-tasa": {
+    "slug": "kamakhya-prasad-tasa",
+    "name": "Kamakhya Prasad Tasa",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 81.0,
+    "debates_count": 19,
+    "questions_asked": 72
+  },
+  "kamlesh-paswan": {
+    "slug": "kamlesh-paswan",
+    "name": "Kamlesh Paswan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "kamaljeet-sehrawat": {
+    "slug": "kamaljeet-sehrawat",
+    "name": "Kamaljeet Sehrawat",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 21,
+    "questions_asked": 235
+  },
+  "kamlesh-jangde": {
+    "slug": "kamlesh-jangde",
+    "name": "Kamlesh Jangde",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 13,
+    "questions_asked": 215
+  },
+  "kangna-ranaut": {
+    "slug": "kangna-ranaut",
+    "name": "Kangna Ranaut",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 84.0,
+    "debates_count": 19,
+    "questions_asked": 183
+  },
+  "kanimozhi-karunanidhi": {
+    "slug": "kanimozhi-karunanidhi",
+    "name": "Kanimozhi Karunanidhi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 71.0,
+    "debates_count": 29,
+    "questions_asked": 107
+  },
+  "kanwar-singh-tanwar": {
+    "slug": "kanwar-singh-tanwar",
+    "name": "Kanwar Singh Tanwar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 11,
+    "questions_asked": 167
+  },
+  "karan-bhushan-singh": {
+    "slug": "karan-bhushan-singh",
+    "name": "Karan Bhushan Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 2,
+    "questions_asked": 51
+  },
+  "karti-p-chidambaram": {
+    "slug": "karti-p-chidambaram",
+    "name": "Karti P Chidambaram",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 87.0,
+    "debates_count": 13,
+    "questions_asked": 82
+  },
+  "kartick-chandra-paul": {
+    "slug": "kartick-chandra-paul",
+    "name": "Kartick Chandra Paul",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 4,
+    "questions_asked": 27
+  },
+  "kesineni-sivanath-chinni": {
+    "slug": "kesineni-sivanath-chinni",
+    "name": "Kesineni Sivanath",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 13,
+    "questions_asked": 173
+  },
+  "kaushalendra-kumar": {
+    "slug": "kaushalendra-kumar",
+    "name": "Kaushalendra Kumar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 34,
+    "questions_asked": 159
+  },
+  "kalipada-saren-kherwal": {
+    "slug": "kalipada-saren-kherwal",
+    "name": "Kalipada Saren Kherwal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 81.0,
+    "debates_count": 18,
+    "questions_asked": 44
+  },
+  "ram-mohan-naidu-kinjarapu": {
+    "slug": "ram-mohan-naidu-kinjarapu",
+    "name": "Kinjarapu Rammohan Naidu",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "khalilur-rahaman": {
+    "slug": "khalilur-rahaman",
+    "name": "Khalilur Rahaman",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 72.0,
+    "debates_count": 13,
+    "questions_asked": 68
+  },
+  "khagen-murmu": {
+    "slug": "khagen-murmu",
+    "name": "Khagen Murmu",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 34,
+    "questions_asked": 297
+  },
+  "kiren-rijiju": {
+    "slug": "kiren-rijiju",
+    "name": "Kiren Rijiju",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "kirti-vardhan-singh": {
+    "slug": "kirti-vardhan-singh",
+    "name": "Kirti Vardhan Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "kishori-lal": {
+    "slug": "kishori-lal",
+    "name": "Kishori Lal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 16,
+    "questions_asked": 34
+  },
+  "suresh-kodikunnil": {
+    "slug": "suresh-kodikunnil",
+    "name": "Kodikunnil Suresh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 52,
+    "questions_asked": 156
+  },
+  "krishan-pal": {
+    "slug": "krishan-pal",
+    "name": "Krishan Pal Gurjar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "krishna-devi-shivshanker-patel": {
+    "slug": "krishna-devi-shivshanker-patel",
+    "name": "Krishna Devi Shivshankar Patel",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 20,
+    "questions_asked": 34
+  },
+  "krishna-prasad-tenneti": {
+    "slug": "krishna-prasad-tenneti",
+    "name": "Krishna Prasad Tenneti",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 26,
+    "questions_asked": 212
+  },
+  "konda-vishweshwar-reddy": {
+    "slug": "konda-vishweshwar-reddy",
+    "name": "Konda Vishweshwar Reddy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 11,
+    "questions_asked": 72
+  },
+  "kriti-devi-debbarman": {
+    "slug": "kriti-devi-debbarman",
+    "name": "Kriti Devi Debbarman",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 14,
+    "questions_asked": 65
+  },
+  "kripanath-mallah": {
+    "slug": "kripanath-mallah",
+    "name": "Kripanath Mallah",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 6,
+    "questions_asked": 96
+  },
+  "kota-srinivas-poojary": {
+    "slug": "kota-srinivas-poojary",
+    "name": "Kota Srinivasa Poojary",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 19,
+    "questions_asked": 228
+  },
+  "kunduru-raghuveer": {
+    "slug": "kunduru-raghuveer",
+    "name": "Kunduru Raghuveer",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 64.0,
+    "debates_count": 0,
+    "questions_asked": 67
+  },
+  "selja": {
+    "slug": "selja",
+    "name": "Kumari Selja",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 10,
+    "questions_asked": 33
+  },
+  "lalji-verma": {
+    "slug": "lalji-verma",
+    "name": "Lalji Verma",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 51,
+    "questions_asked": 76
+  },
+  "kuldeep-indora": {
+    "slug": "kuldeep-indora",
+    "name": "Kuldeep Indora",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 84.0,
+    "debates_count": 22,
+    "questions_asked": 136
+  },
+  "lata-wankhede": {
+    "slug": "lata-wankhede",
+    "name": "Lata Wankhede",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 89.0,
+    "debates_count": 23,
+    "questions_asked": 128
+  },
+  "laxmikant-pappu-nishad": {
+    "slug": "laxmikant-pappu-nishad",
+    "name": "Laxmikant Pappu Nishad",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 23,
+    "questions_asked": 32
+  },
+  "lavu-sri-krishna-devarayalu": {
+    "slug": "lavu-sri-krishna-devarayalu",
+    "name": "Lavu Sri Krishna Devarayalu",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 46,
+    "questions_asked": 219
+  },
+  "lovely-anand": {
+    "slug": "lovely-anand",
+    "name": "Lovely Anand",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 33,
+    "questions_asked": 87
+  },
+  "m-k-raghavan": {
+    "slug": "m-k-raghavan",
+    "name": "M K Raghavan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 73.0,
+    "debates_count": 26,
+    "questions_asked": 155
+  },
+  "lumbaram": {
+    "slug": "lumbaram",
+    "name": "Lumba Ram",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 98.0,
+    "debates_count": 39,
+    "questions_asked": 280
+  },
+  "m-k-vishnu-prasad": {
+    "slug": "m-k-vishnu-prasad",
+    "name": "M K Vishnu Prasad",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 19,
+    "questions_asked": 140
+  },
+  "m-p-abdussamad-samadani": {
+    "slug": "m-p-abdussamad-samadani",
+    "name": "M P Abdussamad Samadani",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 80.0,
+    "debates_count": 22,
+    "questions_asked": 129
+  },
+  "maddila-gurumoorthy": {
+    "slug": "maddila-gurumoorthy",
+    "name": "Maddila Gurumoorthy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 35,
+    "questions_asked": 155
+  },
+  "m-mallesh-babu": {
+    "slug": "m-mallesh-babu",
+    "name": "M Mallesh Babu",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 14,
+    "questions_asked": 32
+  },
+  "madhavaneni-raghunandan-rao": {
+    "slug": "madhavaneni-raghunandan-rao",
+    "name": "Madhavaneni Raghunandan Rao",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 10,
+    "questions_asked": 137
+  },
+  "mahesh-sharma": {
+    "slug": "mahesh-sharma",
+    "name": "Mahesh Sharma",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 1,
+    "questions_asked": 0
+  },
+  "mahesh-kashyap": {
+    "slug": "mahesh-kashyap",
+    "name": "Mahesh Kashyap",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 15,
+    "questions_asked": 112
+  },
+  "magunta-srinivasulu-reddy": {
+    "slug": "magunta-srinivasulu-reddy",
+    "name": "Magunta Sreenivasulu Reddy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 87.0,
+    "debates_count": 12,
+    "questions_asked": 183
+  },
+  "mahua-moitra": {
+    "slug": "mahua-moitra",
+    "name": "Mahua Moitra",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 17,
+    "questions_asked": 74
+  },
+  "mahendra-singh-solanky": {
+    "slug": "mahendra-singh-solanky",
+    "name": "Mahendra Singh Solanky",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 0,
+    "questions_asked": 99
+  },
+  "mahima-kumari-mewar": {
+    "slug": "mahima-kumari-mewar",
+    "name": "Mahima Kumari Mewar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 33,
+    "questions_asked": 188
+  },
+  "mala-rajya-laxmi-shah": {
+    "slug": "mala-rajya-laxmi-shah",
+    "name": "Mala Rajya Laxmi Shah",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 89.0,
+    "debates_count": 4,
+    "questions_asked": 144
+  },
+  "malaiyarasan-d": {
+    "slug": "malaiyarasan-d",
+    "name": "Malaiyarasan D",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 15,
+    "questions_asked": 143
+  },
+  "mala-roy": {
+    "slug": "mala-roy",
+    "name": "Mala Roy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 28.0,
+    "debates_count": 2,
+    "questions_asked": 135
+  },
+  "mallu-ravi": {
+    "slug": "mallu-ravi",
+    "name": "Mallu Ravi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 25,
+    "questions_asked": 88
+  },
+  "malvika-devi": {
+    "slug": "malvika-devi",
+    "name": "Malvika Devi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 55,
+    "questions_asked": 100
+  },
+  "malvinder-singh-kang": {
+    "slug": "malvinder-singh-kang",
+    "name": "Malvinder Singh Kang",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 25,
+    "questions_asked": 74
+  },
+  "mani-a": {
+    "slug": "mani-a",
+    "name": "Mani A",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 55.0,
+    "debates_count": 7,
+    "questions_asked": 129
+  },
+  "manish-jaiswal": {
+    "slug": "manish-jaiswal",
+    "name": "Manish Jaiswal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 32,
+    "questions_asked": 241
+  },
+  "manickam-tagore-b": {
+    "slug": "manickam-tagore-b",
+    "name": "Manickam Tagore B",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 49,
+    "questions_asked": 170
+  },
+  "manish-tewari": {
+    "slug": "manish-tewari",
+    "name": "Manish Tewari",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 43,
+    "questions_asked": 141
+  },
+  "manju-sharma": {
+    "slug": "manju-sharma",
+    "name": "Manju Sharma",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 49,
+    "questions_asked": 140
+  },
+  "manna-lal-rawat": {
+    "slug": "manna-lal-rawat",
+    "name": "Manna Lal Rawat",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 98.0,
+    "debates_count": 38,
+    "questions_asked": 252
+  },
+  "manohar-lal-khattar": {
+    "slug": "manohar-lal-khattar",
+    "name": "Manohar Lal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "manoj-kumar": {
+    "slug": "manoj-kumar",
+    "name": "Manoj Kumar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 18,
+    "questions_asked": 56
+  },
+  "mansukh-mandaviya": {
+    "slug": "mansukh-mandaviya",
+    "name": "Mansukh Mandaviya",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "manoj-tiwari": {
+    "slug": "manoj-tiwari",
+    "name": "Manoj Tiwari",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 21,
+    "questions_asked": 276
+  },
+  "manoj-tigga": {
+    "slug": "manoj-tigga",
+    "name": "Manoj Tigga",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 5,
+    "questions_asked": 4
+  },
+  "mansukhbhai-d-vasava": {
+    "slug": "mansukhbhai-d-vasava",
+    "name": "Mansukhbhai Dhanjibhai Vasava",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 87.0,
+    "debates_count": 27,
+    "questions_asked": 54
+  },
+  "matheswaran-v-s": {
+    "slug": "matheswaran-v-s",
+    "name": "Matheswaran V S",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 71.0,
+    "debates_count": 7,
+    "questions_asked": 111
+  },
+  "mitali-bag": {
+    "slug": "mitali-bag",
+    "name": "Mitali Bag",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 65.0,
+    "debates_count": 13,
+    "questions_asked": 27
+  },
+  "rakibul-hussain": {
+    "slug": "rakibul-hussain",
+    "name": "Md. Rakibul Hussain",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 19,
+    "questions_asked": 113
+  },
+  "misha-bharti": {
+    "slug": "misha-bharti",
+    "name": "Misha Bharti",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 41.0,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "mian-altaf-ahmad": {
+    "slug": "mian-altaf-ahmad",
+    "name": "Mian Altaf Ahmad",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 65.0,
+    "debates_count": 17,
+    "questions_asked": 12
+  },
+  "mitesh-rameshbhai-patel": {
+    "slug": "mitesh-rameshbhai-patel",
+    "name": "Mitesh Patel Bakabhai",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 98.0,
+    "debates_count": 25,
+    "questions_asked": 105
+  },
+  "mohibbullah": {
+    "slug": "mohibbullah",
+    "name": "Mohibbullah",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 14,
+    "questions_asked": 53
+  },
+  "mohite-patil-dhairyasheel-rajsinh": {
+    "slug": "mohite-patil-dhairyasheel-rajsinh",
+    "name": "Mohite Patil Dhairyasheel Rajsinh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 16,
+    "questions_asked": 242
+  },
+  "mohammad-jawed": {
+    "slug": "mohammad-jawed",
+    "name": "Mohammad Jawed",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 42,
+    "questions_asked": 143
+  },
+  "mohmad-haneefa": {
+    "slug": "mohmad-haneefa",
+    "name": "Mohmad Haneefa",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 19,
+    "questions_asked": 79
+  },
+  "mukesh-rajput": {
+    "slug": "mukesh-rajput",
+    "name": "Mukesh Rajput",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 98.0,
+    "debates_count": 18,
+    "questions_asked": 75
+  },
+  "hamdullah-sayeed": {
+    "slug": "hamdullah-sayeed",
+    "name": "Muhammed Hamdullah Sayeed",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 19,
+    "questions_asked": 103
+  },
+  "mukeshkumar-chandrakaant-dalal": {
+    "slug": "mukeshkumar-chandrakaant-dalal",
+    "name": "Mukeshkumar Chandrakaant Dalal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 28,
+    "questions_asked": 203
+  },
+  "murasoli-s": {
+    "slug": "murasoli-s",
+    "name": "Murasoli S",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 12,
+    "questions_asked": 61
+  },
+  "murlidhar-mohol": {
+    "slug": "murlidhar-mohol",
+    "name": "Murlidhar Mohol",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "murari-lal-meena": {
+    "slug": "murari-lal-meena",
+    "name": "Murari Lal Meena",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 26,
+    "questions_asked": 168
+  },
+  "n-k-premachandran": {
+    "slug": "n-k-premachandran",
+    "name": "N K Premachandran",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 89.0,
+    "debates_count": 90,
+    "questions_asked": 117
+  },
+  "naba-charan-majhi": {
+    "slug": "naba-charan-majhi",
+    "name": "Naba Charan Majhi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 85.0,
+    "debates_count": 3,
+    "questions_asked": 287
+  },
+  "narendra-modi": {
+    "slug": "narendra-modi",
+    "name": "Narendra Modi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "narayan-das-ahirwar": {
+    "slug": "narayan-das-ahirwar",
+    "name": "Narayandas Ahirwar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 100.0,
+    "debates_count": 18,
+    "questions_asked": 23
+  },
+  "nalin-soren": {
+    "slug": "nalin-soren",
+    "name": "Nalin Soren",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 46.0,
+    "debates_count": 5,
+    "questions_asked": 130
+  },
+  "narayan-tatu-rane": {
+    "slug": "narayan-tatu-rane",
+    "name": "Narayan Tatu Rane",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 56.0,
+    "debates_count": 0,
+    "questions_asked": 103
+  },
+  "naresh-chandra-uttam-patel": {
+    "slug": "naresh-chandra-uttam-patel",
+    "name": "Naresh Chandra Uttam Patel",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 22,
+    "questions_asked": 18
+  },
+  "namdeo-kirsan": {
+    "slug": "namdeo-kirsan",
+    "name": "Namdeo Kirsan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 69.0,
+    "debates_count": 29,
+    "questions_asked": 175
+  },
+  "naresh-ganpat-mhaske": {
+    "slug": "naresh-ganpat-mhaske",
+    "name": "Naresh Ganpat Mhaske",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 50,
+    "questions_asked": 264
+  },
+  "navaskani-k": {
+    "slug": "navaskani-k",
+    "name": "Navaskani K",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 187,
+    "questions_asked": 221
+  },
+  "nimuben-jayantibhai-bambhaniya-nimuben-bambhaniya": {
+    "slug": "nimuben-jayantibhai-bambhaniya-nimuben-bambhaniya",
+    "name": "Nimuben Jayantibhai Bambhaniya",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "naveen-jindal": {
+    "slug": "naveen-jindal",
+    "name": "Naveen Jindal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 80.0,
+    "debates_count": 27,
+    "questions_asked": 123
+  },
+  "neeraj-maurya": {
+    "slug": "neeraj-maurya",
+    "name": "Neeraj Maurya",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 100.0,
+    "debates_count": 33,
+    "questions_asked": 116
+  },
+  "nitin-jairam-gadkari": {
+    "slug": "nitin-jairam-gadkari",
+    "name": "Nitin Jairam Gadkari",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "nityanand-rai": {
+    "slug": "nityanand-rai",
+    "name": "Nityanand Rai",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "om-birla": {
+    "slug": "om-birla",
+    "name": "Om Birla",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "nilesh-dnyandev-lanke": {
+    "slug": "nilesh-dnyandev-lanke",
+    "name": "Nilesh Dnyandev Lanke",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 81.0,
+    "debates_count": 41,
+    "questions_asked": 265
+  },
+  "nishikant-dubey": {
+    "slug": "nishikant-dubey",
+    "name": "Nishikant Dubey",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 100.0,
+    "debates_count": 73,
+    "questions_asked": 257
+  },
+  "p-v-midhun-reddy": {
+    "slug": "p-v-midhun-reddy",
+    "name": "P V Midhun Reddy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 61.0,
+    "debates_count": 16,
+    "questions_asked": 148
+  },
+  "pankaj-chaudhary": {
+    "slug": "pankaj-chaudhary",
+    "name": "Pankaj Choudhary",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "parimal-suklabaidya": {
+    "slug": "parimal-suklabaidya",
+    "name": "Parimal Suklabaidya",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 8,
+    "questions_asked": 43
+  },
+  "p-c-mohan": {
+    "slug": "p-c-mohan",
+    "name": "P C Mohan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 8,
+    "questions_asked": 228
+  },
+  "omprakash": {
+    "slug": "omprakash",
+    "name": "Omprakash Bhupalsinh Alias Pavan Rajenimbalkar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 69,
+    "questions_asked": 200
+  },
+  "parshottambhai-rupala": {
+    "slug": "parshottambhai-rupala",
+    "name": "Parshottambhai Rupala",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 7,
+    "questions_asked": 142
+  },
+  "parbhubhai-nagarbhai-vasava": {
+    "slug": "parbhubhai-nagarbhai-vasava",
+    "name": "Parbhubhai Nagarbhai Vasava",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 13,
+    "questions_asked": 101
+  },
+  "p-p-chaudhary": {
+    "slug": "p-p-chaudhary",
+    "name": "P P Chaudhary",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 49,
+    "questions_asked": 299
+  },
+  "partha-bhowmick": {
+    "slug": "partha-bhowmick",
+    "name": "Partha Bhowmick",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 17.0,
+    "debates_count": 2,
+    "questions_asked": 7
+  },
+  "pathan-yusuf": {
+    "slug": "pathan-yusuf",
+    "name": "Pathan Yusuf",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 61.0,
+    "debates_count": 14,
+    "questions_asked": 100
+  },
+  "patel-umeshbhai-babubhai": {
+    "slug": "patel-umeshbhai-babubhai",
+    "name": "Patel Umeshbhai Babubhai",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 66,
+    "questions_asked": 130
+  },
+  "piyush-goyal": {
+    "slug": "piyush-goyal",
+    "name": "Piyush Vedprakash Goyal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "phani-bhusan-choudhury": {
+    "slug": "phani-bhusan-choudhury",
+    "name": "Phani Bhusan Choudhury",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 79.0,
+    "debates_count": 7,
+    "questions_asked": 22
+  },
+  "prabha-mallikarjun": {
+    "slug": "prabha-mallikarjun",
+    "name": "Prabha Mallikarjun",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 81.0,
+    "debates_count": 27,
+    "questions_asked": 106
+  },
+  "poonamben-hematbhai-maadam": {
+    "slug": "poonamben-hematbhai-maadam",
+    "name": "Poonamben Hematbhai Maadam",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 11,
+    "questions_asked": 194
+  },
+  "prabhakar-reddy-vemireddy": {
+    "slug": "prabhakar-reddy-vemireddy",
+    "name": "Prabhakar Reddy Vemireddy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 76.0,
+    "debates_count": 9,
+    "questions_asked": 168
+  },
+  "pradan-baruah": {
+    "slug": "pradan-baruah",
+    "name": "Pradan Baruah",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 87.0,
+    "debates_count": 2,
+    "questions_asked": 3
+  },
+  "dr-pradeep-kumar-panigrahy": {
+    "slug": "dr-pradeep-kumar-panigrahy",
+    "name": "Pradeep Kumar Panigrahy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 61.0,
+    "debates_count": 8,
+    "questions_asked": 42
+  },
+  "pradeep-kumar-singh": {
+    "slug": "pradeep-kumar-singh",
+    "name": "Pradeep Kumar Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 10,
+    "questions_asked": 235
+  },
+  "pradeep-purohit": {
+    "slug": "pradeep-purohit",
+    "name": "Pradeep Purohit",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 31,
+    "questions_asked": 171
+  },
+  "pradyut-bordoloi": {
+    "slug": "pradyut-bordoloi",
+    "name": "Pradyut Bordoloi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 75.0,
+    "debates_count": 11,
+    "questions_asked": 138
+  },
+  "pralhad-venkatesh-joshi": {
+    "slug": "pralhad-venkatesh-joshi",
+    "name": "Pralhad Joshi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "praniti-sushilkumar-shinde": {
+    "slug": "praniti-sushilkumar-shinde",
+    "name": "Praniti Sushilkumar Shinde",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 91.0,
+    "debates_count": 39,
+    "questions_asked": 171
+  },
+  "dr-prashant-yadaorao-padole": {
+    "slug": "dr-prashant-yadaorao-padole",
+    "name": "Prashant Yadaorao Padole",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 83,
+    "questions_asked": 94
+  },
+  "pratap-chandra-sarangi": {
+    "slug": "pratap-chandra-sarangi",
+    "name": "Pratap Chandra Sarangi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 13,
+    "questions_asked": 170
+  },
+  "prasun-banerjee": {
+    "slug": "prasun-banerjee",
+    "name": "Prasun Banerjee",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 76.0,
+    "debates_count": 1,
+    "questions_asked": 0
+  },
+  "praveen-khandelwal": {
+    "slug": "praveen-khandelwal",
+    "name": "Praveen Khandelwal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 4,
+    "questions_asked": 40
+  },
+  "jadhav-prataprao-ganpatrao": {
+    "slug": "jadhav-prataprao-ganpatrao",
+    "name": "Prataprao Ganpatrao Jadhav",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "pratima-mondal": {
+    "slug": "pratima-mondal",
+    "name": "Pratima Mondal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 83.0,
+    "debates_count": 46,
+    "questions_asked": 96
+  },
+  "praveen-patel": {
+    "slug": "praveen-patel",
+    "name": "Praveen Patel",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 37,
+    "questions_asked": 334
+  },
+  "priyanka-gandhi-vadra": {
+    "slug": "priyanka-gandhi-vadra",
+    "name": "Priyanka Gandhi Vadra",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 84.0,
+    "debates_count": 11,
+    "questions_asked": 47
+  },
+  "priya-saroj": {
+    "slug": "priya-saroj",
+    "name": "Priya Saroj",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 20,
+    "questions_asked": 85
+  },
+  "priyanka-satish-jarkiholi": {
+    "slug": "priyanka-satish-jarkiholi",
+    "name": "Priyanka Satish Jarkiholi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 60.0,
+    "debates_count": 2,
+    "questions_asked": 4
+  },
+  "pushpendra-saroj": {
+    "slug": "pushpendra-saroj",
+    "name": "Pushpendra Saroj",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 27,
+    "questions_asked": 140
+  },
+  "r-k-chaudhary": {
+    "slug": "r-k-chaudhary",
+    "name": "R K Chaudhary",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 4,
+    "questions_asked": 21
+  },
+  "putta-mahesh-kumar": {
+    "slug": "putta-mahesh-kumar",
+    "name": "Putta Mahesh Kumar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 77.0,
+    "debates_count": 11,
+    "questions_asked": 182
+  },
+  "rabindra-narayan-behera": {
+    "slug": "rabindra-narayan-behera",
+    "name": "Rabindra Narayan Behera",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 89.0,
+    "debates_count": 13,
+    "questions_asked": 19
+  },
+  "rachna-banerjee": {
+    "slug": "rachna-banerjee",
+    "name": "Rachna Banerjee",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 45.0,
+    "debates_count": 5,
+    "questions_asked": 117
+  },
+  "radhakrishna": {
+    "slug": "radhakrishna",
+    "name": "Radhakrishna",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 51.0,
+    "debates_count": 3,
+    "questions_asked": 49
+  },
+  "radha-mohan-singh": {
+    "slug": "radha-mohan-singh",
+    "name": "Radha Mohan Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 4,
+    "questions_asked": 0
+  },
+  "radheshyam-rathiya": {
+    "slug": "radheshyam-rathiya",
+    "name": "Radheshyam Rathiya",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 84.0,
+    "debates_count": 4,
+    "questions_asked": 89
+  },
+  "rahul-gandhi": {
+    "slug": "rahul-gandhi",
+    "name": "Rahul Gandhi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 17,
+    "questions_asked": 64
+  },
+  "rahul-singh-lodhi": {
+    "slug": "rahul-singh-lodhi",
+    "name": "Rahul Singh Lodhi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 7,
+    "questions_asked": 96
+  },
+  "rahul-kaswan": {
+    "slug": "rahul-kaswan",
+    "name": "Rahul Kaswan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 98.0,
+    "debates_count": 54,
+    "questions_asked": 164
+  },
+  "raj-bhushan-choudhary": {
+    "slug": "raj-bhushan-choudhary",
+    "name": "Raj Bhushan Choudhary",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "raj-kumar-chabbewal": {
+    "slug": "raj-kumar-chabbewal",
+    "name": "Raj Kumar Chabbewal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 53.0,
+    "debates_count": 7,
+    "questions_asked": 51
+  },
+  "a-raja": {
+    "slug": "a-raja",
+    "name": "Raja A",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 71.0,
+    "debates_count": 7,
+    "questions_asked": 142
+  },
+  "raja-ram-singh": {
+    "slug": "raja-ram-singh",
+    "name": "Raja Ram Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 35,
+    "questions_asked": 109
+  },
+  "parag-prakash-waje": {
+    "slug": "parag-prakash-waje",
+    "name": "Rajabhau Parag Prakash Waje",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 36,
+    "questions_asked": 80
+  },
+  "rajeev-bhardwaj": {
+    "slug": "rajeev-bhardwaj",
+    "name": "Rajeev Bhardwaj",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 15,
+    "questions_asked": 121
+  },
+  "rajeev-rai": {
+    "slug": "rajeev-rai",
+    "name": "Rajeev Rai",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 48,
+    "questions_asked": 147
+  },
+  "dr-rajesh-mishra": {
+    "slug": "dr-rajesh-mishra",
+    "name": "Rajesh Mishra",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 31,
+    "questions_asked": 238
+  },
+  "rajesh-ranjan-alias-pappu-yadav": {
+    "slug": "rajesh-ranjan-alias-pappu-yadav",
+    "name": "Rajesh Ranjan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 81.0,
+    "debates_count": 70,
+    "questions_asked": 141
+  },
+  "rajesh-verma": {
+    "slug": "rajesh-verma",
+    "name": "Rajesh Verma",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 76.0,
+    "debates_count": 26,
+    "questions_asked": 210
+  },
+  "rajiv-pratap-rudy": {
+    "slug": "rajiv-pratap-rudy",
+    "name": "Rajiv Pratap Rudy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 28,
+    "questions_asked": 133
+  },
+  "rajiv-ranjan-singh-alias-lalan-singh": {
+    "slug": "rajiv-ranjan-singh-alias-lalan-singh",
+    "name": "Rajiv Ranjan Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "rajkumar-chahar": {
+    "slug": "rajkumar-chahar",
+    "name": "Rajkumar Chahar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 98.0,
+    "debates_count": 26,
+    "questions_asked": 141
+  },
+  "raj-kumar-roat": {
+    "slug": "raj-kumar-roat",
+    "name": "Rajkumar Roat",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 93.0,
+    "debates_count": 51,
+    "questions_asked": 145
+  },
+  "dr-rajkumar-sangwan": {
+    "slug": "dr-rajkumar-sangwan",
+    "name": "Rajkumar Sangwan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 100.0,
+    "debates_count": 42,
+    "questions_asked": 109
+  },
+  "rajmohan-unnithan": {
+    "slug": "rajmohan-unnithan",
+    "name": "Rajmohan Unnithan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 80.0,
+    "debates_count": 26,
+    "questions_asked": 126
+  },
+  "rajnath-singh": {
+    "slug": "rajnath-singh",
+    "name": "Rajnath Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "rajpalsinh-mahendrasinh-jadav": {
+    "slug": "rajpalsinh-mahendrasinh-jadav",
+    "name": "Rajpalsinh Mahendrasinh Jadav",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 11,
+    "questions_asked": 36
+  },
+  "raju-bista": {
+    "slug": "raju-bista",
+    "name": "Raju Bista",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 37,
+    "questions_asked": 151
+  },
+  "rakesh-rathor": {
+    "slug": "rakesh-rathor",
+    "name": "Rakesh Rathor",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 70.0,
+    "debates_count": 0,
+    "questions_asked": 55
+  },
+  "raksha-nikhil-khadase": {
+    "slug": "raksha-nikhil-khadase",
+    "name": "Raksha Nikhil Khadse",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "ram-prasad-chaudhary": {
+    "slug": "ram-prasad-chaudhary",
+    "name": "Ram Prasad Chaudhary",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 11,
+    "questions_asked": 7
+  },
+  "ram-shiromani-verma": {
+    "slug": "ram-shiromani-verma",
+    "name": "Ram Shiromani Verma",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 100.0,
+    "debates_count": 37,
+    "questions_asked": 91
+  },
+  "ramasahayam-raghuram-reddy": {
+    "slug": "ramasahayam-raghuram-reddy",
+    "name": "Ramasahayam Raghuram Reddy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 77.0,
+    "debates_count": 18,
+    "questions_asked": 142
+  },
+  "ramashankar-rajbhar": {
+    "slug": "ramashankar-rajbhar",
+    "name": "Ramashankar Rajbhar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 39,
+    "questions_asked": 82
+  },
+  "rambhual-nishad": {
+    "slug": "rambhual-nishad",
+    "name": "Rambhual Nishad",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 83.0,
+    "debates_count": 3,
+    "questions_asked": 31
+  },
+  "ramesh-awasthi": {
+    "slug": "ramesh-awasthi",
+    "name": "Ramesh Awasthi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 23,
+    "questions_asked": 113
+  },
+  "ramesh-chandappa-jigajinagi": {
+    "slug": "ramesh-chandappa-jigajinagi",
+    "name": "Ramesh Chandappa Jigajinagi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 91.0,
+    "debates_count": 1,
+    "questions_asked": 5
+  },
+  "ramvir-singh-bidhuri": {
+    "slug": "ramvir-singh-bidhuri",
+    "name": "Ramvir Singh Bidhuri",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 100.0,
+    "debates_count": 30,
+    "questions_asked": 169
+  },
+  "ramprit-mandal": {
+    "slug": "ramprit-mandal",
+    "name": "Ramprit Mandal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 14,
+    "questions_asked": 112
+  },
+  "dr-rani-sri-kumar": {
+    "slug": "dr-rani-sri-kumar",
+    "name": "Rani Srikumar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 20,
+    "questions_asked": 64
+  },
+  "ranjit-dutta": {
+    "slug": "ranjit-dutta",
+    "name": "Ranjit Dutta",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 85.0,
+    "debates_count": 2,
+    "questions_asked": 29
+  },
+  "inderjit-singh-rao": {
+    "slug": "inderjit-singh-rao",
+    "name": "Rao Inderjit Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "rao-rajendra-singh": {
+    "slug": "rao-rajendra-singh",
+    "name": "Rao Rajendra Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 22,
+    "questions_asked": 114
+  },
+  "ravi-shankar-prasad": {
+    "slug": "ravi-shankar-prasad",
+    "name": "Ravi Shankar Prasad",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 75.0,
+    "debates_count": 6,
+    "questions_asked": 0
+  },
+  "ravindra-dattaram-waikar": {
+    "slug": "ravindra-dattaram-waikar",
+    "name": "Ravindra Dattaram Waikar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 51,
+    "questions_asked": 243
+  },
+  "richard-vanlalhmangaiha": {
+    "slug": "richard-vanlalhmangaiha",
+    "name": "Richard Vanlalhmangaiha",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 4,
+    "questions_asked": 17
+  },
+  "ravindra-shukla-alias-ravi-kishan": {
+    "slug": "ravindra-shukla-alias-ravi-kishan",
+    "name": "Ravindra Shukla Alias Ravi Kishan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 70.0,
+    "debates_count": 29,
+    "questions_asked": 277
+  },
+  "dr-ricky-andrew-j-syngkon": {
+    "slug": "dr-ricky-andrew-j-syngkon",
+    "name": "Ricky Andrew J Syngkon",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 64.0,
+    "debates_count": 9,
+    "questions_asked": 19
+  },
+  "robert-bruce-c": {
+    "slug": "robert-bruce-c",
+    "name": "Robert Bruce C",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 18,
+    "questions_asked": 62
+  },
+  "rodmal-nagar": {
+    "slug": "rodmal-nagar",
+    "name": "Rodmal Nagar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 27,
+    "questions_asked": 51
+  },
+  "roop-kumari-choudhary": {
+    "slug": "roop-kumari-choudhary",
+    "name": "Roopkumari Choudhary",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 18,
+    "questions_asked": 159
+  },
+  "ruchi-vira": {
+    "slug": "ruchi-vira",
+    "name": "Ruchi Vira",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 100.0,
+    "debates_count": 21,
+    "questions_asked": 111
+  },
+  "rudra-narayan-pany": {
+    "slug": "rudra-narayan-pany",
+    "name": "Rudra Narayan Pany",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 79.0,
+    "debates_count": 22,
+    "questions_asked": 41
+  },
+  "s-jagathrakshakan": {
+    "slug": "s-jagathrakshakan",
+    "name": "S Jagathratchakan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 42.0,
+    "debates_count": 8,
+    "questions_asked": 160
+  },
+  "s-jothimani": {
+    "slug": "s-jothimani",
+    "name": "S Jothimani",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 44,
+    "questions_asked": 158
+  },
+  "s-p-singh-baghel": {
+    "slug": "s-p-singh-baghel",
+    "name": "S P Singh Baghel",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "s-supongmeren-jamir": {
+    "slug": "s-supongmeren-jamir",
+    "name": "S Supongmeren Jamir",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 93.0,
+    "debates_count": 27,
+    "questions_asked": 7
+  },
+  "s-venkatesan": {
+    "slug": "s-venkatesan",
+    "name": "S Venkatesan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 69.0,
+    "debates_count": 15,
+    "questions_asked": 116
+  },
+  "sachithanantham-r": {
+    "slug": "sachithanantham-r",
+    "name": "Sachithanantham R",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 93.0,
+    "debates_count": 23,
+    "questions_asked": 111
+  },
+  "sagar-eshwar-khandre": {
+    "slug": "sagar-eshwar-khandre",
+    "name": "Sagar Eshwar Khandre",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 83.0,
+    "debates_count": 7,
+    "questions_asked": 15
+  },
+  "sajda-ahmed": {
+    "slug": "sajda-ahmed",
+    "name": "Sajda Ahmed",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 58.0,
+    "debates_count": 8,
+    "questions_asked": 62
+  },
+  "saleng-a-sangma": {
+    "slug": "saleng-a-sangma",
+    "name": "Saleng A Sangma",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 93.0,
+    "debates_count": 11,
+    "questions_asked": 14
+  },
+  "sambit-patra": {
+    "slug": "sambit-patra",
+    "name": "Sambit Patra",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 16,
+    "questions_asked": 88
+  },
+  "sanatan-pandey": {
+    "slug": "sanatan-pandey",
+    "name": "Sanatan Pandey",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 24,
+    "questions_asked": 102
+  },
+  "sandhya-ray": {
+    "slug": "sandhya-ray",
+    "name": "Sandhya Ray",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 11,
+    "questions_asked": 69
+  },
+  "sangeeta-kumari-singh-deo": {
+    "slug": "sangeeta-kumari-singh-deo",
+    "name": "Sangeeta Kumari Singh Deo",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 81.0,
+    "debates_count": 38,
+    "questions_asked": 105
+  },
+  "sanjay-dina-patil": {
+    "slug": "sanjay-dina-patil",
+    "name": "Sanjay Dina Patil",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 83.0,
+    "debates_count": 17,
+    "questions_asked": 230
+  },
+  "sanjay-haribhau-jadhav": {
+    "slug": "sanjay-haribhau-jadhav",
+    "name": "Sanjay Haribhau Jadhav",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 68.0,
+    "debates_count": 12,
+    "questions_asked": 237
+  },
+  "sanjay-jaiswal": {
+    "slug": "sanjay-jaiswal",
+    "name": "Sanjay Jaiswal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 25,
+    "questions_asked": 170
+  },
+  "sanjay-seth": {
+    "slug": "sanjay-seth",
+    "name": "Sanjay Seth",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "sanjay-uttamrao-deshmukh": {
+    "slug": "sanjay-uttamrao-deshmukh",
+    "name": "Sanjay Uttamrao Deshmukh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 25,
+    "questions_asked": 170
+  },
+  "santosh-pandey": {
+    "slug": "santosh-pandey",
+    "name": "Santosh Pandey",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 93.0,
+    "debates_count": 14,
+    "questions_asked": 22
+  },
+  "sanjna-jatav": {
+    "slug": "sanjna-jatav",
+    "name": "Sanjna Jatav",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 19,
+    "questions_asked": 146
+  },
+  "sarbananda-sonowal": {
+    "slug": "sarbananda-sonowal",
+    "name": "Sarbananda Sonowal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "sarabjeet-singh-khalsa": {
+    "slug": "sarabjeet-singh-khalsa",
+    "name": "Sarabjeet Singh Khalsa",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 31.0,
+    "debates_count": 2,
+    "questions_asked": 1
+  },
+  "satabdi-roy": {
+    "slug": "satabdi-roy",
+    "name": "Satabdi Roy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 76.0,
+    "debates_count": 15,
+    "questions_asked": 19
+  },
+  "sasikanth-senthil": {
+    "slug": "sasikanth-senthil",
+    "name": "Sasikanth Senthil",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 14,
+    "questions_asked": 112
+  },
+  "saptagiri-sankar-ulaka": {
+    "slug": "saptagiri-sankar-ulaka",
+    "name": "Saptagiri Sankar Ulaka",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 96,
+    "questions_asked": 167
+  },
+  "satish-kumar": {
+    "slug": "satish-kumar",
+    "name": "Satish Kumar Gautam",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 5,
+    "questions_asked": 91
+  },
+  "satpal-brahamchari": {
+    "slug": "satpal-brahamchari",
+    "name": "Satpal Brahamchari",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 14,
+    "questions_asked": 176
+  },
+  "sayani-ghosh": {
+    "slug": "sayani-ghosh",
+    "name": "Sayani Ghosh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 84.0,
+    "debates_count": 12,
+    "questions_asked": 107
+  },
+  "saumitra-khan": {
+    "slug": "saumitra-khan",
+    "name": "Saumitra Khan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 79.0,
+    "debates_count": 15,
+    "questions_asked": 100
+  },
+  "savitri-thakur": {
+    "slug": "savitri-thakur",
+    "name": "Savitri Thakur",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "g-selvam": {
+    "slug": "g-selvam",
+    "name": "Selvam G",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 18,
+    "questions_asked": 257
+  },
+  "shafi-parambil": {
+    "slug": "shafi-parambil",
+    "name": "Shafi Parambil",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 75.0,
+    "debates_count": 19,
+    "questions_asked": 147
+  },
+  "t-m-selvaganapathi": {
+    "slug": "t-m-selvaganapathi",
+    "name": "Selvaganapathi T.M.",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 73.0,
+    "debates_count": 20,
+    "questions_asked": 166
+  },
+  "selvaraj-v": {
+    "slug": "selvaraj-v",
+    "name": "Selvaraj V",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 84.0,
+    "debates_count": 16,
+    "questions_asked": 141
+  },
+  "shambhavi": {
+    "slug": "shambhavi",
+    "name": "Shambhavi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 40,
+    "questions_asked": 227
+  },
+  "shankar-lalwani": {
+    "slug": "shankar-lalwani",
+    "name": "Shankar Lalwani",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 100.0,
+    "debates_count": 19,
+    "questions_asked": 175
+  },
+  "shantanu-thakur": {
+    "slug": "shantanu-thakur",
+    "name": "Shantanu Thakur",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "shashank-mani": {
+    "slug": "shashank-mani",
+    "name": "Shashank Mani",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 18,
+    "questions_asked": 121
+  },
+  "sharmila-sarkar": {
+    "slug": "sharmila-sarkar",
+    "name": "Sharmila Sarkar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 79.0,
+    "debates_count": 12,
+    "questions_asked": 48
+  },
+  "sher-singh-ghubaya": {
+    "slug": "sher-singh-ghubaya",
+    "name": "Sher Singh Ghubaya",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 11,
+    "questions_asked": 30
+  },
+  "shatrughan-sinha": {
+    "slug": "shatrughan-sinha",
+    "name": "Shatrughan Prasad Sinha",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 64.0,
+    "debates_count": 0,
+    "questions_asked": 6
+  },
+  "shashi-tharoor": {
+    "slug": "shashi-tharoor",
+    "name": "Shashi Tharoor",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 89.0,
+    "debates_count": 36,
+    "questions_asked": 138
+  },
+  "shiv-pal-singh-patel-dr-s-p-singh": {
+    "slug": "shiv-pal-singh-patel-dr-s-p-singh",
+    "name": "Shiv Pal Singh Patel",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 84.0,
+    "debates_count": 12,
+    "questions_asked": 2
+  },
+  "dr-kalge-shivaji-bandappa": {
+    "slug": "dr-kalge-shivaji-bandappa",
+    "name": "Shivaji Bandappa Kalge",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 28,
+    "questions_asked": 225
+  },
+  "shivmangal-singh-tomar": {
+    "slug": "shivmangal-singh-tomar",
+    "name": "Shivmangal Singh Tomar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 1,
+    "questions_asked": 45
+  },
+  "shivraj-singh-chouhan": {
+    "slug": "shivraj-singh-chouhan",
+    "name": "Shivraj Singh Chouhan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "shobha-karandlaje": {
+    "slug": "shobha-karandlaje",
+    "name": "Shobha Karandlaje",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "shreyas-m-patel": {
+    "slug": "shreyas-m-patel",
+    "name": "Shreyas M Patel",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 80.0,
+    "debates_count": 20,
+    "questions_asked": 31
+  },
+  "shripad-yesso-naik": {
+    "slug": "shripad-yesso-naik",
+    "name": "Shripad Yesso Naik",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "shrikant-eknath-shinde": {
+    "slug": "shrikant-eknath-shinde",
+    "name": "Shrikant Eknath Shinde",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 37,
+    "questions_asked": 257
+  },
+  "shobhanaben-mahendrasinh-baraiya": {
+    "slug": "shobhanaben-mahendrasinh-baraiya",
+    "name": "Shobhanaben Mahendrasinh Baraiya",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 20,
+    "questions_asked": 231
+  },
+  "shyamkumar-babalu-daulat-barve": {
+    "slug": "shyamkumar-babalu-daulat-barve",
+    "name": "Shyamkumar Daulat Barve",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 22,
+    "questions_asked": 122
+  },
+  "shrirang-appa-barne": {
+    "slug": "shrirang-appa-barne",
+    "name": "Shrirang Appa Chandu Barne",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 96.0,
+    "debates_count": 59,
+    "questions_asked": 293
+  },
+  "sk-nurul-islam": {
+    "slug": "sk-nurul-islam",
+    "name": "Sk Nurul Islam",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 5.0,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "sougata-ray": {
+    "slug": "sougata-ray",
+    "name": "Sougata Ray",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 83.0,
+    "debates_count": 67,
+    "questions_asked": 178
+  },
+  "smita-uday-wagh": {
+    "slug": "smita-uday-wagh",
+    "name": "Smita Uday Wagh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 56,
+    "questions_asked": 301
+  },
+  "sribharat-mathukumili": {
+    "slug": "sribharat-mathukumili",
+    "name": "Sribharat Mathukumilli",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 93.0,
+    "debates_count": 16,
+    "questions_asked": 157
+  },
+  "sudhakar-singh": {
+    "slug": "sudhakar-singh",
+    "name": "Sudhakar Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 35,
+    "questions_asked": 110
+  },
+  "k-subbarayan": {
+    "slug": "k-subbarayan",
+    "name": "Subbarayan K",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 64.0,
+    "debates_count": 24,
+    "questions_asked": 136
+  },
+  "sudama-prasad": {
+    "slug": "sudama-prasad",
+    "name": "Sudama Prasad",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 37,
+    "questions_asked": 109
+  },
+  "sudha-r": {
+    "slug": "sudha-r",
+    "name": "Sudha R",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 93.0,
+    "debates_count": 20,
+    "questions_asked": 103
+  },
+  "sudip-bandyopadhyay": {
+    "slug": "sudip-bandyopadhyay",
+    "name": "Sudip Bandyopadhyay",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 38.0,
+    "debates_count": 5,
+    "questions_asked": 0
+  },
+  "sukanta-kumar-panigrahi": {
+    "slug": "sukanta-kumar-panigrahi",
+    "name": "Sukanta Kumar Panigrahi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 25,
+    "questions_asked": 152
+  },
+  "sudhir-gupta": {
+    "slug": "sudhir-gupta",
+    "name": "Sudheer Gupta",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 41,
+    "questions_asked": 252
+  },
+  "sukhdeo-bhagat": {
+    "slug": "sukhdeo-bhagat",
+    "name": "Sukhdeo Bhagat",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 12,
+    "questions_asked": 67
+  },
+  "sukanta-majumdar": {
+    "slug": "sukanta-majumdar",
+    "name": "Sukanta Majumdar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "sunil-bose": {
+    "slug": "sunil-bose",
+    "name": "Sunil Bose",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 61.0,
+    "debates_count": 2,
+    "questions_asked": 46
+  },
+  "sukhjinder-singh-randhawa": {
+    "slug": "sukhjinder-singh-randhawa",
+    "name": "Sukhjinder Singh Randhawa",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 8,
+    "questions_asked": 96
+  },
+  "sunil-kumar": {
+    "slug": "sunil-kumar",
+    "name": "Sunil Kumar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 32,
+    "questions_asked": 132
+  },
+  "surendra-prasad-yadav": {
+    "slug": "surendra-prasad-yadav",
+    "name": "Surendra Prasad Yadav",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 71.0,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "suresh-gopi": {
+    "slug": "suresh-gopi",
+    "name": "Suresh Gopi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "supriya-sule": {
+    "slug": "supriya-sule",
+    "name": "Supriya Sule",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 75,
+    "questions_asked": 247
+  },
+  "suresh-kumar-kashyap": {
+    "slug": "suresh-kumar-kashyap",
+    "name": "Suresh Kumar Kashyap",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 89.0,
+    "debates_count": 28,
+    "questions_asked": 176
+  },
+  "swami-sachchidanand-hari-sakshi": {
+    "slug": "swami-sachchidanand-hari-sakshi",
+    "name": "Swami Sachidanand Hari Sakshi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "suresh-kumar-shetkar": {
+    "slug": "suresh-kumar-shetkar",
+    "name": "Suresh Kumar Shetkar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 83.0,
+    "debates_count": 9,
+    "questions_asked": 165
+  },
+  "thalikkottai-rajuthevar-baalu": {
+    "slug": "thalikkottai-rajuthevar-baalu",
+    "name": "T R Baalu",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 77.0,
+    "debates_count": 16,
+    "questions_asked": 101
+  },
+  "t-sumathy": {
+    "slug": "t-sumathy",
+    "name": "T Sumathy Alias Thamizhachi Thangapandian",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 68,
+    "questions_asked": 169
+  },
+  "tanuj-punia": {
+    "slug": "tanuj-punia",
+    "name": "Tanuj Punia",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 9,
+    "questions_asked": 148
+  },
+  "thanga-tamil-selvan": {
+    "slug": "thanga-tamil-selvan",
+    "name": "Tamilselvan Thanga",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 81.0,
+    "debates_count": 28,
+    "questions_asked": 108
+  },
+  "tangella-uday-srinivas": {
+    "slug": "tangella-uday-srinivas",
+    "name": "Tangella Uday Srinivas",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 89.0,
+    "debates_count": 26,
+    "questions_asked": 116
+  },
+  "tapir-gao": {
+    "slug": "tapir-gao",
+    "name": "Tapir Gao",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 98.0,
+    "debates_count": 11,
+    "questions_asked": 113
+  },
+  "tariq-anwar": {
+    "slug": "tariq-anwar",
+    "name": "Tariq Anwar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 16,
+    "questions_asked": 71
+  },
+  "tharaniventhan-m-s": {
+    "slug": "tharaniventhan-m-s",
+    "name": "Tharaniventhan M S",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 72.0,
+    "debates_count": 8,
+    "questions_asked": 131
+  },
+  "tatkare-sunil-dattatray": {
+    "slug": "tatkare-sunil-dattatray",
+    "name": "Tatkare Sunil Dattatrey",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 65.0,
+    "debates_count": 14,
+    "questions_asked": 104
+  },
+  "tejasvi-surya": {
+    "slug": "tejasvi-surya",
+    "name": "Tejasvi Surya",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 79.0,
+    "debates_count": 28,
+    "questions_asked": 214
+  },
+  "tokhan-sahu": {
+    "slug": "tokhan-sahu",
+    "name": "Tokhan Sahu",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "thirumaavalavan-thol": {
+    "slug": "thirumaavalavan-thol",
+    "name": "Thirumaavalavan Tholkappiyan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 65.0,
+    "debates_count": 17,
+    "questions_asked": 125
+  },
+  "trivendra-singh-rawat": {
+    "slug": "trivendra-singh-rawat",
+    "name": "Trivendra Singh Rawat",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 9,
+    "questions_asked": 149
+  },
+  "ujjwal-raman-singh": {
+    "slug": "ujjwal-raman-singh",
+    "name": "Ujjwal Raman Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 25,
+    "questions_asked": 73
+  },
+  "ummeda-ram-beniwal": {
+    "slug": "ummeda-ram-beniwal",
+    "name": "Ummeda Ram Beniwal",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 42,
+    "questions_asked": 138
+  },
+  "utkarsh-verma-madhur": {
+    "slug": "utkarsh-verma-madhur",
+    "name": "Utkarsh Verma Madhur",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 100.0,
+    "debates_count": 28,
+    "questions_asked": 74
+  },
+  "v-somanna": {
+    "slug": "v-somanna",
+    "name": "V Somanna",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "v-k-sreekandan": {
+    "slug": "v-k-sreekandan",
+    "name": "V K Sreekandan",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 86.0,
+    "debates_count": 33,
+    "questions_asked": 165
+  },
+  "vamsi-krishna-gaddam": {
+    "slug": "vamsi-krishna-gaddam",
+    "name": "Vamsi Krishna Gaddam",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 88.0,
+    "debates_count": 17,
+    "questions_asked": 86
+  },
+  "veena-devi": {
+    "slug": "veena-devi",
+    "name": "Veena Devi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 5,
+    "questions_asked": 2
+  },
+  "varun-chaudhury": {
+    "slug": "varun-chaudhury",
+    "name": "Varun Chaudhry",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 100.0,
+    "debates_count": 15,
+    "questions_asked": 67
+  },
+  "ve-vaithilingam": {
+    "slug": "ve-vaithilingam",
+    "name": "Ve Vaithilingam",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 79.0,
+    "debates_count": 13,
+    "questions_asked": 71
+  },
+  "vijay-baghel": {
+    "slug": "vijay-baghel",
+    "name": "Vijay Baghel",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 82.0,
+    "debates_count": 14,
+    "questions_asked": 270
+  },
+  "vijay-kumar-dubay": {
+    "slug": "vijay-kumar-dubay",
+    "name": "Vijay Kumar Dubey",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 22,
+    "questions_asked": 163
+  },
+  "vijay-kumar-hansdak": {
+    "slug": "vijay-kumar-hansdak",
+    "name": "Vijay Kumar Hansdak",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 85.0,
+    "debates_count": 12,
+    "questions_asked": 47
+  },
+  "vijaylakshmi-devi": {
+    "slug": "vijaylakshmi-devi",
+    "name": "Vijaylakshmi Devi",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 4,
+    "questions_asked": 82
+  },
+  "virendra-kumar": {
+    "slug": "virendra-kumar",
+    "name": "Virendra Kumar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": null,
+    "debates_count": 0,
+    "questions_asked": 0
+  },
+  "dr-vinod-kumar-bind": {
+    "slug": "dr-vinod-kumar-bind",
+    "name": "Vinod Kumar Bind",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 27,
+    "questions_asked": 144
+  },
+  "vijayakumar-alias-vijay-vasanth": {
+    "slug": "vijayakumar-alias-vijay-vasanth",
+    "name": "Vijayakumar Alias Vijay Vasanth",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 92.0,
+    "debates_count": 32,
+    "questions_asked": 194
+  },
+  "birendra-singh": {
+    "slug": "birendra-singh",
+    "name": "Virendra Singh",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 94.0,
+    "debates_count": 39,
+    "questions_asked": 79
+  },
+  "captain-viriato-fernandes": {
+    "slug": "captain-viriato-fernandes",
+    "name": "Viriato Fernandes",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 87.0,
+    "debates_count": 28,
+    "questions_asked": 84
+  },
+  "vishnu-datt-sharma": {
+    "slug": "vishnu-datt-sharma",
+    "name": "Vishnu Datt Sharma",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 80.0,
+    "debates_count": 9,
+    "questions_asked": 151
+  },
+  "vishal-dada-prakashbapu-patil": {
+    "slug": "vishal-dada-prakashbapu-patil",
+    "name": "Vishaldada Prakashbapu Patil",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 90.0,
+    "debates_count": 87,
+    "questions_asked": 208
+  },
+  "vishnu-dayal-ram": {
+    "slug": "vishnu-dayal-ram",
+    "name": "Vishnu Dayal Ram",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 99.0,
+    "debates_count": 44,
+    "questions_asked": 224
+  },
+  "vivek-thakur": {
+    "slug": "vivek-thakur",
+    "name": "Vivek Thakur",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 2,
+    "questions_asked": 26
+  },
+  "vishweshwar-hegde": {
+    "slug": "vishweshwar-hegde",
+    "name": "Vishweshwar Hegde Kageri",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 95.0,
+    "debates_count": 13,
+    "questions_asked": 245
+  },
+  "y-s-avinash-reddy": {
+    "slug": "y-s-avinash-reddy",
+    "name": "Y S Avinash Reddy",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 55.0,
+    "debates_count": 13,
+    "questions_asked": 146
+  },
+  "yaduveer-krishnadatta-chamaraja-wadiyar": {
+    "slug": "yaduveer-krishnadatta-chamaraja-wadiyar",
+    "name": "Yaduveer Wadiyar",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 83.0,
+    "debates_count": 17,
+    "questions_asked": 123
+  },
+  "yogender-chandoliya": {
+    "slug": "yogender-chandoliya",
+    "name": "Yogender Chandolia",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 97.0,
+    "debates_count": 28,
+    "questions_asked": 271
+  },
+  "zia-ur-rehman": {
+    "slug": "zia-ur-rehman",
+    "name": "Zia Ur Rehman",
+    "state": null,
+    "constituency": null,
+    "attendance_percent": 98.0,
+    "debates_count": 24,
+    "questions_asked": 123
+  }
+}

@@ -1095,6 +1095,8 @@ export const MOCK_POLITICIANS: Politician[] = uniquePoliticians.map((p) => {
     criminalCases: p.criminalCases,
     educationStatus: p.educationStatus,
     partyHistory: p.partyHistory,
+    partySwitchCount: p.partySwitchCount,
+    mpladsUtilisationPercent: p.mpladsUtilisationPercent,
     citizenRatings: p.citizenRatings,
     newsItems: p.newsItems,
   });

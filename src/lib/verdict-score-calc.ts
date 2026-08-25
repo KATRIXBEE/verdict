@@ -21,6 +21,8 @@ export function calculateVerdictScore(politician: {
   partyHistory?: {
     isCurrent: boolean;
   }[];
+  partySwitchCount?: number | null;
+  mpladsUtilisationPercent?: number | null;
   citizenRatings?: {
     rating: number;
     isLocalVoter: boolean;
@@ -111,8 +113,32 @@ export function calculateVerdictScore(politician: {
     educationScore = 0.0; // Unverified / not checked / null -> +0.0 (neutral)
   }
 
+  // 5. PARTY SWITCHES
+  let partyLoyaltyScore = 0.0;
+  const switches = politician.partySwitchCount;
+  if (switches !== undefined && switches !== null) {
+    if (switches === 0) {
+      partyLoyaltyScore = 0.5;
+    } else if (switches === 1) {
+      partyLoyaltyScore = 0.0;
+    } else {
+      partyLoyaltyScore = -0.5;
+    }
+  }
+
+  // 6. MPLADS UTILISATION
+  let mpladsScore = 0.0;
+  const mpladsUtil = politician.mpladsUtilisationPercent;
+  if (mpladsUtil !== undefined && mpladsUtil !== null) {
+    if (mpladsUtil > 80.0) {
+      mpladsScore = 0.5;
+    } else if (mpladsUtil < 30.0) {
+      mpladsScore = -0.5;
+    }
+  }
+
   // Final score summation & clamping
-  const rawScore = baseScore + attendanceScore + crimeImpact + assetGrowthScore + educationScore;
+  const rawScore = baseScore + attendanceScore + crimeImpact + assetGrowthScore + educationScore + partyLoyaltyScore + mpladsScore;
   const finalScore = Number(Math.max(0.0, Math.min(10.0, rawScore)).toFixed(1));
   const scoreBand: ScoreBand = getScoreBand(finalScore);
 
@@ -122,7 +148,7 @@ export function calculateVerdictScore(politician: {
     citizenRatingScore: 0.0,
     newsSentimentScore: 0.0,
     educationScore: Number(educationScore.toFixed(2)),
-    partyLoyaltyScore: 0.0,
+    partyLoyaltyScore: Number((partyLoyaltyScore + mpladsScore).toFixed(2)),
     criminalDeduction: Number(criminalDeduction.toFixed(2)),
     finalScore,
     scoreBand,
@@ -144,8 +170,12 @@ export function calculateVerdictScore(politician: {
         ? "Unaccredited institution flag (-0.5 pts)"
         : "Unverified educational declaration (0.0 pts neutral)",
       citizenText: "Verified citizen trust index (0.0 pts neutral)",
-      partyText: "Party loyalty index (0.0 pts neutral)",
-      newsText: "Media coverage sentiment audit index (0.0 pts neutral)",
+      partyText: switches !== undefined && switches !== null
+        ? `${switches} party switch(es) recorded (${partyLoyaltyScore >= 0 ? "+" : ""}${partyLoyaltyScore.toFixed(1)} pts)`
+        : "Party loyalty index (0.0 pts neutral)",
+      newsText: mpladsUtil !== undefined && mpladsUtil !== null
+        ? `MPLADS fund utilisation ${mpladsUtil}% (${mpladsScore >= 0 ? "+" : ""}${mpladsScore.toFixed(1)} pts)`
+        : "Media coverage sentiment audit index (0.0 pts neutral)",
     },
   };
 }
