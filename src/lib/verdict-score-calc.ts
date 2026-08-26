@@ -1,7 +1,8 @@
 import { ScoreBreakdown, ScoreBand } from "@/types";
 import { getScoreBand } from "@/lib/utils";
 
-export function calculateVerdictScore(politician: {
+export interface VerdictScoreInput {
+  // CamelCase interface
   attendancePercentage?: number | null;
   debatesParticipated?: number | null;
   questionsAsked?: number | null;
@@ -30,13 +31,24 @@ export function calculateVerdictScore(politician: {
   newsItems?: {
     sentiment: "positive" | "neutral" | "critical";
   }[];
-}): ScoreBreakdown {
+
+  // Snake_case aliases for direct parameter mapping
+  attendance_percent?: number | null;
+  criminal_case_count?: number | null;
+  worst_case_severity?: string | null;
+  education_verification_status?: string | null;
+  asset_growth_percent?: number | null;
+  party_switch_count?: number | null;
+  mplads_utilisation_percent?: number | null;
+}
+
+export function calculateVerdictScore(politician: VerdictScoreInput): ScoreBreakdown & { score: number } {
   // BASE SCORE: 5.0
   const baseScore = 5.0;
 
   // 1. ATTENDANCE (only if attendancePercentage is NOT null / undefined)
   let attendanceScore = 0.0;
-  const att = politician.attendancePercentage;
+  const att = politician.attendancePercentage !== undefined ? politician.attendancePercentage : politician.attendance_percent;
   if (att === null || att === undefined) {
     attendanceScore = 0.0; // null = neutral
   } else if (att >= 80.0) {
@@ -52,7 +64,26 @@ export function calculateVerdictScore(politician: {
   // 2. CRIMINAL CASES (strict null vs zero distinction)
   let crimeImpact = 0.0;
   let criminalDeduction = 0.0;
-  if (politician.criminalCases === null || politician.criminalCases === undefined) {
+  
+  if (politician.criminal_case_count !== undefined && politician.criminal_case_count !== null) {
+    if (politician.criminal_case_count === 0) {
+      crimeImpact = 1.0; // Confirmed clean
+    } else {
+      const severity = (politician.worst_case_severity || "moderate").toLowerCase();
+      if (severity === "severe") {
+        crimeImpact = -4.0;
+      } else if (severity === "serious") {
+        crimeImpact = -2.5;
+      } else if (severity === "moderate") {
+        crimeImpact = -1.5;
+      } else if (severity === "minor") {
+        crimeImpact = (politician.criminal_case_count || 1) <= 2 ? -0.5 : -1.5;
+      } else {
+        crimeImpact = -1.5;
+      }
+      criminalDeduction = Math.abs(crimeImpact);
+    }
+  } else if (politician.criminalCases === null || politician.criminalCases === undefined) {
     crimeImpact = 0.0; // null / no data imported yet = neutral (0.0 impact)
   } else if (Array.isArray(politician.criminalCases)) {
     const activeCases = politician.criminalCases.filter(
@@ -79,32 +110,44 @@ export function calculateVerdictScore(politician: {
     crimeImpact = 0.0;
   }
 
-  // 3. ASSET GROWTH (only if 2+ years of data exist)
+  // 3. ASSET GROWTH
   let assetGrowthScore = 0.0;
-  const sortedAssets = [...(politician.assetDeclarations || [])]
-    .filter((a) => a.totalAssets !== undefined && a.totalAssets > 0)
-    .sort((a, b) => a.electionYear - b.electionYear);
-
-  if (sortedAssets.length >= 2) {
-    const oldest = sortedAssets[0].totalAssets;
-    const latest = sortedAssets[sortedAssets.length - 1].totalAssets;
-    if (oldest > 0) {
-      const growthPct = ((latest - oldest) / oldest) * 100.0;
-      if (growthPct < 200.0) {
-        assetGrowthScore = 1.0;
-      } else if (growthPct <= 400.0) {
-        assetGrowthScore = 0.0;
-      } else {
-        assetGrowthScore = -2.0;
-      }
+  if (politician.asset_growth_percent !== undefined && politician.asset_growth_percent !== null) {
+    const growthPct = politician.asset_growth_percent;
+    if (growthPct < 200.0) {
+      assetGrowthScore = 1.0;
+    } else if (growthPct <= 400.0) {
+      assetGrowthScore = 0.0;
+    } else {
+      assetGrowthScore = -2.0;
     }
   } else {
-    assetGrowthScore = 0.0; // Insufficient data -> +0.0
+    const sortedAssets = [...(politician.assetDeclarations || [])]
+      .filter((a) => a.totalAssets !== undefined && a.totalAssets > 0)
+      .sort((a, b) => a.electionYear - b.electionYear);
+
+    if (sortedAssets.length >= 2) {
+      const oldest = sortedAssets[0].totalAssets;
+      const latest = sortedAssets[sortedAssets.length - 1].totalAssets;
+      if (oldest > 0) {
+        const growthPct = ((latest - oldest) / oldest) * 100.0;
+        if (growthPct < 200.0) {
+          assetGrowthScore = 1.0;
+        } else if (growthPct <= 400.0) {
+          assetGrowthScore = 0.0;
+        } else {
+          assetGrowthScore = -2.0;
+        }
+      }
+    } else {
+      assetGrowthScore = 0.0; // Insufficient data -> +0.0
+    }
   }
 
   // 4. EDUCATION (only verified gets bonus, null / unverified = 0.0)
   let educationScore = 0.0;
-  const edu = (politician.educationStatus || "").toLowerCase();
+  const rawEdu = politician.educationStatus !== undefined ? politician.educationStatus : politician.education_verification_status;
+  const edu = (rawEdu || "").toLowerCase();
   if (edu === "verified") {
     educationScore = 0.5;
   } else if (edu === "suspicious") {
@@ -115,7 +158,7 @@ export function calculateVerdictScore(politician: {
 
   // 5. PARTY SWITCHES
   let partyLoyaltyScore = 0.0;
-  const switches = politician.partySwitchCount;
+  const switches = politician.partySwitchCount !== undefined ? politician.partySwitchCount : politician.party_switch_count;
   if (switches !== undefined && switches !== null) {
     if (switches === 0) {
       partyLoyaltyScore = 0.5;
@@ -128,7 +171,7 @@ export function calculateVerdictScore(politician: {
 
   // 6. MPLADS UTILISATION
   let mpladsScore = 0.0;
-  const mpladsUtil = politician.mpladsUtilisationPercent;
+  const mpladsUtil = politician.mpladsUtilisationPercent !== undefined ? politician.mpladsUtilisationPercent : politician.mplads_utilisation_percent;
   if (mpladsUtil !== undefined && mpladsUtil !== null) {
     if (mpladsUtil > 80.0) {
       mpladsScore = 0.5;
@@ -143,6 +186,9 @@ export function calculateVerdictScore(politician: {
   const scoreBand: ScoreBand = getScoreBand(finalScore);
 
   return {
+    score: finalScore,
+    finalScore,
+    scoreBand,
     attendanceScore: Number(attendanceScore.toFixed(2)),
     assetGrowthScore: Number(assetGrowthScore.toFixed(2)),
     citizenRatingScore: 0.0,
@@ -150,15 +196,11 @@ export function calculateVerdictScore(politician: {
     educationScore: Number(educationScore.toFixed(2)),
     partyLoyaltyScore: Number((partyLoyaltyScore + mpladsScore).toFixed(2)),
     criminalDeduction: Number(criminalDeduction.toFixed(2)),
-    finalScore,
-    scoreBand,
     details: {
       attendanceText: att !== undefined && att !== null
         ? `${att}% attendance in Parliament (${attendanceScore >= 0 ? "+" : ""}${attendanceScore.toFixed(1)} pts)`
         : "No official attendance records on file (0.0 pts neutral)",
-      assetText: sortedAssets.length >= 2
-        ? `Multi-term asset growth (${assetGrowthScore >= 0 ? "+" : ""}${assetGrowthScore.toFixed(1)} pts)`
-        : "Single term / baseline asset declaration (0.0 pts neutral)",
+      assetText: "Asset declaration growth index",
       criminalText: crimeImpact < 0
         ? `${crimeImpact.toFixed(1)} pts deduction across declared criminal cases`
         : crimeImpact > 0

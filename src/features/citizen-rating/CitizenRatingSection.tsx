@@ -11,9 +11,10 @@ import {
   AlertCircle, 
   ThumbsUp, 
   MessageSquare,
-  Sparkles
+  Sparkles,
+  Info
 } from "lucide-react";
-import { CitizenRating } from "@/types";
+import { CitizenRating, FeedbackCategory } from "@/types";
 import BrutalistCard from "@/components/ui/BrutalistCard";
 import BrutalistButton from "@/components/ui/BrutalistButton";
 import Modal from "@/components/ui/Modal";
@@ -43,6 +44,7 @@ export default function CitizenRatingSection({
   const [isLocal, setIsLocal] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submittedSuccess, setSubmittedSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const localRatings = ratings.filter((r) => r.isLocalVoter);
   const nationalRatings = ratings.filter((r) => !r.isLocalVoter);
@@ -59,35 +61,72 @@ export default function CitizenRatingSection({
       ? (nationalRatings.reduce((acc, r) => acc + r.rating, 0) / nationalRatings.length).toFixed(1)
       : "4.0";
 
-  const handleRatingSubmit = (e: React.FormEvent) => {
+  const handleRatingSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setErrorMessage(null);
 
-    const newRating: CitizenRating = {
-      id: `cr-${Date.now()}`,
-      politicianId,
-      userId: `user-verified-${Math.random().toString(36).substring(2, 7)}`,
-      userName: userName.trim() || "DigiLocker Verified Citizen",
-      userConstituency: isLocal ? constituencyName : "National Voter",
-      rating: selectedStars,
-      feedbackTag: feedbackTag as any,
-      comment: comment.trim() || undefined,
-      isLocalVoter: isLocal,
-      digilockerVerified: true,
-      createdAt: new Date().toISOString(),
-    };
+    try {
+      const response = await fetch("/api/ratings", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          politicianId,
+          rating: selectedStars,
+          userName: userName.trim() || "Anonymous Citizen",
+          comment: comment.trim() || undefined,
+          userConstituency: isLocal ? constituencyName : "National Voter",
+          feedbackTag: feedbackTag as FeedbackCategory,
+        }),
+      });
 
-    setTimeout(() => {
+      if (response.status === 429) {
+        setErrorMessage("Too many ratings submitted. Please try again in a minute.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      if (!response.ok) {
+        const errData = await response.json().catch(() => ({}));
+        setErrorMessage(
+          errData?.error?.message || "Failed to submit citizen rating. Please try again."
+        );
+        setIsSubmitting(false);
+        return;
+      }
+
+      const resJson = await response.json();
+      const savedData = resJson.data || resJson;
+
+      const newRating: CitizenRating = {
+        id: savedData.id || `cr-${Date.now()}`,
+        politicianId,
+        userId: savedData.userId || `user-anon-${Math.random().toString(36).substring(2, 7)}`,
+        userName: savedData.userName || userName.trim() || "Anonymous Citizen",
+        userConstituency: savedData.userConstituency || (isLocal ? constituencyName : "National Voter"),
+        rating: savedData.rating || selectedStars,
+        feedbackTag: savedData.feedbackTag || (feedbackTag as FeedbackCategory),
+        comment: savedData.comment || comment.trim() || undefined,
+        isLocalVoter: Boolean(savedData.isLocalVoter),
+        digilockerVerified: Boolean(savedData.digilockerVerified),
+        createdAt: savedData.createdAt || new Date().toISOString(),
+      };
+
       setRatings([newRating, ...ratings]);
-      setIsSubmitting(false);
       setSubmittedSuccess(true);
       setTimeout(() => {
         setSubmittedSuccess(false);
         setRatingModalOpen(false);
         setComment("");
         setUserName("");
+        setErrorMessage(null);
       }, 2000);
-    }, 600);
+    } catch (err) {
+      console.error("[RATING_SUBMISSION_ERROR]", err);
+      setErrorMessage("Network error. Please check your connection and try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const tagOptions = [
@@ -102,13 +141,21 @@ export default function CitizenRatingSection({
   return (
     <>
       <BrutalistCard
-        title="ANTI-BRIGADING CITIZEN TRUST RATINGS"
-        badge="DIGILOCKER 1-CITIZEN-1-VOTE"
-        badgeColor="pink"
+        title="CITIZEN TRUST RATINGS"
+        badge="COMMUNITY FEEDBACK"
+        badgeColor="yellow"
         statusLight="green"
-        statusLightLabel="CONSTITUENCY ISOLATED"
+        statusLightLabel="IP RATE LIMITED"
       >
         <div className="space-y-6 font-mono">
+          {/* Informational Status Banner */}
+          <div className="bg-brand-cyan/20 border-2 border-ink p-3 flex items-start space-x-2 text-[11px] text-gray-900">
+            <Info className="w-4 h-4 text-ink shrink-0 mt-0.5" />
+            <p>
+              <strong>Public Ledger Notice:</strong> Ratings are currently recorded as unverified community feedback. Official DigiLocker 1-Citizen-1-Vote authentication integration is coming in the next release.
+            </p>
+          </div>
+
           {/* Header Metric Bar */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-surface-muted border-2 border-ink p-4 text-xs">
             <div className="flex items-center space-x-4">
@@ -123,17 +170,17 @@ export default function CitizenRatingSection({
                 <div className="flex items-center space-x-2">
                   <span className="font-bold text-ink text-sm uppercase">
                     {activeTab === "local"
-                      ? `${constituencyName} Residents Rating`
-                      : "National Public Rating"}
+                      ? `${constituencyName} Community Ratings`
+                      : "National Public Opinions"}
                   </span>
-                  <span className="bg-brand-green text-black text-[10px] font-black px-1.5 py-0.2 border border-ink">
-                    VERIFIED
+                  <span className="bg-brand-yellow text-black text-[10px] font-black px-1.5 py-0.2 border border-ink">
+                    COMMUNITY
                   </span>
                 </div>
                 <p className="text-gray-600 text-[11px] mt-0.5">
                   {activeTab === "local"
-                    ? "Weight 70% in VERDICT Score (Local voter residency gate)"
-                    : "Weight 30% in VERDICT Score (Cross-state public opinions)"}
+                    ? "Weight 70% in VERDICT Score (Constituency resident focus)"
+                    : "Weight 30% in VERDICT Score (Cross-state public perspective)"}
                 </p>
               </div>
             </div>
@@ -143,15 +190,18 @@ export default function CitizenRatingSection({
               variant="secondary"
               size="sm"
               shadow="sm"
-              onClick={() => setRatingModalOpen(true)}
+              onClick={() => {
+                setErrorMessage(null);
+                setRatingModalOpen(true);
+              }}
               className="flex items-center space-x-1.5 self-start sm:self-auto"
             >
               <Star className="w-4 h-4 fill-black" />
-              <span>CAST VERIFIED RATING</span>
+              <span>SUBMIT CITIZEN RATING</span>
             </BrutalistButton>
           </div>
 
-          {/* Dual Tabs for Anti-Brigading */}
+          {/* Dual Tabs */}
           <div className="flex border-b-2.5 border-ink">
             <button
               onClick={() => setActiveTab("local")}
@@ -163,7 +213,7 @@ export default function CitizenRatingSection({
             >
               <MapPin className="w-3.5 h-3.5 text-brand-red" />
               <span>
-                CONSTITUENCY VOTERS ({localRatings.length})
+                CONSTITUENCY FEEDBACK ({localRatings.length})
               </span>
             </button>
 
@@ -186,8 +236,8 @@ export default function CitizenRatingSection({
           <div className="space-y-3">
             {displayedRatings.length === 0 ? (
               <div className="p-8 bg-canvas border-2 border-ink text-center text-xs text-gray-600 space-y-2">
-                <p className="font-bold">No verified ratings recorded in this tab yet.</p>
-                <p>Be the first DigiLocker-authenticated citizen to cast a rating for this representative.</p>
+                <p className="font-bold">No community ratings recorded in this tab yet.</p>
+                <p>Be the first citizen to submit a rating for this representative.</p>
               </div>
             ) : (
               displayedRatings.map((r) => (
@@ -198,12 +248,16 @@ export default function CitizenRatingSection({
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <div className="flex items-center space-x-2">
                       <div className="w-6 h-6 bg-ink text-white rounded-full flex items-center justify-center text-[10px] font-bold">
-                        {r.userName[0]?.toUpperCase()}
+                        {r.userName ? r.userName[0]?.toUpperCase() : "C"}
                       </div>
                       <span className="font-bold text-xs text-ink">{r.userName}</span>
-                      {r.isLocalVoter && (
+                      {r.digilockerVerified ? (
                         <span className="bg-brand-green text-black text-[9px] font-extrabold px-1.5 py-0.2 border border-black">
-                          LOCAL RESIDENT
+                          DIGILOCKER VERIFIED
+                        </span>
+                      ) : (
+                        <span className="bg-surface-muted text-gray-700 text-[9px] font-bold px-1.5 py-0.2 border border-ink">
+                          COMMUNITY
                         </span>
                       )}
                     </div>
@@ -238,24 +292,19 @@ export default function CitizenRatingSection({
               ))
             )}
           </div>
-
-          {/* Anti-Brigading Policy Notice */}
-          <div className="bg-brand-yellow/20 border-2 border-ink p-3 flex items-start space-x-2 text-[11px] text-gray-800">
-            <Lock className="w-4 h-4 text-ink shrink-0 mt-0.5" />
-            <p>
-              <strong>Anti-IT Cell Brigading Shield:</strong> To prevent coordinated cross-state voting raids, ratings by voters registered outside {constituencyName} are isolated in the National tab and cannot skew the candidate&apos;s local resident score.
-            </p>
-          </div>
         </div>
       </BrutalistCard>
 
-      {/* DigiLocker Rating Modal */}
+      {/* Citizen Rating Modal */}
       <Modal
         isOpen={ratingModalOpen}
-        onClose={() => setRatingModalOpen(false)}
-        title={`CAST CITIZEN RATING: ${politicianName.toUpperCase()}`}
-        badge="DIGILOCKER 1-CITIZEN-1-VOTE"
-        badgeColor="green"
+        onClose={() => {
+          setRatingModalOpen(false);
+          setErrorMessage(null);
+        }}
+        title={`SUBMIT RATING: ${politicianName.toUpperCase()}`}
+        badge="COMMUNITY LEDGER"
+        badgeColor="yellow"
         maxWidth="lg"
       >
         {submittedSuccess ? (
@@ -264,31 +313,24 @@ export default function CitizenRatingSection({
               <CheckCircle2 className="w-7 h-7 text-black stroke-[2.5]" />
             </div>
             <h3 className="font-display font-black text-xl text-ink uppercase">
-              RATING RECORDED ON-CHAIN & AUDITED!
+              RATING RECORDED IN PUBLIC LEDGER!
             </h3>
             <p className="text-xs text-gray-700">
-              Your rating has been authenticated via DigiLocker Sandbox and logged in the public ledger.
+              Your feedback has been logged into the VERDICT community ratings storage.
             </p>
           </div>
         ) : (
           <form onSubmit={handleRatingSubmit} className="space-y-4 font-mono text-xs">
-            {/* DigiLocker Auth Badge */}
-            <div className="bg-brand-green/20 border-2 border-ink p-3 flex items-center justify-between">
-              <div className="flex items-center space-x-2">
-                <ShieldCheck className="w-5 h-5 text-green-700 shrink-0" />
-                <div>
-                  <span className="font-bold text-ink">DigiLocker Mock Sandbox Connected</span>
-                  <p className="text-[10px] text-gray-600">Aadhaar Token: •••• •••• 9102 (Isolated 1-Citizen-1-Vote)</p>
-                </div>
+            {errorMessage && (
+              <div className="bg-brand-red/10 border-2 border-brand-red p-3 flex items-start space-x-2 text-brand-red text-xs">
+                <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" />
+                <span>{errorMessage}</span>
               </div>
-              <span className="bg-brand-green text-black font-black text-[9px] px-2 py-0.5 border border-black">
-                ACTIVE
-              </span>
-            </div>
+            )}
 
-            {/* Voter Residency Toggle */}
+            {/* Residency Category */}
             <div className="space-y-1.5">
-              <label className="font-bold uppercase text-ink">Constituency Verification:</label>
+              <label className="font-bold uppercase text-ink">Constituency Residency:</label>
               <div className="grid grid-cols-2 gap-2">
                 <button
                   type="button"
@@ -315,7 +357,7 @@ export default function CitizenRatingSection({
 
             {/* Star Rating Selector */}
             <div className="space-y-1.5">
-              <label className="font-bold uppercase text-ink">Your Star Rating (1 to 5):</label>
+              <label className="font-bold uppercase text-ink">Your Rating (1 to 5 Stars):</label>
               <div className="flex items-center space-x-2 bg-canvas p-3 border-2 border-ink justify-center">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <button
@@ -338,7 +380,7 @@ export default function CitizenRatingSection({
 
             {/* Feedback Tag */}
             <div className="space-y-1.5">
-              <label className="font-bold uppercase text-ink">Primary Feedback Category:</label>
+              <label className="font-bold uppercase text-ink">Primary Evaluation Area:</label>
               <select
                 value={feedbackTag}
                 onChange={(e) => setFeedbackTag(e.target.value)}
@@ -385,7 +427,7 @@ export default function CitizenRatingSection({
                 disabled={isSubmitting}
                 className="w-full"
               >
-                {isSubmitting ? "AUTHENTICATING & LOGGING..." : "SUBMIT VERIFIED VOTE"}
+                {isSubmitting ? "LOGGING RATING..." : "SUBMIT CITIZEN RATING"}
               </BrutalistButton>
             </div>
           </form>

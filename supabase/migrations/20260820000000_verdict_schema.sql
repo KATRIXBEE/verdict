@@ -1,203 +1,274 @@
--- ========================================================================
--- VERDICT DATABASE SCHEMA & SECURITY POLICIES (Supabase / Postgres 15+)
--- Adheres to AGENTS.md & database.md Engineering Standards
--- ========================================================================
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
--- Enable UUID extension
-create extension if not exists "pgcrypto";
-
--- ------------------------------------------------------------------------
--- 1. States and Constituencies Master
--- ------------------------------------------------------------------------
-create table if not exists public.constituencies (
-  id uuid primary key default gen_random_uuid(),
-  name text not null,
-  state text not null,
-  type text not null check (type in ('lok_sabha', 'vidhan_sabha')),
-  code text unique not null,
-  registered_voters integer check (registered_voters >= 0),
-  created_at timestamptz not null default now(),
-  updated_at timestamptz not null default now()
+-- Core politicians table
+CREATE TABLE IF NOT EXISTS politicians (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  name VARCHAR(255) NOT NULL,
+  slug VARCHAR(255) UNIQUE,
+  name_variants TEXT[],
+  photo_url TEXT,
+  date_of_birth DATE,
+  age INTEGER,
+  gender VARCHAR(20),
+  current_party VARCHAR(255),
+  party VARCHAR(255),
+  current_constituency VARCHAR(255),
+  constituency VARCHAR(255),
+  current_state VARCHAR(255),
+  state VARCHAR(255),
+  current_house VARCHAR(100),
+  profession TEXT,
+  education TEXT,
+  education_verification_status VARCHAR(50) DEFAULT 'Not Checked',
+  wikipedia_url TEXT,
+  bio_summary TEXT,
+  official_website TEXT,
+  social_twitter VARCHAR(255),
+  social_facebook VARCHAR(255),
+  email VARCHAR(255),
+  phone VARCHAR(50),
+  mp_code VARCHAR(50),
+  verdict_score DECIMAL(3,1) DEFAULT 5.0,
+  score_breakdown JSONB,
+  data_completeness_percent INTEGER DEFAULT 0,
+  criminal_case_count INTEGER,
+  worst_case_severity VARCHAR(20),
+  attendance_percent DECIMAL(5,2),
+  questions_asked INTEGER,
+  debates_count INTEGER,
+  asset_growth_percent DECIMAL(10,2),
+  party_switch_count INTEGER,
+  mplads_utilisation_percent DECIMAL(5,2),
+  mplads_allocated BIGINT,
+  mplads_utilised BIGINT,
+  total_assets BIGINT,
+  liabilities BIGINT,
+  election_year INTEGER,
+  terms_served INTEGER,
+  result VARCHAR(50),
+  portfolio_history JSONB,
+  data_source VARCHAR(100),
+  needs_review BOOLEAN DEFAULT FALSE,
+  last_updated TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
--- Index for constituency search & lookups
-create index if not exists idx_constituencies_state on public.constituencies(state);
-create index if not exists idx_constituencies_name on public.constituencies(name);
-
--- ------------------------------------------------------------------------
--- 2. Politicians Master Table
--- ------------------------------------------------------------------------
-create table if not exists public.politicians (
-  id uuid primary key default gen_random_uuid(),
-  full_name text not null,
-  slug text unique not null,
-  photo_url text,
-  current_party text not null,
-  current_constituency_id uuid references public.constituencies(id) on delete set null,
-  age integer check (age >= 25),
-  gender text check (gender in ('male', 'female', 'other')),
-  profession_declared text,
-  education_degree text,
-  education_institution text,
-  education_status text not null default 'unverified' check (education_status in ('verified', 'unverified', 'suspicious')),
-  attendance_percentage numeric(5,2) check (attendance_percentage between 0 and 100),
-  debates_participated integer not null default 0 check (debates_participated >= 0),
-  questions_asked integer not null default 0 check (questions_asked >= 0),
-  private_member_bills integer not null default 0 check (private_member_bills >= 0),
-  calculated_verdict_score numeric(3,1) not null default 5.0 check (calculated_verdict_score between 0 and 10),
-  news_sentiment_score numeric(3,2) not null default 0.50 check (news_sentiment_score between 0 and 1),
-  terms_served integer not null default 1 check (terms_served >= 1),
-  is_minister boolean not null default false,
-  portfolio text,
-  last_synced_at timestamptz not null default now(),
-  created_at timestamptz not null default now(),
-  updated_at timestamptz not null default now()
+-- Election history table
+CREATE TABLE IF NOT EXISTS election_history (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  politician_id UUID REFERENCES politicians(id) ON DELETE CASCADE,
+  election_year INTEGER NOT NULL,
+  house VARCHAR(100),
+  constituency VARCHAR(255),
+  state VARCHAR(255),
+  party VARCHAR(255),
+  votes_received INTEGER,
+  vote_share_percent DECIMAL(5,2),
+  result VARCHAR(50),
+  margin INTEGER,
+  total_candidates INTEGER,
+  source VARCHAR(100),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  UNIQUE(politician_id, election_year, constituency)
 );
 
--- Indexes for hot queries
-create index if not exists idx_politicians_slug on public.politicians(slug);
-create index if not exists idx_politicians_current_party on public.politicians(current_party);
-create index if not exists idx_politicians_constituency on public.politicians(current_constituency_id);
-create index if not exists idx_politicians_score on public.politicians(calculated_verdict_score desc);
-
--- ------------------------------------------------------------------------
--- 3. Party Affiliation History ("Aaya Ram Gaya Ram")
--- ------------------------------------------------------------------------
-create table if not exists public.party_history (
-  id uuid primary key default gen_random_uuid(),
-  politician_id uuid not null references public.politicians(id) on delete cascade,
-  party_name text not null,
-  start_year integer not null check (start_year >= 1947),
-  end_year integer check (end_year is null or end_year >= start_year),
-  is_current boolean not null default false,
-  switch_reason text,
-  created_at timestamptz not null default now(),
-  updated_at timestamptz not null default now()
+-- Assets table (multi-year)
+CREATE TABLE IF NOT EXISTS assets (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  politician_id UUID REFERENCES politicians(id) ON DELETE CASCADE,
+  election_year INTEGER NOT NULL,
+  movable_assets BIGINT,
+  immovable_assets BIGINT,
+  total_assets BIGINT,
+  total_liabilities BIGINT,
+  net_assets BIGINT,
+  spouse_assets BIGINT,
+  dependent_assets BIGINT,
+  income_sources TEXT,
+  source VARCHAR(100),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  UNIQUE(politician_id, election_year)
 );
 
-create index if not exists idx_party_history_politician on public.party_history(politician_id);
-
--- ------------------------------------------------------------------------
--- 4. Criminal Cases & eCourts Records
--- ------------------------------------------------------------------------
-create table if not exists public.criminal_cases (
-  id uuid primary key default gen_random_uuid(),
-  politician_id uuid not null references public.politicians(id) on delete cascade,
-  cnr_number text,
-  case_number text not null,
-  court_name text not null,
-  ipc_sections text[] not null default '{}',
-  plain_english_summary text not null,
-  severity_tier text not null check (severity_tier in ('minor', 'moderate', 'serious', 'severe')),
-  status text not null check (status in ('active', 'bail_granted', 'stayed', 'acquitted', 'convicted')),
-  filing_date date,
-  last_hearing_date date,
-  next_hearing_date date,
-  presiding_judge text,
-  source_affidavit_url text,
-  ecourts_verified boolean not null default false,
-  created_at timestamptz not null default now(),
-  updated_at timestamptz not null default now()
+-- Criminal cases table
+CREATE TABLE IF NOT EXISTS criminal_cases (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  politician_id UUID REFERENCES politicians(id) ON DELETE CASCADE,
+  case_number VARCHAR(255),
+  court_name VARCHAR(255),
+  court_state VARCHAR(100),
+  ipc_sections TEXT[],
+  ipc_plain_english TEXT[],
+  nature_of_offence TEXT,
+  date_filed DATE,
+  current_status VARCHAR(100),
+  next_hearing_date DATE,
+  severity VARCHAR(20),
+  score_impact DECIMAL(3,1),
+  election_year_declared INTEGER,
+  ecourts_case_id VARCHAR(255),
+  last_status_check TIMESTAMP WITH TIME ZONE,
+  source VARCHAR(100),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
-create index if not exists idx_criminal_cases_politician on public.criminal_cases(politician_id);
-create index if not exists idx_criminal_cases_severity on public.criminal_cases(severity_tier);
-create index if not exists idx_criminal_cases_status on public.criminal_cases(status);
-
--- ------------------------------------------------------------------------
--- 5. Multi-Year Asset Filings (ECI Form 26)
--- ------------------------------------------------------------------------
-create table if not exists public.asset_declarations (
-  id uuid primary key default gen_random_uuid(),
-  politician_id uuid not null references public.politicians(id) on delete cascade,
-  election_year integer not null check (election_year in (2009, 2014, 2019, 2024, 2029)),
-  movable_assets numeric(14,2) not null check (movable_assets >= 0),
-  immovable_assets numeric(14,2) not null check (immovable_assets >= 0),
-  total_assets numeric(14,2) generated always as (movable_assets + immovable_assets) stored,
-  total_liabilities numeric(14,2) not null default 0 check (total_liabilities >= 0),
-  declared_annual_income numeric(14,2) check (declared_annual_income is null or declared_annual_income >= 0),
-  is_outlier_growth boolean not null default false,
-  growth_cagr numeric(6,2),
-  affidavit_pdf_url text,
-  created_at timestamptz not null default now(),
-  updated_at timestamptz not null default now(),
-  constraint unique_politician_election_year unique (politician_id, election_year)
+-- Parliamentary performance table
+CREATE TABLE IF NOT EXISTS parliamentary_performance (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  politician_id UUID REFERENCES politicians(id) ON DELETE CASCADE,
+  term_year_start INTEGER,
+  term_year_end INTEGER,
+  house VARCHAR(100),
+  total_sessions INTEGER,
+  sessions_attended INTEGER,
+  attendance_percent DECIMAL(5,2),
+  questions_asked_starred INTEGER,
+  questions_asked_unstarred INTEGER,
+  debates_participated INTEGER,
+  private_bills_introduced INTEGER,
+  private_bills_passed INTEGER,
+  source VARCHAR(100),
+  last_updated TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  UNIQUE(politician_id, term_year_start, house)
 );
 
-create index if not exists idx_asset_politician on public.asset_declarations(politician_id);
-create index if not exists idx_asset_election_year on public.asset_declarations(election_year);
-
--- ------------------------------------------------------------------------
--- 6. Citizen Ratings (Aadhaar Verified & Anti-Brigading)
--- ------------------------------------------------------------------------
-create table if not exists public.citizen_ratings (
-  id uuid primary key default gen_random_uuid(),
-  politician_id uuid not null references public.politicians(id) on delete cascade,
-  user_id uuid not null references auth.users(id) on delete cascade,
-  user_constituency_id uuid references public.constituencies(id) on delete set null,
-  rating integer not null check (rating between 1 and 5),
-  feedback_tag text check (feedback_tag in ('responsive', 'absentee', 'infrastructure', 'integrity', 'reformist', 'communal', 'accessible')),
-  comment text,
-  is_local_voter boolean not null default false,
-  digilocker_verified boolean not null default true,
-  created_at timestamptz not null default now(),
-  updated_at timestamptz not null default now(),
-  constraint unique_user_politician_rating unique (politician_id, user_id)
+-- Party history table
+CREATE TABLE IF NOT EXISTS party_history (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  politician_id UUID REFERENCES politicians(id) ON DELETE CASCADE,
+  party_name VARCHAR(255) NOT NULL,
+  joined_date DATE,
+  left_date DATE,
+  reason_for_leaving VARCHAR(255),
+  source VARCHAR(100),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
-create index if not exists idx_citizen_ratings_politician on public.citizen_ratings(politician_id);
-create index if not exists idx_citizen_ratings_local on public.citizen_ratings(politician_id, is_local_voter);
+-- Citizen ratings table
+CREATE TABLE IF NOT EXISTS citizen_ratings (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  politician_id UUID REFERENCES politicians(id) ON DELETE CASCADE,
+  politician_slug VARCHAR(255),
+  rating INTEGER CHECK (rating >= 1 AND rating <= 10),
+  user_name VARCHAR(100),
+  user_constituency VARCHAR(255),
+  comment TEXT,
+  digilocker_verified BOOLEAN DEFAULT FALSE,
+  is_local_voter BOOLEAN DEFAULT FALSE,
+  client_ip VARCHAR(45),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
 
--- ------------------------------------------------------------------------
--- 7. Row Level Security (RLS) - Leak Proof Configuration
--- ------------------------------------------------------------------------
-alter table public.constituencies enable row level security;
-alter table public.politicians enable row level security;
-alter table public.party_history enable row level security;
-alter table public.criminal_cases enable row level security;
-alter table public.asset_declarations enable row level security;
-alter table public.citizen_ratings enable row level security;
+-- Ground truth articles table
+CREATE TABLE IF NOT EXISTS ground_truth_articles (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  slug VARCHAR(255) UNIQUE,
+  headline TEXT NOT NULL,
+  summary TEXT,
+  body TEXT,
+  source VARCHAR(255),
+  source_url TEXT,
+  author VARCHAR(255),
+  author_badge VARCHAR(50),
+  category VARCHAR(100),
+  location_state VARCHAR(100),
+  location_district VARCHAR(100),
+  status VARCHAR(50) DEFAULT 'Ongoing',
+  severity VARCHAR(20),
+  affected_people_count INTEGER,
+  published_at TIMESTAMP WITH TIME ZONE,
+  fetched_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  is_verified BOOLEAN DEFAULT FALSE,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
 
--- Public read access for factual public records
-create policy "Public can view constituencies" on public.constituencies
-  for select using (true);
+-- IPC lookup table
+CREATE TABLE IF NOT EXISTS ipc_lookup (
+  section VARCHAR(20) PRIMARY KEY,
+  plain_english TEXT NOT NULL,
+  severity VARCHAR(20) NOT NULL,
+  category VARCHAR(100)
+);
 
-create policy "Public can view politicians" on public.politicians
-  for select using (true);
+-- Data import log table
+CREATE TABLE IF NOT EXISTS data_import_log (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  source VARCHAR(100),
+  status VARCHAR(50),
+  politicians_processed INTEGER DEFAULT 0,
+  politicians_created INTEGER DEFAULT 0,
+  politicians_updated INTEGER DEFAULT 0,
+  errors TEXT,
+  started_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  completed_at TIMESTAMP WITH TIME ZONE
+);
 
-create policy "Public can view party histories" on public.party_history
-  for select using (true);
+-- Indexes for performance
+CREATE INDEX IF NOT EXISTS idx_politicians_slug ON politicians(slug);
+CREATE INDEX IF NOT EXISTS idx_politicians_state ON politicians(state);
+CREATE INDEX IF NOT EXISTS idx_politicians_party ON politicians(current_party);
+CREATE INDEX IF NOT EXISTS idx_politicians_house ON politicians(current_house);
+CREATE INDEX IF NOT EXISTS idx_politicians_score ON politicians(verdict_score DESC);
+CREATE INDEX IF NOT EXISTS idx_politicians_name ON politicians(name);
+CREATE INDEX IF NOT EXISTS idx_criminal_cases_politician ON criminal_cases(politician_id);
+CREATE INDEX IF NOT EXISTS idx_assets_politician ON assets(politician_id);
+CREATE INDEX IF NOT EXISTS idx_ratings_politician ON citizen_ratings(politician_slug);
+CREATE INDEX IF NOT EXISTS idx_ground_truth_category ON ground_truth_articles(category);
 
-create policy "Public can view criminal cases" on public.criminal_cases
-  for select using (true);
+-- Seed IPC lookup table
+INSERT INTO ipc_lookup (section, plain_english, severity, category)
+VALUES
+  ('302', 'Murder', 'Severe', 'Violent Crime'),
+  ('376', 'Rape', 'Severe', 'Sexual Crime'),
+  ('406', 'Criminal breach of trust', 'Serious', 'Financial Crime'),
+  ('420', 'Cheating and fraud', 'Serious', 'Financial Crime'),
+  ('147', 'Rioting', 'Moderate', 'Public Order'),
+  ('148', 'Rioting with deadly weapon', 'Serious', 'Public Order'),
+  ('149', 'Unlawful assembly', 'Moderate', 'Public Order'),
+  ('188', 'Disobedience to public servant', 'Minor', 'Administrative'),
+  ('120B', 'Criminal conspiracy', 'Serious', 'Criminal Law'),
+  ('201', 'Destruction of evidence', 'Serious', 'Criminal Law'),
+  ('384', 'Extortion', 'Serious', 'Financial Crime'),
+  ('409', 'Breach of trust by public servant', 'Severe', 'Corruption'),
+  ('465', 'Forgery', 'Serious', 'Financial Crime'),
+  ('471', 'Using forged document', 'Serious', 'Financial Crime'),
+  ('498A', 'Cruelty by husband or relatives', 'Serious', 'Domestic'),
+  ('POCSO', 'Crime against a child', 'Severe', 'Child Safety'),
+  ('PC-7', 'Offence relating to bribery', 'Severe', 'Corruption'),
+  ('PC-13', 'Criminal misconduct by public servant', 'Severe', 'Corruption')
+ON CONFLICT (section) DO NOTHING;
 
-create policy "Public can view asset declarations" on public.asset_declarations
-  for select using (true);
+-- Row Level Security (read-only for public)
+ALTER TABLE politicians ENABLE ROW LEVEL SECURITY;
+ALTER TABLE criminal_cases ENABLE ROW LEVEL SECURITY;
+ALTER TABLE assets ENABLE ROW LEVEL SECURITY;
+ALTER TABLE election_history ENABLE ROW LEVEL SECURITY;
+ALTER TABLE citizen_ratings ENABLE ROW LEVEL SECURITY;
+ALTER TABLE ground_truth_articles ENABLE ROW LEVEL SECURITY;
 
-create policy "Public can view aggregated citizen ratings" on public.citizen_ratings
-  for select using (true);
-
--- Per-operation strict RLS for citizen ratings
-create policy "Verified users can insert their own rating" on public.citizen_ratings
-  for insert with check (auth.uid() = user_id);
-
-create policy "Users can update their own rating" on public.citizen_ratings
-  for update using (auth.uid() = user_id) with check (auth.uid() = user_id);
-
-create policy "Users can delete their own rating" on public.citizen_ratings
-  for delete using (auth.uid() = user_id);
-
--- ------------------------------------------------------------------------
--- 8. Atomic Multi-Step Calculation Trigger
--- ------------------------------------------------------------------------
-create or replace function public.update_updated_at_column()
-returns trigger as $$
-begin
-  new.updated_at = now();
-  return new;
-end;
-$$ language plpgsql;
-
-create trigger set_politicians_updated_at
-  before update on public.politicians
-  for each row execute function public.update_updated_at_column();
+-- Public read access (all civic data is public)
+DO $$
+BEGIN
+  IF NOT EXISTS (SELECT 1 FROM pg_policies WHERE policyname = 'Public read politicians' AND tablename = 'politicians') THEN
+    CREATE POLICY "Public read politicians" ON politicians FOR SELECT USING (true);
+  END IF;
+  IF NOT EXISTS (SELECT 1 FROM pg_policies WHERE policyname = 'Public read criminal cases' AND tablename = 'criminal_cases') THEN
+    CREATE POLICY "Public read criminal cases" ON criminal_cases FOR SELECT USING (true);
+  END IF;
+  IF NOT EXISTS (SELECT 1 FROM pg_policies WHERE policyname = 'Public read assets' AND tablename = 'assets') THEN
+    CREATE POLICY "Public read assets" ON assets FOR SELECT USING (true);
+  END IF;
+  IF NOT EXISTS (SELECT 1 FROM pg_policies WHERE policyname = 'Public read election history' AND tablename = 'election_history') THEN
+    CREATE POLICY "Public read election history" ON election_history FOR SELECT USING (true);
+  END IF;
+  IF NOT EXISTS (SELECT 1 FROM pg_policies WHERE policyname = 'Public read ground truth' AND tablename = 'ground_truth_articles') THEN
+    CREATE POLICY "Public read ground truth" ON ground_truth_articles FOR SELECT USING (true);
+  END IF;
+  IF NOT EXISTS (SELECT 1 FROM pg_policies WHERE policyname = 'Public read ratings' AND tablename = 'citizen_ratings') THEN
+    CREATE POLICY "Public read ratings" ON citizen_ratings FOR SELECT USING (true);
+  END IF;
+  IF NOT EXISTS (SELECT 1 FROM pg_policies WHERE policyname = 'Public insert ratings' AND tablename = 'citizen_ratings') THEN
+    CREATE POLICY "Public insert ratings" ON citizen_ratings FOR INSERT WITH CHECK (true);
+  END IF;
+END $$;

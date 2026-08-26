@@ -1,3 +1,7 @@
+// CORS POLICY: This endpoint is same-origin only.
+// Cross-origin access is intentionally blocked.
+// If external API access is needed in future, add explicit CORS headers.
+
 import { NextResponse } from "next/server";
 
 const NCRB_DATA = {

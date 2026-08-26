@@ -4,7 +4,11 @@ interface RateLimitRecord {
   timestamps: number[];
 }
 
-// In-memory sliding window store with automatic garbage collection
+// NOTE: This in-memory store resets on server restart.
+// For Vercel deployment this is acceptable — Vercel edge 
+// provides trusted IP and instances recycle frequently.
+// For self-hosted production: replace with Upstash Redis:
+// npm install @upstash/ratelimit @upstash/redis
 const rateLimitStore = new Map<string, RateLimitRecord>();
 
 const CLEANUP_INTERVAL_MS = 5 * 60 * 1000;
@@ -21,6 +25,21 @@ function cleanupExpiredRecords(now: number, windowMs: number) {
   }
 }
 
+function getClientIp(request: NextRequest): string {
+  // Priority: Edge trusted header > rightmost proxy IP in chain > fallback
+  const vercelIp = request.headers.get("x-real-ip");
+  if (vercelIp) return vercelIp;
+
+  const forwardedFor = request.headers.get("x-forwarded-for");
+  if (forwardedFor) {
+    // Take the last IP in the chain (set by upstream reverse proxy, immune to client prefix spoofing)
+    const ips = forwardedFor.split(",").map((ip) => ip.trim());
+    return ips[ips.length - 1];
+  }
+
+  return "127.0.0.1";
+}
+
 function checkRateLimit(ip: string, category: "read" | "mutation", now: number): boolean {
   const windowMs = 60 * 1000; // 60-second sliding window
   const maxLimit = category === "mutation" ? 20 : 60;
@@ -34,11 +53,10 @@ function checkRateLimit(ip: string, category: "read" | "mutation", now: number):
     rateLimitStore.set(key, record);
   }
 
-  // Filter timestamps within the current sliding window
   record.timestamps = record.timestamps.filter((ts) => now - ts < windowMs);
 
   if (record.timestamps.length >= maxLimit) {
-    return false; // Rate limit exceeded
+    return false; // Exceeded limit
   }
 
   record.timestamps.push(now);
@@ -48,25 +66,32 @@ function checkRateLimit(ip: string, category: "read" | "mutation", now: number):
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Bypass static assets, internal Next.js assets, icons, and favicon
-  if (
-    pathname.startsWith("/_next") ||
-    pathname.startsWith("/icons") ||
-    pathname.startsWith("/images") ||
-    pathname.startsWith("/static") ||
-    pathname === "/favicon.ico" ||
-    pathname === "/manifest.json"
-  ) {
-    return NextResponse.next();
-  }
+  // 1. Generate correlation ID and cryptographic per-request nonce for Content Security Policy
+  const requestId = crypto.randomUUID();
+  const nonceBytes = new Uint8Array(16);
+  crypto.getRandomValues(nonceBytes);
+  const nonce = btoa(String.fromCharCode(...nonceBytes));
 
-  // Rate limit API routes
+  const cspDirectives = [
+    "default-src 'self'",
+    `script-src 'self' 'nonce-${nonce}'${process.env.NODE_ENV === "development" ? " 'unsafe-eval'" : ""}`,
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+    "img-src 'self' data: blob: https://*.sansad.in https://*.eci.gov.in https://*.wikimedia.org https://*.wikipedia.org https://righttoinformation.wiki https://api.dicebear.com https://images.unsplash.com",
+    "font-src 'self' data: https://fonts.gstatic.com",
+    "connect-src 'self' https://sansad.in https://righttoinformation.wiki https://upload.wikimedia.org https://api.dicebear.com",
+    "frame-ancestors 'none'",
+  ];
+
+  const cspHeaderValue = cspDirectives.join("; ");
+
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set("x-request-id", requestId);
+  requestHeaders.set("x-nonce", nonce);
+  requestHeaders.set("x-csp-nonce", nonce);
+
+  // 2. Enforce Rate Limiting for API routes
   if (pathname.startsWith("/api/")) {
-    const forwardedFor = request.headers.get("x-forwarded-for");
-    const ip = forwardedFor
-      ? forwardedFor.split(",")[0].trim()
-      : request.headers.get("x-real-ip") || "127.0.0.1";
-
+    const ip = getClientIp(request);
     const isMutation =
       request.method === "POST" ||
       request.method === "PUT" ||
@@ -79,21 +104,46 @@ export function middleware(request: NextRequest) {
 
     if (!allowed) {
       return new NextResponse(
-        JSON.stringify({ error: "Rate limit exceeded. Please try again later." }),
+        JSON.stringify({
+          error: {
+            code: "RATE_LIMITED",
+            message: "Rate limit exceeded. Please try again later.",
+            retryAfter: 60,
+          },
+        }),
         {
           status: 429,
           headers: {
             "Content-Type": "application/json",
             "Retry-After": "60",
+            "Content-Security-Policy": cspHeaderValue,
+            "x-request-id": requestId,
           },
         }
       );
     }
   }
 
-  return NextResponse.next();
+  // 3. Create response with propagated CSP and security headers
+  const response = NextResponse.next({
+    request: { headers: requestHeaders },
+  });
+
+  response.headers.set("Content-Security-Policy", cspHeaderValue);
+  response.headers.set("x-request-id", requestId);
+  return response;
 }
 
 export const config = {
-  matcher: ["/api/:path*"],
+  matcher: [
+    /*
+     * Match all request paths except for the ones starting with:
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     * - manifest.json (PWA manifest)
+     * - icons / images / static (public assets)
+     */
+    "/((?!_next/static|_next/image|favicon.ico|manifest.json|icons|images|static).*)",
+  ],
 };

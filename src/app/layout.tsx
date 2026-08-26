@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
+import { headers } from "next/headers";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Ticker from "@/components/layout/Ticker";
@@ -47,11 +48,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  let nonce = "";
+  try {
+    const headersList = await headers();
+    nonce = headersList.get("x-nonce") ?? "";
+  } catch {
+    // Fallback for static render passes
+  }
+
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} ${plusJakartaSans.variable}`}>
       <head>
@@ -61,6 +70,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="VERDICT" />
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+        {nonce ? <script nonce={nonce} dangerouslySetInnerHTML={{ __html: `window.__VERDICT_NONCE__="${nonce}";` }} /> : null}
       </head>
       <body className="min-h-screen bg-canvas text-ink antialiased flex flex-col selection:bg-brand-yellow selection:text-black">
         {/* Top Ticker */}

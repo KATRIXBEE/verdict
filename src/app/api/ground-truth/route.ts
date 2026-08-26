@@ -1,3 +1,7 @@
+// CORS POLICY: This endpoint is same-origin only.
+// Cross-origin access is intentionally blocked.
+// If external API access is needed in future, add explicit CORS headers.
+
 import { NextRequest, NextResponse } from "next/server";
 import { filterGroundTruthArticles, MOCK_GROUND_TRUTH_ARTICLES } from "@/data/mock-ground-truth";
 

@@ -1,3 +1,7 @@
+// CORS POLICY: This endpoint is same-origin only.
+// Cross-origin access is intentionally blocked.
+// If external API access is needed in future, add explicit CORS headers.
+
 import { NextRequest, NextResponse } from "next/server";
 
 const FALLBACK_SVG = `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">

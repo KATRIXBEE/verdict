@@ -1,5 +1,14 @@
+// CORS POLICY: This endpoint is same-origin only.
+// Cross-origin access is intentionally blocked.
+// If external API access is needed in future, add explicit CORS headers.
+
 import { NextRequest, NextResponse } from "next/server";
 import { getGroundTruthArticleBySlug } from "@/data/mock-ground-truth";
+
+function sanitizeSlug(slug: string): string {
+  // Strip special characters and cap length to prevent reflection exploits
+  return slug.replace(/[^a-zA-Z0-9\-_]/g, "").substring(0, 100);
+}
 
 interface RouteParams {
   params: Promise<{ slug: string }>;
@@ -7,12 +16,14 @@ interface RouteParams {
 
 export async function GET(request: NextRequest, { params }: RouteParams) {
   const { slug } = await params;
+  const safeSlug = sanitizeSlug(slug || "");
+
   try {
-    const article = getGroundTruthArticleBySlug(slug);
+    const article = getGroundTruthArticleBySlug(safeSlug);
 
     if (!article) {
       return NextResponse.json(
-        { error: { code: "NOT_FOUND", message: `Ground truth report '${slug}' not found.` } },
+        { error: { code: "NOT_FOUND", message: `Record '${safeSlug}' not found.` } },
         { status: 404 }
       );
     }

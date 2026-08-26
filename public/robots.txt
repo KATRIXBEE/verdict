@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /offline
+
+# Allow indexing of public civic accountability dossiers
+Allow: /politician/
+Allow: /ground-truth/
+Allow: /tax-money/
+Allow: /compare/
+
+Sitemap: https://verdict.org.in/sitemap.xml

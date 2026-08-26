@@ -1,0 +1,301 @@
+openapi: '3.0.3'
+info:
+  title: VERDICT API
+  description: |
+    India's Politician Accountability Platform API.
+    All data sourced from ECI affidavits, Sansad.in,
+    RTI Wiki, and eCourts public records.
+  version: '1.0.0'
+  contact:
+    name: KATRIX Web Solutions
+    email: katrixbee@gmail.com
+  license:
+    name: MIT
+
+servers:
+  - url: http://localhost:3000
+    description: Development
+  - url: https://verdict.katrix.in
+    description: Production
+
+tags:
+  - name: Politicians
+    description: Politician profiles and data
+  - name: Search
+    description: Search and filtering
+  - name: Ratings
+    description: Citizen rating submission
+  - name: Content
+    description: Ground Truth and news
+  - name: Utilities
+    description: Health, proxy, and utility endpoints
+
+paths:
+  /api/politicians:
+    get:
+      tags: [Politicians]
+      summary: List all politicians
+      description: Returns paginated list of all politicians in the DB
+      parameters:
+        - name: page
+          in: query
+          schema: { type: integer, default: 1 }
+        - name: limit
+          in: query
+          schema: { type: integer, default: 20, maximum: 50 }
+        - name: state
+          in: query
+          schema: { type: string }
+        - name: party
+          in: query
+          schema: { type: string }
+        - name: house
+          in: query
+          schema:
+            type: string
+            enum: [Lok Sabha, Rajya Sabha, State Assembly]
+      responses:
+        '200':
+          description: Paginated politician list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  politicians:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/PoliticianCard'
+                  total: { type: integer }
+                  page: { type: integer }
+                  totalPages: { type: integer }
+
+  /api/politicians/{slug}:
+    get:
+      tags: [Politicians]
+      summary: Get politician by slug
+      parameters:
+        - name: slug
+          in: path
+          required: true
+          schema: { type: string }
+          example: narendra-modi-varanasi
+      responses:
+        '200':
+          description: Full politician profile
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PoliticianFull'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  /api/search:
+    get:
+      tags: [Search]
+      summary: Search politicians
+      parameters:
+        - name: q
+          in: query
+          required: true
+          schema: { type: string, minLength: 2 }
+        - name: page
+          in: query
+          schema: { type: integer, default: 1 }
+        - name: limit
+          in: query
+          schema: { type: integer, default: 20, maximum: 50 }
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items: { $ref: '#/components/schemas/PoliticianCard' }
+                  total: { type: integer }
+
+  /api/ratings:
+    post:
+      tags: [Ratings]
+      summary: Submit a citizen rating
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [politicianId, rating]
+              properties:
+                politicianId: { type: string }
+                rating:
+                  type: integer
+                  minimum: 1
+                  maximum: 10
+                userName:
+                  type: string
+                  maxLength: 100
+                comment:
+                  type: string
+                  maxLength: 500
+                userConstituency:
+                  type: string
+                  maxLength: 100
+      responses:
+        '200':
+          description: Rating submitted successfully
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '429':
+          $ref: '#/components/responses/RateLimited'
+
+  /api/crime-stats:
+    get:
+      tags: [Utilities]
+      summary: National crime statistics
+      description: NCRB 2022 annual crime data with daily estimates
+      responses:
+        '200':
+          description: Crime statistics
+
+  /api/ground-truth:
+    get:
+      tags: [Content]
+      summary: Ground Truth investigative articles
+      responses:
+        '200':
+          description: List of Ground Truth articles
+
+  /api/proxy-image:
+    get:
+      tags: [Utilities]
+      summary: Proxied image from whitelisted government sources
+      parameters:
+        - name: url
+          in: query
+          required: true
+          schema: { type: string, format: uri }
+      responses:
+        '200':
+          description: Proxied image
+          content:
+            image/jpeg: {}
+            image/png: {}
+        '400':
+          description: Missing url parameter
+        '403':
+          description: Domain not in whitelist
+        '413':
+          description: Image exceeds 5MB size limit
+
+  /api/health:
+    get:
+      tags: [Utilities]
+      summary: Application health check
+      description: Returns system health, memory usage, and DB connectivity
+      responses:
+        '200':
+          description: Application is healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+        '503':
+          description: Application is degraded or unhealthy
+
+components:
+  schemas:
+    PoliticianCard:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        name: { type: string }
+        slug: { type: string }
+        party: { type: string }
+        constituency: { type: string }
+        state: { type: string }
+        current_house: { type: string }
+        verdict_score: { type: number, minimum: 0, maximum: 10 }
+        photo_url: { type: string, format: uri, nullable: true }
+        criminal_case_count: { type: integer, nullable: true }
+        attendance_percent: { type: number, nullable: true }
+
+    PoliticianFull:
+      allOf:
+        - $ref: '#/components/schemas/PoliticianCard'
+        - type: object
+          properties:
+            education: { type: string, nullable: true }
+            education_verification_status:
+              type: string
+              enum: [Verified, Unverified, Suspicious, Not Checked]
+            asset_growth_percent: { type: number, nullable: true }
+            party_switch_count: { type: integer, nullable: true }
+            worst_case_severity:
+              type: string
+              enum: [Minor, Moderate, Serious, Severe]
+              nullable: true
+            portfolio_history:
+              type: array
+              nullable: true
+              items:
+                type: object
+                properties:
+                  role: { type: string }
+                  ministry: { type: string }
+                  from_date: { type: string, format: date }
+                  to_date: { type: string, format: date, nullable: true }
+
+    HealthResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: [healthy, degraded, unhealthy]
+        uptime_seconds: { type: integer }
+        timestamp: { type: string, format: date-time }
+        checks:
+          type: object
+          properties:
+            database:
+              type: object
+              properties:
+                status: { type: string }
+                latency_ms: { type: integer, nullable: true }
+            memory:
+              type: object
+              properties:
+                rss_mb: { type: integer }
+                heap_used_mb: { type: integer }
+
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: object
+          properties:
+            code: { type: string }
+            message: { type: string }
+
+  responses:
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/ErrorResponse' }
+    BadRequest:
+      description: Invalid request body
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/ErrorResponse' }
+    RateLimited:
+      description: Too many requests
+      headers:
+        Retry-After:
+          schema: { type: integer }
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/ErrorResponse' }
