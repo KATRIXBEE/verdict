@@ -1,12 +1,32 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import { useRouter } from "next/navigation";
-import { Search, MapPin, Building, ArrowRight, UserCheck, Sparkles, Filter, X } from "lucide-react";
+import { Search, MapPin, Building, ArrowRight, UserCheck, Sparkles, Filter, X, ArrowUpDown } from "lucide-react";
 import { Politician } from "@/types";
 import { searchPoliticians, MOCK_POLITICIANS } from "@/data/mock-politicians";
 import DisambiguationModal from "./DisambiguationModal";
 import { getScoreColor, getProxiedImageUrl } from "@/lib/utils";
+
+export const ALL_STATES = [
+  // 28 States
+  "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar",
+  "Chhattisgarh", "Goa", "Gujarat", "Haryana",
+  "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala",
+  "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya",
+  "Mizoram", "Nagaland", "Odisha", "Punjab",
+  "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana",
+  "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal",
+  // 8 Union Territories
+  "Andaman & Nicobar Islands", "Chandigarh",
+  "Dadra & Nagar Haveli and Daman & Diu",
+  "Delhi", "Jammu & Kashmir", "Ladakh",
+  "Lakshadweep", "Puducherry",
+].sort();
+
+export const ALL_PARTIES = [
+  "BJP", "INC", "SP", "DMK", "AITC", "RJD", "AAP", "JD(U)", "TDP", "SHS", "NCP", "CPI(M)", "YSRCP", "IND"
+];
 
 interface SearchBarProps {
   initialQuery?: string;
@@ -24,8 +44,10 @@ export default function SearchBar({
   const router = useRouter();
   const [query, setQuery] = useState(initialQuery);
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedState, setSelectedState] = useState<string>("ALL");
-  const [selectedParty, setSelectedParty] = useState<string>("ALL");
+  const [selectedState, setSelectedState] = useState<string>("All States");
+  const [selectedParty, setSelectedParty] = useState<string>("All Parties");
+  const [selectedHouse, setSelectedHouse] = useState<string>("All Houses");
+  const [sortBy, setSortBy] = useState<string>("name_asc");
   const [disambiguationOpen, setDisambiguationOpen] = useState(false);
   const [disambiguationCandidates, setDisambiguationCandidates] = useState<Politician[]>([]);
   
@@ -35,9 +57,16 @@ export default function SearchBar({
   // Keyboard shortcut listener ('/' to focus search)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "/" && document.activeElement !== inputRef.current) {
+      if (
+        e.key === "/" &&
+        !["INPUT", "TEXTAREA"].includes((e.target as HTMLElement)?.tagName)
+      ) {
         e.preventDefault();
         inputRef.current?.focus();
+      }
+      if (e.key === "Escape") {
+        setIsOpen(false);
+        inputRef.current?.blur();
       }
     };
     window.addEventListener("keydown", handleKeyDown);
@@ -55,31 +84,56 @@ export default function SearchBar({
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Filter politicians based on query and selected pills
-  const filteredPoliticians = MOCK_POLITICIANS.filter((p) => {
-    const matchesQuery =
-      query.trim() === "" ||
-      p.fullName.toLowerCase().includes(query.toLowerCase()) ||
-      p.currentConstituency.name.toLowerCase().includes(query.toLowerCase()) ||
-      p.currentConstituency.state.toLowerCase().includes(query.toLowerCase()) ||
-      p.currentParty.toLowerCase().includes(query.toLowerCase()) ||
-      p.partyAbbr.toLowerCase().includes(query.toLowerCase());
+  // Coordinated multi-filter and sorting computation
+  const filteredAndSortedPoliticians = useMemo(() => {
+    let list = MOCK_POLITICIANS.filter((p) => {
+      const q = query.trim().toLowerCase();
+      const matchesQuery =
+        q === "" ||
+        p.fullName.toLowerCase().includes(q) ||
+        p.currentConstituency.name.toLowerCase().includes(q) ||
+        p.currentConstituency.state.toLowerCase().includes(q) ||
+        p.currentParty.toLowerCase().includes(q) ||
+        p.partyAbbr.toLowerCase().includes(q);
 
-    const matchesState = selectedState === "ALL" || p.currentConstituency.state === selectedState;
-    const matchesParty = selectedParty === "ALL" || p.partyAbbr === selectedParty;
+      const matchesState =
+        selectedState === "All States" ||
+        p.currentConstituency.state.toLowerCase() === selectedState.toLowerCase();
 
-    return matchesQuery && matchesState && matchesParty;
-  });
+      const matchesParty =
+        selectedParty === "All Parties" ||
+        p.partyAbbr.toLowerCase() === selectedParty.toLowerCase() ||
+        p.currentParty.toLowerCase().includes(selectedParty.toLowerCase());
 
-  // Notify parent component if callback provided
+      const matchesHouse =
+        selectedHouse === "All Houses" ||
+        p.house.toLowerCase() === selectedHouse.toLowerCase();
+
+      return matchesQuery && matchesState && matchesParty && matchesHouse;
+    });
+
+    // Apply sorting
+    if (sortBy === "score_desc") {
+      list = [...list].sort((a, b) => b.calculatedVerdictScore - a.calculatedVerdictScore);
+    } else if (sortBy === "score_asc") {
+      list = [...list].sort((a, b) => a.calculatedVerdictScore - b.calculatedVerdictScore);
+    } else if (sortBy === "cases_desc") {
+      list = [...list].sort((a, b) => (b.criminalCases?.length || 0) - (a.criminalCases?.length || 0));
+    } else {
+      list = [...list].sort((a, b) => a.fullName.localeCompare(b.fullName));
+    }
+
+    return list;
+  }, [query, selectedState, selectedParty, selectedHouse, sortBy]);
+
+  // Notify parent component
   useEffect(() => {
     if (onFilterChange) {
-      onFilterChange(filteredPoliticians);
+      onFilterChange(filteredAndSortedPoliticians);
     }
-  }, [query, selectedState, selectedParty]);
+  }, [filteredAndSortedPoliticians, onFilterChange]);
 
   const handleSelectPolitician = (p: Politician) => {
-    // Check if there are other candidates with identical full name
     const exactNameMatches = MOCK_POLITICIANS.filter(
       (item) => item.fullName.toLowerCase() === p.fullName.toLowerCase()
     );
@@ -109,8 +163,20 @@ export default function SearchBar({
     }
   };
 
-  const states = ["ALL", "Delhi", "Uttar Pradesh", "Karnataka", "West Bengal", "Madhya Pradesh", "Bihar", "Gujarat"];
-  const parties = ["ALL", "BJP", "INC", "SP", "DMK", "AITC", "RJD", "IND"];
+  const hasActiveFilters =
+    selectedState !== "All States" ||
+    selectedParty !== "All Parties" ||
+    selectedHouse !== "All Houses" ||
+    sortBy !== "name_asc" ||
+    query.trim() !== "";
+
+  const handleResetFilters = () => {
+    setSelectedState("All States");
+    setSelectedParty("All Parties");
+    setSelectedHouse("All Houses");
+    setSortBy("name_asc");
+    setQuery("");
+  };
 
   return (
     <div className={`w-full font-mono relative ${className || ""}`} ref={searchContainerRef}>
@@ -130,7 +196,7 @@ export default function SearchBar({
               setIsOpen(true);
             }}
             onFocus={() => setIsOpen(true)}
-            placeholder="Search Neta by Name, Constituency, Party, or State (e.g. Ramesh Kumar, Delhi, BJP)..."
+            placeholder="Search Neta by Name, Constituency, Party, or State (e.g. Narendra Modi, Varanasi, BJP)..."
             className="w-full bg-transparent px-3 sm:px-4 py-3 sm:py-4 text-xs sm:text-base font-bold text-ink placeholder:text-gray-400 focus:outline-none"
           />
 
@@ -141,7 +207,7 @@ export default function SearchBar({
                 setQuery("");
                 inputRef.current?.focus();
               }}
-              className="p-2 text-gray-500 hover:text-brand-red mr-1"
+              className="p-2 text-gray-500 hover:text-brand-red mr-1 cursor-pointer"
             >
               <X className="w-5 h-5" />
             </button>
@@ -153,7 +219,7 @@ export default function SearchBar({
             </kbd>
             <button
               type="submit"
-              className="bg-brand-green text-black font-extrabold px-3 py-1.5 border-2 border-ink text-xs uppercase shadow-hard-xs hover:-translate-y-0.5 transition-transform"
+              className="bg-brand-green text-black font-extrabold px-3 py-1.5 border-2 border-ink text-xs uppercase shadow-hard-xs hover:-translate-y-0.5 transition-transform cursor-pointer"
             >
               FIND DOSSIER
             </button>
@@ -161,50 +227,98 @@ export default function SearchBar({
         </div>
       </form>
 
-      {/* Quick Filter Bar */}
+      {/* Comprehensive Filter & Sort Bar */}
       {showFilters && (
-        <div className="mt-3 flex flex-wrap items-center gap-1.5 sm:gap-2 text-xs">
-          <div className="flex items-center space-x-1 text-gray-700 font-bold mr-1">
-            <Filter className="w-3.5 h-3.5" />
-            <span className="text-[11px] uppercase">Filter:</span>
+        <div className="mt-3 bg-surface border-2.5 border-ink p-3 shadow-hard-xs space-y-2.5 text-xs">
+          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-ink/20 pb-2">
+            <div className="flex items-center space-x-1.5 font-bold text-ink uppercase">
+              <Filter className="w-3.5 h-3.5 text-brand-red" />
+              <span>DIRECT QUERY FILTERS & SORT:</span>
+            </div>
+
+            {hasActiveFilters && (
+              <button
+                type="button"
+                onClick={handleResetFilters}
+                className="text-[11px] font-bold text-brand-red hover:underline flex items-center space-x-1 cursor-pointer"
+              >
+                <X className="w-3 h-3" />
+                <span>RESET ALL FILTERS</span>
+              </button>
+            )}
           </div>
 
-          {/* State Pills */}
-          <div className="flex flex-wrap items-center gap-1">
-            {states.map((st) => (
-              <button
-                key={st}
-                type="button"
-                onClick={() => setSelectedState(st)}
-                className={`px-2 py-0.5 text-[11px] font-bold border-1.5 border-ink transition-all ${
-                  selectedState === st
-                    ? "bg-brand-cyan text-black shadow-hard-xs font-black"
-                    : "bg-surface hover:bg-surface-muted text-gray-800"
-                }`}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+            {/* 1. State Filter (All 36 States & UTs) */}
+            <div>
+              <label className="text-[10px] text-gray-500 font-bold uppercase block mb-0.5">
+                STATE / UT ({ALL_STATES.length}):
+              </label>
+              <select
+                value={selectedState}
+                onChange={(e) => setSelectedState(e.target.value)}
+                className="w-full bg-canvas border-1.5 border-ink p-1.5 text-xs font-bold text-ink focus:outline-none"
               >
-                {st === "ALL" ? "ALL STATES" : st}
-              </button>
-            ))}
-          </div>
+                <option value="All States">All States ({ALL_STATES.length} States & UTs)</option>
+                {ALL_STATES.map((st) => (
+                  <option key={st} value={st}>
+                    {st}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-          <span className="text-gray-400 font-bold mx-1 hidden sm:inline">|</span>
-
-          {/* Party Pills */}
-          <div className="flex flex-wrap items-center gap-1">
-            {parties.map((pt) => (
-              <button
-                key={pt}
-                type="button"
-                onClick={() => setSelectedParty(pt)}
-                className={`px-2 py-0.5 text-[11px] font-bold border-1.5 border-ink transition-all ${
-                  selectedParty === pt
-                    ? "bg-brand-yellow text-black shadow-hard-xs font-black"
-                    : "bg-surface hover:bg-surface-muted text-gray-800"
-                }`}
+            {/* 2. Party Filter */}
+            <div>
+              <label className="text-[10px] text-gray-500 font-bold uppercase block mb-0.5">
+                POLITICAL PARTY:
+              </label>
+              <select
+                value={selectedParty}
+                onChange={(e) => setSelectedParty(e.target.value)}
+                className="w-full bg-canvas border-1.5 border-ink p-1.5 text-xs font-bold text-ink focus:outline-none"
               >
-                {pt}
-              </button>
-            ))}
+                <option value="All Parties">All Parties</option>
+                {ALL_PARTIES.map((pt) => (
+                  <option key={pt} value={pt}>
+                    {pt}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {/* 3. House Filter */}
+            <div>
+              <label className="text-[10px] text-gray-500 font-bold uppercase block mb-0.5">
+                PARLIAMENTARY HOUSE:
+              </label>
+              <select
+                value={selectedHouse}
+                onChange={(e) => setSelectedHouse(e.target.value)}
+                className="w-full bg-canvas border-1.5 border-ink p-1.5 text-xs font-bold text-ink focus:outline-none"
+              >
+                <option value="All Houses">All Houses</option>
+                <option value="Lok Sabha">Lok Sabha (18th)</option>
+                <option value="Rajya Sabha">Rajya Sabha</option>
+              </select>
+            </div>
+
+            {/* 4. Sort By Dropdown */}
+            <div>
+              <label className="text-[10px] text-gray-500 font-bold uppercase block mb-0.5">
+                SORT BY:
+              </label>
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="w-full bg-canvas border-1.5 border-ink p-1.5 text-xs font-bold text-ink focus:outline-none"
+              >
+                <option value="name_asc">Name (A-Z)</option>
+                <option value="score_desc">VERDICT Score (Highest first)</option>
+                <option value="score_asc">VERDICT Score (Lowest first)</option>
+                <option value="cases_desc">Criminal Cases (Most first)</option>
+              </select>
+            </div>
           </div>
         </div>
       )}
@@ -213,11 +327,11 @@ export default function SearchBar({
       {isOpen && query.trim().length > 0 && (
         <div className="absolute top-full left-0 right-0 mt-2 bg-surface border-3 border-ink shadow-hard-xl z-40 max-h-96 overflow-y-auto">
           <div className="bg-ink text-white px-4 py-2 text-xs font-bold uppercase flex justify-between items-center">
-            <span>RESULTS ({filteredPoliticians.length})</span>
+            <span>RESULTS ({filteredAndSortedPoliticians.length})</span>
             <span className="text-brand-yellow text-[10px]">CLICK TO VIEW VERIFIED DOSSIER</span>
           </div>
 
-          {filteredPoliticians.length === 0 ? (
+          {filteredAndSortedPoliticians.length === 0 ? (
             <div className="p-6 text-center text-sm font-bold text-gray-600 bg-surface-muted">
               <p>NO ELECTED REPRESENTATIVE FOUND FOR &quot;{query}&quot;</p>
               <p className="text-xs text-gray-500 font-normal mt-1">
@@ -226,7 +340,7 @@ export default function SearchBar({
             </div>
           ) : (
             <div className="divide-y-2 divide-ink">
-              {filteredPoliticians.map((p) => {
+              {filteredAndSortedPoliticians.slice(0, 10).map((p) => {
                 const scoreColor = getScoreColor(p.calculatedVerdictScore);
                 return (
                   <div

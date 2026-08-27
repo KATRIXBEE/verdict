@@ -134,3 +134,15 @@ export async function POST(request: NextRequest) {
     );
   }
 }
+
+export async function GET() {
+  return NextResponse.json(
+    {
+      error: {
+        code: "METHOD_NOT_ALLOWED",
+        message: "Only POST submissions are supported on /api/ratings.",
+      },
+    },
+    { status: 405 }
+  );
+}

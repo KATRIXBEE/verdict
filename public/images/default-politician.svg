@@ -1,24 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="400" height="400" fill="#1A1A1A"/>
+  <!-- Dark background -->
+  <rect width="400" height="400" fill="#111111"/>
   
-  <!-- Person silhouette -->
-  <!-- Head -->
-  <circle cx="200" cy="145" r="65" fill="#2E2E2E"/>
+  <!-- Subtle grid lines for depth -->
+  <line x1="0" y1="200" x2="400" y2="200" 
+        stroke="#1A1A1A" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="400" 
+        stroke="#1A1A1A" stroke-width="1"/>
   
-  <!-- Body/shoulders -->
-  <ellipse cx="200" cy="320" rx="110" ry="85" fill="#2E2E2E"/>
+  <!-- Person silhouette - head -->
+  <circle cx="200" cy="148" r="68" fill="#2A2A2A"/>
   
-  <!-- Subtle accent line at bottom -->
-  <rect x="0" y="390" width="400" height="10" fill="#FF4545" opacity="0.6"/>
+  <!-- Neck -->
+  <rect x="178" y="208" width="44" height="30" 
+        rx="6" fill="#2A2A2A"/>
   
-  <!-- Small text -->
-  <text x="200" y="375" 
-        font-family="monospace" 
-        font-size="11" 
-        fill="#555555" 
-        text-anchor="middle"
-        letter-spacing="2">
-    PHOTO PENDING
+  <!-- Shoulders / body -->
+  <ellipse cx="200" cy="320" rx="115" ry="90" fill="#2A2A2A"/>
+  
+  <!-- Suit collar details -->
+  <polygon points="200,238 175,290 200,270" fill="#1E1E1E"/>
+  <polygon points="200,238 225,290 200,270" fill="#1E1E1E"/>
+  
+  <!-- Red accent strip at bottom -->
+  <rect x="0" y="385" width="400" height="15" fill="#FF4545" opacity="0.8"/>
+  
+  <!-- VERDICT watermark -->
+  <text
+    x="200" y="370"
+    font-family="'Courier New', monospace"
+    font-size="10"
+    font-weight="bold"
+    fill="#333333"
+    text-anchor="middle"
+    letter-spacing="4">
+    PHOTO UNAVAILABLE
+  </text>
+  
+  <!-- Small scales of justice icon at top right -->
+  <text
+    x="372" y="28"
+    font-family="Arial"
+    font-size="18"
+    fill="#FF4545"
+    opacity="0.5">
+    ⚖
   </text>
 </svg>

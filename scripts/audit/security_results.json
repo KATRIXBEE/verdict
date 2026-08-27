@@ -1,0 +1,1047 @@
+{
+  "injections": [
+    {
+      "url": "/api/search?q='%20OR%20'1'%3D'1",
+      "payload": "' OR '1'='1",
+      "status": 200,
+      "durationMs": 1354,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q='%20OR%201%3D1%20--",
+      "payload": "' OR 1=1 --",
+      "status": 200,
+      "durationMs": 98,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q='%3B%20DROP%20TABLE%20politicians%3B%20--",
+      "payload": "'; DROP TABLE politicians; --",
+      "status": 200,
+      "durationMs": 108,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q='%20UNION%20SELECT%20*%20FROM%20politicians%20--",
+      "payload": "' UNION SELECT * FROM politicians --",
+      "status": 200,
+      "durationMs": 279,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q=1'%20ORDER%20BY%201--",
+      "payload": "1' ORDER BY 1--",
+      "status": 200,
+      "durationMs": 327,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q=1%3B%20WAITFOR%20DELAY%20'0%3A0%3A5'%20--",
+      "payload": "1; WAITFOR DELAY '0:0:5' --",
+      "status": 200,
+      "durationMs": 457,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q=%7B%22%24gt%22%3A%20%22%22%7D",
+      "payload": "{\"$gt\": \"\"}",
+      "status": 200,
+      "durationMs": 283,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q=%7B%22%24where%22%3A%20%22sleep(1000)%22%7D",
+      "payload": "{\"$where\": \"sleep(1000)\"}",
+      "status": 200,
+      "durationMs": 368,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q=%3Cscript%3Ealert('xss')%3C%2Fscript%3E",
+      "payload": "<script>alert('xss')</script>",
+      "status": 200,
+      "durationMs": 791,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q=%3Cimg%20src%3Dx%20onerror%3Dalert(1)%3E",
+      "payload": "<img src=x onerror=alert(1)>",
+      "status": 200,
+      "durationMs": 311,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q=javascript%3Aalert(1)",
+      "payload": "javascript:alert(1)",
+      "status": 200,
+      "durationMs": 282,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q=%3Csvg%20onload%3Dalert(1)%3E",
+      "payload": "<svg onload=alert(1)>",
+      "status": 200,
+      "durationMs": 274,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q='%3Balert(String.fromCharCode(88%2C83%2C83))%2F%2F",
+      "payload": "';alert(String.fromCharCode(88,83,83))//",
+      "status": 200,
+      "durationMs": 279,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q=..%2F..%2F..%2F..%2Fetc%2Fpasswd",
+      "payload": "../../../../etc/passwd",
+      "status": 200,
+      "durationMs": 284,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q=..%2F..%2F..%2F.env",
+      "payload": "../../../.env",
+      "status": 200,
+      "durationMs": 323,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q=..%252F..%252F..%252Fetc%252Fpasswd",
+      "payload": "..%2F..%2F..%2Fetc%2Fpasswd",
+      "status": 200,
+      "durationMs": 286,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q=%3B%20ls%20-la",
+      "payload": "; ls -la",
+      "status": 200,
+      "durationMs": 409,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q=%7C%20cat%20%2Fetc%2Fpasswd",
+      "payload": "| cat /etc/passwd",
+      "status": 200,
+      "durationMs": 638,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/search?q=%60id%60",
+      "payload": "`id`",
+      "status": 200,
+      "durationMs": 302,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state='%20OR%20'1'%3D'1",
+      "payload": "' OR '1'='1",
+      "status": 200,
+      "durationMs": 442,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state='%20OR%201%3D1%20--",
+      "payload": "' OR 1=1 --",
+      "status": 200,
+      "durationMs": 179,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state='%3B%20DROP%20TABLE%20politicians%3B%20--",
+      "payload": "'; DROP TABLE politicians; --",
+      "status": 200,
+      "durationMs": 116,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state='%20UNION%20SELECT%20*%20FROM%20politicians%20--",
+      "payload": "' UNION SELECT * FROM politicians --",
+      "status": 200,
+      "durationMs": 303,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state=1'%20ORDER%20BY%201--",
+      "payload": "1' ORDER BY 1--",
+      "status": 200,
+      "durationMs": 364,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state=1%3B%20WAITFOR%20DELAY%20'0%3A0%3A5'%20--",
+      "payload": "1; WAITFOR DELAY '0:0:5' --",
+      "status": 200,
+      "durationMs": 289,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state=%7B%22%24gt%22%3A%20%22%22%7D",
+      "payload": "{\"$gt\": \"\"}",
+      "status": 200,
+      "durationMs": 372,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state=%7B%22%24where%22%3A%20%22sleep(1000)%22%7D",
+      "payload": "{\"$where\": \"sleep(1000)\"}",
+      "status": 200,
+      "durationMs": 295,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state=%3Cscript%3Ealert('xss')%3C%2Fscript%3E",
+      "payload": "<script>alert('xss')</script>",
+      "status": 200,
+      "durationMs": 513,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state=%3Cimg%20src%3Dx%20onerror%3Dalert(1)%3E",
+      "payload": "<img src=x onerror=alert(1)>",
+      "status": 200,
+      "durationMs": 610,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state=javascript%3Aalert(1)",
+      "payload": "javascript:alert(1)",
+      "status": 200,
+      "durationMs": 286,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state=%3Csvg%20onload%3Dalert(1)%3E",
+      "payload": "<svg onload=alert(1)>",
+      "status": 200,
+      "durationMs": 350,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state='%3Balert(String.fromCharCode(88%2C83%2C83))%2F%2F",
+      "payload": "';alert(String.fromCharCode(88,83,83))//",
+      "status": 200,
+      "durationMs": 321,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state=..%2F..%2F..%2F..%2Fetc%2Fpasswd",
+      "payload": "../../../../etc/passwd",
+      "status": 200,
+      "durationMs": 318,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state=..%2F..%2F..%2F.env",
+      "payload": "../../../.env",
+      "status": 200,
+      "durationMs": 439,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state=..%252F..%252F..%252Fetc%252Fpasswd",
+      "payload": "..%2F..%2F..%2Fetc%2Fpasswd",
+      "status": 200,
+      "durationMs": 412,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state=%3B%20ls%20-la",
+      "payload": "; ls -la",
+      "status": 200,
+      "durationMs": 549,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state=%7C%20cat%20%2Fetc%2Fpasswd",
+      "payload": "| cat /etc/passwd",
+      "status": 200,
+      "durationMs": 415,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?state=%60id%60",
+      "payload": "`id`",
+      "status": 200,
+      "durationMs": 743,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party='%20OR%20'1'%3D'1",
+      "payload": "' OR '1'='1",
+      "status": 200,
+      "durationMs": 302,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party='%20OR%201%3D1%20--",
+      "payload": "' OR 1=1 --",
+      "status": 200,
+      "durationMs": 174,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party='%3B%20DROP%20TABLE%20politicians%3B%20--",
+      "payload": "'; DROP TABLE politicians; --",
+      "status": 200,
+      "durationMs": 266,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party='%20UNION%20SELECT%20*%20FROM%20politicians%20--",
+      "payload": "' UNION SELECT * FROM politicians --",
+      "status": 200,
+      "durationMs": 310,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party=1'%20ORDER%20BY%201--",
+      "payload": "1' ORDER BY 1--",
+      "status": 200,
+      "durationMs": 387,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party=1%3B%20WAITFOR%20DELAY%20'0%3A0%3A5'%20--",
+      "payload": "1; WAITFOR DELAY '0:0:5' --",
+      "status": 200,
+      "durationMs": 273,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party=%7B%22%24gt%22%3A%20%22%22%7D",
+      "payload": "{\"$gt\": \"\"}",
+      "status": 200,
+      "durationMs": 310,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party=%7B%22%24where%22%3A%20%22sleep(1000)%22%7D",
+      "payload": "{\"$where\": \"sleep(1000)\"}",
+      "status": 200,
+      "durationMs": 272,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party=%3Cscript%3Ealert('xss')%3C%2Fscript%3E",
+      "payload": "<script>alert('xss')</script>",
+      "status": 200,
+      "durationMs": 388,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party=%3Cimg%20src%3Dx%20onerror%3Dalert(1)%3E",
+      "payload": "<img src=x onerror=alert(1)>",
+      "status": 200,
+      "durationMs": 276,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party=javascript%3Aalert(1)",
+      "payload": "javascript:alert(1)",
+      "status": 200,
+      "durationMs": 446,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party=%3Csvg%20onload%3Dalert(1)%3E",
+      "payload": "<svg onload=alert(1)>",
+      "status": 200,
+      "durationMs": 575,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party='%3Balert(String.fromCharCode(88%2C83%2C83))%2F%2F",
+      "payload": "';alert(String.fromCharCode(88,83,83))//",
+      "status": 200,
+      "durationMs": 346,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party=..%2F..%2F..%2F..%2Fetc%2Fpasswd",
+      "payload": "../../../../etc/passwd",
+      "status": 200,
+      "durationMs": 318,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party=..%2F..%2F..%2F.env",
+      "payload": "../../../.env",
+      "status": 200,
+      "durationMs": 287,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party=..%252F..%252F..%252Fetc%252Fpasswd",
+      "payload": "..%2F..%2F..%2Fetc%2Fpasswd",
+      "status": 200,
+      "durationMs": 303,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party=%3B%20ls%20-la",
+      "payload": "; ls -la",
+      "status": 200,
+      "durationMs": 360,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party=%7C%20cat%20%2Fetc%2Fpasswd",
+      "payload": "| cat /etc/passwd",
+      "status": 200,
+      "durationMs": 352,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/politicians?party=%60id%60",
+      "payload": "`id`",
+      "status": 429,
+      "durationMs": 11,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/'%20OR%20'1'%3D'1",
+      "payload": "' OR '1'='1",
+      "status": 404,
+      "durationMs": 3882,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/'%20OR%201%3D1%20--",
+      "payload": "' OR 1=1 --",
+      "status": 404,
+      "durationMs": 114,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/'%3B%20DROP%20TABLE%20politicians%3B%20--",
+      "payload": "'; DROP TABLE politicians; --",
+      "status": 404,
+      "durationMs": 104,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/'%20UNION%20SELECT%20*%20FROM%20politicians%20--",
+      "payload": "' UNION SELECT * FROM politicians --",
+      "status": 404,
+      "durationMs": 111,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/1'%20ORDER%20BY%201--",
+      "payload": "1' ORDER BY 1--",
+      "status": 404,
+      "durationMs": 103,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/1%3B%20WAITFOR%20DELAY%20'0%3A0%3A5'%20--",
+      "payload": "1; WAITFOR DELAY '0:0:5' --",
+      "status": 404,
+      "durationMs": 100,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/%7B%22%24gt%22%3A%20%22%22%7D",
+      "payload": "{\"$gt\": \"\"}",
+      "status": 404,
+      "durationMs": 124,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/%7B%22%24where%22%3A%20%22sleep(1000)%22%7D",
+      "payload": "{\"$where\": \"sleep(1000)\"}",
+      "status": 404,
+      "durationMs": 99,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/%3Cscript%3Ealert('xss')%3C%2Fscript%3E",
+      "payload": "<script>alert('xss')</script>",
+      "status": 404,
+      "durationMs": 111,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/%3Cimg%20src%3Dx%20onerror%3Dalert(1)%3E",
+      "payload": "<img src=x onerror=alert(1)>",
+      "status": 404,
+      "durationMs": 102,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/javascript%3Aalert(1)",
+      "payload": "javascript:alert(1)",
+      "status": 404,
+      "durationMs": 105,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/%3Csvg%20onload%3Dalert(1)%3E",
+      "payload": "<svg onload=alert(1)>",
+      "status": 404,
+      "durationMs": 117,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/'%3Balert(String.fromCharCode(88%2C83%2C83))%2F%2F",
+      "payload": "';alert(String.fromCharCode(88,83,83))//",
+      "status": 404,
+      "durationMs": 109,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/..%2F..%2F..%2F..%2Fetc%2Fpasswd",
+      "payload": "../../../../etc/passwd",
+      "status": 404,
+      "durationMs": 113,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/..%2F..%2F..%2F.env",
+      "payload": "../../../.env",
+      "status": 404,
+      "durationMs": 98,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/..%252F..%252F..%252Fetc%252Fpasswd",
+      "payload": "..%2F..%2F..%2Fetc%2Fpasswd",
+      "status": 404,
+      "durationMs": 100,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/%3B%20ls%20-la",
+      "payload": "; ls -la",
+      "status": 404,
+      "durationMs": 127,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/%7C%20cat%20%2Fetc%2Fpasswd",
+      "payload": "| cat /etc/passwd",
+      "status": 404,
+      "durationMs": 112,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/politician/%60id%60",
+      "payload": "`id`",
+      "status": 404,
+      "durationMs": 108,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url='%20OR%20'1'%3D'1",
+      "payload": "' OR '1'='1",
+      "status": 429,
+      "durationMs": 8,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url='%20OR%201%3D1%20--",
+      "payload": "' OR 1=1 --",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url='%3B%20DROP%20TABLE%20politicians%3B%20--",
+      "payload": "'; DROP TABLE politicians; --",
+      "status": 429,
+      "durationMs": 5,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url='%20UNION%20SELECT%20*%20FROM%20politicians%20--",
+      "payload": "' UNION SELECT * FROM politicians --",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url=1'%20ORDER%20BY%201--",
+      "payload": "1' ORDER BY 1--",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url=1%3B%20WAITFOR%20DELAY%20'0%3A0%3A5'%20--",
+      "payload": "1; WAITFOR DELAY '0:0:5' --",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url=%7B%22%24gt%22%3A%20%22%22%7D",
+      "payload": "{\"$gt\": \"\"}",
+      "status": 429,
+      "durationMs": 7,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url=%7B%22%24where%22%3A%20%22sleep(1000)%22%7D",
+      "payload": "{\"$where\": \"sleep(1000)\"}",
+      "status": 429,
+      "durationMs": 5,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url=%3Cscript%3Ealert('xss')%3C%2Fscript%3E",
+      "payload": "<script>alert('xss')</script>",
+      "status": 429,
+      "durationMs": 5,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url=%3Cimg%20src%3Dx%20onerror%3Dalert(1)%3E",
+      "payload": "<img src=x onerror=alert(1)>",
+      "status": 429,
+      "durationMs": 7,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url=javascript%3Aalert(1)",
+      "payload": "javascript:alert(1)",
+      "status": 429,
+      "durationMs": 5,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url=%3Csvg%20onload%3Dalert(1)%3E",
+      "payload": "<svg onload=alert(1)>",
+      "status": 429,
+      "durationMs": 5,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url='%3Balert(String.fromCharCode(88%2C83%2C83))%2F%2F",
+      "payload": "';alert(String.fromCharCode(88,83,83))//",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url=..%2F..%2F..%2F..%2Fetc%2Fpasswd",
+      "payload": "../../../../etc/passwd",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url=..%2F..%2F..%2F.env",
+      "payload": "../../../.env",
+      "status": 429,
+      "durationMs": 7,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url=..%252F..%252F..%252Fetc%252Fpasswd",
+      "payload": "..%2F..%2F..%2Fetc%2Fpasswd",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url=%3B%20ls%20-la",
+      "payload": "; ls -la",
+      "status": 429,
+      "durationMs": 5,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url=%7C%20cat%20%2Fetc%2Fpasswd",
+      "payload": "| cat /etc/passwd",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/proxy-image?url=%60id%60",
+      "payload": "`id`",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/'%20OR%20'1'%3D'1",
+      "payload": "' OR '1'='1",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/'%20OR%201%3D1%20--",
+      "payload": "' OR 1=1 --",
+      "status": 429,
+      "durationMs": 7,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/'%3B%20DROP%20TABLE%20politicians%3B%20--",
+      "payload": "'; DROP TABLE politicians; --",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/'%20UNION%20SELECT%20*%20FROM%20politicians%20--",
+      "payload": "' UNION SELECT * FROM politicians --",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/1'%20ORDER%20BY%201--",
+      "payload": "1' ORDER BY 1--",
+      "status": 429,
+      "durationMs": 5,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/1%3B%20WAITFOR%20DELAY%20'0%3A0%3A5'%20--",
+      "payload": "1; WAITFOR DELAY '0:0:5' --",
+      "status": 429,
+      "durationMs": 5,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/%7B%22%24gt%22%3A%20%22%22%7D",
+      "payload": "{\"$gt\": \"\"}",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/%7B%22%24where%22%3A%20%22sleep(1000)%22%7D",
+      "payload": "{\"$where\": \"sleep(1000)\"}",
+      "status": 429,
+      "durationMs": 7,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/%3Cscript%3Ealert('xss')%3C%2Fscript%3E",
+      "payload": "<script>alert('xss')</script>",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/%3Cimg%20src%3Dx%20onerror%3Dalert(1)%3E",
+      "payload": "<img src=x onerror=alert(1)>",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/javascript%3Aalert(1)",
+      "payload": "javascript:alert(1)",
+      "status": 429,
+      "durationMs": 5,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/%3Csvg%20onload%3Dalert(1)%3E",
+      "payload": "<svg onload=alert(1)>",
+      "status": 429,
+      "durationMs": 5,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/'%3Balert(String.fromCharCode(88%2C83%2C83))%2F%2F",
+      "payload": "';alert(String.fromCharCode(88,83,83))//",
+      "status": 429,
+      "durationMs": 5,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/..%2F..%2F..%2F..%2Fetc%2Fpasswd",
+      "payload": "../../../../etc/passwd",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/..%2F..%2F..%2F.env",
+      "payload": "../../../.env",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/..%252F..%252F..%252Fetc%252Fpasswd",
+      "payload": "..%2F..%2F..%2Fetc%2Fpasswd",
+      "status": 429,
+      "durationMs": 6,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/%3B%20ls%20-la",
+      "payload": "; ls -la",
+      "status": 429,
+      "durationMs": 5,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/%7C%20cat%20%2Fetc%2Fpasswd",
+      "payload": "| cat /etc/passwd",
+      "status": 429,
+      "durationMs": 5,
+      "passed": true,
+      "reason": "Clean"
+    },
+    {
+      "url": "/api/ground-truth/%60id%60",
+      "payload": "`id`",
+      "status": 429,
+      "durationMs": 5,
+      "passed": true,
+      "reason": "Clean"
+    }
+  ],
+  "auth": [
+    {
+      "name": "Rating with fake DigiLocker token",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "Rating with no auth",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "Rating with isLocalVoter: true in body",
+      "status": 200,
+      "passed": true
+    }
+  ],
+  "info_disclosure": [
+    {
+      "path": "/.env",
+      "status": 404,
+      "leaksSecrets": false,
+      "passed": true
+    },
+    {
+      "path": "/.env.local",
+      "status": 404,
+      "leaksSecrets": false,
+      "passed": true
+    },
+    {
+      "path": "/.env.production",
+      "status": 404,
+      "leaksSecrets": false,
+      "passed": true
+    },
+    {
+      "path": "/config.json",
+      "status": 404,
+      "leaksSecrets": false,
+      "passed": true
+    },
+    {
+      "path": "/package.json",
+      "status": 404,
+      "leaksSecrets": false,
+      "passed": true
+    },
+    {
+      "path": "/next.config.js",
+      "status": 404,
+      "leaksSecrets": false,
+      "passed": true
+    },
+    {
+      "path": "/src/lib/db.ts",
+      "status": 404,
+      "leaksSecrets": false,
+      "passed": true
+    },
+    {
+      "path": "/.git/config",
+      "status": 404,
+      "leaksSecrets": false,
+      "passed": true
+    },
+    {
+      "path": "/.git/HEAD",
+      "status": 404,
+      "leaksSecrets": false,
+      "passed": true
+    },
+    {
+      "path": "/api/politicians?page=0&limit=-1",
+      "status": 429,
+      "leaksSecrets": false,
+      "passed": false
+    },
+    {
+      "path": "/api/ratings",
+      "status": 405,
+      "leaksSecrets": false,
+      "passed": true
+    }
+  ],
+  "rate_limiting": [
+    {
+      "test": "25 rapid POST submissions from same IP",
+      "hitRateLimit": true,
+      "successCount": 0,
+      "passed": true
+    }
+  ],
+  "headers": [
+    {
+      "name": "X-Frame-Options",
+      "value": "DENY",
+      "expected": "DENY",
+      "passed": true
+    },
+    {
+      "name": "X-Content-Type-Options",
+      "value": "nosniff",
+      "expected": "nosniff",
+      "passed": true
+    },
+    {
+      "name": "X-XSS-Protection",
+      "value": "1; mode=block",
+      "expected": "1; mode=block",
+      "passed": true
+    },
+    {
+      "name": "Referrer-Policy",
+      "value": "strict-origin-when-cross-origin",
+      "expected": "strict-origin-when-cross-origin",
+      "passed": true
+    },
+    {
+      "name": "Content-Security-Policy",
+      "value": "PRESENT",
+      "expected": "PRESENT",
+      "passed": true
+    },
+    {
+      "name": "X-Powered-By Leak",
+      "value": "NONE (SECURE)",
+      "expected": "NONE (SECURE)",
+      "passed": true
+    }
+  ]
+}

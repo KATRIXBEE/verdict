@@ -44,14 +44,23 @@ export async function GET(
           db.from("citizen_ratings").select("id,rating,user_name,user_constituency,comment,digilocker_verified,is_local_voter,created_at").eq("politician_slug", safeSlug).order("created_at", { ascending: false }).limit(50),
         ]);
 
+        const sanitizedRatings = (ratings || []).map((r: any) => {
+          const { client_ip, ip_address, user_ip, ...safeRating } = r;
+          return safeRating;
+        });
+
         const fullProfile = {
           ...politician,
+          name: politician.full_name || politician.name,
+          fullName: politician.full_name || politician.name,
+          verdict_score: politician.verdict_score ?? politician.verdictScore ?? 5.0,
+          verdictScore: politician.verdict_score ?? politician.verdictScore ?? 5.0,
           criminal_cases: cases || [],
           asset_history: assetHistory || [],
           election_history: electionHistory || [],
           party_history: partyHistory || [],
           parliamentary_performance: performance?.[0] || null,
-          citizen_ratings: ratings || [],
+          citizen_ratings: sanitizedRatings,
         };
 
         return NextResponse.json({
@@ -61,7 +70,7 @@ export async function GET(
         });
       }
     } catch {
-      // Supabase query error; fall back to local data
+      // Supabase query error; fall back to local store
     }
 
     // 2. Fallback to local store
@@ -74,10 +83,19 @@ export async function GET(
       );
     }
 
+    const score = politician.calculatedVerdictScore ?? (politician as any).verdictScore ?? (politician as any).verdict_score ?? 5.0;
+    const payload = {
+      ...politician,
+      name: politician.fullName,
+      fullName: politician.fullName,
+      verdict_score: score,
+      verdictScore: score,
+    };
+
     return NextResponse.json({
       success: true,
-      data: politician,
-      ...politician,
+      data: payload,
+      ...payload,
     });
   } catch (error) {
     console.error("[API_ERROR] /api/politicians/[slug]:", error);

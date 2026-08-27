@@ -397,8 +397,9 @@ export default function TaxMoneyPage() {
         <p>
           Data sources: Union Budget 2024–25 (Ministry of Finance, indiabudget.gov.in), MPs&apos; Salaries Act 1954, and Right To Information Wiki (CC-BY 4.0).
         </p>
-        <Link href="/" className="font-bold text-ink hover:text-brand-red underline decoration-1">
-          Back to Representatives Directory →
+        <Link href="/" className="font-bold text-ink hover:text-brand-red underline decoration-1 inline-flex items-center gap-1.5">
+          <span>Back to Representatives Directory</span>
+          <ArrowRight className="w-3.5 h-3.5 stroke-[2.5]" aria-hidden="true" />
         </Link>
       </div>
     </div>

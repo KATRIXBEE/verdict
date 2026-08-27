@@ -143,7 +143,7 @@ export function getEducationBadge(status?: string | EducationStatus): { label: s
     case "unverified":
       return { label: "UNVERIFIED ARCHIVE", classNames: "bg-[#FFD028] text-black border-black", symbol: "▲" };
     case "suspicious":
-      return { label: "FLAGGED / SUSPICIOUS", classNames: "bg-[#FF4336] text-white border-black animate-pulse", symbol: "✕" };
+      return { label: "FLAGGED / SUSPICIOUS", classNames: "bg-[#FF4336] text-white border-black animate-pulse", symbol: "X" };
     default:
       return { label: "UNVERIFIED ARCHIVE", classNames: "bg-[#FFD028] text-black border-black", symbol: "▲" };
   }
@@ -203,6 +203,7 @@ export function getImageSrc(photoUrl?: string | null): string {
 }
 
 export const getProxiedImageUrl = getImageSrc;
+export const getPoliticianImageSrc = getImageSrc;
 
 
 

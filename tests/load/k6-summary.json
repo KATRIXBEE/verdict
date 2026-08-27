@@ -1,0 +1,286 @@
+{
+    "metrics": {
+        "duration_image_proxy": {
+            "max": 29843.4908,
+            "p(90)": 21834.86971,
+            "p(95)": 24165.838144999998,
+            "avg": 12508.441343749997,
+            "min": 3544.2531,
+            "med": 10962.6511
+        },
+        "vus_max": {
+            "min": 100,
+            "max": 100,
+            "value": 100
+        },
+        "data_received": {
+            "count": 241876040,
+            "rate": 1484557.9307956134
+        },
+        "http_req_tls_handshaking": {
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0
+        },
+        "duration_dossier_pages": {
+            "avg": 17850.307016788316,
+            "min": 1465.3595,
+            "med": 16290.516,
+            "max": 35465.688,
+            "p(90)": 29979.49652,
+            "p(95)": 33053.6328
+        },
+        "http_reqs": {
+            "count": 462,
+            "rate": 2.8356085374457654
+        },
+        "iteration_duration": {
+            "avg": 30358.352859241688,
+            "min": 2056.7169,
+            "med": 26364.5394,
+            "max": 75253.0065,
+            "p(90)": 56200.3605,
+            "p(95)": 66312.57065
+        },
+        "checks": {
+            "passes": 542,
+            "fails": 0,
+            "value": 1
+        },
+        "duration_compare_views": {
+            "med": 19390.245349999997,
+            "max": 34484.0364,
+            "p(90)": 29009.345729999997,
+            "p(95)": 29991.429099999998,
+            "avg": 18608.175049999998,
+            "min": 1444.0083
+        },
+        "duration_home_and_search": {
+            "avg": 15223.413070967736,
+            "min": 290.5668,
+            "med": 15156.00715,
+            "max": 35099.9854,
+            "p(90)": 28681.130660000013,
+            "p(95)": 32512.47388
+        },
+        "group_duration": {
+            "p(90)": 55981.70246000001,
+            "p(95)": 66794.058935,
+            "avg": 30216.083058878507,
+            "min": 1445.7674,
+            "med": 26168.4531,
+            "max": 74522.5756
+        },
+        "data_sent": {
+            "rate": 709.3010836145452,
+            "count": 115565
+        },
+        "http_req_waiting": {
+            "min": 289.5659,
+            "med": 15604.94525,
+            "max": 35465.1417,
+            "p(90)": 28690.73266,
+            "p(95)": 32309.41594,
+            "avg": 15886.996186580085
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 462,
+            "thresholds": {
+                "rate<0.01": false
+            },
+            "value": 0
+        },
+        "http_req_blocked": {
+            "med": 0,
+            "max": 13.3678,
+            "p(90)": 1.283420000000001,
+            "p(95)": 1.5886999999999998,
+            "avg": 0.3313160173160173,
+            "min": 0
+        },
+        "iterations": {
+            "count": 211,
+            "rate": 1.295050652383239
+        },
+        "verdict_failed_requests": {
+            "passes": 0,
+            "fails": 462,
+            "thresholds": {
+                "rate<0.01": false
+            },
+            "value": 0
+        },
+        "http_req_connecting": {
+            "avg": 0.2815363636363637,
+            "min": 0,
+            "med": 0,
+            "max": 13.3678,
+            "p(90)": 1.0602000000000014,
+            "p(95)": 1.5282949999999997
+        },
+        "http_req_sending": {
+            "avg": 0.20691688311688308,
+            "min": 0,
+            "med": 0,
+            "max": 35.2392,
+            "p(90)": 0.50308,
+            "p(95)": 0.6898699999999995
+        },
+        "http_req_receiving": {
+            "p(95)": 632.98987,
+            "avg": 166.66675454545452,
+            "min": 0,
+            "med": 0.8593,
+            "max": 3663.3081,
+            "p(90)": 547.4865600000005
+        },
+        "duration_ratings": {
+            "avg": 14821.936072727274,
+            "min": 6175.0634,
+            "med": 15129.4196,
+            "max": 21922.4229,
+            "p(90)": 20349.8472,
+            "p(95)": 21136.13505
+        },
+        "http_req_duration": {
+            "min": 290.5668,
+            "med": 15878.9067,
+            "max": 35465.688,
+            "p(90)": 29201.18903,
+            "p(95)": 32488.985464999998,
+            "avg": 16053.869858008644,
+            "thresholds": {
+                "p(95)<500": true,
+                "p(99)<1200": true
+            }
+        },
+        "vus": {
+            "value": 16,
+            "min": 1,
+            "max": 100
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 32488.985464999998,
+            "avg": 16053.869858008644,
+            "min": 290.5668,
+            "med": 15878.9067,
+            "max": 35465.688,
+            "p(90)": 29201.18903
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "01_Home_and_Search": {
+                "checks": {
+                    "homepage status 200": {
+                        "name": "homepage status 200",
+                        "path": "::01_Home_and_Search::homepage status 200",
+                        "id": "2b09a741143950cefbd29a350052b0b3",
+                        "passes": 94,
+                        "fails": 0
+                    },
+                    "politicians api status 200": {
+                        "name": "politicians api status 200",
+                        "path": "::01_Home_and_Search::politicians api status 200",
+                        "id": "abfcb2456ff84066edf6f282fdabdad6",
+                        "passes": 80,
+                        "fails": 0
+                    },
+                    "has politicians data": {
+                        "name": "has politicians data",
+                        "path": "::01_Home_and_Search::has politicians data",
+                        "id": "8d747cf4fff541be15cdb2af44e75faa",
+                        "passes": 80,
+                        "fails": 0
+                    },
+                    "search api status 200": {
+                        "name": "search api status 200",
+                        "path": "::01_Home_and_Search::search api status 200",
+                        "id": "cf03409dd81607fa6a77f8bf9a84b9d6",
+                        "passes": 74,
+                        "fails": 0
+                    }
+                },
+                "name": "01_Home_and_Search",
+                "path": "::01_Home_and_Search",
+                "id": "b49f0923afb39c8dbc770d5ff8db12a7",
+                "groups": {}
+            },
+            "02_Politician_Dossiers": {
+                "name": "02_Politician_Dossiers",
+                "path": "::02_Politician_Dossiers",
+                "id": "314cbac5ae2fdc28237601b3d22b1f7d",
+                "groups": {},
+                "checks": {
+                        "dossier html status 200": {
+                            "passes": 74,
+                            "fails": 0,
+                            "name": "dossier html status 200",
+                            "path": "::02_Politician_Dossiers::dossier html status 200",
+                            "id": "192aac0b051d752e21882c06830cc469"
+                        },
+                        "dossier api status 200/404": {
+                            "name": "dossier api status 200/404",
+                            "path": "::02_Politician_Dossiers::dossier api status 200/404",
+                            "id": "eb9329aa038b873bb116d787d1d115c9",
+                            "passes": 63,
+                            "fails": 0
+                        }
+                    }
+            },
+            "03_Compare_and_Analytics": {
+                "name": "03_Compare_and_Analytics",
+                "path": "::03_Compare_and_Analytics",
+                "id": "a6babd3dfcec03e25db296a0be336331",
+                "groups": {},
+                "checks": {
+                        "static/compare view status 200": {
+                            "fails": 0,
+                            "name": "static/compare view status 200",
+                            "path": "::03_Compare_and_Analytics::static/compare view status 200",
+                            "id": "d7df05d552c5bfa0758dbbbc703cf2df",
+                            "passes": 34
+                        }
+                    }
+            },
+            "04_Image_Proxy": {
+                "name": "04_Image_Proxy",
+                "path": "::04_Image_Proxy",
+                "id": "6dce149263838b9999de4c229d866a81",
+                "groups": {},
+                "checks": {
+                        "image proxy status 200": {
+                            "name": "image proxy status 200",
+                            "path": "::04_Image_Proxy::image proxy status 200",
+                            "id": "1247d2a8b5944800a012583c13cd763a",
+                            "passes": 32,
+                            "fails": 0
+                        }
+                    }
+            },
+            "05_Health_and_Ratings": {
+                "name": "05_Health_and_Ratings",
+                "path": "::05_Health_and_Ratings",
+                "id": "3cf767226694448aa3eb11853de24e13",
+                "groups": {},
+                "checks": {
+                        "health check status 200": {
+                            "name": "health check status 200",
+                            "path": "::05_Health_and_Ratings::health check status 200",
+                            "id": "18a1e1030a393b58a0e1b0102eaf19b2",
+                            "passes": 11,
+                            "fails": 0
+                        }
+                    }
+            }
+        },
+        "checks": {}
+    }
+}

@@ -11,7 +11,8 @@ import {
   Scale, 
   Clock, 
   MapPin, 
-  AlertTriangle 
+  AlertTriangle,
+  Info
 } from "lucide-react";
 import { 
   BarChart, 
@@ -259,7 +260,10 @@ export default function CrimeCounter() {
           </div>
 
           <div className="bg-surface-muted p-2.5 border border-ink text-[11px] text-gray-700 space-y-1 mt-3">
-            <span className="font-bold text-ink block">★ Key Observational Context:</span>
+            <span className="font-bold text-ink inline-flex items-center gap-1.5">
+              <Info className="w-3.5 h-3.5 text-brand-red stroke-[2.5]" aria-hidden="true" />
+              <span>Key Observational Context:</span>
+            </span>
             <p>
               Higher registered crime numbers often reflect better police filing and citizen reporting rates in progressive states, alongside demographic population volume.
             </p>

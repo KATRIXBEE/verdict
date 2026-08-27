@@ -46,8 +46,10 @@ export default function PartyHopperTimeline({
         <div className="flex flex-wrap items-center justify-between gap-3 bg-surface-muted border-2 border-ink p-3 text-xs">
           <div className="flex items-center space-x-2">
             <History className="w-4 h-4 text-brand-cyan" />
-            <span className="font-bold text-ink">
-              POLITICAL TRAJECTORY: {startYear} ➔ {currentYear} ({totalYears} Years Active)
+            <span className="font-bold text-ink inline-flex items-center gap-1.5">
+              <span>POLITICAL TRAJECTORY: {startYear}</span>
+              <ArrowRight className="w-3.5 h-3.5 stroke-[2.5]" aria-hidden="true" />
+              <span>{currentYear} ({totalYears} Years Active)</span>
             </span>
           </div>
 

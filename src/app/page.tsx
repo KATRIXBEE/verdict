@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { 
@@ -28,6 +28,10 @@ import CrimeCounter from "@/components/CrimeCounter";
 
 export default function HomePage() {
   const [filteredPoliticians, setFilteredPoliticians] = useState<Politician[]>(MOCK_POLITICIANS);
+
+  const handleFilterChange = useCallback((filtered: Politician[]) => {
+    setFilteredPoliticians(filtered);
+  }, []);
 
   // Top Ranked Politicians (High Verdict Score)
   const topRanked = [...MOCK_POLITICIANS]
@@ -73,7 +77,7 @@ export default function HomePage() {
 
           {/* Big Search Bar */}
           <div className="pt-2">
-            <SearchBar onFilterChange={setFilteredPoliticians} />
+            <SearchBar onFilterChange={handleFilterChange} />
           </div>
 
           {/* Quick Disambiguation Demo Hint */}
@@ -328,9 +332,11 @@ export default function HomePage() {
                       <span className="text-[10px] font-bold text-gray-500 uppercase">SWITCH HISTORY:</span>
                       <div className="font-bold text-[11px] leading-relaxed">
                         {p.partyHistory.map((h, i) => (
-                          <span key={h.id}>
-                            {h.partyAbbr} ({h.startYear})
-                            {i < p.partyHistory.length - 1 ? " ➔ " : ""}
+                          <span key={h.id} className="inline-flex items-center">
+                            <span>{h.partyAbbr} ({h.startYear})</span>
+                            {i < p.partyHistory.length - 1 && (
+                              <ArrowRight className="w-3 h-3 mx-1 text-gray-500 stroke-[2.5]" aria-hidden="true" />
+                            )}
                           </span>
                         ))}
                       </div>

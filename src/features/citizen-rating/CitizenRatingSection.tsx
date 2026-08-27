@@ -163,7 +163,9 @@ export default function CitizenRatingSection({
                 <span className="font-display font-black text-2xl">
                   {activeTab === "local" ? localAvg : nationalAvg}
                 </span>
-                <span className="text-xs font-bold ml-1">/ 5★</span>
+                <span className="text-xs font-bold ml-1 inline-flex items-center">
+                  / 5 <Star className="w-3 h-3 ml-0.5 fill-black stroke-black" aria-hidden="true" />
+                </span>
               </div>
 
               <div>

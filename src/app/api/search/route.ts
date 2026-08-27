@@ -92,19 +92,31 @@ export async function GET(request: NextRequest) {
     const totalMatches = results.length;
     const paginatedResults = results.slice(offset, offset + limit);
 
+    const normalizedLocal = paginatedResults.map((p: any) => ({
+      ...p,
+      name: p.fullName || p.name,
+      fullName: p.fullName || p.name,
+      current_party: p.currentParty || p.current_party,
+      currentParty: p.currentParty || p.current_party,
+      constituency: p.currentConstituency?.name || p.constituency,
+      state: p.currentConstituency?.state || p.state,
+      verdict_score: p.calculatedVerdictScore ?? p.verdictScore ?? p.verdict_score ?? 5.0,
+      verdictScore: p.calculatedVerdictScore ?? p.verdictScore ?? p.verdict_score ?? 5.0,
+    }));
+
     // Check for name collisions to trigger disambiguation metadata
     const nameCollision = results.length > 1 && q.trim().length > 2;
 
     return NextResponse.json({
       success: true,
-      count: paginatedResults.length,
+      count: normalizedLocal.length,
       total: totalMatches,
       page,
       limit,
       totalPages: Math.ceil(totalMatches / limit),
       isDisambiguationRequired: nameCollision,
-      data: paginatedResults,
-      results: paginatedResults,
+      data: normalizedLocal,
+      results: normalizedLocal,
     });
   } catch (error) {
     console.error("[API_ERROR] /api/search:", error);

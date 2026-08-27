@@ -60,7 +60,7 @@ export default function EngagementBar({ article }: EngagementBarProps) {
   const handleWhatsAppShare = () => {
     if (typeof window !== "undefined") {
       const text = encodeURIComponent(
-        `🚨 GROUND TRUTH INVESTIGATION: ${article.headline}\n\nRead the full report with verified RTI and satellite evidence on VERDICT:\n${window.location.href}`
+        `[VERIFIED INVESTIGATION] ${article.headline}\n\nRead the full report with verified RTI and satellite evidence on VERDICT:\n${window.location.href}`
       );
       window.open(`https://api.whatsapp.com/send?text=${text}`, "_blank");
     }
@@ -69,7 +69,7 @@ export default function EngagementBar({ article }: EngagementBarProps) {
   const handleTwitterShare = () => {
     if (typeof window !== "undefined") {
       const text = encodeURIComponent(
-        `🚨 ${article.headline.substring(0, 140)}...\n\nVerified civic investigation via @VerdictIndia:`
+        `[CIVIC REPORT] ${article.headline.substring(0, 140)}...\n\nVerified civic investigation via @VerdictIndia:`
       );
       const url = encodeURIComponent(window.location.href);
       window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, "_blank");

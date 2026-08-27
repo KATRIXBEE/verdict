@@ -109,7 +109,11 @@ export default function Footer() {
           <div>
             © 2026 VERDICT Civic-Tech Foundation. Public Domain Civic Data under India Open Data Initiative.
           </div>
-          <div className="flex items-center space-x-3">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+            <Link href="/india-rankings" className="hover:text-ink underline">
+              India Rankings
+            </Link>
+            <span>•</span>
             <Link href="/method" className="hover:text-ink underline">
               Algorithm Methodology
             </Link>

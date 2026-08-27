@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { FileText, Copy, Check, ExternalLink, Printer, ShieldCheck } from "lucide-react";
+import { FileText, Copy, Check, ExternalLink, Printer, ShieldCheck, Scale } from "lucide-react";
 import { GroundTruthArticle } from "@/types";
 import Modal from "@/components/ui/Modal";
 import BrutalistButton from "@/components/ui/BrutalistButton";
@@ -95,8 +95,11 @@ Date: ${new Date().toLocaleDateString("en-IN")}`;
     >
       <div className="space-y-4 font-mono text-xs">
         {/* Intro notice */}
-        <div className="bg-canvas border-2 border-ink p-3 leading-relaxed">
-          <span className="font-bold text-brand-red">⚖️ CITIZEN ACTION PROTOCOL:</span> This statutory RTI application has been pre-configured with the exact Public Information Officer (PIO) address, departmental jurisdiction, and targeted evidentiary questions derived from this investigation.
+        <div className="bg-canvas border-2 border-ink p-3 leading-relaxed flex items-start gap-2">
+          <Scale className="w-4 h-4 text-brand-red stroke-[2.5] shrink-0 mt-0.5" aria-hidden="true" />
+          <p>
+            <strong className="text-brand-red">CITIZEN ACTION PROTOCOL:</strong> This statutory RTI application has been pre-configured with the exact Public Information Officer (PIO) address, departmental jurisdiction, and targeted evidentiary questions derived from this investigation.
+          </p>
         </div>
 
         {/* Pre-filled Preview */}

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { RefreshCw } from "lucide-react";
+import { RefreshCw, Star } from "lucide-react";
 import Modal from "@/components/ui/Modal";
 import BrutalistButton from "@/components/ui/BrutalistButton";
 import { getScoreBand, getScoreColor } from "@/lib/utils";
@@ -199,9 +199,12 @@ export default function ScoreSimulatorModal({
 
           {/* Citizen Rating */}
           <div className="bg-surface-muted border-2 border-ink p-3 space-y-1.5">
-            <div className="flex justify-between font-bold">
+            <div className="flex justify-between font-bold items-center">
               <span>Citizen Verified Rating:</span>
-              <span className="text-brand-yellow font-black">★ {citizenRating.toFixed(1)} / 5</span>
+              <span className="text-black font-black inline-flex items-center gap-1">
+                <Star className="w-3.5 h-3.5 fill-brand-yellow stroke-black stroke-[2.5]" aria-hidden="true" />
+                <span>{citizenRating.toFixed(1)} / 5</span>
+              </span>
             </div>
             <input
               type="range"

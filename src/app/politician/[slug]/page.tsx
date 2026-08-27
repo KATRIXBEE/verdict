@@ -35,7 +35,7 @@ export default async function PoliticianPage({ params }: PoliticianPageProps) {
     notFound();
   }
 
-  const controversies = getControversiesByPoliticianId(politician.id);
+  const controversies = getControversiesByPoliticianId(politician.slug || politician.id);
 
   return (
     <div className="space-y-8 font-mono">

@@ -33,7 +33,7 @@ describe('POST /api/ratings', () => {
   })
 
   it('returns 200 for valid submission', async () => {
-    const uniqueIp = `10.0.0.${Math.floor(Math.random() * 200) + 1}`
+    const uniqueIp = `192.168.${Math.floor(Math.random() * 250) + 1}.${Math.floor(Math.random() * 250) + 1}`
     const req = makeRequest({
       politicianId: 'narendra-modi-varanasi',
       rating: 5,

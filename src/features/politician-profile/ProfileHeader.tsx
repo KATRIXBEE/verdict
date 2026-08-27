@@ -14,7 +14,8 @@ import {
   Share2, 
   Check, 
   AlertTriangle,
-  Info
+  Info,
+  Award
 } from "lucide-react";
 import { Politician } from "@/types";
 import { getEducationBadge, getScoreColor, getProxiedImageUrl } from "@/lib/utils";
@@ -91,8 +92,9 @@ export default function ProfileHeader({ politician }: ProfileHeaderProps) {
 
             {/* Ministerial Badge if applicable */}
             {politician.isMinister && (
-              <div className="mt-2 w-full bg-brand-yellow text-black border-2 border-ink text-[11px] font-bold text-center py-1 uppercase shadow-hard-xs">
-                ★ {politician.portfolio || "UNION MINISTER"}
+              <div className="mt-2 w-full bg-brand-yellow text-black border-2 border-ink text-[11px] font-bold text-center py-1 uppercase shadow-hard-xs inline-flex items-center justify-center gap-1.5">
+                <Award className="w-3.5 h-3.5 stroke-[2.5] text-black" aria-hidden="true" />
+                <span>{politician.portfolio || "UNION MINISTER"}</span>
               </div>
             )}
           </div>

@@ -47,8 +47,11 @@ export default function IPCTranslatorModal({
     >
       <div className="space-y-6 font-mono">
         {/* Intro notice */}
-        <div className="bg-canvas border-2 border-ink p-3 text-xs leading-relaxed">
-          <span className="font-bold text-brand-red">⚖️ TRANSPARENCY NOTICE:</span> Indian Penal Code (IPC) sections in affidavits are often complex legal jargon. VERDICT translates statutory penal sections into verified layman English with objective severity tiers derived from statutory maximum sentences.
+        <div className="bg-canvas border-2 border-ink p-3 text-xs leading-relaxed flex items-start gap-2">
+          <Scale className="w-4 h-4 text-brand-red stroke-[2.5] shrink-0 mt-0.5" aria-hidden="true" />
+          <p>
+            <strong className="text-brand-red">TRANSPARENCY NOTICE:</strong> Indian Penal Code (IPC) sections in affidavits are often complex legal jargon. VERDICT translates statutory penal sections into verified layman English with objective severity tiers derived from statutory maximum sentences.
+          </p>
         </div>
 
         {/* Section Search Bar */}

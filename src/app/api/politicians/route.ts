@@ -16,8 +16,10 @@ export async function GET(request: NextRequest) {
     const scoreBand = searchParams.get("scoreBand") || "";
     const hasCriminalCases = searchParams.get("hasCriminalCases");
     const sort = searchParams.get("sort") || "name";
-    const page = Math.max(1, parseInt(searchParams.get("page") || "1", 10));
-    const limit = Math.min(50, parseInt(searchParams.get("limit") || "50", 10));
+    const rawPage = parseInt(searchParams.get("page") || "1", 10);
+    const page = isNaN(rawPage) || rawPage < 1 ? 1 : rawPage;
+    const rawLimit = parseInt(searchParams.get("limit") || "50", 10);
+    const limit = isNaN(rawLimit) || rawLimit < 1 ? 50 : Math.min(50, rawLimit);
     const offset = (page - 1) * limit;
 
     // Attempt live Supabase query first
@@ -96,6 +98,16 @@ export async function GET(request: NextRequest) {
       filtered = filtered.filter((p) => (p.criminalCases || []).length > 0);
     } else if (hasCriminalCases === "false") {
       filtered = filtered.filter((p) => (p.criminalCases || []).length === 0);
+    }
+
+    if (sort === "score_desc") {
+      filtered = [...filtered].sort((a, b) => b.calculatedVerdictScore - a.calculatedVerdictScore);
+    } else if (sort === "score_asc") {
+      filtered = [...filtered].sort((a, b) => a.calculatedVerdictScore - b.calculatedVerdictScore);
+    } else if (sort === "cases" || sort === "cases_desc") {
+      filtered = [...filtered].sort((a, b) => (b.criminalCases?.length || 0) - (a.criminalCases?.length || 0));
+    } else {
+      filtered = [...filtered].sort((a, b) => a.fullName.localeCompare(b.fullName));
     }
 
     const total = filtered.length;

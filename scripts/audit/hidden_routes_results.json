@@ -1,0 +1,386 @@
+[
+  {
+    "route": "/admin",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/admin/dashboard",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/admin/politicians",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/admin/login",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/dashboard",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/login",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/signup",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/register",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/cms",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/editor",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/staff",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/internal",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/dev",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/debug",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/test",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/preview",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/staging",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/api/admin",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/api/admin/politicians",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/api/debug",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/api/test",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/api/internal",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/api/env",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/api/config",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/api/users",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/api/sessions",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/api/logs",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/api/metrics",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/api/status",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/api/v1/politicians",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/api/v2/politicians",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/v1/api/politicians",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/_next/static/",
+    "status": 308,
+    "contentType": "",
+    "flag": "FOUND"
+  },
+  {
+    "route": "/_next/server/",
+    "status": 308,
+    "contentType": "",
+    "flag": "FOUND"
+  },
+  {
+    "route": "/sitemap.xml",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/sitemap.txt",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/security.txt",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/.well-known/security.txt",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/changelog",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/version",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/health",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/status",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/ping",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/favicon.ico",
+    "status": 404,
+    "contentType": "",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/apple-touch-icon.png",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/browserconfig.xml",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/crossdomain.xml",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/phpinfo.php",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/wp-admin",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/wp-login.php",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/backup",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/backup.zip",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/backup.tar.gz",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/db-backup.sql",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/dump.sql",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/export.json",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/data",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/uploads",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/files",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/docs",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/swagger",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/graphql",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/graphql/playground",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  },
+  {
+    "route": "/__graphql",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "flag": "NOT_FOUND"
+  }
+]
