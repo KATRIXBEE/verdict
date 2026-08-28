@@ -12,7 +12,8 @@ import {
   Menu, 
   X, 
   Coins, 
-  Globe2 
+  Globe2,
+  Banknote 
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import BrutalistButton from "@/components/ui/BrutalistButton";
@@ -24,9 +25,10 @@ export default function Header() {
 
   const navLinks = [
     { href: "/", label: "DASHBOARD", icon: Scale },
+    { href: "/tax-money", label: "TAX MONEY", icon: Coins },
+    { href: "/money-trail", label: "MONEY TRAIL", icon: Banknote },
     { href: "/ground-truth", label: "GROUND TRUTH", icon: Newspaper },
     { href: "/india-rankings", label: "INDIA RANKINGS", icon: Globe2 },
-    { href: "/tax-money", label: "TAX MONEY", icon: Coins },
     { href: "/compare", label: "NETA FACE-OFF", icon: GitCompare },
     { href: "/method", label: "METHODOLOGY & IPC", icon: BookOpen },
   ];
@@ -96,10 +98,10 @@ export default function Header() {
             <div className="xl:hidden flex items-center">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-1.5 sm:p-2 border-2.5 border-ink bg-surface shadow-hard-xs text-ink"
+                className="min-w-[44px] min-h-[44px] flex items-center justify-center p-2 border-2.5 border-ink bg-surface shadow-hard-xs text-ink cursor-pointer active:translate-x-0.5 active:translate-y-0.5"
                 aria-label="Toggle Navigation Menu"
               >
-                {mobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
+                {mobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]" />}
               </button>
             </div>
           </div>
@@ -108,7 +110,7 @@ export default function Header() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="xl:hidden border-t-2.5 border-ink bg-canvas p-4 space-y-2 font-mono shadow-hard-lg">
+        <div className="xl:hidden border-t-2.5 border-ink bg-canvas p-3 sm:p-4 space-y-2 font-mono shadow-hard-lg max-h-[calc(100vh-5rem)] overflow-y-auto">
           {navLinks.map((link) => {
             const Icon = link.icon;
             const isActive = pathname === link.href;
@@ -118,18 +120,20 @@ export default function Header() {
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className={cn(
-                  "flex items-center space-x-3 px-3.5 py-2.5 border-2 border-ink font-bold text-xs sm:text-sm shadow-hard-xs",
-                  isActive ? "bg-brand-yellow text-black" : "bg-surface text-ink"
+                  "min-h-[44px] flex items-center space-x-3 px-3.5 py-3 border-2 border-ink font-bold text-xs sm:text-sm shadow-hard-xs transition-all",
+                  isActive 
+                    ? "bg-brand-yellow text-black -translate-x-0.5 -translate-y-0.5 shadow-hard-sm" 
+                    : "bg-surface text-ink hover:bg-surface-muted"
                 )}
               >
-                <Icon className="w-4 h-4" />
-                <span>{link.label}</span>
+                <Icon className="w-4 h-4 shrink-0" />
+                <span className="truncate">{link.label}</span>
               </Link>
             );
           })}
           <div className="pt-2">
             <Link href="/compare" onClick={() => setMobileMenuOpen(false)}>
-              <BrutalistButton variant="primary" size="md" className="w-full">
+              <BrutalistButton variant="primary" size="md" className="w-full min-h-[44px] flex items-center justify-center">
                 NETA FACE-OFF (COMPARE)
               </BrutalistButton>
             </Link>

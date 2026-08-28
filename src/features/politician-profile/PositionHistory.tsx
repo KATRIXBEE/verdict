@@ -57,8 +57,9 @@ export default function PositionHistory({ portfolioHistory }: PositionHistoryPro
                       {item.government}
                     </span>
                     {isCurrent ? (
-                      <span className="bg-brand-green text-black font-extrabold text-[10px] px-2 py-0.5 border border-black animate-pulse uppercase">
-                        ● CURRENT ROLE
+                      <span className="bg-brand-green text-black font-extrabold text-[10px] px-2 py-0.5 border border-black uppercase inline-flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 rounded-full bg-black animate-pulse inline-block" aria-hidden="true" />
+                        <span>CURRENT ROLE</span>
                       </span>
                     ) : (
                       <span className="bg-gray-200 text-gray-700 font-bold text-[10px] px-2 py-0.5 border border-ink uppercase">

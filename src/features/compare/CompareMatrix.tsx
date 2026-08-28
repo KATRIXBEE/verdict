@@ -317,6 +317,90 @@ export default function CompareMatrix({
           </div>
         </div>
       </div>
+
+      {/* Mobile-Adaptive Metric Comparison Matrix Table */}
+      <div className="bg-surface border-3 border-ink p-4 sm:p-6 shadow-hard-lg space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2.5 border-ink pb-3">
+          <div className="flex items-center space-x-2">
+            <Scale className="w-5 h-5 text-brand-red stroke-[2.5]" />
+            <h3 className="font-display font-black text-lg sm:text-xl uppercase text-ink">
+              HEAD-TO-HEAD METRIC COMPARISON MATRIX
+            </h3>
+          </div>
+          <span className="text-[10px] font-bold text-gray-500 bg-surface-muted px-2 py-0.5 border border-ink self-start sm:self-auto">
+            SCROLLABLE ON MOBILE
+          </span>
+        </div>
+
+        <div className="overflow-x-auto w-full -mx-2 sm:mx-0 px-2 sm:px-0">
+          <table className="w-full min-w-[500px] border-collapse border-2 border-ink text-xs font-mono">
+            <thead>
+              <tr className="bg-ink text-white">
+                <th className="p-3 text-left border-r border-gray-700 w-2/5">EVALUATION METRIC</th>
+                <th className="p-3 text-left border-r border-gray-700 w-3/10 truncate">{neta1.fullName}</th>
+                <th className="p-3 text-left w-3/10 truncate">{neta2.fullName}</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y-2 divide-ink bg-surface">
+              <tr className="hover:bg-surface-muted">
+                <td className="p-3 font-bold border-r-2 border-ink">Overall VERDICT Score</td>
+                <td className="p-3 font-black border-r-2 border-ink">
+                  <span className={`px-2 py-0.5 border border-black ${score1Color.bg} ${score1Color.text}`}>
+                    {neta1.calculatedVerdictScore.toFixed(1)} / 10
+                  </span>
+                </td>
+                <td className="p-3 font-black">
+                  <span className={`px-2 py-0.5 border border-black ${score2Color.bg} ${score2Color.text}`}>
+                    {neta2.calculatedVerdictScore.toFixed(1)} / 10
+                  </span>
+                </td>
+              </tr>
+              <tr className="hover:bg-surface-muted">
+                <td className="p-3 font-bold border-r-2 border-ink">Parliament Attendance</td>
+                <td className="p-3 font-black border-r-2 border-ink text-ink">{neta1.attendancePercentage}%</td>
+                <td className="p-3 font-black text-ink">{neta2.attendancePercentage}%</td>
+              </tr>
+              <tr className="hover:bg-surface-muted">
+                <td className="p-3 font-bold border-r-2 border-ink">Debates Participated</td>
+                <td className="p-3 font-black border-r-2 border-ink">{neta1.debatesParticipated}</td>
+                <td className="p-3 font-black">{neta2.debatesParticipated}</td>
+              </tr>
+              <tr className="hover:bg-surface-muted">
+                <td className="p-3 font-bold border-r-2 border-ink">Active Criminal Dockets</td>
+                <td className={`p-3 font-black border-r-2 border-ink ${activeCases1 > 0 ? "text-brand-red" : "text-green-700"}`}>
+                  {activeCases1} {activeCases1 === 0 ? "(Clean)" : "Active"}
+                </td>
+                <td className={`p-3 font-black ${activeCases2 > 0 ? "text-brand-red" : "text-green-700"}`}>
+                  {activeCases2} {activeCases2 === 0 ? "(Clean)" : "Active"}
+                </td>
+              </tr>
+              <tr className="hover:bg-surface-muted">
+                <td className="p-3 font-bold border-r-2 border-ink">Declared Net Worth</td>
+                <td className="p-3 font-black border-r-2 border-ink text-ink">{formatINR(latestAsset1)}</td>
+                <td className="p-3 font-black text-ink">{formatINR(latestAsset2)}</td>
+              </tr>
+              <tr className="hover:bg-surface-muted">
+                <td className="p-3 font-bold border-r-2 border-ink">Party Switches</td>
+                <td className="p-3 font-black border-r-2 border-ink">{switches1} Switch(es)</td>
+                <td className="p-3 font-black">{switches2} Switch(es)</td>
+              </tr>
+              <tr className="hover:bg-surface-muted">
+                <td className="p-3 font-bold border-r-2 border-ink">UGC Degree Audit</td>
+                <td className="p-3 border-r-2 border-ink">
+                  <span className={`px-1.5 py-0.5 text-[10px] font-bold border ${edu1.classNames}`}>
+                    {edu1.label}
+                  </span>
+                </td>
+                <td className="p-3">
+                  <span className={`px-1.5 py-0.5 text-[10px] font-bold border ${edu2.classNames}`}>
+                    {edu2.label}
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   );
 }

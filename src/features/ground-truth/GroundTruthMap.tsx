@@ -48,21 +48,22 @@ export default function GroundTruthMap({ articles }: GroundTruthMapProps) {
           <div className="absolute inset-0 bg-grid-matrix opacity-40 pointer-events-none" />
 
           {/* India Regional Sector Guides */}
-          <div className="absolute top-4 left-4 text-[10px] text-gray-500 font-bold">
+          <div className="hidden sm:block absolute top-4 left-4 text-[10px] text-gray-500 font-bold">
             LAT 36°N (NORTHERN FRONTIER)
           </div>
-          <div className="absolute bottom-4 left-4 text-[10px] text-gray-500 font-bold">
+          <div className="hidden sm:block absolute bottom-4 left-4 text-[10px] text-gray-500 font-bold">
             LAT 08°N (INDIAN OCEAN BASIN)
           </div>
-          <div className="absolute bottom-4 right-4 text-[10px] text-gray-500 font-bold">
+          <div className="hidden sm:block absolute bottom-4 right-4 text-[10px] text-gray-500 font-bold">
             LNG 96°E (EASTERN BENGAL DELTA)
           </div>
 
           {/* Stylized Geo Container */}
           <div className="w-full h-full relative max-w-lg aspect-square border-2 border-dashed border-gray-400 bg-surface/40 p-4">
             {/* Compass Rose */}
-            <div className="absolute top-3 right-3 text-center text-[9px] font-black text-gray-600 bg-surface border border-ink px-1.5 py-0.5 shadow-hard-xs">
-              N ▲
+            <div className="absolute top-3 right-3 text-center text-[9px] font-black text-gray-600 bg-surface border border-ink px-1.5 py-0.5 shadow-hard-xs inline-flex items-center gap-1">
+              <span>N</span>
+              <Compass className="w-3 h-3 text-ink stroke-[2.5]" aria-hidden="true" />
             </div>
 
             {/* Plot Article Pins */}

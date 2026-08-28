@@ -153,7 +153,7 @@ export const RUPEE_HISTORICAL_DATA: Record<string, CurrencyData> = {
   sar: {
     name: "Saudi Riyal",
     flag: "SA",
-    symbol: "﷼",
+    symbol: "SAR",
     data: [
       { year: 2005, rate: 11.8 },
       { year: 2010, rate: 12.2 },

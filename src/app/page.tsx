@@ -147,6 +147,41 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Money Trail Teaser Banner */}
+      <section className="bg-[#111111] text-[#F5F3EF] border-3 border-ink p-5 sm:p-7 shadow-hard-xl font-mono relative overflow-hidden space-y-4">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 relative z-10">
+          <div className="space-y-2 max-w-2xl">
+            <div className="inline-flex items-center space-x-2 bg-brand-red text-white px-2.5 py-0.5 border border-ink text-xs font-black uppercase shadow-hard-xs">
+              <span className="w-2 h-2 rounded-full bg-brand-yellow animate-ping" />
+              <span>GROUND TRUTH • CITIZEN MONEY TRAIL</span>
+            </div>
+            <h2 className="font-display font-black text-2xl sm:text-3xl uppercase tracking-tight text-white">
+              ₹4.83 LAKH CRORE EXPOSED BY <span className="text-brand-yellow underline decoration-brand-red decoration-2">CAG AUDITS</span>
+            </h2>
+            <p className="text-xs sm:text-sm text-gray-300 font-semibold leading-relaxed">
+              Explore verified findings on highway cost inflation, unspent workers welfare treasuries, and ₹54,000+ crore booked under miscellaneous heads.
+            </p>
+          </div>
+
+          <div className="shrink-0">
+            <Link href="/money-trail">
+              <BrutalistButton variant="primary" size="md" className="font-display font-black text-sm uppercase">
+                <span>EXPLORE MONEY TRAIL</span>
+                <ArrowRight className="w-4 h-4 ml-1.5" />
+              </BrutalistButton>
+            </Link>
+          </div>
+        </div>
+
+        <div className="pt-2 border-t border-gray-800 flex flex-wrap items-center gap-2 text-[11px] font-bold text-gray-400 relative z-10">
+          <span className="text-brand-yellow uppercase text-[10px] font-black">FLAGGED CASES:</span>
+          <span className="bg-[#1A1A1A] border border-gray-700 px-2 py-0.5 text-gray-200">Dwarka Expressway (14x Cost)</span>
+          <span className="bg-[#1A1A1A] border border-gray-700 px-2 py-0.5 text-gray-200">BOCW Workers Fund (₹40,000 Cr)</span>
+          <span className="bg-[#1A1A1A] border border-gray-700 px-2 py-0.5 text-gray-200">Nirbhaya Fund (&lt;20% Spent)</span>
+          <span className="bg-[#1A1A1A] border border-gray-700 px-2 py-0.5 text-gray-200">Minor Head 800 (₹54,282 Cr)</span>
+        </div>
+      </section>
+
       {/* Featured Grids */}
       <section className="space-y-8">
         {/* 1. All Indexed Politician Dossiers */}
@@ -168,7 +203,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
             {filteredPoliticians.map((p) => {
               const scoreColor = getScoreColor(p.calculatedVerdictScore);
               const eduBadge = getEducationBadge(p.educationStatus);
@@ -288,7 +323,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {partyHoppers.map((p) => {
               const totalSwitches = p.partyHistory.length - 1;
               return (

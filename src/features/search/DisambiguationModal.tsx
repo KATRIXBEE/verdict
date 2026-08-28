@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { UserCheck, MapPin, Building, Award, ArrowRight } from "lucide-react";
+import { UserCheck, MapPin, Building, Award, ArrowRight, AlertTriangle } from "lucide-react";
 import { Politician } from "@/types";
 import Modal from "@/components/ui/Modal";
 import BrutalistButton from "@/components/ui/BrutalistButton";
@@ -33,7 +33,11 @@ export default function DisambiguationModal({
     >
       <div className="space-y-4 font-mono">
         <div className="bg-brand-yellow/30 border-2 border-ink p-3 text-xs leading-relaxed">
-          <span className="font-bold text-brand-red">▲ MULTIPLE LAWMAKERS IDENTIFIED:</span> Multiple elected representatives share this name or query. Please select the specific politician dossier below:
+          <span className="font-bold text-brand-red inline-flex items-center gap-1 mr-1">
+            <AlertTriangle className="w-3.5 h-3.5 stroke-[2.5]" aria-hidden="true" />
+            <span>MULTIPLE LAWMAKERS IDENTIFIED:</span>
+          </span>
+          <span>Multiple elected representatives share this name or query. Please select the specific politician dossier below:</span>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

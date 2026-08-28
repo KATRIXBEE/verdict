@@ -101,41 +101,41 @@ export default function ProfileHeader({ politician }: ProfileHeaderProps) {
 
           {/* Middle & Right: Personal Info & Education Flag */}
           <div className="flex-1 space-y-4 w-full">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b-2.5 border-ink pb-4">
-              <div>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b-2.5 border-ink pb-4">
+              <div className="space-y-1">
                 <div className="flex items-center space-x-2">
-                  <h1 className="font-display font-black text-2xl sm:text-4xl uppercase text-ink tracking-tight">
+                  <h1 className="font-display font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase text-ink tracking-tight">
                     {politician.fullName}
                   </h1>
                 </div>
-                <div className="flex flex-wrap items-center gap-2 mt-1 text-xs text-gray-700 font-bold">
-                  <span className="flex items-center space-x-1 bg-surface-muted px-2 py-0.5 border border-ink">
+                <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mt-1 text-xs text-gray-700 font-bold">
+                  <span className="inline-flex items-center space-x-1 bg-surface-muted px-2 py-0.5 border border-ink">
                     <MapPin className="w-3.5 h-3.5 text-brand-red shrink-0" />
                     <span>{politician.currentConstituency.name} ({politician.currentConstituency.code})</span>
                   </span>
-                  <span>•</span>
+                  <span aria-hidden="true">•</span>
                   <span>{politician.currentConstituency.state}</span>
-                  <span>•</span>
+                  <span aria-hidden="true">•</span>
                   <span>{politician.house}</span>
-                  <span>•</span>
+                  <span aria-hidden="true">•</span>
                   <span>{politician.termsServed} {politician.termsServed > 1 ? "Terms" : "Term"}</span>
                 </div>
               </div>
 
               {/* Share & Compare Buttons */}
-              <div className="flex items-center space-x-2 shrink-0">
+              <div className="flex items-center space-x-2 shrink-0 pt-1 sm:pt-0">
                 <button
                   onClick={handleShare}
-                  className="flex items-center space-x-1 px-3 py-1.5 border-2 border-ink bg-surface hover:bg-surface-muted font-bold text-xs shadow-hard-xs"
+                  className="min-h-[40px] inline-flex items-center space-x-1.5 px-3 py-2 border-2 border-ink bg-surface hover:bg-surface-muted font-bold text-xs shadow-hard-xs cursor-pointer active:translate-x-0.5 active:translate-y-0.5"
                   title="Copy Dossier Link"
                 >
-                  {copied ? <Check className="w-3.5 h-3.5 text-brand-green" /> : <Share2 className="w-3.5 h-3.5" />}
+                  {copied ? <Check className="w-4 h-4 text-brand-green stroke-[2.5]" /> : <Share2 className="w-4 h-4 stroke-[2.5]" />}
                   <span>{copied ? "COPIED!" : "SHARE"}</span>
                 </button>
 
                 <Link href={`/compare?p1=${politician.slug}`}>
-                  <BrutalistButton variant="cyan" size="sm" shadow="sm" className="flex items-center space-x-1">
-                    <GitCompare className="w-3.5 h-3.5" />
+                  <BrutalistButton variant="cyan" size="sm" shadow="sm" className="min-h-[40px] inline-flex items-center space-x-1.5 px-3 py-2">
+                    <GitCompare className="w-4 h-4 stroke-[2.5]" />
                     <span>FACE-OFF</span>
                   </BrutalistButton>
                 </Link>

@@ -207,9 +207,10 @@ export default function SearchBar({
                 setQuery("");
                 inputRef.current?.focus();
               }}
-              className="p-2 text-gray-500 hover:text-brand-red mr-1 cursor-pointer"
+              className="min-w-[44px] min-h-[44px] flex items-center justify-center text-gray-500 hover:text-brand-red cursor-pointer"
+              aria-label="Clear search input"
             >
-              <X className="w-5 h-5" />
+              <X className="w-5 h-5 stroke-[2.5]" />
             </button>
           )}
 
@@ -229,37 +230,37 @@ export default function SearchBar({
 
       {/* Comprehensive Filter & Sort Bar */}
       {showFilters && (
-        <div className="mt-3 bg-surface border-2.5 border-ink p-3 shadow-hard-xs space-y-2.5 text-xs">
+        <div className="mt-3 bg-surface border-2.5 border-ink p-3 sm:p-4 shadow-hard-xs space-y-3 text-xs">
           <div className="flex flex-wrap items-center justify-between gap-2 border-b border-ink/20 pb-2">
             <div className="flex items-center space-x-1.5 font-bold text-ink uppercase">
               <Filter className="w-3.5 h-3.5 text-brand-red" />
-              <span>DIRECT QUERY FILTERS & SORT:</span>
+              <span>DIRECT QUERY FILTERS &amp; SORT:</span>
             </div>
 
             {hasActiveFilters && (
               <button
                 type="button"
                 onClick={handleResetFilters}
-                className="text-[11px] font-bold text-brand-red hover:underline flex items-center space-x-1 cursor-pointer"
+                className="min-h-[36px] text-[11px] font-bold text-brand-red hover:underline inline-flex items-center space-x-1 cursor-pointer px-2 py-1"
               >
-                <X className="w-3 h-3" />
+                <X className="w-3.5 h-3.5" />
                 <span>RESET ALL FILTERS</span>
               </button>
             )}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3">
             {/* 1. State Filter (All 36 States & UTs) */}
             <div>
-              <label className="text-[10px] text-gray-500 font-bold uppercase block mb-0.5">
+              <label className="text-[10px] text-gray-500 font-bold uppercase block mb-1">
                 STATE / UT ({ALL_STATES.length}):
               </label>
               <select
                 value={selectedState}
                 onChange={(e) => setSelectedState(e.target.value)}
-                className="w-full bg-canvas border-1.5 border-ink p-1.5 text-xs font-bold text-ink focus:outline-none"
+                className="w-full min-h-[42px] sm:min-h-[38px] bg-canvas border-1.5 border-ink p-2 sm:p-1.5 text-xs font-bold text-ink focus:outline-none"
               >
-                <option value="All States">All States ({ALL_STATES.length} States & UTs)</option>
+                <option value="All States">All States ({ALL_STATES.length} States &amp; UTs)</option>
                 {ALL_STATES.map((st) => (
                   <option key={st} value={st}>
                     {st}
@@ -270,13 +271,13 @@ export default function SearchBar({
 
             {/* 2. Party Filter */}
             <div>
-              <label className="text-[10px] text-gray-500 font-bold uppercase block mb-0.5">
+              <label className="text-[10px] text-gray-500 font-bold uppercase block mb-1">
                 POLITICAL PARTY:
               </label>
               <select
                 value={selectedParty}
                 onChange={(e) => setSelectedParty(e.target.value)}
-                className="w-full bg-canvas border-1.5 border-ink p-1.5 text-xs font-bold text-ink focus:outline-none"
+                className="w-full min-h-[42px] sm:min-h-[38px] bg-canvas border-1.5 border-ink p-2 sm:p-1.5 text-xs font-bold text-ink focus:outline-none"
               >
                 <option value="All Parties">All Parties</option>
                 {ALL_PARTIES.map((pt) => (
@@ -289,13 +290,13 @@ export default function SearchBar({
 
             {/* 3. House Filter */}
             <div>
-              <label className="text-[10px] text-gray-500 font-bold uppercase block mb-0.5">
+              <label className="text-[10px] text-gray-500 font-bold uppercase block mb-1">
                 PARLIAMENTARY HOUSE:
               </label>
               <select
                 value={selectedHouse}
                 onChange={(e) => setSelectedHouse(e.target.value)}
-                className="w-full bg-canvas border-1.5 border-ink p-1.5 text-xs font-bold text-ink focus:outline-none"
+                className="w-full min-h-[42px] sm:min-h-[38px] bg-canvas border-1.5 border-ink p-2 sm:p-1.5 text-xs font-bold text-ink focus:outline-none"
               >
                 <option value="All Houses">All Houses</option>
                 <option value="Lok Sabha">Lok Sabha (18th)</option>
@@ -305,13 +306,13 @@ export default function SearchBar({
 
             {/* 4. Sort By Dropdown */}
             <div>
-              <label className="text-[10px] text-gray-500 font-bold uppercase block mb-0.5">
+              <label className="text-[10px] text-gray-500 font-bold uppercase block mb-1">
                 SORT BY:
               </label>
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="w-full bg-canvas border-1.5 border-ink p-1.5 text-xs font-bold text-ink focus:outline-none"
+                className="w-full min-h-[42px] sm:min-h-[38px] bg-canvas border-1.5 border-ink p-2 sm:p-1.5 text-xs font-bold text-ink focus:outline-none"
               >
                 <option value="name_asc">Name (A-Z)</option>
                 <option value="score_desc">VERDICT Score (Highest first)</option>

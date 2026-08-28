@@ -11,7 +11,7 @@ export default function Ticker() {
   ];
 
   return (
-    <div className="bg-ink text-white border-b-2.5 border-ink py-1.5 px-4 overflow-hidden relative select-none">
+    <div className="bg-ink text-white border-b-2.5 border-ink py-1.5 px-3 sm:px-4 w-full max-w-full overflow-x-hidden relative select-none">
       <div className="flex items-center">
         {/* Left static label */}
         <div className="hidden sm:flex items-center space-x-1.5 bg-brand-red text-white text-[10px] font-mono font-extrabold uppercase px-2 py-0.5 border border-white shrink-0 mr-4 z-10 shadow-hard-xs">

@@ -34,9 +34,9 @@ export interface RankingCategoryGroup {
 }
 
 export const INDIA_RANKINGS_DATA: Record<string, RankingCategoryGroup> = {
-  // ═══════════════════════════════════════
+  // =======================================
   // CATEGORY 1: HUMAN DEVELOPMENT & WELFARE
-  // ═══════════════════════════════════════
+  // =======================================
   human_development: {
     label: "Human Development & Welfare",
     icon: "Users",
@@ -172,9 +172,9 @@ export const INDIA_RANKINGS_DATA: Record<string, RankingCategoryGroup> = {
     ],
   },
 
-  // ═══════════════════════════════════════
+  // =======================================
   // CATEGORY 2: GOVERNANCE & DEMOCRACY
-  // ═══════════════════════════════════════
+  // =======================================
   governance: {
     label: "Governance & Democracy",
     icon: "Landmark",
@@ -310,9 +310,9 @@ export const INDIA_RANKINGS_DATA: Record<string, RankingCategoryGroup> = {
     ],
   },
 
-  // ═══════════════════════════════════════
+  // =======================================
   // CATEGORY 3: ECONOMY & TRADE
-  // ═══════════════════════════════════════
+  // =======================================
   economy: {
     label: "Economy & Trade",
     icon: "TrendingUp",
@@ -480,9 +480,9 @@ export const INDIA_RANKINGS_DATA: Record<string, RankingCategoryGroup> = {
     ],
   },
 
-  // ═══════════════════════════════════════
+  // =======================================
   // CATEGORY 4: ENVIRONMENT & CLIMATE
-  // ═══════════════════════════════════════
+  // =======================================
   environment: {
     label: "Environment & Climate",
     icon: "Leaf",
@@ -618,9 +618,9 @@ export const INDIA_RANKINGS_DATA: Record<string, RankingCategoryGroup> = {
     ],
   },
 
-  // ═══════════════════════════════════════
+  // =======================================
   // CATEGORY 5: EDUCATION
-  // ═══════════════════════════════════════
+  // =======================================
   education: {
     label: "Education",
     icon: "GraduationCap",
@@ -724,9 +724,9 @@ export const INDIA_RANKINGS_DATA: Record<string, RankingCategoryGroup> = {
     ],
   },
 
-  // ═══════════════════════════════════════
+  // =======================================
   // CATEGORY 6: HEALTH
-  // ═══════════════════════════════════════
+  // =======================================
   health: {
     label: "Health",
     icon: "HeartPulse",
@@ -862,9 +862,9 @@ export const INDIA_RANKINGS_DATA: Record<string, RankingCategoryGroup> = {
     ],
   },
 
-  // ═══════════════════════════════════════
+  // =======================================
   // CATEGORY 7: INNOVATION & TECHNOLOGY
-  // ═══════════════════════════════════════
+  // =======================================
   innovation: {
     label: "Innovation & Technology",
     icon: "Lightbulb",
@@ -1000,9 +1000,9 @@ export const INDIA_RANKINGS_DATA: Record<string, RankingCategoryGroup> = {
     ],
   },
 
-  // ═══════════════════════════════════════
+  // =======================================
   // CATEGORY 8: SOCIAL EQUITY & RIGHTS
-  // ═══════════════════════════════════════
+  // =======================================
   social_equity: {
     label: "Social Equity & Rights",
     icon: "Scale",
@@ -1106,9 +1106,9 @@ export const INDIA_RANKINGS_DATA: Record<string, RankingCategoryGroup> = {
     ],
   },
 
-  // ═══════════════════════════════════════
+  // =======================================
   // CATEGORY 9: MILITARY & GEOPOLITICS
-  // ═══════════════════════════════════════
+  // =======================================
   military: {
     label: "Military & Geopolitics",
     icon: "Shield",
@@ -1196,9 +1196,9 @@ export const INDIA_RANKINGS_DATA: Record<string, RankingCategoryGroup> = {
     ],
   },
 
-  // ═══════════════════════════════════════
+  // =======================================
   // CATEGORY 10: TOURISM & TRAVEL
-  // ═══════════════════════════════════════
+  // =======================================
   tourism: {
     label: "Tourism & Travel",
     icon: "Plane",
@@ -1254,9 +1254,9 @@ export const INDIA_RANKINGS_DATA: Record<string, RankingCategoryGroup> = {
     ],
   },
 
-  // ═══════════════════════════════════════
+  // =======================================
   // CATEGORY 11: SPORTS
-  // ═══════════════════════════════════════
+  // =======================================
   sports: {
     label: "Sports",
     icon: "Trophy",
@@ -1360,9 +1360,9 @@ export const INDIA_RANKINGS_DATA: Record<string, RankingCategoryGroup> = {
     ],
   },
 
-  // ═══════════════════════════════════════
+  // =======================================
   // CATEGORY 12: INFRASTRUCTURE
-  // ═══════════════════════════════════════
+  // =======================================
   infrastructure: {
     label: "Infrastructure",
     icon: "Building",
@@ -1450,9 +1450,9 @@ export const INDIA_RANKINGS_DATA: Record<string, RankingCategoryGroup> = {
     ],
   },
 
-  // ═══════════════════════════════════════
+  // =======================================
   // CATEGORY 13: MEDIA & CULTURE
-  // ═══════════════════════════════════════
+  // =======================================
   media_culture: {
     label: "Media & Culture",
     icon: "Film",
@@ -1508,9 +1508,9 @@ export const INDIA_RANKINGS_DATA: Record<string, RankingCategoryGroup> = {
     ],
   },
 
-  // ═══════════════════════════════════════
+  // =======================================
   // CATEGORY 14: MISCELLANEOUS
-  // ═══════════════════════════════════════
+  // =======================================
   miscellaneous: {
     label: "Miscellaneous",
     icon: "Globe",

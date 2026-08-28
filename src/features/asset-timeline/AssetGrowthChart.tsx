@@ -78,8 +78,9 @@ export default function AssetGrowthChart({
             <strong>Liabilities:</strong> {formatINR(data.rawLiabilities)}
           </div>
           {data.isOutlier && (
-            <div className="bg-brand-red text-white text-[10px] font-bold p-1 mt-1">
-              ▲ UNUSUAL GROWTH OUTLIER (&gt;500%)
+            <div className="bg-brand-red text-white text-[10px] font-bold p-1 mt-1 inline-flex items-center gap-1">
+              <AlertTriangle className="w-3 h-3 stroke-[2.5]" aria-hidden="true" />
+              <span>UNUSUAL GROWTH OUTLIER (&gt;500%)</span>
             </div>
           )}
         </div>

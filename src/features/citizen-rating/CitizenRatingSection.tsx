@@ -360,16 +360,17 @@ export default function CitizenRatingSection({
             {/* Star Rating Selector */}
             <div className="space-y-1.5">
               <label className="font-bold uppercase text-ink">Your Rating (1 to 5 Stars):</label>
-              <div className="flex items-center space-x-2 bg-canvas p-3 border-2 border-ink justify-center">
+              <div className="flex items-center space-x-1 sm:space-x-2 bg-canvas p-3 border-2 border-ink justify-center">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <button
                     key={star}
                     type="button"
                     onClick={() => setSelectedStars(star)}
-                    className="p-1 hover:scale-125 transition-transform cursor-pointer"
+                    className="min-w-[44px] min-h-[44px] flex items-center justify-center p-1.5 hover:scale-110 active:scale-95 transition-transform cursor-pointer"
+                    aria-label={`Rate ${star} star${star > 1 ? "s" : ""}`}
                   >
                     <Star
-                      className={`w-7 h-7 ${
+                      className={`w-7 h-7 stroke-[2] ${
                         star <= selectedStars
                           ? "text-brand-yellow fill-brand-yellow"
                           : "text-gray-300"

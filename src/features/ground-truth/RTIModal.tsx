@@ -132,23 +132,23 @@ Date: ${new Date().toLocaleDateString("en-IN")}`;
         </div>
 
         {/* Action Button Bar */}
-        <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t-2 border-ink">
-          <div className="flex items-center space-x-2">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pt-2 border-t-2 border-ink">
+          <div className="flex flex-wrap items-center gap-2">
             <button
               type="button"
               onClick={handleCopy}
-              className="inline-flex items-center space-x-1.5 bg-surface hover:bg-surface-muted px-3 py-1.5 border-2 border-ink font-bold shadow-hard-xs text-xs"
+              className="min-h-[40px] inline-flex items-center space-x-1.5 bg-surface hover:bg-surface-muted px-3.5 py-2 border-2 border-ink font-bold shadow-hard-xs text-xs cursor-pointer active:translate-x-0.5 active:translate-y-0.5"
             >
-              {copied ? <Check className="w-3.5 h-3.5 text-brand-green" /> : <Copy className="w-3.5 h-3.5" />}
+              {copied ? <Check className="w-4 h-4 text-brand-green stroke-[2.5]" /> : <Copy className="w-4 h-4 stroke-[2.5]" />}
               <span>{copied ? "COPIED TO CLIPBOARD!" : "COPY RTI TEXT"}</span>
             </button>
 
             <button
               type="button"
               onClick={handlePrint}
-              className="inline-flex items-center space-x-1.5 bg-surface hover:bg-surface-muted px-3 py-1.5 border-2 border-ink font-bold shadow-hard-xs text-xs"
+              className="min-h-[40px] inline-flex items-center space-x-1.5 bg-surface hover:bg-surface-muted px-3.5 py-2 border-2 border-ink font-bold shadow-hard-xs text-xs cursor-pointer active:translate-x-0.5 active:translate-y-0.5"
             >
-              <Printer className="w-3.5 h-3.5" />
+              <Printer className="w-4 h-4 stroke-[2.5]" />
               <span>PRINT / SAVE PDF</span>
             </button>
           </div>
@@ -157,10 +157,10 @@ Date: ${new Date().toLocaleDateString("en-IN")}`;
             href="https://rtionline.gov.in"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center space-x-1 bg-brand-green text-black px-3 py-1.5 border-2 border-ink font-black shadow-hard-xs text-xs hover:bg-[#20ff78]"
+            className="min-h-[40px] inline-flex items-center justify-center space-x-1.5 bg-brand-green text-black px-3.5 py-2 border-2 border-ink font-black shadow-hard-xs text-xs hover:bg-[#20ff78] cursor-pointer active:translate-x-0.5 active:translate-y-0.5"
           >
             <span>SUBMIT AT RTIONLINE.GOV.IN</span>
-            <ExternalLink className="w-3.5 h-3.5" />
+            <ExternalLink className="w-4 h-4 stroke-[2.5]" />
           </a>
         </div>
       </div>

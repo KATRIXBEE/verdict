@@ -80,6 +80,17 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="https://cag.gov.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between text-gray-800 hover:text-brand-red underline decoration-1 font-bold text-brand-red"
+                >
+                  <span>Comptroller & Auditor General (CAG)</span>
+                  <ExternalLink className="w-3 h-3 ml-1" />
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://www.ugc.gov.in"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -105,21 +116,29 @@ export default function Footer() {
         </div>
 
         {/* Bottom copyright and timestamp */}
-        <div className="border-t-2 border-ink mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-gray-600 text-[11px]">
-          <div>
+        <div className="border-t-2 border-ink mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-gray-600 text-[11px]">
+          <div className="text-center sm:text-left">
             © 2026 VERDICT Civic-Tech Foundation. Public Domain Civic Data under India Open Data Initiative.
           </div>
-          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-            <Link href="/india-rankings" className="hover:text-ink underline">
+          <div className="flex flex-wrap items-center justify-center sm:justify-end gap-1.5 sm:gap-2">
+            <Link href="/money-trail" className="min-h-[36px] inline-flex items-center hover:text-ink underline font-bold text-brand-red px-1.5 py-1">
+              Money Trail
+            </Link>
+            <span aria-hidden="true">•</span>
+            <Link href="/tax-money" className="min-h-[36px] inline-flex items-center hover:text-ink underline px-1.5 py-1">
+              Tax Money
+            </Link>
+            <span aria-hidden="true">•</span>
+            <Link href="/india-rankings" className="min-h-[36px] inline-flex items-center hover:text-ink underline px-1.5 py-1">
               India Rankings
             </Link>
-            <span>•</span>
-            <Link href="/method" className="hover:text-ink underline">
-              Algorithm Methodology
+            <span aria-hidden="true">•</span>
+            <Link href="/method" className="min-h-[36px] inline-flex items-center hover:text-ink underline px-1.5 py-1">
+              Methodology
             </Link>
-            <span>•</span>
-            <Link href="/compare" className="hover:text-ink underline">
-              Head-to-Head Compare
+            <span aria-hidden="true">•</span>
+            <Link href="/compare" className="min-h-[36px] inline-flex items-center hover:text-ink underline px-1.5 py-1">
+              Compare
             </Link>
           </div>
         </div>

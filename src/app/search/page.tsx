@@ -119,7 +119,9 @@ function SearchResults() {
       {/* Empty State */}
       {!isLoading && !error && results.length === 0 && (
         <div className="bg-canvas border-3 border-ink p-12 text-center shadow-hard-md space-y-3">
-          <div className="text-3xl">🔍</div>
+          <div className="w-12 h-12 mx-auto bg-surface-muted border-2 border-ink flex items-center justify-center shadow-hard-xs">
+            <Search className="w-6 h-6 text-gray-500 stroke-[2.5]" aria-hidden="true" />
+          </div>
           <h3 className="font-display font-black text-lg uppercase text-ink">
             NO REPRESENTATIVES FOUND FOR &quot;{query}&quot;
           </h3>
