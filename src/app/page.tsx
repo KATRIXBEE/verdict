@@ -25,12 +25,20 @@ import { formatINR, getScoreColor, getEducationBadge, getProxiedImageUrl } from 
 import BrutalistCard from "@/components/ui/BrutalistCard";
 import BrutalistButton from "@/components/ui/BrutalistButton";
 import CrimeCounter from "@/components/CrimeCounter";
+import { EMPTY_STATES } from "@/components/ui/EmptyState";
 
 export default function HomePage() {
   const [filteredPoliticians, setFilteredPoliticians] = useState<Politician[]>(MOCK_POLITICIANS);
+  const [hasActiveFilters, setHasActiveFilters] = useState(false);
 
-  const handleFilterChange = useCallback((filtered: Politician[]) => {
+  const handleFilterChange = useCallback((filtered: Politician[], activeFilters?: boolean) => {
     setFilteredPoliticians(filtered);
+    setHasActiveFilters(activeFilters ?? filtered.length < MOCK_POLITICIANS.length);
+  }, []);
+
+  const handleResetFilters = useCallback(() => {
+    setFilteredPoliticians(MOCK_POLITICIANS);
+    setHasActiveFilters(false);
   }, []);
 
   // Top Ranked Politicians (High Verdict Score)
@@ -203,6 +211,11 @@ export default function HomePage() {
             </Link>
           </div>
 
+          {filteredPoliticians.length === 0 ? (
+            <div className="mt-2">
+              {EMPTY_STATES.filterNoResults(handleResetFilters)}
+            </div>
+          ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
             {filteredPoliticians.map((p) => {
               const scoreColor = getScoreColor(p.calculatedVerdictScore);
@@ -303,6 +316,7 @@ export default function HomePage() {
               );
             })}
           </div>
+          )}
         </div>
 
         {/* 2. Spotlight: "Aaya Ram Gaya Ram" Serial Party Switchers */}

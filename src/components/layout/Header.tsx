@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { 
@@ -22,6 +22,19 @@ import GlobalSearch from "@/components/GlobalSearch";
 export default function Header() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
+
+  // Scroll-aware sticky header
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   const navLinks = [
     { href: "/", label: "DASHBOARD", icon: Scale },
@@ -34,7 +47,14 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-surface border-b-3 border-ink sticky top-0 z-40 shadow-hard-md">
+    <header
+      className={cn(
+        "sticky top-0 z-40 transition-all duration-300",
+        scrolled
+          ? "bg-surface/95 border-b-2 border-ink backdrop-blur-sm shadow-hard-md"
+          : "bg-surface border-b-3 border-ink shadow-hard-md"
+      )}
+    >
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20 gap-2 sm:gap-4">
           {/* Logo Brand */}

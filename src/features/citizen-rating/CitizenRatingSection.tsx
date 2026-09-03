@@ -18,6 +18,7 @@ import { CitizenRating, FeedbackCategory } from "@/types";
 import BrutalistCard from "@/components/ui/BrutalistCard";
 import BrutalistButton from "@/components/ui/BrutalistButton";
 import Modal from "@/components/ui/Modal";
+import { useToast } from "@/components/ui/Toast";
 
 interface CitizenRatingSectionProps {
   politicianId: string;
@@ -45,6 +46,7 @@ export default function CitizenRatingSection({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submittedSuccess, setSubmittedSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const { showToast } = useToast();
 
   const localRatings = ratings.filter((r) => r.isLocalVoter);
   const nationalRatings = ratings.filter((r) => !r.isLocalVoter);
@@ -82,15 +84,16 @@ export default function CitizenRatingSection({
 
       if (response.status === 429) {
         setErrorMessage("Too many ratings submitted. Please try again in a minute.");
+        showToast("Too many requests. Please wait a moment.", "warning");
         setIsSubmitting(false);
         return;
       }
 
       if (!response.ok) {
         const errData = await response.json().catch(() => ({}));
-        setErrorMessage(
-          errData?.error?.message || "Failed to submit citizen rating. Please try again."
-        );
+        const errMsg = errData?.error?.message || "Failed to submit citizen rating. Please try again.";
+        setErrorMessage(errMsg);
+        showToast("Failed to submit rating. Try again.", "error");
         setIsSubmitting(false);
         return;
       }
@@ -114,6 +117,7 @@ export default function CitizenRatingSection({
 
       setRatings([newRating, ...ratings]);
       setSubmittedSuccess(true);
+      showToast("Rating submitted successfully!", "success");
       setTimeout(() => {
         setSubmittedSuccess(false);
         setRatingModalOpen(false);
@@ -124,6 +128,7 @@ export default function CitizenRatingSection({
     } catch (err) {
       console.error("[RATING_SUBMISSION_ERROR]", err);
       setErrorMessage("Network error. Please check your connection and try again.");
+      showToast("Network error. Check your connection.", "error");
     } finally {
       setIsSubmitting(false);
     }

@@ -16,6 +16,7 @@ import CitizenRatingSection from "@/features/citizen-rating/CitizenRatingSection
 import NewsSentimentStream from "@/features/news-sentiment/NewsSentimentStream";
 import PositionHistory from "@/features/politician-profile/PositionHistory";
 import BrutalistButton from "@/components/ui/BrutalistButton";
+import { CopyButton } from "@/components/ui/CopyButton";
 
 interface PoliticianPageProps {
   params: Promise<{ slug: string }>;
@@ -46,7 +47,7 @@ export default async function PoliticianPage({ params }: PoliticianPageProps) {
           <span>BACK TO ALL REPRESENTATIVES</span>
         </Link>
 
-        <div className="flex items-center space-x-2 text-xs font-bold">
+        <div className="flex flex-wrap items-center gap-2 text-xs font-bold">
           <span className="text-gray-500">INDEX:</span>
           <span className="bg-brand-yellow px-2 py-0.5 border border-ink text-black">
             {politician.house}
@@ -54,6 +55,11 @@ export default async function PoliticianPage({ params }: PoliticianPageProps) {
           <span className="bg-brand-cyan px-2 py-0.5 border border-ink text-black">
             {politician.currentConstituency.state}
           </span>
+          <CopyButton
+            text={`https://verdict.vercel.app/politician/${politician.slug}`}
+            label="Share Profile"
+            successLabel="Copied!"
+          />
         </div>
       </div>
 

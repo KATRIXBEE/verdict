@@ -149,3 +149,63 @@ body {
 .text-stroke-2 {
   -webkit-text-stroke: 2.5px #111111;
 }
+
+/* =============================================
+   Feature: Hover States (Feature 11 Polish)
+   ============================================= */
+
+/* Politician cards — lift on hover */
+.politician-card {
+  transition: border-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+.politician-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 6px 9px 0px #111111;
+}
+
+/* Nav links underline animation */
+nav a {
+  position: relative;
+}
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #FF4336;
+  transition: width 0.2s ease;
+}
+nav a:hover::after {
+  width: 100%;
+}
+
+/* =============================================
+   Feature: Custom Scrollbar — Brand Red
+   (Upgrades existing custom scrollbar at top)
+   ============================================= */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EBE8E1;
+  border-left: 1px solid #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF4336;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #CC2E24;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #FF4336 #EBE8E1;
+}
