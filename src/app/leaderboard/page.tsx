@@ -140,7 +140,7 @@ export default function LeaderboardPage() {
         </div>
 
         <h1 className="font-display font-black text-3xl sm:text-4xl text-white uppercase tracking-tight">
-          🎯 MOST WANTED — WEEKLY LEADERBOARD
+          MOST WANTED — WEEKLY LEADERBOARD
         </h1>
         <p className="text-xs sm:text-sm text-gray-400">
           Rankings refresh weekly · Week ending {data?.week_ending || new Date().toISOString().split('T')[0]}
@@ -188,7 +188,7 @@ export default function LeaderboardPage() {
       {/* Row 2: Biggest Fallers & Risers */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <LeaderboardColumn
-          title="📉 BIGGEST FALLERS" 
+          title="BIGGEST FALLERS" 
           subtitle="Largest negative score drop in the past 7 days"
           items={data?.biggest_fallers} 
           valueKey="score_change_7d"
@@ -198,7 +198,7 @@ export default function LeaderboardPage() {
           icon={TrendingDown}
         />
         <LeaderboardColumn
-          title="📈 BIGGEST RISERS" 
+          title="BIGGEST RISERS" 
           subtitle="Largest positive score gain in the past 7 days"
           items={data?.biggest_risers} 
           valueKey="score_change_7d"

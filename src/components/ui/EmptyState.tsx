@@ -1,5 +1,6 @@
 import React from 'react'
 import BrutalistButton from '@/components/ui/BrutalistButton'
+import { Search, ClipboardList, ShieldCheck, Newspaper, Star, Landmark } from 'lucide-react'
 
 interface EmptyStateProps {
   icon?: React.ReactNode
@@ -12,14 +13,14 @@ interface EmptyStateProps {
 }
 
 export function EmptyState({
-  icon = '🔍',
+  icon = <Search className="w-10 h-10 text-ink/70 stroke-[1.5]" />,
   title,
   subtitle,
   action,
 }: EmptyStateProps) {
   return (
     <div className="flex flex-col items-center justify-center p-10 sm:p-16 text-center bg-canvas border-2 border-dashed border-ink/40 min-h-[200px] space-y-4 font-mono">
-      <div className="text-4xl" aria-hidden="true">{icon}</div>
+      <div className="flex items-center justify-center text-ink" aria-hidden="true">{icon}</div>
       <div className="font-display font-black text-base uppercase text-ink tracking-wide">
         {title}
       </div>
@@ -46,7 +47,7 @@ export function EmptyState({
 export const EMPTY_STATES = {
   searchNoResults: (query: string, onClear: () => void) => (
     <EmptyState
-      icon="🔍"
+      icon={<Search className="w-10 h-10 text-ink/70 stroke-[1.5]" />}
       title={`No results for "${query}"`}
       subtitle="Try a different name, party, constituency, or state."
       action={{ label: 'CLEAR SEARCH', onClick: onClear }}
@@ -55,7 +56,7 @@ export const EMPTY_STATES = {
 
   noPolticianData: () => (
     <EmptyState
-      icon="📋"
+      icon={<ClipboardList className="w-10 h-10 text-ink/70 stroke-[1.5]" />}
       title="Data Not Yet Available"
       subtitle="This section is updated periodically from government sources. Check back soon."
     />
@@ -63,7 +64,7 @@ export const EMPTY_STATES = {
 
   noCriminalCases: () => (
     <EmptyState
-      icon="✅"
+      icon={<ShieldCheck className="w-10 h-10 text-[#00C853] stroke-[1.5]" />}
       title="No Criminal Cases Declared"
       subtitle="This politician declared no criminal cases in their ECI Form 26 affidavit. Source: Election Commission of India."
     />
@@ -71,7 +72,7 @@ export const EMPTY_STATES = {
 
   noGroundTruth: () => (
     <EmptyState
-      icon="📰"
+      icon={<Newspaper className="w-10 h-10 text-ink/70 stroke-[1.5]" />}
       title="No Stories Yet"
       subtitle="Ground Truth stories are updated daily from verified journalism sources. Check back tomorrow."
     />
@@ -79,7 +80,7 @@ export const EMPTY_STATES = {
 
   noRatings: () => (
     <EmptyState
-      icon="⭐"
+      icon={<Star className="w-10 h-10 text-[#FFD700] stroke-[1.5]" />}
       title="No Citizen Ratings Yet"
       subtitle="Be the first to rate this politician. Your rating is recorded in the public ledger."
     />
@@ -87,7 +88,7 @@ export const EMPTY_STATES = {
 
   filterNoResults: (onReset: () => void) => (
     <EmptyState
-      icon="🏛️"
+      icon={<Landmark className="w-10 h-10 text-ink/70 stroke-[1.5]" />}
       title="No Politicians Match These Filters"
       subtitle="Try removing some filters or changing your selection."
       action={{ label: 'RESET ALL FILTERS', onClick: onReset }}

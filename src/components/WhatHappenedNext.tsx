@@ -11,7 +11,8 @@ import {
   ArrowRight, 
   Megaphone,
   CheckCircle,
-  ExternalLink
+  ExternalLink,
+  Check
 } from 'lucide-react'
 
 export interface UnsolvedStory {
@@ -161,23 +162,50 @@ export function WhatHappenedNext({ storyId, compact = false }: WhatHappenedNextP
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-1">
-          <p className="text-xs text-gray-300">
-            {status === 'no_action_taken' && '⚠️ Authorities have taken zero punitive action despite statutory deadlines.'}
-            {status === 'under_investigation' && '🔍 Departmental enquiry initiated. Preliminary chargesheet pending.'}
-            {status === 'chargesheeted' && '⚖️ Chargesheet officially registered in special magistrate court.'}
-            {status === 'hearing_scheduled' && '🏛️ Next hearing date fixed before designated judicial bench.'}
+          <p className="text-xs text-gray-300 flex items-center gap-1.5 flex-wrap">
+            {status === 'no_action_taken' && (
+              <>
+                <AlertCircle className="w-3.5 h-3.5 text-[#FF4545] shrink-0" />
+                <span>Authorities have taken zero punitive action despite statutory deadlines.</span>
+              </>
+            )}
+            {status === 'under_investigation' && (
+              <>
+                <Clock className="w-3.5 h-3.5 text-[#FFD700] shrink-0" />
+                <span>Departmental enquiry initiated. Preliminary chargesheet pending.</span>
+              </>
+            )}
+            {status === 'chargesheeted' && (
+              <>
+                <FileText className="w-3.5 h-3.5 text-[#00E5FF] shrink-0" />
+                <span>Chargesheet officially registered in special magistrate court.</span>
+              </>
+            )}
+            {status === 'hearing_scheduled' && (
+              <>
+                <Scale className="w-3.5 h-3.5 text-[#00E676] shrink-0" />
+                <span>Next hearing date fixed before designated judicial bench.</span>
+              </>
+            )}
           </p>
 
           <button
             onClick={(e) => storyId && handleDemandUpdate(storyId, e)}
             disabled={hasDemanded}
-            className={`shrink-0 px-4 py-2 border-2 border-black font-display font-black text-xs uppercase transition-all shadow-[2px_2px_0px_#000] ${
+            className={`shrink-0 px-4 py-2 border-2 border-black font-display font-black text-xs uppercase transition-all shadow-[2px_2px_0px_#000] inline-flex items-center gap-1.5 ${
               hasDemanded
                 ? 'bg-gray-700 text-gray-300 cursor-not-allowed'
                 : 'bg-[#FF4545] text-white hover:bg-[#FFD700] hover:text-black cursor-pointer'
             }`}
           >
-            {hasDemanded ? '✓ DEMAND REGISTERED' : `DEMAND UPDATE (${demands})`}
+            {hasDemanded ? (
+              <>
+                <Check className="w-3.5 h-3.5 text-[#00E676]" />
+                <span>DEMAND REGISTERED</span>
+              </>
+            ) : (
+              `DEMAND UPDATE (${demands})`
+            )}
           </button>
         </div>
       </div>
@@ -186,11 +214,11 @@ export function WhatHappenedNext({ storyId, compact = false }: WhatHappenedNextP
 
   // Full Tracker on Ground Truth Landing Page
   const filterTabs = [
-    { key: 'ALL', label: 'ALL TRACKED CASES' },
-    { key: 'no_action_taken', label: '🔴 NO ACTION TAKEN' },
-    { key: 'under_investigation', label: '🟡 UNDER INVESTIGATION' },
-    { key: 'chargesheeted', label: '🔵 CHARGESHEET FILED' },
-    { key: 'hearing_scheduled', label: '🟢 HEARING SCHEDULED' },
+    { key: 'ALL', label: 'ALL TRACKED CASES', dotColor: '' },
+    { key: 'no_action_taken', label: 'NO ACTION TAKEN', dotColor: 'bg-[#FF4545]' },
+    { key: 'under_investigation', label: 'UNDER INVESTIGATION', dotColor: 'bg-[#FFD700]' },
+    { key: 'chargesheeted', label: 'CHARGESHEET FILED', dotColor: 'bg-[#00E5FF]' },
+    { key: 'hearing_scheduled', label: 'HEARING SCHEDULED', dotColor: 'bg-[#00E676]' },
   ]
 
   return (
@@ -224,13 +252,16 @@ export function WhatHappenedNext({ storyId, compact = false }: WhatHappenedNextP
             <button
               key={tab.key}
               onClick={() => setStatusFilter(tab.key)}
-              className={`px-3 py-1.5 text-xs font-bold border-2 transition-all cursor-pointer ${
+              className={`px-3 py-1.5 text-xs font-bold border-2 transition-all cursor-pointer inline-flex items-center gap-2 ${
                 isActive
                   ? 'bg-[#FF4545] text-white border-black shadow-hard-xs -translate-y-0.5 font-black'
                   : 'bg-[#1C1C1C] text-gray-300 border-[#333] hover:border-white hover:text-white'
               }`}
             >
-              {tab.label}
+              {tab.dotColor && (
+                <span className={`w-2 h-2 rounded-full ${tab.dotColor} shrink-0`} />
+              )}
+              <span>{tab.label}</span>
             </button>
           )
         })}

@@ -39,7 +39,7 @@ export default function Header() {
 
   const navLinks = [
     { href: "/", label: "DASHBOARD", icon: Scale },
-    { href: "/leaderboard", label: "MOST WANTED 🎯", icon: Target },
+    { href: "/leaderboard", label: "MOST WANTED", icon: Target },
     { href: "/tax-money", label: "TAX MONEY", icon: Coins },
     { href: "/money-trail", label: "MONEY TRAIL", icon: Banknote },
     { href: "/ground-truth", label: "GROUND TRUTH", icon: Newspaper },

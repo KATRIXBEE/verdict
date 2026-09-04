@@ -138,7 +138,7 @@ function GroundTruthListingContent() {
         </div>
       </section>
 
-      {/* 🔥 Interesting Today Top Row */}
+      {/* Interesting Today Top Row */}
       {interestingArticles.length > 0 && (
         <section className="bg-[#111111] border-3 border-ink p-5 sm:p-6 shadow-hard-xl space-y-4 text-white">
           <div className="flex items-center justify-between border-b border-[#2E2E2E] pb-3">
@@ -147,7 +147,7 @@ function GroundTruthListingContent() {
                 <Flame className="w-4 h-4" />
               </span>
               <h2 className="font-display font-black text-lg sm:text-xl uppercase tracking-tight text-white">
-                🔥 INTERESTING TODAY: HIGH-IMPACT EXPOSÉS
+                INTERESTING TODAY: HIGH-IMPACT EXPOSÉS
               </h2>
             </div>
             <span className="text-[11px] font-bold text-[#FFD700] uppercase hidden sm:inline-block">
