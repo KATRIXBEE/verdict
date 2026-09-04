@@ -14,10 +14,23 @@ import feedparser
 from dateutil import parser as date_parser
 
 SOURCES = {
+    "Reuters India": {
+        "url": "https://news.google.com/rss/search?q=site:reuters.com+india+politics&hl=en-IN&gl=IN&ceid=IN:en",
+        "category": "Governance",
+        "badge_color": "#FF8000",
+        "credibility": "High"
+    },
     "The Reporters' Collective": {
-        "url": "https://www.reporterscollective.in/feed",
+        "url": "https://www.reporters-collective.in/stories?format=rss",
+        "fallback_url": "https://news.google.com/rss/search?q=site:reporters-collective.in&hl=en-IN&gl=IN&ceid=IN:en",
         "category": "Investigative",
         "badge_color": "#FF4545",
+        "credibility": "High"
+    },
+    "Newslaundry": {
+        "url": "https://www.newslaundry.com/feed",
+        "category": "Media Accountability",
+        "badge_color": "#E50914",
         "credibility": "High"
     },
     "Indian Express": {
@@ -34,36 +47,42 @@ SOURCES = {
     },
     "The Wire": {
         "url": "https://thewire.in/category/politics/feed/",
-        "category": "Politics",
+        "fallback_url": "https://news.google.com/rss/search?q=site:thewire.in+politics&hl=en-IN&gl=IN&ceid=IN:en",
+        "category": "Investigative",
         "badge_color": "#8B0000",
         "credibility": "High"
     },
     "Scroll.in": {
-        "url": "https://scroll.in/rss/india",
-        "category": "India",
+        "url": "https://scroll.in/feed",
+        "fallback_url": "https://news.google.com/rss/search?q=site:scroll.in+india&hl=en-IN&gl=IN&ceid=IN:en",
+        "category": "Deep Reporting",
         "badge_color": "#333333",
         "credibility": "High"
-    },
-    "NDTV India": {
-        "url": "https://feeds.feedburner.com/ndtvnews-india-news",
-        "category": "National",
-        "badge_color": "#E50914",
-        "credibility": "High"
-    },
+    }
 }
 
-CIVIC_KEYWORDS = [
-    'corruption', 'scam', 'fraud', 'arrested', 'crore',
-    'minister', 'politician', 'parliament', 'government',
-    'environment', 'pollution', 'factory', 'industrial',
-    'farmer', 'tribal', 'adivasi', 'forest', 'RTI',
-    'whistleblower', 'investigation', 'expose', 'alleged',
-    'bribery', 'tender', 'contractor', 'scheme', 'diversion',
-    'CBI', 'ED', 'income tax', 'raid', 'probe',
-    'Supreme Court', 'High Court', 'PIL', 'conviction',
-    'FIR', 'chargesheet', 'custody', 'bail',
-    'land grab', 'mine', 'encroachment', 'displaced',
-    'lok sabha', 'rajya sabha', 'eci', 'election', 'affidavit'
+# TIER 1: Core Civic & Political Keywords
+TIER_1_CIVIC_KEYWORDS = [
+    'mp', 'mla', 'minister', 'parliament', 'lok sabha', 'rajya sabha', 
+    'election', 'scam', 'cbi', 'ed', 'court', 'judge', 'verdict', 
+    'bill', 'law', 'corruption', 'fraud', 'whistleblower', 'bribery', 
+    'tender', 'scheme', 'income tax', 'supreme court', 'high court', 
+    'pil', 'conviction', 'fir', 'chargesheet', 'custody', 'bail', 
+    'affidavit', 'pollution', 'tribal', 'forest', 'rti'
+]
+
+# TIER 2: High Interest / Spicy Keywords
+TIER_2_INTERESTING_KEYWORDS = [
+    'raid', 'arrest', 'suspended', 'bribe', 'disproportionate', 
+    'absconding', 'defamation', 'disqualif', 'sting', 'taped', 
+    'leak', 'clash', 'boycott', 'outrage', 'unaccounted', 
+    'extortion', 'black money'
+]
+
+# Noise keywords to filter out irrelevant cultural/sports stories
+NOISE_KEYWORDS = [
+    'cricket', 'bollywood', 'box office', 'horoscope', 'zodiac', 
+    'ipl', 't20', 'fashion week', 'movie review', 'recipe', 'trailer'
 ]
 
 def clean_html(text):
@@ -118,19 +137,36 @@ def main():
     for source_name, config in SOURCES.items():
         feed_url = config["url"]
         print(f"\nFetching RSS: {source_name} ({feed_url})...")
-        try:
-            req = urllib.request.Request(
-                feed_url,
-                headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) VERDICT-News-Bot/1.0"}
-            )
-            with urllib.request.urlopen(req, timeout=12) as response:
-                feed_content = response.read()
+        
+        urls_to_try = [feed_url]
+        if "fallback_url" in config:
+            urls_to_try.append(config["fallback_url"])
 
-            feed = feedparser.parse(feed_content)
-            fetched_count = len(feed.entries)
+        entries = []
+        for u in urls_to_try:
+            try:
+                req = urllib.request.Request(
+                    u,
+                    headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) VERDICT-News-Bot/1.0"}
+                )
+                with urllib.request.urlopen(req, timeout=12) as response:
+                    feed_content = response.read()
+                feed = feedparser.parse(feed_content)
+                if len(feed.entries) > 0:
+                    entries = feed.entries
+                    break
+            except Exception as ex:
+                print(f"  [!] URL failed ({u}): {ex}")
+
+        if not entries:
+            print(f"  [!] Could not fetch entries for {source_name}, skipping.")
+            continue
+
+        try:
+            fetched_count = len(entries)
             source_inserted = 0
 
-            for entry in feed.entries:
+            for entry in entries:
                 url = entry.get("link") or entry.get("id") or ""
                 if not url or url in seen_urls:
                     continue
@@ -156,12 +192,35 @@ def main():
                 if pub_date and pub_date < seven_days_ago:
                     continue
 
-                # Civic keyword matching
                 combined_text = f"{title} {summary}".lower()
-                matches = [kw for kw in CIVIC_KEYWORDS if kw in combined_text]
 
-                if not matches:
+                # Noise filter: skip if contains noise keywords unless overridden by Tier 2
+                noise_matched = any(nk in combined_text for nk in NOISE_KEYWORDS)
+
+                # Two-tier keyword classification
+                tier2_matches = [kw for kw in TIER_2_INTERESTING_KEYWORDS if kw in combined_text]
+                tier1_matches = [kw for kw in TIER_1_CIVIC_KEYWORDS if kw in combined_text]
+
+                if noise_matched and not tier2_matches:
                     continue
+
+                if not tier2_matches and not tier1_matches:
+                    continue
+
+                is_interesting = len(tier2_matches) > 0
+                all_matched = (tier2_matches + tier1_matches)[:4]
+
+                # Classify unsolved status
+                if 'chargesheet' in combined_text:
+                    unsolved_status = 'chargesheeted'
+                elif 'hearing' in combined_text or 'scheduled' in combined_text:
+                    unsolved_status = 'hearing_scheduled'
+                elif any(k in combined_text for k in ['probe', 'investigat', 'cbi', 'ed', 'raid', 'arrest', 'fir']):
+                    unsolved_status = 'under_investigation'
+                else:
+                    unsolved_status = 'no_action_taken'
+
+                days_elapsed = (now - (pub_date or now)).days
 
                 article_obj = {
                     "id": f"gt-{len(all_articles) + len(newly_inserted) + 1}",
@@ -174,7 +233,11 @@ def main():
                     "credibility": config["credibility"],
                     "published_at": (pub_date or now).isoformat(),
                     "status": "Ongoing",
-                    "matched_keywords": matches[:4]
+                    "is_interesting": is_interesting,
+                    "unsolved_status": unsolved_status,
+                    "last_checked_at": now.isoformat(),
+                    "days_since_first_reported": max(1, days_elapsed),
+                    "matched_keywords": all_matched
                 }
 
                 seen_urls.add(url)
@@ -183,7 +246,7 @@ def main():
 
             print(f"  [OK] Fetched: {fetched_count} entries | Inserted (Civic Matched): {source_inserted}")
         except Exception as ex:
-            print(f"  [!] Failed fetching {source_name}: {ex}")
+            print(f"  [!] Failed parsing {source_name}: {ex}")
 
     # Combine and save locally
     combined_list = newly_inserted + all_articles
@@ -216,7 +279,11 @@ def main():
                 "badge_color": a["badge_color"],
                 "credibility": a["credibility"],
                 "published_at": a["published_at"],
-                "status": a["status"]
+                "status": a["status"],
+                "is_interesting": a.get("is_interesting", False),
+                "unsolved_status": a.get("unsolved_status", "under_investigation"),
+                "last_checked_at": a.get("last_checked_at"),
+                "days_since_first_reported": a.get("days_since_first_reported", 1)
             }
             for a in newly_inserted
         ]

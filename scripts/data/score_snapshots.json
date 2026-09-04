@@ -1,0 +1,4330 @@
+[
+  {
+    "politician_id": "1e00b590-7f73-40f9-89d0-fd4bb473cdea",
+    "politician_slug": "varun-chaudhry-ambala",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 100.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "17358450-24f5-4529-8658-66122e7df866",
+    "politician_slug": "godam-nagesh-adilabad",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "51fdde8b-acab-4125-839a-2e66299cf914",
+    "politician_slug": "bishnu-pada-ray-andamannicobarislands",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f47515af-1f44-4ea9-8524-8ef7d26eed56",
+    "politician_slug": "gumma-thanuja-rani-araku",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 91.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0604c73a-40a9-4bfc-b8c3-d206c8f43d43",
+    "politician_slug": "kiren-rijiju-arunachalwest",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1a7f1602-ae47-4914-8599-7336bc59ec1c",
+    "politician_slug": "abdul-rashid-sheikh-baramulla",
+    "verdict_score": 4.0,
+    "criminal_case_count": 8,
+    "attendance_percent": 45.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "35571b94-0094-4262-80ff-d50c7338c1d9",
+    "politician_slug": "pradeep-purohit-bargarh",
+    "verdict_score": 5.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "dd9bef08-1190-43a7-81b0-cdc5074e0728",
+    "politician_slug": "manish-tewari-chandigarh",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b1cd8755-f71d-4138-91ee-002669436602",
+    "politician_slug": "praveen-khandelwal-chandnichowk",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "9b68ef7f-ea99-4d68-bd9e-af9e6bbfc3f5",
+    "politician_slug": "priyanka-satish-jarkiholi-chikkodi",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 60.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1c7aa16a-f865-4f4f-921b-1d23317bb2a1",
+    "politician_slug": "jagadish-chandra-barma-basunia-coochbehar",
+    "verdict_score": 5.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 51.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c54d6a75-c6d0-4afd-af8f-ac6fc481de1d",
+    "politician_slug": "patel-umeshbhai-babubhai-damandiu",
+    "verdict_score": 5.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 96.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f1ed48cd-abdf-41f7-9d3e-8d3d706510c4",
+    "politician_slug": "kuldeep-indora-ganganagar",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 84.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "db6d35c6-f524-4199-a333-62d5b220487d",
+    "politician_slug": "sukhjinder-singh-randhawa-gurdaspur",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "2d7dcb65-b644-4b82-af06-86171ecab5c2",
+    "politician_slug": "angomcha-bimol-akoijam-innermanipur",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 82.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "17a11cca-b3e8-4b18-a84c-e2e8e4f4c8d2",
+    "politician_slug": "rajeev-bhardwaj-kangra",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "5844f6bd-b294-4df5-965e-1fd7026d3e4f",
+    "politician_slug": "chavda-vinod-lakhamshi-kachchh",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7fed8b1b-d9f6-4e48-bd98-c033ff9a0642",
+    "politician_slug": "rajmohan-unnithan-kasaragod",
+    "verdict_score": 5.5,
+    "criminal_case_count": 6,
+    "attendance_percent": 80.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "45ef7347-23be-4972-882d-1cf57cbde4bf",
+    "politician_slug": "joyanta-basumatary-kokrajhar",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 82.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b8481c36-7a0b-4335-8f88-d42217f12700",
+    "politician_slug": "mohmad-haneefa-ladakh",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "02cdbfd1-0bde-48a2-8850-5e782d0db998",
+    "politician_slug": "muhammed-hamdullah-sayeed-lakshadweep",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3cbd05bc-7518-46d0-a1d5-3f2ea957a756",
+    "politician_slug": "richard-vanlalhmangaiha-mizoram",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "df9be8ce-4df8-488e-82ca-98e2ac2ff7ef",
+    "politician_slug": "shivmangal-singh-tomar-morena",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 82.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "cec6c75c-aa68-4a25-80e5-3779d517e49f",
+    "politician_slug": "s-supongmeren-jamir-nagaland",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 93.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "21c53857-d449-4a4f-9ac0-5253ef9951c3",
+    "politician_slug": "gowaal-kagada-padavi-nandurbar",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a33da752-bdb5-4371-92be-74277420cc0b",
+    "politician_slug": "shripad-yesso-naik-northgoa",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1f295d9f-0c7b-4725-86a5-cc0d518a8421",
+    "politician_slug": "ve-vaithilingam-puducherry",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 79.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "40aadaef-60aa-419c-9081-20f3979212f8",
+    "politician_slug": "vijay-kumar-hansdak-rajmahal",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 85.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4294180b-143a-440f-a8c4-d79b7fdb9fd2",
+    "politician_slug": "chintamani-maharaj-surguja",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 84.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3804e6e0-a8ca-4d07-9c92-4f078bdeef51",
+    "politician_slug": "imran-masood-saharanpur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 8,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "9d6ebc71-8560-4360-bd9b-d76499311c61",
+    "politician_slug": "ricky-andrew-j-syngkon-shillong",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 64.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "764d29d4-6ec0-4592-85d2-4144157af142",
+    "politician_slug": "indra-hang-subba-sikkim",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "238b69ae-e245-4d5f-836e-e886bd234b65",
+    "politician_slug": "sasikanth-senthil-tiruvallur",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "654d3e6a-c11f-4477-9262-9760bdddc636",
+    "politician_slug": "mala-rajya-lakshmi-shah-tehrigarhwal",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4fccb8df-a5fe-4b16-b1ed-c08c51d422d9",
+    "politician_slug": "biplab-kumar-deb-tripurawest",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 84.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "6259aa7a-a5c3-45d1-bbe3-8fbce7be33a4",
+    "politician_slug": "sunil-kumar-valmikinagar",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 61.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c84e3466-328d-4501-98a4-b26585c6828d",
+    "politician_slug": "mahesh-kashyap-bastar",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "59ebcd7e-dc67-4173-88b7-33b9ac3526ab",
+    "politician_slug": "pathan-yusuf-baharampur",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 61.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0c4ece0c-5eec-4961-989c-f158eb7039df",
+    "politician_slug": "sangeeta-kumari-singh-deo-bolangir",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 81.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "18e27cb9-3b1c-4d9f-a7e6-b46625a3a56a",
+    "politician_slug": "konda-vishweshwar-reddy-chevella",
+    "verdict_score": 5.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "de7d963a-cdf8-49a9-a5d2-9040f813fb37",
+    "politician_slug": "mani-a-dharmapuri",
+    "verdict_score": 4.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 55.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b5552bed-46a1-48b5-b885-69724de127b2",
+    "politician_slug": "putta-mahesh-kumar-eluru",
+    "verdict_score": 5.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "22d58ef8-5c47-4b4c-afe3-08b1c3f44506",
+    "politician_slug": "krishan-pal-faridabad",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7844080d-eb08-4e45-aaf6-b03c402af89a",
+    "politician_slug": "sher-singh-ghubaya-firozpur",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b1c5df67-562b-48a1-aaa1-a930919376cc",
+    "politician_slug": "basavaraj-bommai-haveri",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 80.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c4b0de4b-21d6-4148-b1e4-59554e03a560",
+    "politician_slug": "bhajan-lal-jatav-dholpur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e5ad2805-0bd5-4546-97ec-86663d7d5e9c",
+    "politician_slug": "kamakhya-prasad-tasa-kaziranga",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 81.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "9af14f19-60f1-4974-b72a-2febb1e57558",
+    "politician_slug": "mohammad-jawed-kishanganj",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7de2d294-1799-42e5-835e-dd661f86f31e",
+    "politician_slug": "arun-govil-meerut",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 96.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a0c5b63d-0a7b-4358-af90-622106644e5a",
+    "politician_slug": "nitin-jairam-gadkari-nagpur",
+    "verdict_score": 3.5,
+    "criminal_case_count": 10,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "90060086-084f-41b7-a813-5b7d8775734e",
+    "politician_slug": "janardan-mishra-rewa",
+    "verdict_score": 9.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 100.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4e20ab0e-1639-4f2f-8983-45ac4a82e611",
+    "politician_slug": "parshottambhai-rupala-rajkot",
+    "verdict_score": 6.0,
+    "criminal_case_count": 3,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "01200d5f-743e-4acb-9f12-037f06d94346",
+    "politician_slug": "joba-majhi-singhbhum",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 79.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "28e7520d-e18e-4e61-aaee-9238c4f97b4e",
+    "politician_slug": "suresh-gopi-thrissur",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 66.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "381d03d3-d808-489c-897d-8e8ee6cf3297",
+    "politician_slug": "rajkumar-sangwan-baghpat",
+    "verdict_score": 6.0,
+    "criminal_case_count": 3,
+    "attendance_percent": 100.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ebc2aae0-1beb-43ab-ab19-a1e37c3b6c3b",
+    "politician_slug": "harsimrat-kaur-badal-bathinda",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 69.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e31e0457-7378-4974-a051-86ece7d5cda1",
+    "politician_slug": "prashant-yadaorao-padole-bhandaragondiya",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "42a6c9c8-d24b-41f2-a4a8-80619ae5a129",
+    "politician_slug": "benny-behanan-chalakudy",
+    "verdict_score": 5.5,
+    "criminal_case_count": 5,
+    "attendance_percent": 84.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4e5893f0-13e1-405f-849f-0a8cc4e8eb8a",
+    "politician_slug": "murari-lal-meena-dausa",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "baf640cc-7e79-4b9f-8ac6-531ac328e730",
+    "politician_slug": "pralhad-joshi-dharwad",
+    "verdict_score": 5.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "95875624-d7e4-43a6-b53a-da5a12c58646",
+    "politician_slug": "bhojraj-nag-kanker",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a974d178-2a22-4655-9b38-054c3fa01e73",
+    "politician_slug": "malvika-devi-kalahandi",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "78cc8d61-8a02-41fc-9fc6-a952654b645f",
+    "politician_slug": "tariq-anwar-katihar",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "81ded0b3-467c-4825-960b-e3581d82baf8",
+    "politician_slug": "kali-charan-munda-khunti",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3e110608-df4d-4aed-a81b-8ce802a68d78",
+    "politician_slug": "balashowry-vallabhaneni-machilipatnam",
+    "verdict_score": 6.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3668843d-830e-48b1-a139-47a50c762c54",
+    "politician_slug": "aruna-d-k-mahbubnagar",
+    "verdict_score": 5.5,
+    "criminal_case_count": 6,
+    "attendance_percent": 84.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "bc630705-4645-4811-a220-d9c061d3b5b1",
+    "politician_slug": "abu-taher-khan-murshidabad",
+    "verdict_score": 5.5,
+    "criminal_case_count": 3,
+    "attendance_percent": 81.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "721f159a-fcb8-48df-888e-c2636285a06c",
+    "politician_slug": "mansukh-mandaviya-porbandar",
+    "verdict_score": 5.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f87d970b-8d78-4c4d-8337-ee493825dde3",
+    "politician_slug": "rajesh-mishra-sidhi",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "611cf6b8-5442-4a05-9abb-9c7572ee7fe3",
+    "politician_slug": "ranjit-dutta-sonitpur",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 85.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d571902f-d33a-42d6-a099-d88210d91ea2",
+    "politician_slug": "annadurai-c-n-tiruvannamalai",
+    "verdict_score": 5.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ce7c7a08-1a82-46af-b452-cc92a48cf96e",
+    "politician_slug": "tharaniventhan-m-s-arani",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 72.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0d98b29c-2129-4347-a910-1e74ea1f9fc5",
+    "politician_slug": "hibi-eden-ernakulam",
+    "verdict_score": 6.0,
+    "criminal_case_count": 10,
+    "attendance_percent": 85.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "95c96297-bee2-4d88-80ed-256e59cffca3",
+    "politician_slug": "kirsan-namdeo-chimur",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8bd566a7-3664-461b-9db3-a9a8d5373a6e",
+    "politician_slug": "atul-garg-ghaziabad",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "dd6e6921-d191-4746-9373-0a67f4203290",
+    "politician_slug": "poonamben-hematbhai-maadam-jamnagar",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "24f3be55-db8f-4358-9619-b01fc9e9526f",
+    "politician_slug": "mahua-moitra-krishnanagar",
+    "verdict_score": 6.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1d9e92e9-d102-4a5b-81b0-82133a208d2f",
+    "politician_slug": "pradan-baruah-lakhimpur",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 87.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "91f35db4-51ca-4652-8c6f-b4a2efed431a",
+    "politician_slug": "sukhdeo-bhagat-lohardaga",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "87f56114-7c3c-4bf7-81d8-3488ebfa8317",
+    "politician_slug": "balabhadra-majhi-nabarangpur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 87.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4539345e-a127-4385-9a2c-d1e9f5de3ca8",
+    "politician_slug": "mallu-ravi-nagarkurnool",
+    "verdict_score": 6.0,
+    "criminal_case_count": 6,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ccee49a3-70bd-4dc0-9d9d-d0c72cb1e884",
+    "politician_slug": "rajesh-ranjan-alias-pappu-yadav-purnia",
+    "verdict_score": 5.5,
+    "criminal_case_count": 41,
+    "attendance_percent": 81.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "35933784-f864-402b-8f43-ab1d0721b79a",
+    "politician_slug": "himadri-singh-shahdol",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b54d9059-8065-4996-80ca-d01e57d8154d",
+    "politician_slug": "gurmeet-singh-meet-hayer-sangrur",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 83.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1f79d044-e277-4c83-aa02-e9f64e6cae41",
+    "politician_slug": "harish-chandra-meena-sawaimadhopur",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 98.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c0373008-f7b9-4290-b8cd-8300c982b884",
+    "politician_slug": "vishweshwar-hegde-kageri-uttarakannada",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "64e1fbe3-9849-497b-a68c-61bca9698579",
+    "politician_slug": "kesineni-sivanath-chinni-vijayawada",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d9b9659a-7397-448b-85ab-182d1fd5f826",
+    "politician_slug": "bhagirath-choudhary-ajmer",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b41d5fc4-8a00-409a-84e3-e8a9d8255174",
+    "politician_slug": "dhanorkar-pratibha-suresh-alias-balubhau-chandrapur",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "06af6c05-28ef-491f-b4cd-e526af7abcbd",
+    "politician_slug": "prabha-mallikarjun-davanagere",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 81.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "190b279b-762a-4c6b-9d53-bd92383e139d",
+    "politician_slug": "sarbananda-sonowal-dibrugarh",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "fee6e878-318c-44ab-a301-ee644c921e64",
+    "politician_slug": "mahesh-sharma-gautambuddhanagar",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "586c6643-c835-4043-971c-bec58b3fb24d",
+    "politician_slug": "chandra-sekhar-pemmasani-guntur",
+    "verdict_score": 4.0,
+    "criminal_case_count": 1,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d5c5dcec-a8dc-40c2-af19-8f3f614bc06e",
+    "politician_slug": "dean-kuriakose-idukki",
+    "verdict_score": 6.0,
+    "criminal_case_count": 88,
+    "attendance_percent": 81.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1ca2cca1-9033-45be-988d-f585e4e6e54b",
+    "politician_slug": "ashish-dubey-jabalpur",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "2f247fc1-c2bf-4fbb-9c1c-0c1c499fbf05",
+    "politician_slug": "chudasama-rajeshbhai-naranbhai-junagadh",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "bee8c526-cf2e-4f3e-b07f-71008b38bd9c",
+    "politician_slug": "sukanta-kumar-panigrahi-kandhamal",
+    "verdict_score": 6.0,
+    "criminal_case_count": 4,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "cb43763d-78e7-4e0d-9d91-eaac9185a99b",
+    "politician_slug": "dinesh-chandra-yadav-madhepura",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 91.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d63824b9-d087-43d2-9d91-1100c5ff729b",
+    "politician_slug": "kunduru-raghuveer-nalgonda",
+    "verdict_score": 5.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 64.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "73de1073-27e0-4324-a9de-347c636dd944",
+    "politician_slug": "vishnu-dayal-ram-palamau",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "6a18b144-f320-4c78-951b-1bb7b5aba8eb",
+    "politician_slug": "dharamvira-gandhi-patiala",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 78.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a1664122-f268-464e-a6e8-2ca67e189f45",
+    "politician_slug": "jagannath-sarkar-ranaghat",
+    "verdict_score": 5.5,
+    "criminal_case_count": 4,
+    "attendance_percent": 81.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4e7c8876-5f5f-485a-82fe-318037077aa5",
+    "politician_slug": "ravikumar-d-viluppuram",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "abe76e87-992d-41ac-b8d0-20829e895461",
+    "politician_slug": "bharatbhai-manubhai-sutariya-amreli",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c66aa7da-7885-4501-8bfe-b7f0b750e580",
+    "politician_slug": "shantanu-bangaon",
+    "verdict_score": 3.0,
+    "criminal_case_count": 8,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3dbf04c8-b2b9-43b1-b1fa-f36afa86f966",
+    "politician_slug": "chamala-kiran-kumar-reddy-bhongir",
+    "verdict_score": 5.5,
+    "criminal_case_count": 3,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f7b48f29-4b45-49d5-83c5-ba69107b9694",
+    "politician_slug": "bhola-singh-bulandshahr",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "24700198-9434-4cd5-ab70-3c81508ef3b4",
+    "politician_slug": "bhartruhari-mahtab-cuttack",
+    "verdict_score": 5.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ad3f3400-c79c-47b3-84c9-9e67034d2b22",
+    "politician_slug": "gopal-jee-darbhanga",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "5ca42e22-135e-4495-b88c-83e7c5e94470",
+    "politician_slug": "manish-jaiswal-hazaribagh",
+    "verdict_score": 6.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "27a0dc2f-695b-42d9-b5b9-2499b97fce3b",
+    "politician_slug": "gaurav-gogoi-jorhat",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 77.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "46203503-dde1-4108-a2f6-041a4f07f33f",
+    "politician_slug": "malaiyarasan-d-kallakurichi",
+    "verdict_score": 6.0,
+    "criminal_case_count": 4,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "feb4127f-6e92-450e-83c6-786949f77a2f",
+    "politician_slug": "k-francis-george-kottayam",
+    "verdict_score": 5.0,
+    "criminal_case_count": 5,
+    "attendance_percent": 79.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ae243adc-34e5-4da8-8321-fbd274818191",
+    "politician_slug": "faggan-singh-kulaste-mandla",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0532659c-6903-4673-867d-a8b31be602e6",
+    "politician_slug": "hanuman-beniwal-nagaur",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "47c01f23-59ba-4fb5-9fc1-9df7d21eccda",
+    "politician_slug": "lavu-srikrishna-devarayalu-narsaraopet",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f6eec7e2-788d-487d-b330-9651bb43c5a0",
+    "politician_slug": "b-y-raghavendra-shimoga",
+    "verdict_score": 4.0,
+    "criminal_case_count": 1,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a15c2630-86a3-42b0-a4cb-fbdb00fdf899",
+    "politician_slug": "sanjay-uttamrao-deshmukh-washim",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7af4b9ea-4e80-43fe-bed6-60a806f38bef",
+    "politician_slug": "k-c-venugopal-alappuzha",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 83.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c1fbc842-11b1-41ac-86af-ed9b5097f49d",
+    "politician_slug": "satish-kumar-gautam-aligarh",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "90046656-ad1f-465b-8209-3977567ce7d8",
+    "politician_slug": "bharti-pardhi-balaghat",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "416dca71-6ef9-4a59-bc88-e92f856307c9",
+    "politician_slug": "krishna-prasad-tenneti-bapatla",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3007f3ea-7d43-4d61-b5fc-875b4d1548fb",
+    "politician_slug": "partha-bhowmick-barrackpur",
+    "verdict_score": 2.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 17.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e92016a5-1be7-431b-864b-2db9b4bd78fb",
+    "politician_slug": "nimuben-jayantibhai-bambhaniya-nimuben-bambhaniya-bhavnagar",
+    "verdict_score": 5.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8e3fd51e-220e-4002-a0bc-11198f39d176",
+    "politician_slug": "aashtikar-patil-nagesh-bapurao-hingoli",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 64.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b4acf214-057b-4533-a072-1bd87ad67219",
+    "politician_slug": "baijayant-panda-kendrapara",
+    "verdict_score": 4.5,
+    "criminal_case_count": 8,
+    "attendance_percent": 76.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8eebc47d-e584-4abf-a284-184cb2298c58",
+    "politician_slug": "raj-bhushan-choudhary-muzaffarpur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "5dff80d3-8d0c-4f0e-9446-6c73ca334da6",
+    "politician_slug": "p-p-chaudhary-pali",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a2b0c82c-8caa-41d2-873a-e287b5f137d3",
+    "politician_slug": "selvaganapathi-t-m-salem",
+    "verdict_score": 4.0,
+    "criminal_case_count": 1,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0ab4b90c-b54c-4821-b66e-86e6db91f24c",
+    "politician_slug": "kota-srinivas-poojary-udupichikmagalur",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8c3dec05-36ae-4de3-a015-a6ad68f241ec",
+    "politician_slug": "kadiyam-kavya-warangal",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a4b0e666-f1b9-4464-8f66-4d330982d7ee",
+    "politician_slug": "mitesh-patel-bakabhai-anand",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 98.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "95e31b3d-a2d8-411e-9593-06c0678a5c5e",
+    "politician_slug": "bunty-vivek-sahu-chhindwara",
+    "verdict_score": 5.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 79.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "16bb02bd-b0db-4905-b723-c64fdbd4d538",
+    "politician_slug": "sougata-ray-dumdum",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 83.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "cc6f875d-35a6-425e-a8f9-1942ad7da886",
+    "politician_slug": "shreyas-m-patel-hassan",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 80.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4498da49-f04b-417b-8f93-47a8f49abdda",
+    "politician_slug": "anoop-pradhan-balmiki-hathras",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ed83daa5-d8b8-47be-871e-53040e3c5b20",
+    "politician_slug": "gajendra-singh-shekhawat-jodhpur",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e652ac0f-83fa-4421-bfc9-ba0f0a7863d5",
+    "politician_slug": "bibhu-prasad-tarai-jagatsinghpur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 3,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ce3f7798-e064-4ff9-aaac-59b0b5a29e5a",
+    "politician_slug": "balram-naik-porika-mahabubabad",
+    "verdict_score": 5.0,
+    "criminal_case_count": 6,
+    "attendance_percent": 64.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "dd24d688-f770-404a-bd40-ea2463c744f7",
+    "politician_slug": "kodikunnil-suresh-mavelikkara",
+    "verdict_score": 6.0,
+    "criminal_case_count": 6,
+    "attendance_percent": 82.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e9665ec4-42d6-4afe-97f0-5cae55628ea0",
+    "politician_slug": "matheswaran-v-s-namakkal",
+    "verdict_score": 5.0,
+    "criminal_case_count": 3,
+    "attendance_percent": 71.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4f498818-4fe2-4903-8152-53db995741be",
+    "politician_slug": "chavan-vasantrao-balwantrao-nanded",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 68.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "eedf0a16-49c3-41df-9424-8b54d5bb4219",
+    "politician_slug": "magunta-sreenivasulu-reddy-ongole",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 87.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "28cbb055-e9ca-4eb7-bcea-e9027c066e0e",
+    "politician_slug": "veena-devi-vaishali",
+    "verdict_score": 6.0,
+    "criminal_case_count": 3,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "2477c222-4ebc-45e2-8036-ca788487afe1",
+    "politician_slug": "ummeda-ram-beniwal-barmer",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "fd598914-9067-4090-910a-6d846f5b4570",
+    "politician_slug": "kakoli-ghosh-dastidar-barasat",
+    "verdict_score": 4.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 62.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "80520889-6253-46bb-aa27-399fb42c4ab6",
+    "politician_slug": "captain-brijesh-chowta-dakshinakannada",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 96.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b15436ec-f9a7-4181-97d6-06737891aafa",
+    "politician_slug": "k-e-prakash-erode",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c501bbb7-b482-4d04-a9fa-c7d11ca4b5f1",
+    "politician_slug": "alok-kumar-suman-gopalganj",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "92e53d24-b5fd-49cb-806a-50804c9fcc5c",
+    "politician_slug": "darshan-singh-choudhary-hoshangabad",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "65e27bf7-4037-4038-bdc6-04a945d5c96b",
+    "politician_slug": "ramasahayam-raghuram-reddy-khammam",
+    "verdict_score": 5.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 77.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "2cce1fe5-9339-4815-be4f-8a86bea281a4",
+    "politician_slug": "devusinh-chauhan-kheda",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "425e08ad-a16d-4e0f-a508-14395d034837",
+    "politician_slug": "hemamalini-dharmendra-deol-mathura",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d819874b-e791-48ee-848d-f2ec1538b36d",
+    "politician_slug": "byreddy-shabari-nandyal",
+    "verdict_score": 6.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "01fc71e4-ba45-4628-8266-18d1eb614cca",
+    "politician_slug": "jadhav-sanjay-bandu-haribhau-parbhani",
+    "verdict_score": 4.0,
+    "criminal_case_count": 6,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d8a6ac62-5e07-4d7e-bbe6-445a34e9bf62",
+    "politician_slug": "anto-antony-pathanamthitta",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 78.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b1543750-a9cb-4807-a4fe-5506fd19829b",
+    "politician_slug": "sambit-patra-puri",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "35b5fc5b-5f08-441a-81ce-816abf22cc10",
+    "politician_slug": "s-p-singh-baghel-agra",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "9cee2146-e825-4f9c-a51e-e19c48c289a4",
+    "politician_slug": "sk-nurul-islam-basirhat",
+    "verdict_score": 5.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 5.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3952923a-6ce0-40e8-847f-282265e6f271",
+    "politician_slug": "aparajita-sarangi-bhubaneswar",
+    "verdict_score": 5.0,
+    "criminal_case_count": 4,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b8c9248f-aeb5-44b5-858a-ab7c2db85dfd",
+    "politician_slug": "govind-makthappa-karjol-chitradurga",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 73.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "5529634d-88cc-4090-b4a7-c35ff3ebae5a",
+    "politician_slug": "lumbaram-jalore",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 98.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ac746c43-ce22-4a3d-8d51-021f0213fd93",
+    "politician_slug": "kalyan-vaijinathrao-kale-jalna",
+    "verdict_score": 6.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "690c94b9-12a4-4242-9272-1597e3f3f088",
+    "politician_slug": "n-k-premachandran-kollam",
+    "verdict_score": 6.0,
+    "criminal_case_count": 5,
+    "attendance_percent": 89.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "bfec616d-a3e5-4fee-a2dc-eaca483b7ef2",
+    "politician_slug": "bastipati-nagaraju-panchalingala-kurnoolu",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "bdc03b02-79a1-47fb-9119-6be3abe2ee8e",
+    "politician_slug": "rajpalsinh-mahendrasinh-jadav-panchmahal",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f07634a8-0fc3-4531-8f64-b0b78c5b4a14",
+    "politician_slug": "vijaylakshmi-devi-siwan",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "866f01d7-f53a-4ce6-bd06-db9ad47b7022",
+    "politician_slug": "subbarayan-k-tiruppur",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 64.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0ca21d83-527d-455d-9bdb-e263b90b5a91",
+    "politician_slug": "shivraj-singh-chouhan-vidisha",
+    "verdict_score": 3.5,
+    "criminal_case_count": 1,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8fe7ac46-5f91-4cca-b0bb-13222ea8993e",
+    "politician_slug": "ambica-g-lakshminarayana-valmiki-ananthapur",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "5ec7bf81-5745-4603-a686-aa822cc28db9",
+    "politician_slug": "anita-subhadarshini-aska",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 91.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "050c961a-a099-4792-8cf2-d893c02c74dc",
+    "politician_slug": "adoor-prakash-attingal",
+    "verdict_score": 5.0,
+    "criminal_case_count": 16,
+    "attendance_percent": 81.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "db0c6f5c-0f80-4198-b925-5ffeacf0624c",
+    "politician_slug": "bhumare-sandipanrao-asaram-aurangabad",
+    "verdict_score": 4.0,
+    "criminal_case_count": 4,
+    "attendance_percent": 75.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c893334c-b96a-4114-a945-8cb376a97af6",
+    "politician_slug": "alok-sharma-bhopal",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1dfe3734-94bf-4ef8-9ccd-6efe0aad5805",
+    "politician_slug": "jaswantsinh-sumanbhai-bhabhor-dahod",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "44a87744-4828-44a7-80ee-43f75574bb01",
+    "politician_slug": "rajkumar-chahar-fatehpursikri",
+    "verdict_score": 6.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 98.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0cb9582e-cb03-4be4-9e9b-57fbb04e2868",
+    "politician_slug": "pratima-mondal-joynagar",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 83.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3da3d454-1c14-477e-b425-d203793ae66e",
+    "politician_slug": "janardan-singh-sigriwal-maharajganj",
+    "verdict_score": 5.5,
+    "criminal_case_count": 5,
+    "attendance_percent": 100.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "05c0c2d6-efb5-4eba-8950-2cdbc7c17a8a",
+    "politician_slug": "raja-a-nilgiris",
+    "verdict_score": 4.5,
+    "criminal_case_count": 7,
+    "attendance_percent": 71.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "62d0e0f4-48ec-46b2-8231-63d520fe7ace",
+    "politician_slug": "v-somanna-tumkur",
+    "verdict_score": 4.0,
+    "criminal_case_count": 1,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "68aeeb76-8000-457c-900d-cd2d607626ba",
+    "politician_slug": "manna-lal-rawat-udaipur",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 98.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ad2e362d-d1cc-4347-8203-a8f4be396e4d",
+    "politician_slug": "manoj-tigga-alipurduars",
+    "verdict_score": 5.5,
+    "criminal_case_count": 10,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7fcfe04e-6964-4d17-b4b2-455ff08b8cd4",
+    "politician_slug": "gurjeet-singh-aujla-amritsar",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 87.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "318acd8d-e185-4cc4-b430-d0ac71dd4a6d",
+    "politician_slug": "tapir-gao-arunachaleast",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 98.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "6d648268-3be3-4613-a5fe-07b8f9928eb7",
+    "politician_slug": "sandhya-ray-bhind",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b53dfa48-6a74-439b-8989-a742ea867025",
+    "politician_slug": "arjun-ram-meghwal-bikaner",
+    "verdict_score": 5.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "21b4126a-d27d-41be-966d-96ff5469f928",
+    "politician_slug": "geniben-nagaji-thakor-banaskantha",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0faaa295-d10f-4644-b96b-34ce608b93ec",
+    "politician_slug": "jagadish-shettar-belgaum",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 85.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "97832d6d-c20b-4df4-972e-99a205a59eca",
+    "politician_slug": "kalanidhi-veeraswamy-chennainorth",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 85.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "edf1a2d1-ab82-4c09-9636-26769080e5a6",
+    "politician_slug": "delkar-kalaben-mohanbhai-dadarnagarhaveli",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 82.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "5fc7ef5a-59c2-4d79-a8a9-7a010b32f190",
+    "politician_slug": "rakibul-hussain-dhubri",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 82.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "6317fdad-e02e-4b26-97df-c71507be61bc",
+    "politician_slug": "bachhav-shobha-dinesh-dhule",
+    "verdict_score": 5.5,
+    "criminal_case_count": 3,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d3becd9c-ffb7-44ae-981c-49e79d676b98",
+    "politician_slug": "nalin-soren-dumka",
+    "verdict_score": 3.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 46.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d5493ee1-51ed-4921-97d9-3832b36a7df8",
+    "politician_slug": "anil-baluni-garhwal",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 96.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a37122b9-3330-430c-866b-8d815b7632a7",
+    "politician_slug": "naveen-jindal-kurukshetra",
+    "verdict_score": 6.0,
+    "criminal_case_count": 9,
+    "attendance_percent": 80.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "69dbaed1-9d19-488b-b010-8a0cfef67909",
+    "politician_slug": "iqra-choudhary-kairana",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "519f2634-103a-453d-a727-52ec10c76bfa",
+    "politician_slug": "k-sudhakaran-kannur",
+    "verdict_score": 4.0,
+    "criminal_case_count": 14,
+    "attendance_percent": 58.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "6927e2bf-ac23-4aec-9496-89375ba5d2ea",
+    "politician_slug": "kangna-ranaut-mandi",
+    "verdict_score": 6.0,
+    "criminal_case_count": 8,
+    "attendance_percent": 84.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1589589a-fa8a-431f-b264-df303538419c",
+    "politician_slug": "manoj-tiwari-eastdelhi",
+    "verdict_score": 6.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "5dedef9f-f2a0-4e79-9689-e7ab19a59465",
+    "politician_slug": "alfred-kanngam-s-arthur-outermanipur",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 70.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a9c7810d-5d6e-46f3-9139-8fd00c702f75",
+    "politician_slug": "sanjay-jaiswal-paschimchamparan",
+    "verdict_score": 5.5,
+    "criminal_case_count": 5,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "aa4935d1-4672-462b-8c88-3aa1e19bd34d",
+    "politician_slug": "vamsi-krishna-gaddam-peddapalle",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "028f6ca8-4a77-4dc2-9cf1-937bd543945e",
+    "politician_slug": "radheshyam-rathiya-raigarh",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 84.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "2ef2ce98-8d41-4d8c-88dc-990d55657d84",
+    "politician_slug": "aga-syed-ruhullah-mehdi-srinagar",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 93.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f9f7346e-162d-4711-b518-b131b9706a32",
+    "politician_slug": "captain-viriato-fernandes-southgoa",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 87.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a9d763ca-c7cd-43ae-a18f-6b04fe881985",
+    "politician_slug": "kinjarapu-rammohan-naidu-srikakulam",
+    "verdict_score": 4.0,
+    "criminal_case_count": 4,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d1a4e41b-edfd-4643-a2fc-3b0dd44b4009",
+    "politician_slug": "jual-oram-sundargarh",
+    "verdict_score": 3.5,
+    "criminal_case_count": 3,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1ca568c6-805f-4a2e-a2ac-c845d70782a1",
+    "politician_slug": "kriti-devi-debbarman-tripuraeast",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4633fb78-b551-4b22-aa6d-d17493036cf9",
+    "politician_slug": "saleng-a-sangma-tura",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 93.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "fb8508fe-6109-4b91-8a85-4c228239ec5d",
+    "politician_slug": "raj-kumar-roat-banswara",
+    "verdict_score": 3.5,
+    "criminal_case_count": 2,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a0812390-50be-46a2-97a8-80bc6410b2f0",
+    "politician_slug": "pradeep-kumar-panigrahy-berhampur",
+    "verdict_score": 5.5,
+    "criminal_case_count": 4,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3c792e2e-b45b-40b5-ac36-0e271634249b",
+    "politician_slug": "ganapathy-rajkumar-p-coimbatore",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 91.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ba88c608-ffe6-486f-a70f-9e9c05304e57",
+    "politician_slug": "bhaskar-murlidhar-bhagare-dindori",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4f6e1e73-88d1-4a8a-b0f7-5641bc56d5bd",
+    "politician_slug": "akshaya-yadav-firozabad",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 81.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ddea2294-f554-40f4-a7e8-cea31f4b8d51",
+    "politician_slug": "b-k-parthasarathi-hindupur",
+    "verdict_score": 5.0,
+    "criminal_case_count": 15,
+    "attendance_percent": 74.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a94ba1b5-e106-4920-ac24-9bcc9852a12e",
+    "politician_slug": "h-d-kumaraswamy-mandya",
+    "verdict_score": 4.0,
+    "criminal_case_count": 3,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "fe2dc267-3b59-4978-be8e-4591ecb9ccf7",
+    "politician_slug": "bapi-haldar-mathurapur",
+    "verdict_score": 5.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 79.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8bc46bd5-f031-44f0-a4f1-760f1425eb96",
+    "politician_slug": "rodmal-nagar-rajgarh",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d5ba9a2c-3656-4799-abd2-c8ef80a48f82",
+    "politician_slug": "rajiv-pratap-rudy-saran",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "303f5c96-9649-4f5f-b37c-af2456b2674f",
+    "politician_slug": "shashi-tharoor-thiruvananthapuram",
+    "verdict_score": 6.0,
+    "criminal_case_count": 12,
+    "attendance_percent": 89.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "aa8d9839-b508-45bc-95a5-fa6713a484e0",
+    "politician_slug": "hemang-joshi-vadodara",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7a03dca9-f1e0-457c-afef-923ebbf53df8",
+    "politician_slug": "chandra-prakash-joshi-chittorgarh",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 89.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "de4d3c5a-b7f1-43ef-99c4-559a5304cddd",
+    "politician_slug": "jashubhai-bhilubhai-rathva-chhotaudaipur",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 96.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "58601634-a74c-4c2d-8730-5413d0b36ec2",
+    "politician_slug": "mahendra-singh-solanky-dewas",
+    "verdict_score": 5.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b54b43a4-e6d0-4e10-b99f-50e606697206",
+    "politician_slug": "abhishek-banerjee-diamondharbour",
+    "verdict_score": 2.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 28.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b3610d49-2b69-42dd-a14b-2de81d9bde63",
+    "politician_slug": "chirag-paswan-hajipur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "572371ba-52b8-4270-8ef5-f99c41eb8f6c",
+    "politician_slug": "y-s-avinash-reddy-kadapa",
+    "verdict_score": 3.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 55.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "eb6d7bb6-1964-4aa2-a820-baba90f87697",
+    "politician_slug": "saptagiri-sankar-ulaka-koraput",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e0f49a6b-79b4-4e6a-8714-68868f54d68e",
+    "politician_slug": "dimple-yadav-mainpuri",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 82.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3ad35b07-2971-4fd5-8d36-d8c43ee4b063",
+    "politician_slug": "yaduveer-krishnadatta-chamaraja-wadiyar-mysore",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1c52104e-27ba-4a8b-aba7-06d6c0985f6b",
+    "politician_slug": "rajabhau-parag-prakash-waje-nashik",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f605781e-c459-4048-882a-6576e0c1eb21",
+    "politician_slug": "eswarasamy-k-pollachi",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 83.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ff4e7958-34aa-40e1-9677-23406d21fd32",
+    "politician_slug": "mansukhbhai-dhanjibhai-vasava-bharuch",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 87.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0c7e4e38-7909-4d10-9bd1-5592cdf0f867",
+    "politician_slug": "sunil-bose-chamarajanagar",
+    "verdict_score": 4.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 61.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "406293ea-5278-46c2-bc46-901034bd5ed3",
+    "politician_slug": "sachithanantham-r-dindigul",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 93.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a9b53cd9-735a-47c2-9430-791ed7e97e51",
+    "politician_slug": "devesh-shakya-etah",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e7007007-6d8e-432a-9464-2e699daa6158",
+    "politician_slug": "sayani-ghosh-jadavpur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 84.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "899e4331-98cf-47ef-83f0-8d37397afa64",
+    "politician_slug": "prabhakar-reddy-vemireddy-nellore",
+    "verdict_score": 4.5,
+    "criminal_case_count": 6,
+    "attendance_percent": 76.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4a09bec1-500b-4109-9e02-85756638c082",
+    "politician_slug": "hemant-vishnu-savara-palghar",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 98.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "328eaa02-a157-4681-a4ed-44526ea2545c",
+    "politician_slug": "mahima-kumari-mewar-rajsamand",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "beff66b9-ca33-40c9-a1ee-40286e265364",
+    "politician_slug": "anil-firojiya-ujjain",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "9d30d025-b47c-42dc-afd3-631a39d525ef",
+    "politician_slug": "nityanand-rai-ujiarpur",
+    "verdict_score": 5.5,
+    "criminal_case_count": 3,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f277bbdd-7ee8-44d7-a4d1-1c646a10e70d",
+    "politician_slug": "damodar-agarwal-bhilwara",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "683c72f8-e3a3-434f-bce6-047e82729ac2",
+    "politician_slug": "aditya-yadav-badaun",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3f657c56-9169-40fe-b795-c73918428abf",
+    "politician_slug": "c-n-manjunath-bangalorerural",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "58119a5c-e1ca-48d4-ab9b-799f174088d9",
+    "politician_slug": "parbhubhai-nagarbhai-vasava-bardoli",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 82.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "17b54973-eeb6-4d6c-b936-32892403864e",
+    "politician_slug": "balya-mama-suresh-gopinath-mhatre-bhiwandi",
+    "verdict_score": 5.0,
+    "criminal_case_count": 4,
+    "attendance_percent": 66.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "23821335-899b-4ba4-8ff1-1669bc5e5876",
+    "politician_slug": "jothimani-s-karur",
+    "verdict_score": 4.0,
+    "criminal_case_count": 1,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "451f3b67-644e-42a5-919b-60d1a4326d2d",
+    "politician_slug": "mala-roy-kolkatadakshin",
+    "verdict_score": 4.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 28.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "95b6ea8b-909e-433a-8593-53f977e5d98b",
+    "politician_slug": "sudheer-gupta-mandsour",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7ce1e045-876f-4abf-9f0e-6cb5275090e6",
+    "politician_slug": "shambhavi-samastipur",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 96.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7014a98c-17bc-4bf8-b04e-d985f7b1051a",
+    "politician_slug": "gurumoorthy-maddila-thirupathi",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "66fe494b-8379-42c2-be3f-b51d7e73bd9f",
+    "politician_slug": "neeraj-maurya-aonla",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 100.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "cb46821e-4b53-4888-a4dd-19439f25733c",
+    "politician_slug": "shobha-karandlaje-bangalorenorth",
+    "verdict_score": 3.0,
+    "criminal_case_count": 8,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f6ca10c9-6ddc-45bc-b031-e15ec7378d0c",
+    "politician_slug": "giriraj-singh-begusarai",
+    "verdict_score": 3.0,
+    "criminal_case_count": 4,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a94e0b49-dce4-49f7-91bc-f430b384905e",
+    "politician_slug": "om-birla-kota",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "9b75e510-3327-47f4-b4f3-ef2167213a18",
+    "politician_slug": "shrikant-eknath-shinde-kalyan",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 82.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c53ce755-0fb0-4524-bcee-05b2eb4c85f4",
+    "politician_slug": "bandyopadhyay-sudip-kolkatauttar",
+    "verdict_score": 4.0,
+    "criminal_case_count": 2,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3b6c2e73-bb09-455c-8983-a2fb16f762c8",
+    "politician_slug": "anita-nagarsingh-chouhan-ratlam",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 82.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "98d71a11-8c3b-4790-9b6e-2c5d8c380219",
+    "politician_slug": "p-v-midhun-reddy-rajampet",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 61.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c5b25e64-fe29-4255-9620-34accc7ff960",
+    "politician_slug": "mukeshkumar-chandrakaant-dalal-uncontested-surat",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "db42eb1d-8002-4284-8f63-a27cd0f0a0cd",
+    "politician_slug": "durai-vaiko-tiruchirappalli",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 85.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "2c0495e8-6d89-4d2d-85f6-1f79eec2ad10",
+    "politician_slug": "p-c-mohan-bangalorecentral",
+    "verdict_score": 5.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3e3990e8-e7eb-4a5b-a479-fc63df4f26f7",
+    "politician_slug": "chhatra-pal-singh-gangwar-bareilly",
+    "verdict_score": 5.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "9a60a6c5-ccb8-44c7-b8a1-dfc4a2cfdc67",
+    "politician_slug": "daggumalla-prasada-rao-chittoor",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "78b9cd94-0ac3-4dc6-8ec2-49d7154ae526",
+    "politician_slug": "savitri-dhar",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "9cdd1044-ef65-4435-8369-a1bdc8aabca4",
+    "politician_slug": "prasun-banerjee-howrah",
+    "verdict_score": 4.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 76.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "52f22f5b-74ea-40be-b1df-8b0e54a39350",
+    "politician_slug": "dushyant-singh-baran",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "624ff239-6659-4d34-9508-16ae67cf4137",
+    "politician_slug": "rajesh-verma-khagaria",
+    "verdict_score": 5.0,
+    "criminal_case_count": 12,
+    "attendance_percent": 76.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "938dfd79-d327-4d7c-aec6-f5481b7a6af7",
+    "politician_slug": "c-r-patil-navsari",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8a9dc080-c65c-419b-870b-687e0536a7bb",
+    "politician_slug": "arun-nehru-perambalur",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 84.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "77c868bd-4fc3-473f-ba3a-e3183c231683",
+    "politician_slug": "naresh-ganpat-mhaske-thane",
+    "verdict_score": 6.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f2992f03-aafc-4b1c-802b-9501b5f6a167",
+    "politician_slug": "tejasvi-surya-bangaloresouth",
+    "verdict_score": 4.5,
+    "criminal_case_count": 3,
+    "attendance_percent": 79.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7d98d238-f225-4e78-b5b6-0613a22643ac",
+    "politician_slug": "ajay-kumar-mandal-bhagalpur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 43.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "bb25b615-d27d-46bf-8f42-a21ff546e28b",
+    "politician_slug": "m-k-vishnuprasad-cuddalore",
+    "verdict_score": 4.0,
+    "criminal_case_count": 1,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "951ed513-c515-4479-aad0-cff17b751238",
+    "politician_slug": "shankar-lalwani-indore",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 100.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e810ca45-6122-47b3-a25a-49ead6af2f7d",
+    "politician_slug": "piyush-goyal-mumbainorth",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8dfc43d0-a4a2-49bc-a978-c0982eed6b56",
+    "politician_slug": "jitin-prasada-pilibhit",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "dd97f094-cad3-4891-bad8-d6f6e96700a9",
+    "politician_slug": "sajda-ahmed-uluberia",
+    "verdict_score": 5.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 58.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3ebd4a24-b4d7-4b8e-ba42-5b87891789d1",
+    "politician_slug": "dhaval-laxmanbhai-patel-valsad",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d66ceba5-4b4a-44cf-8851-4da73ab275e9",
+    "politician_slug": "giridhari-yadav-banka",
+    "verdict_score": 4.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 75.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "5443dff3-0de4-42f1-8378-abcadcf3ae53",
+    "politician_slug": "thirumaavalavan-thol-chidambaram",
+    "verdict_score": 5.5,
+    "criminal_case_count": 4,
+    "attendance_percent": 65.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a1081e79-b009-4c8d-be02-38b2adc3972f",
+    "politician_slug": "k-sudhakar-chikkballapur",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "9085bbab-bab3-4063-afc2-fbfbe7533b2b",
+    "politician_slug": "gajendra-singh-patel-khargone",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a72379d8-a986-4beb-8e17-666af3175cdc",
+    "politician_slug": "ravindra-dattaram-waikar-mumbainorthwest",
+    "verdict_score": 6.0,
+    "criminal_case_count": 3,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "50b2c853-1e7b-4791-9704-9abf7a31ce0c",
+    "politician_slug": "arun-kumar-sagar-shahjahanpur",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "33913191-9c07-420c-bbb3-206f1467561b",
+    "politician_slug": "kalyan-banerjee-srerampur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 75.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "5ae65f67-4ddc-46dc-99aa-1583cbb290c1",
+    "politician_slug": "rachna-banerjee-hooghly",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 45.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "5cefc8a5-fb75-44a1-9de4-be1cef610551",
+    "politician_slug": "gyaneshwar-patil-khandwa",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c9c5674a-87ef-4a92-b9bc-162eb99b3b84",
+    "politician_slug": "utkarsh-verma-madhur-kheri",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 100.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f41412ba-a34b-4018-9123-72f8ba812ef2",
+    "politician_slug": "m-mallesh-babu-kolar",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "dacf1434-268e-4109-9c18-5697bf76f1f8",
+    "politician_slug": "sudha-r-mayiladuthurai",
+    "verdict_score": 6.0,
+    "criminal_case_count": 10,
+    "attendance_percent": 93.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d93f180e-21a0-4f42-a5ad-9e7d4de0800c",
+    "politician_slug": "sanjay-dina-patil-mumbainortheast",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 83.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0af23729-f24c-4d50-8168-f20b2acbcd4d",
+    "politician_slug": "rajiv-ranjan-singh-alias-lalan-singh-munger",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7bea4f54-5a8f-4fdf-ab63-924fbec2423a",
+    "politician_slug": "bag-mitali-arambagh",
+    "verdict_score": 5.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f947cdd8-1e6d-43e8-ad63-be93e6de0011",
+    "politician_slug": "durgadas-d-d-uikey-betul",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "47f7adc1-973e-4d7e-825c-f4f9f94c28e4",
+    "politician_slug": "anand-bhadauriya-dhaurahra",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "acd72e02-b321-4e27-b07e-e4da3c690c1e",
+    "politician_slug": "gaikwad-varsha-eknath-mumbainorthcentral",
+    "verdict_score": 6.0,
+    "criminal_case_count": 7,
+    "attendance_percent": 96.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4284d3d1-2278-47dd-8c72-b9f8d08ce857",
+    "politician_slug": "selvaraj-v-nagapattinam",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 84.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "cf546a98-eeb9-45c8-a8a6-cdc8cb8ce8c0",
+    "politician_slug": "kaushalendra-kumar-nalanda",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "14df75cc-1d32-422f-9fc6-a0fa8d2f4dca",
+    "politician_slug": "mian-altaf-ahmad-rajouri",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 65.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e5f8f5a3-38c4-4d1e-8f9b-e01dbdc51e11",
+    "politician_slug": "ajay-tamta-almora",
+    "verdict_score": 5.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d14034bf-5970-4fd2-b609-ebd388e968e3",
+    "politician_slug": "gaddigoudar-parvatagouda-chandanagouda-bagalkot",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "2392f9b2-4b1e-4795-a3d1-22dd35c55cda",
+    "politician_slug": "phani-bhusan-choudhury-barpeta",
+    "verdict_score": 5.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 79.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "688e04d5-af1b-4c2a-bca7-9cbaa1a26d0c",
+    "politician_slug": "t-sumathy-alias-thamizhachi-thangapandian-chennaisouth",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "92826d97-01d2-4fb3-9785-e4f175ebd298",
+    "politician_slug": "rahul-kaswan-churu",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 98.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "df987d84-2f32-4cb9-8c18-b2de25560637",
+    "politician_slug": "harsh-malhotra-eastdelhi",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c78c60ad-f25c-43cd-af5d-99714c7f0d1d",
+    "politician_slug": "bharat-singh-kushwah-gwalior",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7971343f-9e2a-4c82-ba5a-b081b3bef855",
+    "politician_slug": "nishikant-dubey-godda",
+    "verdict_score": 6.0,
+    "criminal_case_count": 8,
+    "attendance_percent": 100.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b3e169df-ebd0-4e10-af74-4d7adf21495b",
+    "politician_slug": "anurag-singh-hamirpur",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ea9de821-923a-4101-8006-6bb073a5ed72",
+    "politician_slug": "kamlesh-jangde-champa",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0542f6b4-3037-4745-85ad-97e7944a10e4",
+    "politician_slug": "smita-uday-wagh-jalgaon",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8ef709ca-b612-4ed3-8a16-f6c1dfb1be70",
+    "politician_slug": "jayanta-kumar-roy-jalpaiguri",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c659cfd9-6fae-4f32-8017-fea4dc45a086",
+    "politician_slug": "bandi-sanjay-kumar-karimnagar",
+    "verdict_score": 4.0,
+    "criminal_case_count": 42,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "23d94d75-cb3d-4edf-ae31-53065c9f7d52",
+    "politician_slug": "amritpal-singh-khadoorsahib",
+    "verdict_score": 3.0,
+    "criminal_case_count": 12,
+    "attendance_percent": 1.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "dda8f967-7cb6-4175-930e-3122f86ca44b",
+    "politician_slug": "harendra-singh-malik-muzaffarnagar",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "40cfb685-46df-4d72-ba05-2854a62a0f52",
+    "politician_slug": "dabhi-bharatsinhji-shankarji-patan",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c6f946e4-3625-44a4-b209-5fb6689f2105",
+    "politician_slug": "radha-mohan-singh-purvichamparan",
+    "verdict_score": 5.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "2f5f7703-43d5-41cb-b8f4-fadd2afaf3d5",
+    "politician_slug": "selja-sirsa",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8d5bd0e2-fb74-4101-9b0d-54c50e763ba8",
+    "politician_slug": "dharmendra-pradhan-sambalpur",
+    "verdict_score": 5.5,
+    "criminal_case_count": 5,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d7dbb00b-7da7-4560-8722-7532fbbb460b",
+    "politician_slug": "shafi-parambil-vadakara",
+    "verdict_score": 5.0,
+    "criminal_case_count": 47,
+    "attendance_percent": 75.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1da17fa2-695d-4244-ac4e-45b44af0f1c4",
+    "politician_slug": "appalanaidu-kalisetti-vizianagaram",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "005242a0-6b97-434b-a915-4052b75dd883",
+    "politician_slug": "anil-yeshwant-desai-mumbaisouthcentral",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "38701d8a-52dd-4fc4-bc7a-eeb10a58b794",
+    "politician_slug": "ravi-shankar-prasad-patnasahib",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 75.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "9cebb150-e48e-4b65-beaa-1aec9ffe24ee",
+    "politician_slug": "rakesh-rathor-sitapur",
+    "verdict_score": 4.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 70.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b794f685-b50a-43bd-aa7c-c524972e259a",
+    "politician_slug": "murasoli-s-thanjavur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 6,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c5de74d8-1afb-49be-8e40-fff522985005",
+    "politician_slug": "abhijit-gangopadhyay-tamluk",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 87.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d7659a7b-7e31-4565-8ffb-37d2f848fb05",
+    "politician_slug": "jai-prakash-hardoi",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 85.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "478e616a-1dcb-4de7-9286-78e931eb522c",
+    "politician_slug": "adhikari-soumendu-kanthi",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 84.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "766184c2-d44b-4e7c-9315-fd3c96d74bcf",
+    "politician_slug": "arvind-ganpat-sawant-mumbaisouth",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "925f36da-1b00-4f18-a601-55df2a63a211",
+    "politician_slug": "misha-bharti-patliputra",
+    "verdict_score": 4.0,
+    "criminal_case_count": 6,
+    "attendance_percent": 41.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "52ee4432-617d-4d71-b424-53d63a72bb05",
+    "politician_slug": "karti-p-chidambaram-sivaganga",
+    "verdict_score": 5.5,
+    "criminal_case_count": 11,
+    "attendance_percent": 87.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a7169143-3047-48dd-ade8-3a4ee33ff1bd",
+    "politician_slug": "sudama-prasad-arrah",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1404cbce-65ec-4fab-a14d-c8d1ca1795db",
+    "politician_slug": "adhikari-deepak-dev-ghatal",
+    "verdict_score": 5.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 8.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c80f8dee-5ee9-40e3-87f6-2e3cf0832ee0",
+    "politician_slug": "venkatesan-s-madurai",
+    "verdict_score": 5.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "50be51b9-264a-4d35-8fa2-33df29fc7672",
+    "politician_slug": "ashok-kumar-rawat-misrikh",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e9907d23-953e-4275-8560-e2b05b072d51",
+    "politician_slug": "tatkare-sunil-dattatrey-raigad",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "03be893d-da12-4727-9d43-a40770b3adde",
+    "politician_slug": "sudhakar-singh-buxar",
+    "verdict_score": 3.5,
+    "criminal_case_count": 3,
+    "attendance_percent": 58.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0a91e029-414f-4086-b5b1-693d5114655d",
+    "politician_slug": "kalipada-saren-kherwal-jhargram",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 81.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "5a224582-6cb0-4555-b33f-cd5e5ebaf5aa",
+    "politician_slug": "shrirang-appa-chandu-barne-maval",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 96.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f89010ca-66f4-44f4-afd6-b768dd09329b",
+    "politician_slug": "thanga-tamilselvan-theni",
+    "verdict_score": 4.0,
+    "criminal_case_count": 17,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "2692ba73-de33-4205-ac11-1528a61a9915",
+    "politician_slug": "swami-sachchidanand-hari-sakshi-unnao",
+    "verdict_score": 6.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "cd15e6ae-e9aa-4139-9c59-00754871bdb3",
+    "politician_slug": "june-maliah-medinipur",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 79.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "41eeaf30-628f-4562-872f-7f33a95db725",
+    "politician_slug": "r-k-chaudhary-mohanlalganj",
+    "verdict_score": 6.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "82abb674-828d-44de-9053-60c7140757ad",
+    "politician_slug": "murlidhar-mohol-pune",
+    "verdict_score": 4.0,
+    "criminal_case_count": 3,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "56d2cbe5-69fc-489e-8467-5472214fd67f",
+    "politician_slug": "manoj-kumar-sasaram",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "17952cb4-10f3-4449-857e-3b11d021755d",
+    "politician_slug": "manickam-tagore-b-virudhunagar",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "24c9aaae-4170-41f4-9062-5750206097be",
+    "politician_slug": "supriya-sule-baramati",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f8423d78-a91f-4e13-9a46-92e191d77a4c",
+    "politician_slug": "raja-ram-singh-karakat",
+    "verdict_score": 5.5,
+    "criminal_case_count": 3,
+    "attendance_percent": 96.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c222143a-e981-40ab-9dc3-9cc3d481ba6d",
+    "politician_slug": "raj-nath-singh-lucknow",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "83085986-cc3d-4323-9e9c-b2dc437b98af",
+    "politician_slug": "jyotirmay-singh-mahato-purulia",
+    "verdict_score": 5.0,
+    "criminal_case_count": 3,
+    "attendance_percent": 71.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1c4a228f-629f-4612-aeb9-29e0c19f888c",
+    "politician_slug": "navaskani-k-ramanathapuram",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 82.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8ccba6a7-0ca1-4134-8707-0c1cf401fd28",
+    "politician_slug": "arup-chakraborty-bankura",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 45.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1b7e0987-f602-410c-b63d-f7e2f31d1b92",
+    "politician_slug": "surendra-prasad-yadav-jahanabad",
+    "verdict_score": 5.0,
+    "criminal_case_count": 7,
+    "attendance_percent": 71.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "2a8b54de-8900-4ee1-886a-f9c75645c2b8",
+    "politician_slug": "rahul-gandhi-raebareli",
+    "verdict_score": 3.5,
+    "criminal_case_count": 18,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ab1e058b-2d84-43bf-a6b9-573e39cababa",
+    "politician_slug": "amol-ramsing-kolhe-shirur",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 73.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3db7a296-7fa3-4df0-b9ca-b4f9bab96da4",
+    "politician_slug": "kanimozhi-karunanidhi-thoothukkudi",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 71.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b7529214-22d3-4045-8388-005c2adcde18",
+    "politician_slug": "nilesh-dnyandev-lanke-ahmednagar",
+    "verdict_score": 6.0,
+    "criminal_case_count": 5,
+    "attendance_percent": 81.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "6e85107e-6482-4a0c-855a-8ff36d4fc555",
+    "politician_slug": "kishori-lal-amethi",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "26569ebe-6ae1-4531-9ea4-2d0ffe78a62d",
+    "politician_slug": "abhay-kumar-sinha-aurangabad",
+    "verdict_score": 5.5,
+    "criminal_case_count": 12,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "bf214223-cde5-4f32-a8bd-c99e65088e59",
+    "politician_slug": "khan-saumitra-bishnupur",
+    "verdict_score": 3.5,
+    "criminal_case_count": 2,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "6490d7d1-baab-4145-8f19-2473d0b00556",
+    "politician_slug": "rani-sri-kumar-tenkasi",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "57cebb53-70c8-4e21-9f1e-8578844cc593",
+    "politician_slug": "sharmila-sarkar-bardhamanpurba",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 79.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7a13d855-4a43-4180-956b-7c96de8ee924",
+    "politician_slug": "jitan-ram-manjhi-gaya",
+    "verdict_score": 4.0,
+    "criminal_case_count": 6,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a2a2d358-513f-42b8-921d-a04eb59e1d72",
+    "politician_slug": "bhausaheb-rajaram-wakchaure-shirdi",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 91.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7b187003-23fd-492a-816c-a40ee27bb86a",
+    "politician_slug": "rambhual-nishad-sultanpur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 8,
+    "attendance_percent": 83.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8aa164b2-7d2a-4195-9ec9-8105e52c4526",
+    "politician_slug": "robert-bruce-c-tirunelveli",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4b3e2ac0-4e7f-46f9-bdc9-42d5e948a065",
+    "politician_slug": "azad-kirti-jha-durgapur",
+    "verdict_score": 5.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "144f69c5-cbf0-4954-8a08-c9448a154eff",
+    "politician_slug": "bajrang-manohar-sonwane-beed",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "cba80ce8-acd2-4d85-acfc-f7d3896f8354",
+    "politician_slug": "vijayakumar-alias-vijay-vasanth-kanniyakumari",
+    "verdict_score": 6.0,
+    "criminal_case_count": 8,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0b67bd75-2407-4bdf-a2bd-ce00f65e8035",
+    "politician_slug": "vivek-nawada",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3b0ffe35-f8cf-4fac-ac6d-6b6150869644",
+    "politician_slug": "shiv-pal-singh-patel-s-p-singh-pratapgarh",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 84.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b12c8561-c158-4217-9724-2a043094456a",
+    "politician_slug": "ramesh-jigajinagi-bijapur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b38394f8-651a-4f68-aa8e-1ca485c202a6",
+    "politician_slug": "chandan-chauhan-bijnor",
+    "verdict_score": 5.5,
+    "criminal_case_count": 4,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f9d5dbdf-739c-4aca-9536-5ec3d8cc0c0f",
+    "politician_slug": "dayanidhi-maran-chennaicentral",
+    "verdict_score": 4.5,
+    "criminal_case_count": 4,
+    "attendance_percent": 69.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "2331c2f9-f45a-4a08-8fbc-d94c06387eb9",
+    "politician_slug": "kali-charan-singh-chatra",
+    "verdict_score": 5.5,
+    "criminal_case_count": 8,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "19075811-be8f-4a18-849c-4a4c10b1f3d7",
+    "politician_slug": "raju-bista-darjeeling",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "941b4409-85fb-4e87-8426-73fa36f399a7",
+    "politician_slug": "dilip-saikia-udalguri",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1fb27b66-ed2b-41f8-bf33-6182a66bd8de",
+    "politician_slug": "jyotiraditya-m-scindia-guna",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4379cedd-2ed3-448b-89b0-4b25ac66c368",
+    "politician_slug": "jai-parkash-j-p-s-o-harikesh-hisar",
+    "verdict_score": 6.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 96.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e73db879-eec5-4081-bf0f-8b1160891279",
+    "politician_slug": "brijendra-singh-ola-jhunjhunu",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 100.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "6a1edc57-1e16-4470-ab16-a4e0ef097b95",
+    "politician_slug": "charanjit-singh-channi-jalandhar",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 70.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3d1b63f9-5120-4066-b51d-261c1954b833",
+    "politician_slug": "jyotsna-charandas-mahant-korba",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 89.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "132f17d3-c635-4b0f-8359-7d8466b606ee",
+    "politician_slug": "ananta-nayak-keonjhar",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "05431c64-fe6b-4872-b608-093f47b7a059",
+    "politician_slug": "haribhai-patel-mahesana",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "01d46e7b-cc70-4f93-995a-e82b3afad89b",
+    "politician_slug": "ajay-bhatt-udhamsinghnagar",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "9944882e-23a4-4d8a-9c63-3e86797f48c2",
+    "politician_slug": "bansuri-swaraj-newdelhi",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "5b19da6a-885b-4e33-8a6f-5188f2a53e68",
+    "politician_slug": "arvind-dharmapuri-nizamabad",
+    "verdict_score": 4.5,
+    "criminal_case_count": 22,
+    "attendance_percent": 79.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "dd07947a-1389-48cc-b220-3f4ccbc996dc",
+    "politician_slug": "khadse-raksha-nikhil-raver",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b194c81b-7aab-4edd-af69-dd7cadefbba7",
+    "politician_slug": "suresh-kumar-kashyap-shimla",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 89.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "09a2bb89-9592-434d-b2e4-cebd5a911d4a",
+    "politician_slug": "lovely-anand-sheohar",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e2c21559-130e-498f-8869-3aea778c5995",
+    "politician_slug": "jitendra-singh-udhampur",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8710a24b-0a89-46d4-9705-74b2a37ecb42",
+    "politician_slug": "sribharat-mathukumili-visakhapatnam",
+    "verdict_score": 6.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 93.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8c14e51f-b286-401b-b5c9-0b5a00cb0a3c",
+    "politician_slug": "shatrughan-prasad-sinha-asansol",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 64.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e50035f2-6cbb-404a-92ae-5157c279ecdc",
+    "politician_slug": "mukesh-rajput-farrukhabad",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 98.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3c8f140e-ccc8-4154-83ab-6ea97e443674",
+    "politician_slug": "arun-bharti-jamui",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 82.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "069e4bf2-649f-4765-86a6-a1fc39e8c6c7",
+    "politician_slug": "omprakash-bhupalsinh-alias-pavan-rajenimbalkar-osmanabad",
+    "verdict_score": 5.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0a0f65b5-4ac4-4a9f-bb1e-1b67bd0a17fe",
+    "politician_slug": "asit-kumar-mal-bolpur",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a1bb07ab-0461-42ac-86f4-e3807dd6dc03",
+    "politician_slug": "jitendra-kumar-dohare-etawah",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a003563e-3200-4f58-a33c-d5b313fde88b",
+    "politician_slug": "kalge-shivaji-bandappa-latur",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "78ed1a82-5244-4e4d-aaa6-43431b60b51d",
+    "politician_slug": "satabdi-roy-birbhum",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 76.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4428db63-96ee-4776-aa1f-7c4193366e5d",
+    "politician_slug": "akhilesh-yadav-kannauj",
+    "verdict_score": 4.0,
+    "criminal_case_count": 3,
+    "attendance_percent": 45.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ac021822-f6a9-461b-ad19-6326bf8eeefb",
+    "politician_slug": "praniti-sushilkumar-shinde-solapur",
+    "verdict_score": 5.5,
+    "criminal_case_count": 3,
+    "attendance_percent": 91.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "9f7ae360-da06-4e72-89de-ab6e800e1031",
+    "politician_slug": "ramesh-awasthi-kanpur",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0e24491a-641d-4890-a7d4-4520720a412c",
+    "politician_slug": "mohite-patil-dhairyasheel-rajsinh-madha",
+    "verdict_score": 3.5,
+    "criminal_case_count": 36,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b6b37533-f342-4ace-8035-3162d32afb2d",
+    "politician_slug": "devendra-singh-alias-bhole-singh-akbarpur",
+    "verdict_score": 5.5,
+    "criminal_case_count": 13,
+    "attendance_percent": 89.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "699af5fa-d95b-4793-9234-072cd5f01a95",
+    "politician_slug": "vishal-dada-prakashbapu-patil-sangli",
+    "verdict_score": 4.0,
+    "criminal_case_count": 9,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1d444f09-2572-4b85-b640-62a4be447c11",
+    "politician_slug": "narayan-das-ahirwar-jalaun",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 100.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "aef209b7-5262-45cb-8f86-4b3923c459f5",
+    "politician_slug": "shrimant-chh-udayanraje-pratapsinhamaharaj-bhonsle-satara",
+    "verdict_score": 5.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "96b674d0-f07d-46ef-a04f-55bb933e9ec9",
+    "politician_slug": "anurag-sharma-jhansi",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f658c503-7ec1-4b95-80fa-3cb5b96f8a4e",
+    "politician_slug": "narayan-tatu-rane-sindhudurg",
+    "verdict_score": 5.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 56.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ea2be94a-3a11-4e7c-be39-c6a360502d46",
+    "politician_slug": "ajendra-singh-lodhi-hamirpur",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 63.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e3714d35-a952-4395-aca6-eca1a7defbc6",
+    "politician_slug": "chhatrapati-shahu-shahaji-kolhapur",
+    "verdict_score": 4.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 54.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3c8e2378-44ee-4200-9a76-1f2a268e4159",
+    "politician_slug": "krishna-devi-shivshanker-patel-banda",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ae591b5d-87aa-4dec-a18c-e33211912700",
+    "politician_slug": "dhairyasheel-sambhajirao-mane-hatkanangale",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 77.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f36ffb86-d335-45e2-952c-e2c73a2b399e",
+    "politician_slug": "naresh-chandra-uttam-patel-fatehpur",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ad925078-fb05-406a-90f6-29cf0808c79a",
+    "politician_slug": "c-m-ramesh-anakapalle",
+    "verdict_score": 3.5,
+    "criminal_case_count": 5,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c3d48359-f0aa-4a35-b1ce-824253fd268f",
+    "politician_slug": "tokhan-sahu-bilaspur",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "5dbce65b-d167-4211-8ec6-8ab5db6f964b",
+    "politician_slug": "jadhav-prataprao-ganpatrao-buldhana",
+    "verdict_score": 4.0,
+    "criminal_case_count": 4,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "2d30121b-c3ea-4df8-a5dc-23db5c230f8e",
+    "politician_slug": "radhakrishna-gulbarga",
+    "verdict_score": 5.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 51.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1d0dae6a-a074-404a-ad7b-576a3ddc2fd1",
+    "politician_slug": "bijuli-kalita-medhi-guwahati",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3c57017d-fa10-471e-b175-6040876fdb7f",
+    "politician_slug": "trivendra-singh-rawat-haridwar",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0d5c3c7b-6182-478c-b036-c0c3600622bf",
+    "politician_slug": "raj-kumar-chabbewal-hoshiarpur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 53.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d5ed7c3a-af23-4122-956f-b577ce315fb8",
+    "politician_slug": "jugal-kishore-jammu",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0f9dda20-44a8-4c03-ba99-29fabf9fd6d6",
+    "politician_slug": "manohar-lal-karnal",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b8d0610f-bd9a-4784-a5b1-ec60bb3fb658",
+    "politician_slug": "annpurna-devi-kodarma",
+    "verdict_score": 3.5,
+    "criminal_case_count": 2,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "641d7a1f-0fba-44f2-90a6-81f537474584",
+    "politician_slug": "m-k-raghavan-kozhikode",
+    "verdict_score": 5.0,
+    "criminal_case_count": 4,
+    "attendance_percent": 73.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "5aac5e14-8fa2-438d-b4ac-f27ddc377067",
+    "politician_slug": "naba-charan-majhi-mayurbhanj",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 85.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c722ae9b-cb3f-4c96-a03f-2d2210dd5fa6",
+    "politician_slug": "chandrashekhar-nagina",
+    "verdict_score": 5.5,
+    "criminal_case_count": 36,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4811f0e3-153e-4214-8c33-dbee6a2c2767",
+    "politician_slug": "yogender-chandoliya-westdelhi",
+    "verdict_score": 6.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d9712cd2-8bfb-431e-8ce4-9141a987f7ca",
+    "politician_slug": "kartick-chandra-paul-raiganj",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "9e16948e-f066-4c82-99d4-91e165007070",
+    "politician_slug": "lata-wankhede-sagar",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 89.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0064acc5-5ca8-4eae-b18f-add2fd110130",
+    "politician_slug": "amraram-sikar",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 89.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b82ba8e4-5b85-491b-ab47-992905d034b1",
+    "politician_slug": "t-r-baalu-sriperumbudur",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 77.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ce3a101a-20ff-426c-8a32-28b568f4ba0e",
+    "politician_slug": "shobhanaben-mahendrasinh-baraiya-sabarkantha",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "6d706d2b-7e8c-4c3f-9553-d4916347f975",
+    "politician_slug": "devesh-chandra-sitamarhi",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 75.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e587c6ca-85d6-4533-9eb1-55f3efe70226",
+    "politician_slug": "suresh-kumar-shetkar-zahirabad",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 83.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f40e5064-7e4f-4b7c-a445-6038b65337dd",
+    "politician_slug": "pushpendra-saroj-kaushambi",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 96.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f1d55dea-6634-4d3f-a83d-cac23a5fcad2",
+    "politician_slug": "praveen-patel-phulpur",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "dca8d431-7c2a-459e-8291-e71f9fab7263",
+    "politician_slug": "ujjwal-raman-singh-allahabad",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b884b7b5-ceed-49c3-b271-4eec252a6d37",
+    "politician_slug": "tanuj-punia-barabanki",
+    "verdict_score": 5.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a0225a4e-4f3c-4d72-815f-c510f9047c9c",
+    "politician_slug": "awadhesh-prasad-faizabad",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "6b92e5ca-ef3a-4643-8524-018697477ed2",
+    "politician_slug": "lalji-verma-ambedkarnagar",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "2de8faac-ecd9-4398-9a0f-f28dc8f171c5",
+    "politician_slug": "anand-kumar-baharaich",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "86f1327e-5890-4ba1-8916-4fc6ed897f3f",
+    "politician_slug": "karan-bhushan-singh-kaiserganj",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e1e31017-1f10-48da-b9ae-5fe360516d99",
+    "politician_slug": "ram-shiromani-verma-shrawasti",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 100.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ac12fdee-8a15-4e8d-ab49-cbddbb862c1d",
+    "politician_slug": "kirtivardhan-singh-gonda",
+    "verdict_score": 4.0,
+    "criminal_case_count": 3,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d9ee78be-9582-4927-90b2-d0c1ef298a6e",
+    "politician_slug": "anup-sanjay-dhotre-akola",
+    "verdict_score": 5.5,
+    "criminal_case_count": 5,
+    "attendance_percent": 100.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7fcb132f-2408-4453-ab9a-a2dc11debbf6",
+    "politician_slug": "malvinder-singh-kang-anandpursahib",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "169135fe-0c4e-4404-8455-5e7145490a90",
+    "politician_slug": "pratap-chandra-sarangi-balasore",
+    "verdict_score": 5.0,
+    "criminal_case_count": 6,
+    "attendance_percent": 82.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "47968d97-1639-4c8d-b1c1-a33130193f41",
+    "politician_slug": "sukanta-majumdar-balurghat",
+    "verdict_score": 3.5,
+    "criminal_case_count": 14,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4ad54fac-cdde-440e-9003-2927b7612d35",
+    "politician_slug": "amarsing-tisso-diphu",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "56cd0eb8-ce06-4bea-aeea-cac0907c07bd",
+    "politician_slug": "amit-shah-gandhinagar",
+    "verdict_score": 4.0,
+    "criminal_case_count": 3,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7222e18d-0f30-4915-8e80-270294f82641",
+    "politician_slug": "chandra-prakash-choudhary-giridih",
+    "verdict_score": 5.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 89.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "20a468a2-6df7-45c6-9261-d5da6b8b1a4f",
+    "politician_slug": "rao-rajendra-singh-jaipurrural",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4dcbf84a-ccdd-41b0-9c2b-8df3dea8d72b",
+    "politician_slug": "selvam-g-kancheepuram",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8d468c7c-8148-470b-970c-3b1e4a32fa6a",
+    "politician_slug": "tangella-uday-srinivas-tea-time-uday-kakinada",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 89.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ca90d8c0-22a2-4701-a5d8-1bb47f8cae75",
+    "politician_slug": "ashok-kumar-yadav-madhubani",
+    "verdict_score": 5.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "141a3252-051c-4843-a98b-afcc9128fe57",
+    "politician_slug": "e-t-mohammed-basheer-malappuram",
+    "verdict_score": 4.0,
+    "criminal_case_count": 1,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "06f50a56-33bf-4742-93c8-232203e6fd6e",
+    "politician_slug": "madhavaneni-raghunandan-rao-medak",
+    "verdict_score": 6.0,
+    "criminal_case_count": 29,
+    "attendance_percent": 96.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "6fca27a6-9a8f-4313-9f4f-0124a96c2d08",
+    "politician_slug": "ruchi-vira-moradabad",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 100.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d75061df-049b-447e-b34c-2877ffa1ca20",
+    "politician_slug": "santosh-pandey-rajnandgaon",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 93.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "cf89a663-a23f-48ee-9e8a-b85a8d9a6bb4",
+    "politician_slug": "g-kumar-naik-raichur",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1c3230e4-47c1-4e35-bf29-1c00ec02b023",
+    "politician_slug": "satpal-brahamchari-sonipat",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0b878fe7-336b-4ab0-a305-04a4b3715437",
+    "politician_slug": "virendra-kumar-tikamgarh",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3b0c0288-6289-4678-b928-679eb7387156",
+    "politician_slug": "kamaljeet-sehrawat-westdelhi",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 96.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "343c281f-e399-4b32-a8fa-cc9f7faacb5f",
+    "politician_slug": "jagdambika-pal-domariyaganj",
+    "verdict_score": 5.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 100.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f3011b09-d195-4356-8006-acaa6927e197",
+    "politician_slug": "ram-prasad-chaudhary-basti",
+    "verdict_score": 5.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "85452c42-8c55-48c3-b5b9-69a59530f2b1",
+    "politician_slug": "laxmikant-pappu-nishad-santkabirnagar",
+    "verdict_score": 5.5,
+    "criminal_case_count": 3,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "580a33cb-40f9-40ff-b009-0ab89ac287b1",
+    "politician_slug": "pankaj-chaudhary-maharajganj",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "68501adc-2013-4368-b27f-9cc5c615efa6",
+    "politician_slug": "ravindra-shukla-alias-ravi-kishan-gorakhpur",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 70.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b3a76fc3-0b60-4f2e-bfde-3819295108a4",
+    "politician_slug": "vijay-kumar-dubay-kushinagar",
+    "verdict_score": 4.0,
+    "criminal_case_count": 2,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f43989fb-c78b-4d72-9506-317eedea2bb5",
+    "politician_slug": "shashank-mani-deoria",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "232ccb33-c528-4f38-87ec-703f042e2957",
+    "politician_slug": "kamlesh-paswan-bansgaon",
+    "verdict_score": 5.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "75c311ba-d552-4d08-b553-b07716c3ed02",
+    "politician_slug": "daroga-prasad-saroj-lalganj",
+    "verdict_score": 6.0,
+    "criminal_case_count": 3,
+    "attendance_percent": 91.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ed87861d-48b9-4036-8df4-b069c490e9f9",
+    "politician_slug": "dharmendra-yadav-azamgarh",
+    "verdict_score": 5.0,
+    "criminal_case_count": 6,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c0afeb34-b3a4-4876-90b6-c510d6491988",
+    "politician_slug": "s-jagathratchakan-arakkonam",
+    "verdict_score": 4.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 42.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ae8538ba-ee35-4330-8c61-4fba50cb281a",
+    "politician_slug": "hasmukhbhai-patel-h-s-patel-ahmedabadeast",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 98.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "1755b5de-e4d6-441d-a40d-2a278d6a5c84",
+    "politician_slug": "g-m-harish-balayogi-amalapuram",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0f9fc930-2955-49e1-a621-52b99d8316ce",
+    "politician_slug": "balwant-baswant-wankhade-amravati",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "dcdd3a0b-6978-40a5-b9f1-b008d69e90d0",
+    "politician_slug": "avimanyu-sethi-bhadrak",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4583173b-dcf3-4e24-973e-377030ae196c",
+    "politician_slug": "sagar-eshwar-khandre-bidar",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0b62ba02-05bc-41f8-b869-02feb0e14b50",
+    "politician_slug": "rahul-singh-lodhi-damoh",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "58205df8-f6eb-449d-9c4b-d8afee50b684",
+    "politician_slug": "vijay-baghel-durg",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 82.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0f97b64b-2b2a-4767-b65c-ec19f822d876",
+    "politician_slug": "dulu-mahato-dhanbad",
+    "verdict_score": 5.5,
+    "criminal_case_count": 4,
+    "attendance_percent": 85.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ae35d9a7-f6db-4e7a-a30b-1c20f24c42ad",
+    "politician_slug": "manju-sharma-jaipur",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "96da8c88-d459-4a68-9acc-bc2c9de9944c",
+    "politician_slug": "ramprit-mandal-jhanjharpur",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c8c36ff3-b54f-4deb-b720-4f663b0bf2ba",
+    "politician_slug": "kripanath-mallah-karimganj",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7d37dbfb-c2ca-46b8-b5ea-91c9421ab559",
+    "politician_slug": "amrinder-singh-raja-warring-ludhiana",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 66.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "6ed98c73-db35-43e8-beb1-446f7355d034",
+    "politician_slug": "khagen-murmu-maldahauttar",
+    "verdict_score": 5.5,
+    "criminal_case_count": 7,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "90759d00-d972-47b1-afba-5268ba9334af",
+    "politician_slug": "eatala-rajender-malkajgiri",
+    "verdict_score": 5.5,
+    "criminal_case_count": 45,
+    "attendance_percent": 84.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "9add798f-7863-4f9a-adbe-42452a0a9f68",
+    "politician_slug": "m-p-abdussamad-samadani-ponnani",
+    "verdict_score": 4.0,
+    "criminal_case_count": 1,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "6ccc0097-6a8e-4dc4-959e-254955954753",
+    "politician_slug": "deepender-singh-hooda-rohtak",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ba46bf1c-f65a-463f-b0a6-e692bcfa6669",
+    "politician_slug": "mohibbullah-rampur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 3,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "73e8deef-8cfd-40f9-b53e-406e1d172ca3",
+    "politician_slug": "ramvir-singh-bidhuri-southdelhi",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 100.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "541b28ae-1bc0-4e27-96c3-1bc835b1e073",
+    "politician_slug": "rajeev-rai-ghosi",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "dcd4f162-6a31-4135-aa46-841711246b3b",
+    "politician_slug": "ramashankar-rajbhar-salempur",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 95.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0d78185e-b183-4fde-8f84-a1217ea46561",
+    "politician_slug": "sanatan-pandey-ballia",
+    "verdict_score": 5.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 88.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e58d5e17-303e-4c85-a273-6ebeb741dc83",
+    "politician_slug": "babu-singh-kushwaha-jaunpur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 25,
+    "attendance_percent": 87.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "7360b9ca-b49e-4f07-857d-89d6bbc3e15e",
+    "politician_slug": "priya-saroj-machhlishahr",
+    "verdict_score": 6.0,
+    "criminal_case_count": 2,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "205a444e-da0c-4cd1-b38a-4b4f79d79399",
+    "politician_slug": "afzal-ansari-ghazipur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 5,
+    "attendance_percent": 81.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "3afdb06f-b266-48f3-8b67-4dde2818a037",
+    "politician_slug": "birendra-singh-chandauli",
+    "verdict_score": 5.0,
+    "criminal_case_count": 3,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b7674413-9df2-4687-a33b-122cd4ccbb4d",
+    "politician_slug": "narendra-modi-varanasi",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "18976f08-ea34-4369-8cd0-f3bd49c4bd27",
+    "politician_slug": "vinod-kumar-bind-bhadohi",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "aa3f9f86-8a8d-455e-866a-bc07026b3e5f",
+    "politician_slug": "anupriya-patel-mirzapur",
+    "verdict_score": 4.0,
+    "criminal_case_count": 2,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0bf22fb2-1c4e-41a5-a409-140a7cc6ba90",
+    "politician_slug": "bhupender-yadav-alwar",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "2038126c-5f69-4a50-8794-b0980dcdabce",
+    "politician_slug": "dineshbhai-makwana-advocate-ahmedabadwest",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 98.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "6bd28102-ae17-4b2a-9b55-a1fee538a197",
+    "politician_slug": "dharambir-singh-mahendragarh",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 97.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "f9f248d4-6c03-4597-887a-0c74df975847",
+    "politician_slug": "amar-singh-fatehgarhsahib",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "799f1a2c-93ab-451c-9b20-25a8bb5e3bb5",
+    "politician_slug": "rabindra-narayan-behera-jajpur",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 89.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "041718b5-2c5c-4e34-8840-4b7ceaa80487",
+    "politician_slug": "vishnu-datt-sharma-v-d-sharma-khajuraho",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 80.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "88ac8117-1630-44f5-89d1-8d06a6044477",
+    "politician_slug": "k-rajashekar-basavaraj-hitnal-koppal",
+    "verdict_score": 4.5,
+    "criminal_case_count": 3,
+    "attendance_percent": 66.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e254c898-c472-409b-91dc-82ae4976ccb1",
+    "politician_slug": "isha-khan-choudhury-maldahadakshin",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 80.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "83af2325-74e2-4272-b930-a2a016989473",
+    "politician_slug": "v-k-sreekandan-palakkad",
+    "verdict_score": 7.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4eef0450-8e2f-43e6-8038-cb366d09c124",
+    "politician_slug": "brijmohan-agrawal-raipur",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 84.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a61577c7-4c90-436c-8ad5-9c59f0998574",
+    "politician_slug": "daggubati-purandheshwari-rajahmundry",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "93210180-160c-499d-8a05-7867df8446b6",
+    "politician_slug": "sanjay-seth-ranchi",
+    "verdict_score": 4.0,
+    "criminal_case_count": 2,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "eaf7ffd6-823a-4375-b728-bd3ee503ae05",
+    "politician_slug": "zia-ur-rehman-sambhal",
+    "verdict_score": 6.0,
+    "criminal_case_count": 6,
+    "attendance_percent": 98.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "25574fa9-bc23-43f1-9836-c4339f307d5b",
+    "politician_slug": "g-kishan-reddy-secunderabad",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "0d4faac1-c64d-4938-ae7e-19ccef755322",
+    "politician_slug": "parimal-suklabaidya-silchar",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a6e553f9-5cce-4191-85e2-aa683ea7fad2",
+    "politician_slug": "dileshwar-kamait-supaul",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "17607a02-b16a-4d08-9fe7-fe02faf044e6",
+    "politician_slug": "dm-kathir-anand-vellore",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "ed7b967c-9081-4bce-8d2b-294f4a2a50fd",
+    "politician_slug": "amar-sharadrao-kale-wardha",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "4ea55353-22a8-4be4-be56-dcb7123fea53",
+    "politician_slug": "chhotelal-robertsganj",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 90.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "2774ee1a-ab14-4fb8-9490-e24f35a49203",
+    "politician_slug": "kanwar-singh-tanwar-amroha",
+    "verdict_score": 5.5,
+    "criminal_case_count": 1,
+    "attendance_percent": 96.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8fa15928-79d1-4455-b9cb-bdbe11506d4e",
+    "politician_slug": "pradeep-kumar-singh-araria",
+    "verdict_score": 4.0,
+    "criminal_case_count": 4,
+    "attendance_percent": 61.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "aa6ab597-f77a-4e2d-99dd-5eb207fe66ea",
+    "politician_slug": "sanjna-jatav-bharatpur",
+    "verdict_score": 8.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "d37c5a3e-41a3-4521-9cfe-9c271b4e021b",
+    "politician_slug": "e-tukaram-bellary",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 58.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b8f85ce2-716b-499e-a3b0-eda5ada4f36a",
+    "politician_slug": "rudra-narayan-pany-dhenkanal",
+    "verdict_score": 4.5,
+    "criminal_case_count": 4,
+    "attendance_percent": 79.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "934efa09-33b9-4cc5-998f-560c4a408aff",
+    "politician_slug": "sarabjeet-singh-khalsa-faridkot",
+    "verdict_score": 5.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 31.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "c7bd9aae-0194-4319-ab61-4150f4f4670e",
+    "politician_slug": "rao-inderjit-singh-gurgaon",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "8910bd2c-5d6b-455b-9402-bebfb47e34f0",
+    "politician_slug": "asaduddin-owaisi-hyderabad",
+    "verdict_score": 5.5,
+    "criminal_case_count": 5,
+    "attendance_percent": 86.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "5cfb9bed-9725-417a-8a03-90c8898f0faf",
+    "politician_slug": "bidyut-baran-mahato-jamshedpur",
+    "verdict_score": 6.0,
+    "criminal_case_count": 1,
+    "attendance_percent": 99.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "9a676baf-43a7-41cb-965a-84db7b496563",
+    "politician_slug": "khalilur-rahaman-jangipur",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 72.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "01fee359-3b91-4c88-acff-24cdff473258",
+    "politician_slug": "gopinath-k-krishnagiri",
+    "verdict_score": 6.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 77.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "07e47b33-5076-4b44-a3ec-aa23db995777",
+    "politician_slug": "roop-kumari-choudhary-mahasamund",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "e6bc3403-3ef0-4adc-abb0-d8f866aa6282",
+    "politician_slug": "pradyut-bordoloi-nagaon",
+    "verdict_score": 7.0,
+    "criminal_case_count": 0,
+    "attendance_percent": 75.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "08d896d2-f003-42f3-862e-481b2b611ec7",
+    "politician_slug": "bhupathi-raju-srinivasa-varma-b-j-p-varma-narsapuram",
+    "verdict_score": 6.0,
+    "criminal_case_count": 0,
+    "attendance_percent": null,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "a6ed79c5-07f4-47f3-bd1c-172a0a76cf0a",
+    "politician_slug": "shyamkumar-babalu-daulat-barve-ramtek",
+    "verdict_score": 5.5,
+    "criminal_case_count": 2,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "51171b16-77d8-42c9-83c8-eb075731efb2",
+    "politician_slug": "ganesh-singh-satna",
+    "verdict_score": 5.5,
+    "criminal_case_count": 3,
+    "attendance_percent": 94.0,
+    "snapshot_date": "2026-09-05"
+  },
+  {
+    "politician_id": "b3088e8e-26bb-4a24-bb60-24ced75a7b50",
+    "politician_slug": "chandubhai-chhaganbhai-shihora-surendranagar",
+    "verdict_score": 8.5,
+    "criminal_case_count": 0,
+    "attendance_percent": 92.0,
+    "snapshot_date": "2026-09-05"
+  }
+]

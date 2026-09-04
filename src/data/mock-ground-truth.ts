@@ -126,6 +126,13 @@ Despite Central Pollution Control Board (CPCB) mandates ordering continuous onli
         "Provide the total penalty amount levied under Section 33A of the Water Act and the actual amount collected to date.",
       ],
     },
+    is_interesting: true,
+    unsolved_status: "hearing_scheduled",
+    days_since_first_reported: 39,
+    last_checked_at: "2026-09-04T10:00:00Z",
+    case_reference: "NGT/PB/O.A. 412/2026",
+    source_name: "The Reporters' Collective",
+    source_url: "https://www.reporters-collective.in/stories/vapi-effluents",
   },
 
   // ----------------------------------------------------------------------
@@ -223,6 +230,13 @@ The registered directors of the firm are domestic helpers and drivers employed a
         "Provide certified copies of all running bill payment vouchers released to M/s Maa Vindhyavasini Earthworks between Jan 2024 and June 2026.",
       ],
     },
+    is_interesting: true,
+    unsolved_status: "under_investigation",
+    days_since_first_reported: 44,
+    last_checked_at: "2026-09-04T11:30:00Z",
+    case_reference: "UP-LOK/INV/2026/89",
+    source_name: "Indian Express",
+    source_url: "https://indianexpress.com/article/india/bundelkhand-highway-cracks-probe-89211/",
   },
 
   // ----------------------------------------------------------------------
@@ -317,6 +331,13 @@ When citizen investigators conducted unannounced inspections with village pancha
         "Provide the stock ledger of life-saving snake antivenom vials received and utilized across the district.",
       ],
     },
+    is_interesting: false,
+    unsolved_status: "no_action_taken",
+    days_since_first_reported: 61,
+    last_checked_at: "2026-09-03T09:00:00Z",
+    case_reference: "FRA/MP/GUNA/2026/014",
+    source_name: "The Hindu",
+    source_url: "https://www.thehindu.com/news/national/other-states/guna-tribal-health-clinics-empty-phc/article682219.ece",
   },
 
   // ----------------------------------------------------------------------
@@ -402,6 +423,13 @@ However, satellite imagery cross-verified with drone surveys reveals active noct
       "1. Permanent radar and drone night surveillance along the Hooghly-Damanganga estuary.\n2. Scientific concrete geotube armoring of 24 vulnerable embankment breach points.\n3. Immediate disaster compensation fund for farmers whose fertile soil suffered irreversible saline contamination.",
     upvotes: 1950,
     affectedVotes: 810,
+    is_interesting: true,
+    unsolved_status: "chargesheeted",
+    days_since_first_reported: 52,
+    last_checked_at: "2026-09-04T15:45:00Z",
+    case_reference: "CBI/EOU-IV/RC-07/2026",
+    source_name: "The Wire",
+    source_url: "https://thewire.in/environment/sundarbans-embankment-breach-sand-mining",
   },
 
   // ----------------------------------------------------------------------
@@ -479,6 +507,13 @@ However, an extensive 4-month undercover sting operation reveals a thriving synd
       "1. Mandatory integration of Election Commission candidate portal with the National Academic Depository (NAD).\n2. Disqualification under RPA 1951 for candidates submitting unaccredited or counterfeit degree affidavits.\n3. Nationwide shutdown of all unauthorized diploma printing centres.",
     upvotes: 4210,
     affectedVotes: 512,
+    is_interesting: false,
+    unsolved_status: "under_investigation",
+    days_since_first_reported: 70,
+    last_checked_at: "2026-09-02T14:10:00Z",
+    case_reference: "EOW/DEL/FIR-442/2026",
+    source_name: "Scroll.in",
+    source_url: "https://scroll.in/article/fake-degrees-syndicate-delhi-election-affidavits",
   },
 
   // ----------------------------------------------------------------------
@@ -556,6 +591,13 @@ In the past 24 months, more than 60% of village handpumps have completely dried 
       "1. Immediate power disconnection to all commercial borewells lacking valid CGWA NOC.\n2. Installation of smart digital water flow meters on all industrial bottling units.\n3. Construction of 50 rainwater percolation recharging shafts across Danapur block.",
     upvotes: 1680,
     affectedVotes: 740,
+    is_interesting: true,
+    unsolved_status: "under_investigation",
+    days_since_first_reported: 28,
+    last_checked_at: "2026-09-04T18:00:00Z",
+    case_reference: "CGWA/BIH/PAT/2026/08",
+    source_name: "Newslaundry",
+    source_url: "https://www.newslaundry.com/2026/08/14/patna-groundwater-tanker-mafia-investigation",
   },
 ];
 

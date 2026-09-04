@@ -122,6 +122,13 @@ export interface GroundTruthArticle {
   upvotes: number;
   affectedVotes: number;
   rtiTemplate?: RTITemplate;
+  is_interesting?: boolean;
+  unsolved_status?: 'under_investigation' | 'chargesheeted' | 'hearing_scheduled' | 'no_action_taken' | 'closed';
+  last_checked_at?: string;
+  days_since_first_reported?: number;
+  case_reference?: string;
+  source_name?: string;
+  source_url?: string;
 }
 
 export interface Constituency {

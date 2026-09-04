@@ -12,7 +12,10 @@ import {
   Clock, 
   MapPin, 
   AlertTriangle,
-  Info
+  Info,
+  Gavel,
+  ShieldCheck,
+  Percent
 } from "lucide-react";
 import { 
   BarChart, 
@@ -21,22 +24,20 @@ import {
   YAxis, 
   Tooltip, 
   ResponsiveContainer, 
-  Cell, 
   CartesianGrid 
 } from "recharts";
-import BrutalistCard from "@/components/ui/BrutalistCard";
 
 const NCRB_DATA = {
   annual: {
     year: 2022,
     rape_cases: 31516,
     murder_cases: 28522,
-    kidnapping_cases: 100545,
+    kidnapping_cases: 107588,
     robbery_cases: 24393,
     crimes_against_women: 445256,
     crimes_against_children: 162449,
     cybercrime_cases: 65893,
-    total_ipc_crimes: 4461679,
+    total_ipc_crimes: 3561379,
   },
   daily_average: {
     rape_cases: 86.35,        // 31516 / 365
@@ -44,9 +45,88 @@ const NCRB_DATA = {
     crimes_against_women: 1219.88, // 445256 / 365
     cybercrime_cases: 180.53,  // 65893 / 365
   },
+  disposal_overview: {
+    total_ipc_crimes: 3561379,
+    chargesheeting_rate: 71.3,
+    conviction_rate: 57.0,
+    cases_pending_trial_pct: 89.5,
+    court_pendency: "3.12 crore cases",
+  },
+  categories: [
+    {
+      key: "murder",
+      name: "Murder & Homicide",
+      total: 28522,
+      chargesheeted_pct: 81.5,
+      convicted_pct: 43.8,
+      unsolved_pct: 56.2,
+      rate_desc: "1 murder every 18.4 minutes",
+      reality_desc: "56.2% end without conviction",
+    },
+    {
+      key: "kidnapping",
+      name: "Kidnapping & Abduction",
+      total: 107588,
+      chargesheeted_pct: 37.1,
+      convicted_pct: 28.5,
+      unsolved_pct: 71.5,
+      rate_desc: "1 incident every 4.9 minutes",
+      reality_desc: "71.5% end without conviction",
+    },
+    {
+      key: "women",
+      name: "Crimes Against Women",
+      total: 445256,
+      chargesheeted_pct: 75.8,
+      convicted_pct: 25.1,
+      unsolved_pct: 74.9,
+      rate_desc: "1 incident every 71 seconds",
+      reality_desc: "74.9% end without conviction",
+    },
+    {
+      key: "children",
+      name: "Crimes Against Children",
+      total: 162449,
+      chargesheeted_pct: 75.6,
+      convicted_pct: 34.2,
+      unsolved_pct: 65.8,
+      rate_desc: "1 incident every 3.2 minutes",
+      reality_desc: "65.8% end without conviction",
+    },
+    {
+      key: "economic",
+      name: "Economic Offences",
+      total: 193885,
+      chargesheeted_pct: 47.7,
+      convicted_pct: 24.8,
+      unsolved_pct: 75.2,
+      rate_desc: "1 fraud every 2.7 minutes",
+      reality_desc: "75.2% end without conviction",
+    },
+    {
+      key: "corruption",
+      name: "Corruption (PCA)",
+      total: 4139,
+      chargesheeted_pct: 61.2,
+      convicted_pct: 39.9,
+      unsolved_pct: 60.1,
+      rate_desc: "1 case every 2.1 hours",
+      reality_desc: "60.1% end without conviction",
+    },
+    {
+      key: "cyber",
+      name: "Cyber Crimes",
+      total: 65893,
+      chargesheeted_pct: 31.4,
+      convicted_pct: 22.8,
+      unsolved_pct: 77.2,
+      rate_desc: "1 cyber attack every 8.0 mins",
+      reality_desc: "77.2% end without conviction",
+    },
+  ],
   monthly_chart: [
     { category: "Women Safety", monthly: Math.round(445256 / 12), annual: 445256 },
-    { category: "Kidnapping", monthly: Math.round(100545 / 12), annual: 100545 },
+    { category: "Kidnapping", monthly: Math.round(107588 / 12), annual: 107588 },
     { category: "Cybercrime", monthly: Math.round(65893 / 12), annual: 65893 },
     { category: "Rape Cases", monthly: Math.round(31516 / 12), annual: 31516 },
     { category: "Murders", monthly: Math.round(28522 / 12), annual: 28522 },
@@ -186,7 +266,142 @@ export default function CrimeCounter() {
         </div>
       </div>
 
-      {/* ROW 2 & ROW 3 — Monthly Comparison Chart & State-wise Top 5 */}
+      {/* PROMINENT STAT CALLOUT BANNER — Judicial Pendency Crisis */}
+      <div className="bg-[#111111] border-3 border-ink p-6 shadow-hard-xl text-white space-y-4 relative overflow-hidden">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#2E2E2E] pb-4">
+          <div className="space-y-1">
+            <div className="inline-flex items-center space-x-2 bg-[#FF4545] text-white px-2.5 py-0.5 border border-ink text-xs font-black uppercase shadow-hard-xs">
+              <Gavel className="w-3.5 h-3.5" />
+              <span>JUDICIAL CRISIS DOCKET</span>
+            </div>
+            <h3 className="font-display font-black text-2xl sm:text-3xl text-[#FFD700] uppercase tracking-tight">
+              89.5% OF ALL CASES IN COURT REMAIN PENDING TRIAL
+            </h3>
+            <p className="text-xs text-gray-300 font-semibold max-w-3xl">
+              Filing an FIR is not justice. Across India, {NCRB_DATA.disposal_overview.court_pendency} choke lower judiciary benches while 3.56 million new IPC offenses enter the system annually.
+            </p>
+          </div>
+
+          <div className="bg-[#1C1C1C] border border-[#333] p-3 text-right shrink-0">
+            <span className="text-[10px] text-gray-400 font-bold uppercase block">TOTAL COURT PENDENCY</span>
+            <span className="font-display font-black text-2xl text-[#00E5FF]">3.12 CRORE</span>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs pt-1">
+          <div className="bg-[#181818] border border-[#2E2E2E] p-3">
+            <span className="text-[10px] text-gray-400 font-bold block uppercase">TOTAL IPC CRIMES</span>
+            <span className="font-display font-black text-lg text-white">3,561,379</span>
+            <span className="text-[10px] text-gray-500 block">Reported in 2022</span>
+          </div>
+          <div className="bg-[#181818] border border-[#2E2E2E] p-3">
+            <span className="text-[10px] text-gray-400 font-bold block uppercase">CHARGESHEETING RATE</span>
+            <span className="font-display font-black text-lg text-[#00E5FF]">71.3%</span>
+            <span className="text-[10px] text-gray-500 block">By Police to Courts</span>
+          </div>
+          <div className="bg-[#181818] border border-[#2E2E2E] p-3">
+            <span className="text-[10px] text-gray-400 font-bold block uppercase">CONVICTION RATE</span>
+            <span className="font-display font-black text-lg text-[#00E676]">57.0%</span>
+            <span className="text-[10px] text-gray-500 block">In Completed Trials</span>
+          </div>
+          <div className="bg-[#181818] border border-[#2E2E2E] p-3">
+            <span className="text-[10px] text-gray-400 font-bold block uppercase">PENDING TRIAL</span>
+            <span className="font-display font-black text-lg text-[#FF4545]">89.5%</span>
+            <span className="text-[10px] text-gray-500 block">Unresolved in Judiciary</span>
+          </div>
+        </div>
+      </div>
+
+      {/* ROW 2 — Solved vs Unsolved Category Cards */}
+      <div className="space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-ink pb-3">
+          <div className="flex items-center space-x-2">
+            <Scale className="w-5 h-5 text-brand-red" />
+            <h3 className="font-display font-black text-lg sm:text-xl uppercase text-ink">
+              CRIME DISPOSAL REALITY: SOLVED VS. UNSOLVED
+            </h3>
+          </div>
+
+          <div className="flex items-center gap-3 text-xs font-bold">
+            <span className="inline-flex items-center gap-1.5">
+              <span className="w-2.5 h-2.5 bg-[#00C853] inline-block border border-black" />
+              <span>Convicted</span>
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <span className="w-2.5 h-2.5 bg-[#FFD600] inline-block border border-black" />
+              <span>Pending Trial</span>
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <span className="w-2.5 h-2.5 bg-[#D50000] inline-block border border-black" />
+              <span>Unsolved / Acquitted</span>
+            </span>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          {NCRB_DATA.categories.map((cat) => {
+            const convictedPct = cat.convicted_pct;
+            const pendingPct = Math.max(0, cat.chargesheeted_pct - cat.convicted_pct);
+            const unsolvedPct = Math.max(0, 100 - cat.chargesheeted_pct);
+
+            return (
+              <div
+                key={cat.key}
+                className="bg-canvas border-2.5 border-ink p-4 shadow-hard-xs flex flex-col justify-between space-y-3 hover:-translate-y-0.5 transition-all"
+              >
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between text-[11px] font-bold text-gray-600 border-b border-gray-300 pb-1.5">
+                    <span className="font-black text-ink">{cat.name}</span>
+                    <span className="text-gray-500">{cat.total.toLocaleString("en-IN")} total</span>
+                  </div>
+
+                  <div className="space-y-1">
+                    <div className="text-xs font-black text-brand-red flex items-center gap-1">
+                      <Clock className="w-3.5 h-3.5" />
+                      <span>{cat.rate_desc}</span>
+                    </div>
+                    <div className="text-[11px] font-bold text-gray-700">
+                      Reality: <strong className="text-brand-red">{cat.reality_desc}</strong>
+                    </div>
+                  </div>
+
+                  {/* Tri-Color Split Progress Bar */}
+                  <div className="space-y-1 pt-1">
+                    <div className="h-4 w-full bg-gray-200 border border-black flex overflow-hidden">
+                      <div
+                        style={{ width: `${convictedPct}%` }}
+                        className="bg-[#00C853] h-full"
+                        title={`Convicted: ${convictedPct}%`}
+                      />
+                      <div
+                        style={{ width: `${pendingPct}%` }}
+                        className="bg-[#FFD600] h-full border-l border-r border-black"
+                        title={`Chargesheeted & Pending Trial: ${pendingPct.toFixed(1)}%`}
+                      />
+                      <div
+                        style={{ width: `${unsolvedPct}%` }}
+                        className="bg-[#D50000] h-full"
+                        title={`Unchargesheeted / Unsolved: ${unsolvedPct.toFixed(1)}%`}
+                      />
+                    </div>
+
+                    <div className="flex items-center justify-between text-[10px] font-bold text-gray-600">
+                      <span>Convicted: <strong>{convictedPct}%</strong></span>
+                      <span>Chargesheeted: <strong>{cat.chargesheeted_pct}%</strong></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="text-[10px] text-gray-500 border-t border-gray-300 pt-1.5">
+                  Unsolved / No Conviction: <strong className="text-black">{cat.unsolved_pct}%</strong>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* ROW 3 — Monthly Comparison Chart & State-wise Top 5 */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Monthly Average Comparison Chart */}
         <div className="lg:col-span-7 bg-canvas border-2.5 border-ink p-5 shadow-hard-md space-y-4">
@@ -276,7 +491,7 @@ export default function CrimeCounter() {
         <div className="flex items-start space-x-2">
           <AlertTriangle className="w-4 h-4 text-brand-orange shrink-0 mt-0.5" />
           <p>
-            <strong>Data Source & Methodology:</strong> Data extracted directly from the National Crime Records Bureau (NCRB) Annual Report 2022 (Ministry of Home Affairs, Govt. of India). Real-time ticker figures are estimates calculated from annual averages.
+            <strong>Data Source & Methodology:</strong> Source: National Crime Records Bureau (NCRB), Crime in India 2022 Report, Ministry of Home Affairs. Real-time ticker figures are estimates calculated from annual averages.
           </p>
         </div>
 

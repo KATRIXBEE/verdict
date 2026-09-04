@@ -29,6 +29,7 @@ import EngagementBar from "@/features/ground-truth/EngagementBar";
 import ArticleCard from "@/features/ground-truth/ArticleCard";
 import BrutalistCard from "@/components/ui/BrutalistCard";
 import BrutalistButton from "@/components/ui/BrutalistButton";
+import { WhatHappenedNext } from "@/components/WhatHappenedNext";
 import { cn, getProxiedImageUrl } from "@/lib/utils";
 
 interface ArticleDetailPageProps {
@@ -199,6 +200,9 @@ export default async function GroundTruthDetailPage({ params }: ArticleDetailPag
           {article.body}
         </div>
       </article>
+
+      {/* Post-Investigation Docket / Unsolved Status Tracker */}
+      <WhatHappenedNext storyId={article.id} compact={true} />
 
       {/* 2. Evidence Section */}
       {article.evidence.length > 0 && (

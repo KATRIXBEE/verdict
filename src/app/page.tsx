@@ -25,6 +25,8 @@ import { formatINR, getScoreColor, getEducationBadge, getProxiedImageUrl } from 
 import BrutalistCard from "@/components/ui/BrutalistCard";
 import BrutalistButton from "@/components/ui/BrutalistButton";
 import CrimeCounter from "@/components/CrimeCounter";
+import { TodaysVerdictBanner } from "@/components/TodaysVerdictBanner";
+import { YourMPWidget } from "@/components/YourMPWidget";
 import { EMPTY_STATES } from "@/components/ui/EmptyState";
 
 export default function HomePage() {
@@ -152,6 +154,16 @@ export default function HomePage() {
           <p className="text-[11px] text-gray-600">
             Constituency-isolated citizen trust rating prevents cross-state IT cell raids.
           </p>
+        </div>
+      </section>
+
+      {/* Spotlight and Your MP Grid */}
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="lg:col-span-2">
+          <TodaysVerdictBanner />
+        </div>
+        <div>
+          <YourMPWidget />
         </div>
       </section>
 

@@ -25,6 +25,18 @@ import ArticleCard from "@/features/ground-truth/ArticleCard";
 import GroundTruthMap from "@/features/ground-truth/GroundTruthMap";
 import DailyNewsFeed from "@/features/ground-truth/DailyNewsFeed";
 import BrutalistButton from "@/components/ui/BrutalistButton";
+import { WhatHappenedNext } from "@/components/WhatHappenedNext";
+
+const SOURCES_LIST = [
+  "ALL",
+  "Indian Express",
+  "The Hindu",
+  "Newslaundry",
+  "The Wire",
+  "Scroll.in",
+  "Reuters India",
+  "The Reporters' Collective",
+];
 
 function GroundTruthListingContent() {
   const searchParams = useSearchParams();
@@ -32,6 +44,7 @@ function GroundTruthListingContent() {
 
   const [selectedState, setSelectedState] = useState<string>("ALL");
   const [selectedCategory, setSelectedCategory] = useState<string>("ALL");
+  const [selectedSource, setSelectedSource] = useState<string>("ALL");
   const [selectedPolitician, setSelectedPolitician] = useState<string>(initialPolitician);
   const [sortBy, setSortBy] = useState<"recent" | "read" | "shared" | "impact">("recent");
   const [searchQuery, setSearchQuery] = useState("");
@@ -69,13 +82,21 @@ function GroundTruthListingContent() {
     "Karnataka",
   ];
 
-  const filteredArticles = filterGroundTruthArticles({
+  const rawFiltered = filterGroundTruthArticles({
     state: selectedState,
     category: selectedCategory,
     politicianId: selectedPolitician,
     sortBy,
     searchQuery,
   });
+
+  const filteredArticles = selectedSource === "ALL"
+    ? rawFiltered
+    : rawFiltered.filter((a) =>
+        (a.source_name || a.author.publication || "").toLowerCase().includes(selectedSource.toLowerCase())
+      );
+
+  const interestingArticles = MOCK_GROUND_TRUTH_ARTICLES.filter((a) => a.is_interesting);
 
   const totalAffected = filteredArticles.reduce((acc, a) => acc + a.affectedPeopleCount, 0);
 
@@ -116,6 +137,56 @@ function GroundTruthListingContent() {
           </div>
         </div>
       </section>
+
+      {/* 🔥 Interesting Today Top Row */}
+      {interestingArticles.length > 0 && (
+        <section className="bg-[#111111] border-3 border-ink p-5 sm:p-6 shadow-hard-xl space-y-4 text-white">
+          <div className="flex items-center justify-between border-b border-[#2E2E2E] pb-3">
+            <div className="flex items-center space-x-2">
+              <span className="p-1.5 bg-[#FF4545] text-white border border-black shadow-hard-xs">
+                <Flame className="w-4 h-4" />
+              </span>
+              <h2 className="font-display font-black text-lg sm:text-xl uppercase tracking-tight text-white">
+                🔥 INTERESTING TODAY: HIGH-IMPACT EXPOSÉS
+              </h2>
+            </div>
+            <span className="text-[11px] font-bold text-[#FFD700] uppercase hidden sm:inline-block">
+              TWO-TIER CIVIC & HIGH-CONSEQUENCE INTELLIGENCE
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {interestingArticles.slice(0, 4).map((item) => (
+              <Link
+                key={item.id}
+                href={`/ground-truth/${item.slug}`}
+                className="bg-[#1A1A1A] border-2 border-[#333] hover:border-[#FF4545] p-4 flex flex-col justify-between shadow-hard-xs transition-all group hover:-translate-y-1"
+              >
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between text-[10px] font-bold">
+                    <span className="bg-[#FF4545] text-white px-2 py-0.5 border border-black">
+                      #{item.category}
+                    </span>
+                    <span className="text-gray-400">
+                      DAY {item.days_since_first_reported || 30}
+                    </span>
+                  </div>
+                  <h3 className="font-display font-black text-xs uppercase text-white group-hover:text-[#FFD700] transition-colors line-clamp-2">
+                    {item.headline}
+                  </h3>
+                  <p className="text-[11px] text-gray-400 line-clamp-2">
+                    {item.summary}
+                  </p>
+                </div>
+                <div className="pt-3 border-t border-[#2A2A2A] flex items-center justify-between text-[11px] font-bold text-gray-300">
+                  <span className="text-[#00E5FF] truncate">{item.source_name || "Investigative Desk"}</span>
+                  <span className="text-white group-hover:translate-x-1 transition-transform font-black">→</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Filter & View Mode Control Bar */}
       <div className="bg-surface border-3 border-ink p-4 sm:p-5 shadow-hard-md space-y-4">
@@ -250,10 +321,41 @@ function GroundTruthListingContent() {
           </div>
         </div>
 
+        {/* Source Filter Tabs */}
+        <div className="space-y-1.5 pt-2 border-t border-gray-300">
+          <label className="text-[10px] text-gray-500 font-bold uppercase block">
+            VERIFIED INVESTIGATIVE NEWS OUTLET:
+          </label>
+          <div className="flex flex-wrap gap-1.5">
+            {SOURCES_LIST.map((src) => {
+              const isActive = selectedSource === src;
+              return (
+                <button
+                  key={src}
+                  type="button"
+                  onClick={() => setSelectedSource(src)}
+                  className={`text-xs font-bold px-2.5 py-1 border-1.5 border-ink transition-all cursor-pointer ${
+                    isActive
+                      ? "bg-brand-red text-white font-black shadow-hard-xs -translate-y-0.5"
+                      : "bg-surface hover:bg-brand-yellow text-ink"
+                  }`}
+                >
+                  {src === "ALL" ? "ALL 7 SOURCES" : src}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
         {/* Active Filter Indicators */}
-        {(selectedState !== "ALL" || selectedCategory !== "ALL" || selectedPolitician !== "ALL" || searchQuery) && (
+        {(selectedState !== "ALL" || selectedCategory !== "ALL" || selectedPolitician !== "ALL" || selectedSource !== "ALL" || searchQuery) && (
           <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-gray-300 text-xs">
             <span className="text-[10px] text-gray-500 font-bold uppercase">ACTIVE FILTERS:</span>
+            {selectedSource !== "ALL" && (
+              <span className="bg-brand-yellow text-black px-2 py-0.5 border border-ink text-[11px] font-bold">
+                Source: {selectedSource}
+              </span>
+            )}
             {selectedState !== "ALL" && (
               <span className="bg-brand-cyan text-black px-2 py-0.5 border border-ink text-[11px] font-bold">
                 State: {selectedState}
@@ -279,6 +381,7 @@ function GroundTruthListingContent() {
               onClick={() => {
                 setSelectedState("ALL");
                 setSelectedCategory("ALL");
+                setSelectedSource("ALL");
                 setSelectedPolitician("ALL");
                 setSearchQuery("");
               }}
@@ -289,6 +392,9 @@ function GroundTruthListingContent() {
           </div>
         )}
       </div>
+
+      {/* What Happened Next: Unsolved Case Tracker */}
+      <WhatHappenedNext />
 
       {/* Main Content Area: Grid vs Map */}
       {viewMode === "map" ? (
