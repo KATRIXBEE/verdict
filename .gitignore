@@ -52,3 +52,6 @@ data-pipeline/verdict_pipeline.db
 # Binaries & Executables
 *.exe
 tests/load/bin/
+
+.vercel
+.env*

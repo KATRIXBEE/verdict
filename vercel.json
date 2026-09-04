@@ -1,0 +1,50 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "regions": ["sin1"],
+  "functions": {
+    "src/app/api/proxy-image/route.ts": {
+      "maxDuration": 10
+    },
+    "src/app/api/politicians/route.ts": {
+      "maxDuration": 30
+    },
+    "src/app/api/search/route.ts": {
+      "maxDuration": 15
+    },
+    "src/app/api/ratings/route.ts": {
+      "maxDuration": 15
+    },
+    "src/app/api/ground-truth/route.ts": {
+      "maxDuration": 20
+    },
+    "src/app/api/india-rankings/route.ts": {
+      "maxDuration": 10
+    },
+    "src/app/api/money-trail/route.ts": {
+      "maxDuration": 20
+    },
+    "src/app/api/health/route.ts": {
+      "maxDuration": 10
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" }
+      ]
+    },
+    {
+      "source": "/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
