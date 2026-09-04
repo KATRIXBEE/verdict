@@ -1,0 +1,33 @@
+# Tests & Binaries
+tests/**
+tests
+coverage/**
+coverage
+*.exe
+
+# Python Data Pipeline & Scrapers
+data-pipeline/**
+data-pipeline
+scripts/**
+scripts
+*.py
+*.pyc
+__pycache__/**
+__pycache__
+
+# Large CSV & Database files
+*.csv
+*.db
+*.sqlite
+*.sqlite3
+
+# Reports & Presentations
+reports/**
+reports
+*.pptx
+*.pdf
+
+# Local Logs & Env
+*.log
+.env.local
+.env*.local
