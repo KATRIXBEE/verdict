@@ -92,7 +92,7 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "navbar sticky top-0 z-[1000] transition-all duration-300 w-full max-w-full px-3 md:px-6 py-2 flex items-center justify-between gap-2 overflow-x-hidden min-h-[56px] sm:min-h-[64px]",
+        "navbar navbar-container sticky top-0 z-[1000] transition-all duration-300 w-full max-w-full box-border px-4 md:px-5 py-2 sm:py-2.5 flex items-center justify-between gap-3 sm:gap-4 overflow-x-clip min-h-[56px] sm:min-h-[64px]",
         scrolled
           ? "bg-surface/95 border-b-2 border-ink backdrop-blur-sm shadow-hard-md"
           : "bg-surface border-b-3 border-ink shadow-hard-md"
@@ -240,7 +240,7 @@ export default function Header() {
       </nav>
 
       {/* Right Action: Global Search & Mobile Hamburger */}
-      <div className="flex items-center space-x-2 shrink-0">
+      <div className="flex items-center space-x-2 flex-shrink min-w-0">
         {/* Global Search Bar (Responsive flex-shrink container) */}
         <GlobalSearch />
 

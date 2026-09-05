@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { Search, X, MapPin, ArrowRight } from "lucide-react";
 import { useDebounce } from "@/hooks/useDebounce";
-import { getPoliticianImageSrc } from "@/lib/utils";
+import { cn, getPoliticianImageSrc } from "@/lib/utils";
 
 export function GlobalSearch() {
   const [query, setQuery] = useState("");
@@ -97,9 +97,10 @@ export function GlobalSearch() {
   return (
     <div
       ref={containerRef}
-      className={`navbar-search relative font-mono text-xs ${
-        mobileExpanded ? "w-full" : "w-auto"
-      }`}
+      className={cn(
+        "navbar-search relative font-mono text-xs",
+        mobileExpanded ? "w-full" : "w-auto flex items-center"
+      )}
     >
       {/* Mobile Trigger Button */}
       {!mobileExpanded && (
@@ -134,7 +135,7 @@ export function GlobalSearch() {
               }
             }}
             placeholder='Search neta by name, party...'
-            className="navbar-search-input w-full bg-transparent h-full py-2 px-1 text-xs font-bold text-ink placeholder:text-gray-400 focus:outline-none"
+            className="w-full bg-transparent h-full py-2 px-1 text-xs font-bold text-ink placeholder:text-gray-400 focus:outline-none"
           />
           {query && (
             <button
@@ -164,8 +165,12 @@ export function GlobalSearch() {
       )}
 
       {/* Desktop Search Input Box */}
-      <div className="hidden md:flex relative items-center flex-shrink min-w-0">
-        <div className="relative flex items-center flex-shrink min-w-0">
+      <div className="navbar-search-wrapper hidden md:flex relative items-center flex-1 min-w-[120px] max-w-[280px] mr-1">
+        <div className="relative w-full flex items-center">
+          <div className="absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-neutral-500 flex items-center justify-center">
+            <Search className="w-3.5 h-3.5 stroke-[2.5]" />
+          </div>
+
           <input
             ref={!mobileExpanded ? inputRef : undefined}
             type="text"
@@ -177,13 +182,9 @@ export function GlobalSearch() {
                 handleNavigate(`/search?q=${encodeURIComponent(query.trim())}`);
               }
             }}
-            placeholder="Search neta... (/)"
-            className="w-36 sm:w-44 md:w-52 lg:w-56 xl:w-64 pl-8 pr-7 py-1.5 text-xs font-mono bg-white text-black border-[2px] border-black shadow-[2px_2px_0px_0px_#000] focus:outline-none focus:ring-0 placeholder:text-neutral-500"
+            placeholder="Search neta..."
+            className="navbar-search-input w-full min-w-0 box-border pl-8 pr-9 py-1.5 text-xs sm:text-[13px] font-mono bg-white text-black border-[2px] border-black shadow-[2px_2px_0px_0px_#000] focus:outline-none focus:ring-0 placeholder:text-neutral-500 overflow-hidden text-ellipsis whitespace-nowrap"
           />
-
-          <div className="absolute left-2.5 pointer-events-none text-neutral-500 flex items-center justify-center">
-            <Search className="w-3.5 h-3.5 stroke-[2.5]" />
-          </div>
 
           {query ? (
             <button
@@ -192,13 +193,13 @@ export function GlobalSearch() {
                 setQuery("");
                 inputRef.current?.focus();
               }}
-              className="absolute right-2 p-0.5 text-neutral-500 hover:text-brand-red cursor-pointer"
+              className="absolute right-2 top-1/2 -translate-y-1/2 p-0.5 text-neutral-500 hover:text-brand-red cursor-pointer flex items-center justify-center"
               aria-label="Clear query"
             >
               <X className="w-3.5 h-3.5" />
             </button>
           ) : (
-            <kbd className="hidden lg:inline-block absolute right-2 bg-surface-muted border border-ink px-1.5 py-0.2 text-[10px] font-extrabold text-gray-500 shadow-hard-xs pointer-events-none">
+            <kbd className="absolute right-2 top-1/2 -translate-y-1/2 bg-surface-muted border border-ink px-1.5 py-0.5 text-[10px] font-extrabold text-gray-500 shadow-hard-xs pointer-events-none flex items-center justify-center leading-none">
               /
             </kbd>
           )}
