@@ -5,6 +5,9 @@ import re
 import time
 import requests
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.data_integrity_guard import validate_politician_record
 
 SUPABASE_URL = "https://ksdqughrmrburubgbtba.supabase.co"
 SERVICE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzZHF1Z2hybXJidXJ1YmdidGJhIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NzY4NTczNywiZXhwIjoyMTAzMjYxNzM3fQ.egQKQ3mCJR_iup3nuJhTkrRC6J9oviTggQ_h0i9U6pE")
@@ -211,6 +214,11 @@ def main():
     for raw in politicians_raw:
         clean = clean_politician(raw)
         if clean:
+            is_valid, issues = validate_politician_record(clean)
+            if not is_valid:
+                print(f"  [GUARD REJECTED] {clean.get('name')}: {', '.join(issues)}")
+                skipped += 1
+                continue
             cleaned.append(clean)
         else:
             skipped += 1

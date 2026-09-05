@@ -204,7 +204,7 @@ class ScoreCalculator:
                 # Case data presence (strict null vs confirmed clean zero distinction)
                 if len(pol.criminal_cases) > 0:
                     cases_input = pol.criminal_cases
-                elif pol.name in ["Narendra Modi", "Dr. Arvind Shrivastava", "Amit Shah", "Nirmala Sitharaman"]:
+                elif pol.name in ["Narendra Modi", "Amit Shah", "Nirmala Sitharaman"]:
                     cases_input = []  # Confirmed 0 cases -> +1.0
                 else:
                     cases_input = None  # No data imported yet -> 0.0 (neutral)

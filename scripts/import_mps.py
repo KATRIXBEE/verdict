@@ -32,17 +32,6 @@ from sqlalchemy import select, func, or_
 INPUT_FILE = "scripts/data/mps_2024_raw.json"
 CHECKPOINT_FILE = "scripts/data/checkpoints/progress.json"
 
-# Manual politicians to preserve exactly
-MANUAL_POLITICIANS = [
-    "Dr. Arvind Shrivastava",
-    "Rameshwar Singh",
-    "Digvijay Rathore",
-    "Jayashree Venkataraman",
-    "Ramesh Kumar",
-    "Anandita Banerjee",
-    "Vikramjeet Ranawat",
-]
-
 PARTY_CONFIG = {
     "BJP": {"abbr": "BJP", "color": "#FF9933"},
     "INC": {"abbr": "INC", "color": "#0099FF"},
@@ -303,13 +292,7 @@ async def import_mps_to_database():
 
                 norm_name = normalize_name(name)
 
-                # 2. Check if manually preserved politician
-                if any(normalize_name(m) == norm_name for m in MANUAL_POLITICIANS):
-                    print(f"  ⟳ Skipped (Preserved Manual): {name}")
-                    stats["skipped"] += 1
-                    continue
-
-                # 3. Match existing politician by normalized name & state / constituency
+                # 2. Match existing politician by normalized name & state / constituency
                 stmt = select(Politician).where(
                     or_(
                         Politician.name.ilike(f"%{name}%"),

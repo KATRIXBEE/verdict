@@ -1,0 +1,724 @@
+{
+  "generated_at": "2026-09-05T12:54:57.795774",
+  "source": "Local Pipeline SQLite & Mock Data",
+  "total_politicians": 553,
+  "total_flagged": 55,
+  "high_confidence_fake": [],
+  "needs_review": [
+    {
+      "id": "ae8538ba-ee35-4330-8c61-4fba50cb281a",
+      "name": "Hasmukhbhai Patel (H.S.Patel)",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Ahmedabad East",
+      "state": "Gujarat",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "a4b0e666-f1b9-4464-8f66-4d330982d7ee",
+      "name": "Mitesh Patel (Bakabhai)",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Anand",
+      "state": "Gujarat",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "b5cdf5a7-71c3-48af-905b-c933bc65f6d3",
+      "name": "Mitali Bag",
+      "party": "AITC",
+      "constituency": "ARAMBAG (SC)",
+      "state": "National",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "554ddf99-9d4b-4360-8fab-69a9bf61074d",
+      "name": "Gaddigoudar Parvatgouda Chandangouda",
+      "party": "BJP",
+      "constituency": "BAGALKOT",
+      "state": "National",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "3c8e2378-44ee-4200-9a76-1f2a268e4159",
+      "name": "Krishna Devi Shivshanker Patel",
+      "party": "Samajwadi Party",
+      "constituency": "Banda",
+      "state": "Uttar Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "fb8508fe-6109-4b91-8a85-4c228239ec5d",
+      "name": "Raj Kumar Roat",
+      "party": "Bharat Adivasi Party",
+      "constituency": "BANSWARA",
+      "state": "Rajasthan",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "9cee2146-e825-4f9c-a51e-e19c48c289a4",
+      "name": "Sk Nurul Islam",
+      "party": "All India Trinamool Congress",
+      "constituency": "Basirhat",
+      "state": "West Bengal",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "f277bbdd-7ee8-44d7-a4d1-1c646a10e70d",
+      "name": "Damodar Agarwal",
+      "party": "Bharatiya Janata Party",
+      "constituency": "BHILWARA",
+      "state": "Rajasthan",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "b12c8561-c158-4217-9724-2a043094456a",
+      "name": "Ramesh Jigajinagi",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Bijapur",
+      "state": "Karnataka",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "bf214223-cde5-4f32-a8bd-c99e65088e59",
+      "name": "Khan Saumitra",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Bishnupur",
+      "state": "West Bengal",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "5dbce65b-d167-4211-8ec6-8ab5db6f964b",
+      "name": "Jadhav Prataprao Ganpatrao",
+      "party": "Shiv Sena",
+      "constituency": "Buldhana",
+      "state": "Maharashtra",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "0c946242-5df7-40d8-b53c-c3b50e9190d4",
+      "name": "Sumathy T",
+      "party": "DMK",
+      "constituency": "CHENNAI SOUTH",
+      "state": "National",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "bb25b615-d27d-46bf-8f42-a21ff546e28b",
+      "name": "M.K. Vishnuprasad",
+      "party": "Indian National Congress",
+      "constituency": "CUDDALORE",
+      "state": "Tamil Nadu",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "9d6ebc71-8560-4360-bd9b-d76499311c61",
+      "name": "Dr. Ricky Andrew J. Syngkon",
+      "party": "Voice of the People Party",
+      "constituency": "Shillong",
+      "state": "Meghalaya",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "654d3e6a-c11f-4477-9262-9760bdddc636",
+      "name": "Mala Rajya Lakshmi Shah",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Tehri Garhwal",
+      "state": "Uttarakhand",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "d571902f-d33a-42d6-a099-d88210d91ea2",
+      "name": "Annadurai, C.N.",
+      "party": "Dravida Munnetra Kazhagam",
+      "constituency": "TIRUVANNAMALAI",
+      "state": "Tamil Nadu",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "2f247fc1-c2bf-4fbb-9c1c-0c1c499fbf05",
+      "name": "Chudasama Rajeshbhai Naranbhai",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Junagadh",
+      "state": "Gujarat",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "4e7c8876-5f5f-485a-82fe-318037077aa5",
+      "name": "RAVIKUMAR. D",
+      "party": "Viduthalai Chiruthaigal Katchi",
+      "constituency": "VILUPPURAM",
+      "state": "Tamil Nadu",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "47c01f23-59ba-4fb5-9fc1-9df7d21eccda",
+      "name": "Lavu Srikrishna Devarayalu",
+      "party": "Telugu Desam",
+      "constituency": "Narsaraopet",
+      "state": "Andhra Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "0ab4b90c-b54c-4821-b66e-86e6db91f24c",
+      "name": "Kota Srinivas Poojary",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Udupi Chikmagalur",
+      "state": "Karnataka",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "4498da49-f04b-417b-8f93-47a8f49abdda",
+      "name": "Anoop Pradhan Balmiki",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Hathras",
+      "state": "Uttar Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "4f498818-4fe2-4903-8152-53db995741be",
+      "name": "Chavan Vasantrao Balwantrao",
+      "party": "Indian National Congress",
+      "constituency": "Nanded",
+      "state": "Maharashtra",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "425e08ad-a16d-4e0f-a508-14395d034837",
+      "name": "Hemamalini Dharmendra Deol",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Mathura",
+      "state": "Uttar Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "3da3d454-1c14-477e-b425-d203793ae66e",
+      "name": "Janardan Singh \"sigriwal\"",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Maharajganj",
+      "state": "Bihar",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "QUOTED_NICKNAME"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "4f6e1e73-88d1-4a8a-b0f7-5641bc56d5bd",
+      "name": "Akshaya Yadav",
+      "party": "Samajwadi Party",
+      "constituency": "Firozabad",
+      "state": "Uttar Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "23821335-899b-4ba4-8ff1-1669bc5e5876",
+      "name": "JOTHIMANI. S",
+      "party": "Indian National Congress",
+      "constituency": "KARUR",
+      "state": "Tamil Nadu",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "7014a98c-17bc-4bf8-b04e-d985f7b1051a",
+      "name": "Gurumoorthy Maddila",
+      "party": "Yuvajana Sramika Rythu Congress Party",
+      "constituency": "Thirupathi",
+      "state": "Andhra Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "c53ce755-0fb0-4524-bcee-05b2eb4c85f4",
+      "name": "Bandyopadhyay Sudip",
+      "party": "All India Trinamool Congress",
+      "constituency": "Kolkata Uttar",
+      "state": "West Bengal",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "3e3990e8-e7eb-4a5b-a479-fc63df4f26f7",
+      "name": "Chhatra Pal Singh Gangwar",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Bareilly",
+      "state": "Uttar Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "938dfd79-d327-4d7c-aec6-f5481b7a6af7",
+      "name": "C R Patil",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Navsari",
+      "state": "Gujarat",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "e810ca45-6122-47b3-a25a-49ead6af2f7d",
+      "name": "Piyush Goyal",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Mumbai North",
+      "state": "Maharashtra",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "c9c5674a-87ef-4a92-b9bc-162eb99b3b84",
+      "name": "Utkarsh Verma 'madhur'",
+      "party": "Samajwadi Party",
+      "constituency": "Kheri",
+      "state": "Uttar Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "QUOTED_NICKNAME"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "acd72e02-b321-4e27-b07e-e4da3c690c1e",
+      "name": "Gaikwad Varsha Eknath",
+      "party": "Indian National Congress",
+      "constituency": "Mumbai North Central",
+      "state": "Maharashtra",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "40cfb685-46df-4d72-ba05-2854a62a0f52",
+      "name": "Dabhi Bharatsinhji Shankarji",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Patan",
+      "state": "Gujarat",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "c80f8dee-5ee9-40e3-87f6-2e3cf0832ee0",
+      "name": "Venkatesan S",
+      "party": "Communist Party of India  (Marxist)",
+      "constituency": "MADURAI",
+      "state": "Tamil Nadu",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "c222143a-e981-40ab-9dc3-9cc3d481ba6d",
+      "name": "Raj Nath Singh",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Lucknow",
+      "state": "Uttar Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "dd07947a-1389-48cc-b220-3f4ccbc996dc",
+      "name": "Khadse Raksha Nikhil",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Raver",
+      "state": "Maharashtra",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "8710a24b-0a89-46d4-9705-74b2a37ecb42",
+      "name": "Sribharat Mathukumili",
+      "party": "Telugu Desam",
+      "constituency": "Visakhapatnam",
+      "state": "Andhra Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "a003563e-3200-4f58-a33c-d5b313fde88b",
+      "name": "Dr. Kalge Shivaji Bandappa",
+      "party": "Indian National Congress",
+      "constituency": "Latur",
+      "state": "Maharashtra",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "699af5fa-d95b-4793-9234-072cd5f01a95",
+      "name": "Vishal (dada) Prakashbapu Patil",
+      "party": "Independent",
+      "constituency": "Sangli",
+      "state": "Maharashtra",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "1d444f09-2572-4b85-b640-62a4be447c11",
+      "name": "Narayan Das Ahirwar",
+      "party": "Samajwadi Party",
+      "constituency": "Jalaun",
+      "state": "Uttar Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "aef209b7-5262-45cb-8f86-4b3923c459f5",
+      "name": "Shrimant Chh Udayanraje Pratapsinhamaharaj Bhonsle",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Satara",
+      "state": "Maharashtra",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "e3714d35-a952-4395-aca6-eca1a7defbc6",
+      "name": "Chhatrapati Shahu Shahaji",
+      "party": "Indian National Congress",
+      "constituency": "Kolhapur",
+      "state": "Maharashtra",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "4811f0e3-153e-4214-8c33-dbee6a2c2767",
+      "name": "Yogender Chandoliya",
+      "party": "Bharatiya Janata Party",
+      "constituency": "West Delhi",
+      "state": "NCT OF Delhi",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "0064acc5-5ca8-4eae-b18f-add2fd110130",
+      "name": "Amraram",
+      "party": "Communist Party of India  (Marxist)",
+      "constituency": "SIKAR",
+      "state": "Rajasthan",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "ac12fdee-8a15-4e8d-ab49-cbddbb862c1d",
+      "name": "Kirtivardhan Singh",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Gonda",
+      "state": "Uttar Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "b3a76fc3-0b60-4f2e-bfde-3819295108a4",
+      "name": "Vijay Kumar Dubay",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Kushi Nagar",
+      "state": "Uttar Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "dcd4f162-6a31-4135-aa46-841711246b3b",
+      "name": "Ramashankar Rajbhar",
+      "party": "Samajwadi Party",
+      "constituency": "Salempur",
+      "state": "Uttar Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "a61577c7-4c90-436c-8ad5-9c59f0998574",
+      "name": "Daggubati Purandheshwari",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Rajahmundry",
+      "state": "Andhra Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "01fee359-3b91-4c88-acff-24cdff473258",
+      "name": "Gopinath K",
+      "party": "Indian National Congress",
+      "constituency": "KRISHNAGIRI",
+      "state": "Tamil Nadu",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "07e47b33-5076-4b44-a3ec-aa23db995777",
+      "name": "Roop Kumari Choudhary",
+      "party": "Bharatiya Janata Party",
+      "constituency": "MAHASAMUND",
+      "state": "Chhattisgarh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "e6bc3403-3ef0-4adc-abb0-d8f866aa6282",
+      "name": "Pradyut Bordoloi",
+      "party": "Indian National Congress",
+      "constituency": "Nagaon",
+      "state": "Assam",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "08d896d2-f003-42f3-862e-481b2b611ec7",
+      "name": "Bhupathi Raju Srinivasa Varma (B.J.P.VARMA)",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Narsapuram",
+      "state": "Andhra Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "a6ed79c5-07f4-47f3-bd1c-172a0a76cf0a",
+      "name": "Shyamkumar (babalu) Daulat Barve",
+      "party": "Indian National Congress",
+      "constituency": "Ramtek",
+      "state": "Maharashtra",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    },
+    {
+      "id": "591413da-d90b-4dfe-98a9-e0cc996671d2",
+      "name": "Smriti Irani",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Amethi",
+      "state": "Uttar Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1
+    }
+  ]
+}

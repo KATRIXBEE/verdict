@@ -11,16 +11,6 @@ const INPUT_FILE = path.join(__dirname, 'data', 'mps_2024_raw.json');
 const CHECKPOINT_FILE = path.join(__dirname, 'data', 'checkpoints', 'progress.json');
 const FRONTEND_OUTPUT = path.join(__dirname, '..', 'src', 'data', 'all-mps.json');
 
-const MANUAL_POLITICIANS = [
-  'dr. arvind shrivastava',
-  'rameshwar singh',
-  'digvijay rathore',
-  'jayashree venkataraman',
-  'ramesh kumar',
-  'anandita banerjee',
-  'vikramjeet ranawat',
-];
-
 const PARTY_CONFIG = {
   BJP: { abbr: 'BJP', color: '#FF9933' },
   INC: { abbr: 'INC', color: '#0099FF' },
@@ -111,13 +101,6 @@ function main() {
     try {
       const name = (mp.name || '').trim();
       if (!name) continue;
-
-      const normName = normalizeName(name);
-      if (MANUAL_POLITICIANS.includes(normName)) {
-        console.log(`  ⟳ Skipped (Preserved Manual): ${name}`);
-        stats.skipped++;
-        continue;
-      }
 
       const constituency = (mp.constituency || '').trim() || 'General';
       const state = (mp.state || '').trim() || 'National';

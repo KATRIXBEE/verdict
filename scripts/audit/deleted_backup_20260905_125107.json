@@ -1,0 +1,866 @@
+{
+  "timestamp": "2026-09-05T12:51:07.172845",
+  "records_to_delete": [
+    {
+      "id": "neta-8",
+      "name": "Col. Vikramjeet Ranawat (Retd.)",
+      "party": "Mock",
+      "constituency": "Mock",
+      "state": "Mock",
+      "house": "Lok Sabha",
+      "data_source": "mock-politicians.ts",
+      "flags": [
+        "SUSPICIOUS_TITLE:col.",
+        "SUSPICIOUS_TITLE:(retd.)",
+        "NO_MP_CODE",
+        "NO_VERIFICATION_LINKS",
+        "SUSPICIOUS_SOURCE:mock-politicians.ts"
+      ],
+      "flag_count": 5,
+      "rti_wiki_check": {
+        "found": false,
+        "source": "RTI Wiki"
+      },
+      "myneta_local_check": {
+        "found": false,
+        "source": "MyNeta Winners 2024 Local"
+      },
+      "eci_check": {
+        "found": false,
+        "source": "ECI all-mps.json"
+      },
+      "myneta_live_check": {
+        "found": false,
+        "source": "MyNeta.info Live",
+        "status": 404
+      },
+      "verified_via": null,
+      "final_verdict": "LIKELY_FABRICATED"
+    },
+    {
+      "id": "neta-2",
+      "name": "Rameshwar ",
+      "party": "Mock",
+      "constituency": "Mock",
+      "state": "Mock",
+      "house": "Lok Sabha",
+      "data_source": "mock-politicians.ts",
+      "flags": [
+        "NO_MP_CODE",
+        "NO_VERIFICATION_LINKS",
+        "SUSPICIOUS_SOURCE:mock-politicians.ts"
+      ],
+      "flag_count": 3,
+      "rti_wiki_check": {
+        "found": false,
+        "source": "RTI Wiki"
+      },
+      "myneta_local_check": {
+        "found": false,
+        "source": "MyNeta Winners 2024 Local"
+      },
+      "eci_check": {
+        "found": false,
+        "source": "ECI all-mps.json"
+      },
+      "myneta_live_check": {
+        "found": false,
+        "source": "MyNeta.info Live",
+        "status": 404
+      },
+      "verified_via": null,
+      "final_verdict": "LIKELY_FABRICATED"
+    },
+    {
+      "id": "neta-3",
+      "name": "Digvijay ",
+      "party": "Mock",
+      "constituency": "Mock",
+      "state": "Mock",
+      "house": "Lok Sabha",
+      "data_source": "mock-politicians.ts",
+      "flags": [
+        "NO_MP_CODE",
+        "NO_VERIFICATION_LINKS",
+        "SUSPICIOUS_SOURCE:mock-politicians.ts"
+      ],
+      "flag_count": 3,
+      "rti_wiki_check": {
+        "found": false,
+        "source": "RTI Wiki"
+      },
+      "myneta_local_check": {
+        "found": false,
+        "source": "MyNeta Winners 2024 Local"
+      },
+      "eci_check": {
+        "found": false,
+        "source": "ECI all-mps.json"
+      },
+      "myneta_live_check": {
+        "found": false,
+        "source": "MyNeta.info Live",
+        "status": 404
+      },
+      "verified_via": null,
+      "final_verdict": "LIKELY_FABRICATED"
+    },
+    {
+      "id": "neta-4",
+      "name": "Smt. Jayashree Venkataraman",
+      "party": "Mock",
+      "constituency": "Mock",
+      "state": "Mock",
+      "house": "Lok Sabha",
+      "data_source": "mock-politicians.ts",
+      "flags": [
+        "NO_MP_CODE",
+        "NO_VERIFICATION_LINKS",
+        "SUSPICIOUS_SOURCE:mock-politicians.ts"
+      ],
+      "flag_count": 3,
+      "rti_wiki_check": {
+        "found": false,
+        "source": "RTI Wiki"
+      },
+      "myneta_local_check": {
+        "found": false,
+        "source": "MyNeta Winners 2024 Local"
+      },
+      "eci_check": {
+        "found": false,
+        "source": "ECI all-mps.json"
+      },
+      "myneta_live_check": {
+        "found": false,
+        "source": "MyNeta.info Live",
+        "status": 404
+      },
+      "verified_via": null,
+      "final_verdict": "LIKELY_FABRICATED"
+    },
+    {
+      "id": "225a362e-2ad3-4047-a30a-c04dd4f13cd2",
+      "name": "Dr. Arvind Shrivastava",
+      "party": "INC",
+      "constituency": "Varanasi North",
+      "state": "Uttar Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1,
+      "rti_wiki_check": {
+        "found": false,
+        "source": "RTI Wiki"
+      },
+      "myneta_local_check": {
+        "found": false,
+        "source": "MyNeta Winners 2024 Local"
+      },
+      "eci_check": {
+        "found": false,
+        "source": "ECI all-mps.json"
+      },
+      "myneta_live_check": {
+        "found": false,
+        "source": "MyNeta.info Live",
+        "status": 404
+      },
+      "verified_via": null,
+      "final_verdict": "LIKELY_FABRICATED"
+    },
+    {
+      "id": "a982086c-390a-4372-aa95-633069cbc879",
+      "name": "Rameshwar Singh",
+      "party": "BJP",
+      "constituency": "Jaunpur",
+      "state": "Uttar Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1,
+      "rti_wiki_check": {
+        "found": false,
+        "source": "RTI Wiki"
+      },
+      "myneta_local_check": {
+        "found": false,
+        "source": "MyNeta Winners 2024 Local"
+      },
+      "eci_check": {
+        "found": false,
+        "source": "ECI all-mps.json"
+      },
+      "myneta_live_check": {
+        "found": false,
+        "source": "MyNeta.info Live",
+        "status": 404
+      },
+      "verified_via": null,
+      "final_verdict": "LIKELY_FABRICATED"
+    },
+    {
+      "id": "0d044c64-9de0-47ad-be34-c7023d6596a0",
+      "name": "Digvijay Rathore",
+      "party": "BJP",
+      "constituency": "Guna",
+      "state": "Madhya Pradesh",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1,
+      "rti_wiki_check": {
+        "found": false,
+        "source": "RTI Wiki"
+      },
+      "myneta_local_check": {
+        "found": false,
+        "source": "MyNeta Winners 2024 Local"
+      },
+      "eci_check": {
+        "found": false,
+        "source": "ECI all-mps.json"
+      },
+      "myneta_live_check": {
+        "found": false,
+        "source": "MyNeta.info Live",
+        "status": 404
+      },
+      "verified_via": null,
+      "final_verdict": "LIKELY_FABRICATED"
+    },
+    {
+      "id": "945c10fc-f594-4ad1-bad9-b0470b86a0cc",
+      "name": "Jayashree Venkataraman",
+      "party": "DMK",
+      "constituency": "Chennai Central",
+      "state": "Tamil Nadu",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1,
+      "rti_wiki_check": {
+        "found": false,
+        "source": "RTI Wiki"
+      },
+      "myneta_local_check": {
+        "found": false,
+        "source": "MyNeta Winners 2024 Local"
+      },
+      "eci_check": {
+        "found": false,
+        "source": "ECI all-mps.json"
+      },
+      "myneta_live_check": {
+        "found": false,
+        "source": "MyNeta.info Live",
+        "status": 404
+      },
+      "verified_via": null,
+      "final_verdict": "LIKELY_FABRICATED"
+    },
+    {
+      "id": "78bbe3e1-86e8-4e4c-9262-898709f736fb",
+      "name": "Vikramjeet Ranawat",
+      "party": "BJP",
+      "constituency": "Valsad",
+      "state": "Gujarat",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1,
+      "rti_wiki_check": {
+        "found": false,
+        "source": "RTI Wiki"
+      },
+      "myneta_local_check": {
+        "found": false,
+        "source": "MyNeta Winners 2024 Local"
+      },
+      "eci_check": {
+        "found": false,
+        "source": "ECI all-mps.json"
+      },
+      "myneta_live_check": {
+        "found": false,
+        "source": "MyNeta.info Live",
+        "error": "HTTPSConnectionPool(host='www.myneta.info', port=443): Read timed out. (read timeout=12)"
+      },
+      "verified_via": null,
+      "final_verdict": "LIKELY_FABRICATED"
+    },
+    {
+      "id": "d8305e38-d5b6-426d-8fa5-9581ae4eb09e",
+      "name": "Devendra Deshmukh",
+      "party": "BJP",
+      "constituency": "Nagpur",
+      "state": "Maharashtra",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1,
+      "rti_wiki_check": {
+        "found": false,
+        "source": "RTI Wiki"
+      },
+      "myneta_local_check": {
+        "found": false,
+        "source": "MyNeta Winners 2024 Local"
+      },
+      "eci_check": {
+        "found": false,
+        "source": "ECI all-mps.json"
+      },
+      "myneta_live_check": {
+        "found": false,
+        "source": "MyNeta.info Live",
+        "error": "HTTPSConnectionPool(host='www.myneta.info', port=443): Read timed out. (read timeout=12)"
+      },
+      "verified_via": null,
+      "final_verdict": "LIKELY_FABRICATED"
+    },
+    {
+      "id": "38e361f5-39c8-42bc-a121-b59bf0e4d58a",
+      "name": "Supriya Pawar",
+      "party": "NCP",
+      "constituency": "Baramati",
+      "state": "Maharashtra",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1,
+      "rti_wiki_check": {
+        "found": false,
+        "source": "RTI Wiki"
+      },
+      "myneta_local_check": {
+        "found": false,
+        "source": "MyNeta Winners 2024 Local"
+      },
+      "eci_check": {
+        "found": false,
+        "source": "ECI all-mps.json"
+      },
+      "myneta_live_check": {
+        "found": false,
+        "source": "MyNeta.info Live",
+        "status": 404
+      },
+      "verified_via": null,
+      "final_verdict": "LIKELY_FABRICATED"
+    },
+    {
+      "id": "e8b89e7d-e56b-44fc-9c65-b00a9cb90055",
+      "name": "Aditya Kulkarni",
+      "party": "SS-UBT",
+      "constituency": "Thane",
+      "state": "Maharashtra",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1,
+      "rti_wiki_check": {
+        "found": false,
+        "source": "RTI Wiki"
+      },
+      "myneta_local_check": {
+        "found": false,
+        "source": "MyNeta Winners 2024 Local"
+      },
+      "eci_check": {
+        "found": false,
+        "source": "ECI all-mps.json"
+      },
+      "myneta_live_check": {
+        "found": false,
+        "source": "MyNeta.info Live",
+        "error": "HTTPSConnectionPool(host='www.myneta.info', port=443): Read timed out. (read timeout=12)"
+      },
+      "verified_via": null,
+      "final_verdict": "LIKELY_FABRICATED"
+    },
+    {
+      "id": "4cfc78c1-b799-459d-9c0e-eac04472c7f0",
+      "name": "Nitin Gadve",
+      "party": "BJP",
+      "constituency": "Pune",
+      "state": "Maharashtra",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1,
+      "rti_wiki_check": {
+        "found": false,
+        "source": "RTI Wiki"
+      },
+      "myneta_local_check": {
+        "found": false,
+        "source": "MyNeta Winners 2024 Local"
+      },
+      "eci_check": {
+        "found": false,
+        "source": "ECI all-mps.json"
+      },
+      "myneta_live_check": {
+        "found": false,
+        "source": "MyNeta.info Live",
+        "error": "HTTPSConnectionPool(host='www.myneta.info', port=443): Read timed out. (read timeout=12)"
+      },
+      "verified_via": null,
+      "final_verdict": "LIKELY_FABRICATED"
+    },
+    {
+      "id": "b8161066-6084-4f59-bdff-0ea4c266a7c0",
+      "name": "Prakash Ambedkar",
+      "party": "VBA",
+      "constituency": "Akola",
+      "state": "Maharashtra",
+      "house": "Lok Sabha",
+      "data_source": "sqlite_pipeline",
+      "flags": [
+        "NO_MP_CODE"
+      ],
+      "flag_count": 1,
+      "rti_wiki_check": {
+        "found": false,
+        "source": "RTI Wiki"
+      },
+      "myneta_local_check": {
+        "found": false,
+        "source": "MyNeta Winners 2024 Local"
+      },
+      "eci_check": {
+        "found": false,
+        "source": "ECI all-mps.json"
+      },
+      "myneta_live_check": {
+        "found": false,
+        "source": "MyNeta.info Live",
+        "status": 404
+      },
+      "verified_via": null,
+      "final_verdict": "LIKELY_FABRICATED"
+    }
+  ],
+  "supabase_records": [],
+  "sqlite_records": [
+    {
+      "id": "225a362e-2ad3-4047-a30a-c04dd4f13cd2",
+      "name": "Dr. Arvind Shrivastava",
+      "name_variants": "[\"Dr. Arvind Shrivastava\"]",
+      "slug": "arvind-shrivastava-uttarpradesh",
+      "photo_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+      "date_of_birth": null,
+      "gender": "Male",
+      "current_party": "INC",
+      "current_constituency": "Varanasi North",
+      "current_state": "Uttar Pradesh",
+      "current_house": "Lok Sabha",
+      "profession": null,
+      "education": "Post Graduate",
+      "education_verification_status": "Unverified",
+      "wikipedia_url": null,
+      "wikipedia_summary": null,
+      "official_website": null,
+      "social_twitter": null,
+      "social_facebook": null,
+      "verdict_score": 5,
+      "data_completeness_percent": 66,
+      "data_sources": "[\"Lok Dhaba (Ashoka TCPD)\"]",
+      "needs_review": 1,
+      "last_updated": "2026-08-23 17:19:45.197972",
+      "created_at": "2026-08-20 17:02:37.817750",
+      "portfolio_history": null,
+      "email": null,
+      "mp_code": null,
+      "attendance_percent": null,
+      "questions_asked": null,
+      "debates_count": null,
+      "criminal_case_count": null,
+      "worst_case_severity": null,
+      "party_switch_count": 0,
+      "asset_growth_percent": null,
+      "mplads_allocated": 122513571,
+      "mplads_utilised": 1300000,
+      "mplads_utilisation_percent": 1.1
+    },
+    {
+      "id": "a982086c-390a-4372-aa95-633069cbc879",
+      "name": "Rameshwar Singh",
+      "name_variants": "[\"Rameshwar Singh\"]",
+      "slug": "rameshwar-singh-uttarpradesh",
+      "photo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Maharajadbg.jpg/400px-Maharajadbg.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "date_of_birth": null,
+      "gender": "Male",
+      "current_party": "BJP",
+      "current_constituency": "Jaunpur",
+      "current_state": "Uttar Pradesh",
+      "current_house": "Lok Sabha",
+      "profession": null,
+      "education": "Graduate",
+      "education_verification_status": "Unverified",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rameshwar_Singh",
+      "wikipedia_summary": "Rameshwar Singh Thakur was a Maithali Brahmin maharaja of Darbhanga in the Mithila region from 1898 to his death. He became maharaja on the death of his elder brother Lakshmeshwar Singh, who died without issue. He was appointed to the Indian Civil Service in 1878, serving as assistant magistrate successively at Darbhanga, Chhapra, and Bhagalpur. He was exempted from attendance at the Civil Courts and was appointed a Member of the Bengal Legislative Council in 1885. He was the first Indian appointed to the lieutenant governor's Executive Council.",
+      "official_website": null,
+      "social_twitter": null,
+      "social_facebook": null,
+      "verdict_score": 5.5,
+      "data_completeness_percent": 73,
+      "data_sources": "[\"Lok Dhaba (Ashoka TCPD)\", \"Wikipedia\"]",
+      "needs_review": 1,
+      "last_updated": "2026-08-23 17:19:45.235444",
+      "created_at": "2026-08-20 17:02:37.833944",
+      "portfolio_history": null,
+      "email": null,
+      "mp_code": null,
+      "attendance_percent": null,
+      "questions_asked": null,
+      "debates_count": null,
+      "criminal_case_count": null,
+      "worst_case_severity": null,
+      "party_switch_count": 0,
+      "asset_growth_percent": null,
+      "mplads_allocated": null,
+      "mplads_utilised": null,
+      "mplads_utilisation_percent": null
+    },
+    {
+      "id": "0d044c64-9de0-47ad-be34-c7023d6596a0",
+      "name": "Digvijay Rathore",
+      "name_variants": "[\"Digvijay Rathore\"]",
+      "slug": "digvijay-rathore-madhyapradesh",
+      "photo_url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
+      "date_of_birth": null,
+      "gender": "Male",
+      "current_party": "BJP",
+      "current_constituency": "Guna",
+      "current_state": "Madhya Pradesh",
+      "current_house": "Lok Sabha",
+      "profession": null,
+      "education": "Doctorate",
+      "education_verification_status": "Verified",
+      "wikipedia_url": null,
+      "wikipedia_summary": null,
+      "official_website": null,
+      "social_twitter": null,
+      "social_facebook": null,
+      "verdict_score": 6,
+      "data_completeness_percent": 66,
+      "data_sources": "[\"Lok Dhaba (Ashoka TCPD)\"]",
+      "needs_review": 1,
+      "last_updated": "2026-08-23 17:19:45.191967",
+      "created_at": "2026-08-20 17:02:37.842451",
+      "portfolio_history": null,
+      "email": null,
+      "mp_code": null,
+      "attendance_percent": null,
+      "questions_asked": null,
+      "debates_count": null,
+      "criminal_case_count": null,
+      "worst_case_severity": null,
+      "party_switch_count": 0,
+      "asset_growth_percent": null,
+      "mplads_allocated": 53816600,
+      "mplads_utilised": 22594000,
+      "mplads_utilisation_percent": 42
+    },
+    {
+      "id": "945c10fc-f594-4ad1-bad9-b0470b86a0cc",
+      "name": "Jayashree Venkataraman",
+      "name_variants": "[\"Jayashree Venkataraman\"]",
+      "slug": "jayashree-venkataraman-tamilnadu",
+      "photo_url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80",
+      "date_of_birth": null,
+      "gender": "Female",
+      "current_party": "DMK",
+      "current_constituency": "Chennai Central",
+      "current_state": "Tamil Nadu",
+      "current_house": "Lok Sabha",
+      "profession": null,
+      "education": "Post Graduate",
+      "education_verification_status": "Unverified",
+      "wikipedia_url": null,
+      "wikipedia_summary": null,
+      "official_website": null,
+      "social_twitter": null,
+      "social_facebook": null,
+      "verdict_score": 5.5,
+      "data_completeness_percent": 66,
+      "data_sources": "[\"Lok Dhaba (Ashoka TCPD)\"]",
+      "needs_review": 1,
+      "last_updated": "2026-08-23 17:19:45.229759",
+      "created_at": "2026-08-20 17:02:37.849075",
+      "portfolio_history": null,
+      "email": null,
+      "mp_code": null,
+      "attendance_percent": null,
+      "questions_asked": null,
+      "debates_count": null,
+      "criminal_case_count": null,
+      "worst_case_severity": null,
+      "party_switch_count": 0,
+      "asset_growth_percent": null,
+      "mplads_allocated": null,
+      "mplads_utilised": null,
+      "mplads_utilisation_percent": null
+    },
+    {
+      "id": "78bbe3e1-86e8-4e4c-9262-898709f736fb",
+      "name": "Vikramjeet Ranawat",
+      "name_variants": "[\"Vikramjeet Ranawat\"]",
+      "slug": "vikramjeet-ranawat-gujarat",
+      "photo_url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80",
+      "date_of_birth": null,
+      "gender": "Male",
+      "current_party": "BJP",
+      "current_constituency": "Valsad",
+      "current_state": "Gujarat",
+      "current_house": "Lok Sabha",
+      "profession": null,
+      "education": "Graduate",
+      "education_verification_status": "Unverified",
+      "wikipedia_url": null,
+      "wikipedia_summary": null,
+      "official_website": null,
+      "social_twitter": null,
+      "social_facebook": null,
+      "verdict_score": 5.5,
+      "data_completeness_percent": 66,
+      "data_sources": "[\"Lok Dhaba (Ashoka TCPD)\"]",
+      "needs_review": 1,
+      "last_updated": "2026-08-23 17:19:45.224730",
+      "created_at": "2026-08-20 17:02:37.872386",
+      "portfolio_history": null,
+      "email": null,
+      "mp_code": null,
+      "attendance_percent": null,
+      "questions_asked": null,
+      "debates_count": null,
+      "criminal_case_count": null,
+      "worst_case_severity": null,
+      "party_switch_count": 0,
+      "asset_growth_percent": null,
+      "mplads_allocated": null,
+      "mplads_utilised": null,
+      "mplads_utilisation_percent": null
+    },
+    {
+      "id": "d8305e38-d5b6-426d-8fa5-9581ae4eb09e",
+      "name": "Devendra Deshmukh",
+      "name_variants": "[\"Devendra Deshmukh\"]",
+      "slug": "devendra-deshmukh-maharashtra",
+      "photo_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+      "date_of_birth": null,
+      "gender": "Male",
+      "current_party": "BJP",
+      "current_constituency": "Nagpur",
+      "current_state": "Maharashtra",
+      "current_house": "Lok Sabha",
+      "profession": null,
+      "education": "Post Graduate",
+      "education_verification_status": "Unverified",
+      "wikipedia_url": null,
+      "wikipedia_summary": null,
+      "official_website": null,
+      "social_twitter": null,
+      "social_facebook": null,
+      "verdict_score": 5.5,
+      "data_completeness_percent": 66,
+      "data_sources": "[\"Lok Dhaba (Ashoka TCPD)\"]",
+      "needs_review": 1,
+      "last_updated": "2026-08-23 17:19:45.253624",
+      "created_at": "2026-08-20 17:02:37.883855",
+      "portfolio_history": null,
+      "email": null,
+      "mp_code": null,
+      "attendance_percent": null,
+      "questions_asked": null,
+      "debates_count": null,
+      "criminal_case_count": null,
+      "worst_case_severity": null,
+      "party_switch_count": 0,
+      "asset_growth_percent": null,
+      "mplads_allocated": null,
+      "mplads_utilised": null,
+      "mplads_utilisation_percent": null
+    },
+    {
+      "id": "38e361f5-39c8-42bc-a121-b59bf0e4d58a",
+      "name": "Supriya Pawar",
+      "name_variants": "[\"Supriya Pawar\"]",
+      "slug": "supriya-pawar-maharashtra",
+      "photo_url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
+      "date_of_birth": null,
+      "gender": "Female",
+      "current_party": "NCP",
+      "current_constituency": "Baramati",
+      "current_state": "Maharashtra",
+      "current_house": "Lok Sabha",
+      "profession": null,
+      "education": "Graduate",
+      "education_verification_status": "Unverified",
+      "wikipedia_url": null,
+      "wikipedia_summary": null,
+      "official_website": null,
+      "social_twitter": null,
+      "social_facebook": null,
+      "verdict_score": 5.5,
+      "data_completeness_percent": 66,
+      "data_sources": "[\"Lok Dhaba (Ashoka TCPD)\"]",
+      "needs_review": 1,
+      "last_updated": "2026-08-23 17:19:45.208981",
+      "created_at": "2026-08-20 17:02:37.888855",
+      "portfolio_history": null,
+      "email": null,
+      "mp_code": null,
+      "attendance_percent": null,
+      "questions_asked": null,
+      "debates_count": null,
+      "criminal_case_count": null,
+      "worst_case_severity": null,
+      "party_switch_count": 0,
+      "asset_growth_percent": null,
+      "mplads_allocated": null,
+      "mplads_utilised": null,
+      "mplads_utilisation_percent": null
+    },
+    {
+      "id": "e8b89e7d-e56b-44fc-9c65-b00a9cb90055",
+      "name": "Aditya Kulkarni",
+      "name_variants": "[\"Aditya Kulkarni\"]",
+      "slug": "aditya-kulkarni-maharashtra",
+      "photo_url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80",
+      "date_of_birth": null,
+      "gender": "Male",
+      "current_party": "SS-UBT",
+      "current_constituency": "Thane",
+      "current_state": "Maharashtra",
+      "current_house": "Lok Sabha",
+      "profession": null,
+      "education": "Graduate",
+      "education_verification_status": "Unverified",
+      "wikipedia_url": null,
+      "wikipedia_summary": null,
+      "official_website": null,
+      "social_twitter": null,
+      "social_facebook": null,
+      "verdict_score": 7.5,
+      "data_completeness_percent": 66,
+      "data_sources": "[\"Lok Dhaba (Ashoka TCPD)\"]",
+      "needs_review": 1,
+      "last_updated": "2026-08-23 17:19:45.258132",
+      "created_at": "2026-08-20 17:02:37.895990",
+      "portfolio_history": null,
+      "email": null,
+      "mp_code": null,
+      "attendance_percent": 92,
+      "questions_asked": 104,
+      "debates_count": 19,
+      "criminal_case_count": null,
+      "worst_case_severity": null,
+      "party_switch_count": 0,
+      "asset_growth_percent": null,
+      "mplads_allocated": null,
+      "mplads_utilised": null,
+      "mplads_utilisation_percent": null
+    },
+    {
+      "id": "4cfc78c1-b799-459d-9c0e-eac04472c7f0",
+      "name": "Nitin Gadve",
+      "name_variants": "[\"Nitin Gadve\"]",
+      "slug": "nitin-gadve-maharashtra",
+      "photo_url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
+      "date_of_birth": null,
+      "gender": "Male",
+      "current_party": "BJP",
+      "current_constituency": "Pune",
+      "current_state": "Maharashtra",
+      "current_house": "Lok Sabha",
+      "profession": null,
+      "education": "Post Graduate",
+      "education_verification_status": "Unverified",
+      "wikipedia_url": null,
+      "wikipedia_summary": null,
+      "official_website": null,
+      "social_twitter": null,
+      "social_facebook": null,
+      "verdict_score": 5.5,
+      "data_completeness_percent": 66,
+      "data_sources": "[\"Lok Dhaba (Ashoka TCPD)\"]",
+      "needs_review": 1,
+      "last_updated": "2026-08-23 17:19:45.215511",
+      "created_at": "2026-08-20 17:02:37.902009",
+      "portfolio_history": null,
+      "email": null,
+      "mp_code": null,
+      "attendance_percent": null,
+      "questions_asked": null,
+      "debates_count": null,
+      "criminal_case_count": null,
+      "worst_case_severity": null,
+      "party_switch_count": 0,
+      "asset_growth_percent": null,
+      "mplads_allocated": null,
+      "mplads_utilised": null,
+      "mplads_utilisation_percent": null
+    },
+    {
+      "id": "b8161066-6084-4f59-bdff-0ea4c266a7c0",
+      "name": "Prakash Ambedkar",
+      "name_variants": "[\"Prakash Ambedkar\"]",
+      "slug": "prakash-ambedkar-maharashtra",
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Prakash_Yashwant_Ambedkar.jpg/400px-Prakash_Yashwant_Ambedkar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "date_of_birth": null,
+      "gender": "Male",
+      "current_party": "VBA",
+      "current_constituency": "Akola",
+      "current_state": "Maharashtra",
+      "current_house": "Lok Sabha",
+      "profession": null,
+      "education": "Graduate Professional",
+      "education_verification_status": "Unverified",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prakash_Yashwant_Ambedkar",
+      "wikipedia_summary": "Prakash Yashwant Ambedkar, popularly known as Balasaheb Ambedkar, is an Indian politician, writer and lawyer. He is the president of Vanchit Bahujan Agadi political party. He is a three-time Member of Parliament. He was a member of the 12th and 13th Lok Sabha of India representing the Lok Sabha constituency of Akola, Maharashtra. He has served in both houses of the Indian Parliament.",
+      "official_website": null,
+      "social_twitter": null,
+      "social_facebook": null,
+      "verdict_score": 5.5,
+      "data_completeness_percent": 73,
+      "data_sources": "[\"Lok Dhaba (Ashoka TCPD)\", \"Wikipedia\"]",
+      "needs_review": 1,
+      "last_updated": "2026-08-23 17:19:45.241449",
+      "created_at": "2026-08-20 17:02:37.907009",
+      "portfolio_history": null,
+      "email": null,
+      "mp_code": null,
+      "attendance_percent": null,
+      "questions_asked": null,
+      "debates_count": null,
+      "criminal_case_count": null,
+      "worst_case_severity": null,
+      "party_switch_count": 0,
+      "asset_growth_percent": null,
+      "mplads_allocated": null,
+      "mplads_utilised": null,
+      "mplads_utilisation_percent": null
+    }
+  ]
+}
