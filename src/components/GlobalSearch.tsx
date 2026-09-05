@@ -97,7 +97,7 @@ export function GlobalSearch() {
   return (
     <div
       ref={containerRef}
-      className={`relative font-mono text-xs ${
+      className={`navbar-search relative font-mono text-xs ${
         mobileExpanded ? "w-full" : "w-auto"
       }`}
     >
@@ -165,7 +165,7 @@ export function GlobalSearch() {
 
       {/* Desktop Search Input Box */}
       <div
-        className="hidden md:flex h-10 lg:h-11 min-w-[240px] lg:min-w-[280px] items-center bg-surface border-2.5 border-ink shadow-hard-xs focus-within:shadow-hard-sm transition-all"
+        className="navbar-search hidden md:flex h-10 lg:h-11 min-w-[140px] max-w-[280px] w-full flex-shrink items-center bg-surface border-2.5 border-ink shadow-hard-xs focus-within:shadow-hard-sm transition-all"
       >
         <div className="pl-2.5 pr-1.5 text-gray-500 flex items-center justify-center">
           <Search className="w-3.5 h-3.5 stroke-[2.5]" />
@@ -183,7 +183,7 @@ export function GlobalSearch() {
             }
           }}
           placeholder='Search neta... (Press "/")'
-          className="navbar-search-input w-full bg-transparent py-1.5 px-1.5 text-xs font-bold text-ink placeholder:text-gray-400 focus:outline-none"
+          className="navbar-search-input w-full bg-transparent py-1.5 px-1.5 text-xs font-bold text-ink placeholder:text-gray-400 focus:outline-none min-w-0"
         />
 
         {query && (
