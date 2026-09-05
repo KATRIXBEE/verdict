@@ -17,6 +17,7 @@ import { TrendingUp, AlertTriangle, ShieldCheck, DollarSign, ExternalLink, Info 
 import { AssetDeclaration } from "@/types";
 import { formatINR } from "@/lib/utils";
 import BrutalistCard from "@/components/ui/BrutalistCard";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 interface AssetGrowthChartProps {
   declarations: AssetDeclaration[];
@@ -27,6 +28,7 @@ export default function AssetGrowthChart({
   declarations,
   politicianName,
 }: AssetGrowthChartProps) {
+  const isMobile = useIsMobile();
   const [chartType, setChartType] = useState<"stacked" | "total">("stacked");
 
   const sortedDeclarations = [...declarations].sort((a, b) => a.electionYear - b.electionYear);
@@ -61,18 +63,18 @@ export default function AssetGrowthChart({
     if (active && payload && payload.length) {
       const data = payload[0].payload;
       return (
-        <div className="bg-surface border-2.5 border-ink p-3 shadow-hard-md font-mono text-xs space-y-1">
+        <div className="bg-surface border-2.5 border-ink p-2.5 shadow-hard-md font-mono text-xs space-y-1 max-w-[220px] pointer-events-none z-50 break-words">
           <div className="font-extrabold uppercase text-ink border-b border-ink pb-1">
             ELECTION YEAR: {label}
           </div>
           <div className="text-gray-800">
-            <strong>Movable Assets:</strong> {formatINR(data.rawMovable)}
+            <strong>Movable:</strong> {formatINR(data.rawMovable)}
           </div>
           <div className="text-gray-800">
-            <strong>Immovable Assets:</strong> {formatINR(data.rawImmovable)}
+            <strong>Immovable:</strong> {formatINR(data.rawImmovable)}
           </div>
           <div className="text-ink font-bold border-t border-gray-300 pt-1">
-            <strong>Total Assets:</strong> {formatINR(data.rawTotal)}
+            <strong>Total:</strong> {formatINR(data.rawTotal)}
           </div>
           <div className="text-brand-red">
             <strong>Liabilities:</strong> {formatINR(data.rawLiabilities)}
@@ -80,7 +82,7 @@ export default function AssetGrowthChart({
           {data.isOutlier && (
             <div className="bg-brand-red text-white text-[10px] font-bold p-1 mt-1 inline-flex items-center gap-1">
               <AlertTriangle className="w-3 h-3 stroke-[2.5]" aria-hidden="true" />
-              <span>UNUSUAL GROWTH OUTLIER (&gt;500%)</span>
+              <span>UNUSUAL GROWTH (&gt;500%)</span>
             </div>
           )}
         </div>
@@ -150,21 +152,25 @@ export default function AssetGrowthChart({
         )}
 
         {/* Recharts Visualization */}
-        <div className="h-64 sm:h-72 w-full bg-surface border-2 border-ink p-3 pt-4 shadow-hard-xs">
+        <div className={`w-full ${isMobile ? "h-60" : "h-64 sm:h-72"} bg-surface border-2 border-ink p-2 sm:p-3 pt-4 shadow-hard-xs`}>
           <ResponsiveContainer width="100%" height="100%">
             {chartType === "stacked" ? (
               <BarChart data={chartData} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e5e5e5" />
-                <XAxis dataKey="year" stroke="#111111" fontSize={12} fontWeight={700} />
+                <XAxis dataKey="year" stroke="#111111" fontSize={isMobile ? 10 : 12} fontWeight={700} />
                 <YAxis
                   stroke="#111111"
-                  fontSize={11}
+                  fontSize={isMobile ? 9 : 11}
                   tickFormatter={(val) => `₹${val} Cr`}
                   fontWeight={600}
                 />
-                <Tooltip content={<CustomTooltip />} />
+                <Tooltip 
+                  content={<CustomTooltip />} 
+                  wrapperStyle={{ zIndex: 100, outline: "none" }}
+                  isAnimationActive={false}
+                />
                 <Legend
-                  wrapperStyle={{ fontSize: 11, fontWeight: 700, paddingTop: 8 }}
+                  wrapperStyle={{ fontSize: isMobile ? 9 : 11, fontWeight: 700, paddingTop: 8 }}
                   formatter={(val) =>
                     val === "movableCr"
                       ? "Movable Assets (Cr)"
@@ -180,14 +186,18 @@ export default function AssetGrowthChart({
             ) : (
               <AreaChart data={chartData} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e5e5e5" />
-                <XAxis dataKey="year" stroke="#111111" fontSize={12} fontWeight={700} />
+                <XAxis dataKey="year" stroke="#111111" fontSize={isMobile ? 10 : 12} fontWeight={700} />
                 <YAxis
                   stroke="#111111"
-                  fontSize={11}
+                  fontSize={isMobile ? 9 : 11}
                   tickFormatter={(val) => `₹${val} Cr`}
                   fontWeight={600}
                 />
-                <Tooltip content={<CustomTooltip />} />
+                <Tooltip 
+                  content={<CustomTooltip />} 
+                  wrapperStyle={{ zIndex: 100, outline: "none" }}
+                  isAnimationActive={false}
+                />
                 <Area
                   type="monotone"
                   dataKey="totalCr"

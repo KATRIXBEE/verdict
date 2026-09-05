@@ -36,8 +36,75 @@ import { BUDGET_2024, MINISTER_SALARIES, SAMPLE_BUDGET_BILLS } from "@/data/budg
 import { formatINR } from "@/lib/utils";
 import BrutalistCard from "@/components/ui/BrutalistCard";
 import BrutalistButton from "@/components/ui/BrutalistButton";
+import { useIsMobile } from "@/hooks/useIsMobile";
+
+// Custom tooltip component that is mobile-safe
+function CustomTooltip({ active, payload }: any) {
+  if (!active || !payload || !payload.length) return null;
+  const data = payload[0];
+  const color = data.payload?.color || data.payload?.fill || "#FF4545";
+  const amount = data.payload?.amount_crore ?? data.payload?.amount;
+
+  return (
+    <div
+      style={{
+        background: "#1A1A1A",
+        border: "1px solid #FF4545",
+        padding: "8px 12px",
+        fontSize: "11px",
+        color: "#FFFFFF",
+        fontFamily: "monospace",
+        maxWidth: "200px", // CRITICAL: cap width
+        wordWrap: "break-word",
+        pointerEvents: "none",
+        zIndex: 100,
+      }}
+    >
+      <div style={{ fontWeight: "bold", color }}>
+        {data.name}
+      </div>
+      <div>
+        {data.payload?.percent}% ({amount ? `₹${amount.toLocaleString("en-IN")} Cr` : ""})
+      </div>
+    </div>
+  );
+}
+
+// Mobile-safe tooltip for minister salaries comparison
+function SalaryTooltip({ active, payload }: any) {
+  if (!active || !payload || !payload.length) return null;
+  const item = payload[0];
+  const p = item.payload;
+  return (
+    <div
+      style={{
+        background: "#1A1A1A",
+        border: "1px solid #00E5FF",
+        padding: "8px 12px",
+        fontSize: "11px",
+        color: "#FFFFFF",
+        fontFamily: "monospace",
+        maxWidth: "200px",
+        wordWrap: "break-word",
+        pointerEvents: "none",
+        zIndex: 100,
+      }}
+    >
+      <div style={{ fontWeight: "bold", color: p.country === "India" ? "#FF4336" : "#70D6FF" }}>
+        {p.country} — {p.role}
+      </div>
+      <div>
+        ${Number(item.value).toLocaleString("en-US")} / yr
+      </div>
+      <div style={{ fontSize: "10px", color: "#AAAAAA" }}>
+        GDP/Capita: ${p.gdp_per_capita_usd?.toLocaleString("en-US")}
+      </div>
+    </div>
+  );
+}
 
 export default function TaxMoneyPage() {
+  const isMobile = useIsMobile();
   const [selectedMinistry, setSelectedMinistry] = useState<string | null>(null);
 
   const activeAlloc = BUDGET_2024.top_allocations.find((a) => a.ministry === selectedMinistry) || BUDGET_2024.top_allocations[0];
@@ -104,15 +171,15 @@ export default function TaxMoneyPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Donut / Pie Chart */}
-          <div className="lg:col-span-6 h-80 w-full relative">
-            <ResponsiveContainer width="100%" height="100%">
+          <div className={`lg:col-span-6 ${isMobile ? "h-[260px]" : "h-[380px]"} w-full relative`}>
+            <ResponsiveContainer width="100%" height={isMobile ? 260 : 380}>
               <PieChart>
                 <Pie
                   data={BUDGET_2024.top_allocations}
                   cx="50%"
                   cy="50%"
-                  innerRadius={70}
-                  outerRadius={120}
+                  innerRadius={isMobile ? 55 : 90}
+                  outerRadius={isMobile ? 90 : 150}
                   paddingAngle={2}
                   dataKey="percent"
                   nameKey="ministry"
@@ -129,19 +196,20 @@ export default function TaxMoneyPage() {
                   ))}
                 </Pie>
                 <RechartsTooltip
-                  contentStyle={{ backgroundColor: "#1A1A1A", border: "2px solid #000", color: "#FFF", fontFamily: "monospace", fontSize: "12px" }}
-                  formatter={(value: any, name: any) => [`${value}% (₹${BUDGET_2024.top_allocations.find(a => a.ministry === name)?.amount_crore.toLocaleString("en-IN")} Cr)`, name]}
+                  content={<CustomTooltip />}
+                  wrapperStyle={{ zIndex: 100, outline: "none" }}
+                  isAnimationActive={false}
                 />
               </PieChart>
             </ResponsiveContainer>
             <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
               <span className="text-[10px] font-bold text-gray-500 uppercase">TOTAL SIZE</span>
-              <span className="font-display font-black text-lg text-ink">₹47.94 L CR</span>
+              <span className={`font-display font-black ${isMobile ? "text-base" : "text-lg"} text-ink`}>₹47.94 L CR</span>
             </div>
           </div>
 
           {/* Allocation Details Card */}
-          <div className="lg:col-span-6 bg-canvas border-2.5 border-ink p-5 shadow-hard-md space-y-4">
+          <div className="lg:col-span-6 bg-canvas border-2.5 border-ink p-5 shadow-hard-md space-y-4 mt-5 lg:mt-0">
             <div className="flex items-center justify-between border-b-2 border-ink pb-2">
               <div className="flex items-center space-x-2">
                 <span className="w-3 h-3 rounded-full border border-black" style={{ backgroundColor: activeAlloc.color }} />
@@ -238,19 +306,20 @@ export default function TaxMoneyPage() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div className="lg:col-span-7 h-80 w-full">
+          <div className={`lg:col-span-7 ${isMobile ? "h-[280px]" : "h-80"} w-full`}>
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
                 data={MINISTER_SALARIES.comparison}
                 layout="vertical"
-                margin={{ top: 10, right: 30, left: 40, bottom: 10 }}
+                margin={{ top: 10, right: 30, left: isMobile ? 10 : 40, bottom: 10 }}
               >
                 <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
                 <XAxis type="number" tick={{ fontSize: 10, fill: "#000" }} unit="$" />
-                <YAxis dataKey="country" type="category" tick={{ fontSize: 11, fill: "#000", fontWeight: "bold" }} width={80} />
+                <YAxis dataKey="country" type="category" tick={{ fontSize: isMobile ? 9 : 11, fill: "#000", fontWeight: "bold" }} width={isMobile ? 65 : 80} />
                 <RechartsTooltip 
-                  contentStyle={{ backgroundColor: "#1A1A1A", border: "2px solid #000", color: "#FFF", fontFamily: "monospace", fontSize: "12px" }}
-                  formatter={(value: any, name: any, item: any) => [`$${Number(value).toLocaleString("en-US")} / yr (GDP/Capita: $${item.payload.gdp_per_capita_usd.toLocaleString("en-US")})`, item.payload.role]}
+                  content={<SalaryTooltip />}
+                  wrapperStyle={{ zIndex: 100, outline: "none" }}
+                  isAnimationActive={false}
                 />
                 <Bar dataKey="annual_usd" fill="#00E5FF" stroke="#000" strokeWidth={1.5}>
                   {MINISTER_SALARIES.comparison.map((entry, index) => (

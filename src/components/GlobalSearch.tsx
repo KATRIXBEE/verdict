@@ -109,27 +109,70 @@ export function GlobalSearch() {
             setMobileExpanded(true);
             setTimeout(() => inputRef.current?.focus(), 50);
           }}
-          className="md:hidden p-2 bg-surface border-2 border-ink text-ink shadow-hard-xs hover:bg-brand-yellow transition-colors flex items-center justify-center"
+          className="md:hidden p-2 min-h-[40px] min-w-[40px] bg-surface border-2 border-ink text-ink shadow-hard-xs hover:bg-brand-yellow transition-colors flex items-center justify-center"
           aria-label="Open search input"
         >
           <Search className="w-4 h-4 stroke-[2.5]" />
         </button>
       )}
 
-      {/* Search Input Box */}
+      {/* Mobile Full-Width Overlay Search Box (Prevents Navbar Overflow/Overlap) */}
+      {mobileExpanded && (
+        <div className="md:hidden fixed inset-x-2 top-2 z-[1001] h-10 flex items-center bg-surface border-2.5 border-ink shadow-hard-md">
+          <div className="pl-3 pr-2 text-gray-500 flex items-center justify-center">
+            <Search className="w-4 h-4 stroke-[2.5]" />
+          </div>
+          <input
+            ref={inputRef}
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            onFocus={() => query.trim().length >= 2 && setIsOpen(true)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && query.trim().length >= 2) {
+                handleNavigate(`/search?q=${encodeURIComponent(query.trim())}`);
+              }
+            }}
+            placeholder='Search neta by name, party...'
+            className="navbar-search-input w-full bg-transparent h-full py-2 px-1 text-xs font-bold text-ink placeholder:text-gray-400 focus:outline-none"
+          />
+          {query && (
+            <button
+              type="button"
+              onClick={() => {
+                setQuery("");
+                inputRef.current?.focus();
+              }}
+              className="p-2 text-gray-500 hover:text-brand-red"
+              aria-label="Clear query"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          )}
+          <button
+            type="button"
+            onClick={() => {
+              setMobileExpanded(false);
+              setIsOpen(false);
+            }}
+            className="px-2.5 h-full bg-surface-muted hover:bg-brand-red hover:text-white border-l-2 border-ink text-ink font-bold text-xs flex items-center justify-center transition-colors"
+            aria-label="Close search"
+          >
+            <X className="w-4 h-4 stroke-[2.5]" />
+          </button>
+        </div>
+      )}
+
+      {/* Desktop Search Input Box */}
       <div
-        className={`${
-          mobileExpanded
-            ? "flex w-full min-w-[260px] sm:min-w-[320px]"
-            : "hidden md:flex min-w-[240px] lg:min-w-[280px]"
-        } items-center bg-surface border-2.5 border-ink shadow-hard-xs focus-within:shadow-hard-sm transition-all`}
+        className="hidden md:flex h-10 lg:h-11 min-w-[240px] lg:min-w-[280px] items-center bg-surface border-2.5 border-ink shadow-hard-xs focus-within:shadow-hard-sm transition-all"
       >
         <div className="pl-2.5 pr-1.5 text-gray-500 flex items-center justify-center">
           <Search className="w-3.5 h-3.5 stroke-[2.5]" />
         </div>
 
         <input
-          ref={inputRef}
+          ref={!mobileExpanded ? inputRef : undefined}
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -140,7 +183,7 @@ export function GlobalSearch() {
             }
           }}
           placeholder='Search neta... (Press "/")'
-          className="w-full bg-transparent py-1.5 px-1.5 text-xs font-bold text-ink placeholder:text-gray-400 focus:outline-none"
+          className="navbar-search-input w-full bg-transparent py-1.5 px-1.5 text-xs font-bold text-ink placeholder:text-gray-400 focus:outline-none"
         />
 
         {query && (
@@ -151,6 +194,7 @@ export function GlobalSearch() {
               inputRef.current?.focus();
             }}
             className="p-1 text-gray-500 hover:text-brand-red mr-1"
+            aria-label="Clear query"
           >
             <X className="w-3.5 h-3.5" />
           </button>
@@ -163,7 +207,7 @@ export function GlobalSearch() {
 
       {/* Autocomplete Dropdown */}
       {isOpen && results.length > 0 && (
-        <div className="absolute top-full left-0 right-0 mt-1 bg-surface border-2.5 border-ink shadow-hard-xl z-50 max-h-[380px] overflow-y-auto min-w-[280px] sm:min-w-[320px]">
+        <div className="absolute top-full right-0 mt-1 bg-surface border-2.5 border-ink shadow-hard-xl z-[1002] max-h-[380px] overflow-y-auto w-[calc(100vw-24px)] md:w-full md:min-w-[320px] max-w-[420px]">
           <div className="bg-ink text-white px-3 py-1.5 text-[10px] font-bold uppercase flex justify-between items-center">
             <span>RESULTS ({results.length})</span>
             {isLoading && <span className="text-brand-yellow">SEARCHING...</span>}

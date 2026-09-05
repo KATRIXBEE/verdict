@@ -209,3 +209,26 @@ nav a:hover::after {
   scrollbar-width: thin;
   scrollbar-color: #FF4336 #EBE8E1;
 }
+
+/* =============================================
+   Mobile Responsiveness: Sticky Navbar & Page Layout
+   ============================================= */
+header, .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  header, .navbar {
+    min-height: 56px;
+  }
+  .navbar-search-input {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  main, .page-content {
+    padding-bottom: 80px;
+  }
+}
+

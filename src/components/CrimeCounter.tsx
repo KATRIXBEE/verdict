@@ -141,7 +141,38 @@ const NCRB_DATA = {
   ]
 };
 
+import { useIsMobile } from "@/hooks/useIsMobile";
+
+function CrimeTooltip({ active, payload }: any) {
+  if (!active || !payload || !payload.length) return null;
+  const item = payload[0];
+  return (
+    <div
+      style={{
+        background: "#1A1A1A",
+        border: "1px solid #FF4336",
+        padding: "8px 12px",
+        fontSize: "11px",
+        color: "#FFFFFF",
+        fontFamily: "monospace",
+        maxWidth: "200px",
+        wordWrap: "break-word",
+        pointerEvents: "none",
+        zIndex: 100,
+      }}
+    >
+      <div style={{ fontWeight: "bold", color: "#FF4336" }}>
+        {item.payload.category}
+      </div>
+      <div>
+        {Number(item.value).toLocaleString("en-IN")} / month
+      </div>
+    </div>
+  );
+}
+
 export default function CrimeCounter() {
+  const isMobile = useIsMobile();
   const [secondsElapsed, setSecondsElapsed] = useState(0);
 
   useEffect(() => {
@@ -417,15 +448,16 @@ export default function CrimeCounter() {
             </span>
           </div>
 
-          <div className="h-64 w-full pt-2">
+          <div className={`w-full ${isMobile ? "h-56" : "h-64"} pt-2`}>
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={NCRB_DATA.monthly_chart} margin={{ top: 10, right: 10, left: -20, bottom: 20 }}>
+              <BarChart data={NCRB_DATA.monthly_chart} margin={{ top: 10, right: 10, left: isMobile ? -25 : -20, bottom: 20 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
-                <XAxis dataKey="category" tick={{ fontSize: 10, fill: "#000", fontWeight: "bold" }} angle={-15} textAnchor="end" />
-                <YAxis tick={{ fontSize: 10, fill: "#000" }} />
+                <XAxis dataKey="category" tick={{ fontSize: isMobile ? 8 : 10, fill: "#000", fontWeight: "bold" }} angle={-15} textAnchor="end" />
+                <YAxis tick={{ fontSize: isMobile ? 9 : 10, fill: "#000" }} />
                 <Tooltip 
-                  contentStyle={{ backgroundColor: "#1A1A1A", border: "2px solid #000", color: "#FFF", fontFamily: "monospace", fontSize: "12px" }}
-                  formatter={(value: any) => [`${Number(value).toLocaleString("en-IN")} / month`, "Monthly Average"]}
+                  content={<CrimeTooltip />}
+                  wrapperStyle={{ zIndex: 100, outline: "none" }}
+                  isAnimationActive={false}
                 />
                 <Bar dataKey="monthly" fill="#FF4336" stroke="#000" strokeWidth={1.5} />
               </BarChart>

@@ -30,12 +30,14 @@ import { formatINR } from "@/lib/utils";
 import VerifiedDataDisclaimer from "@/components/VerifiedDataDisclaimer";
 import ShareCardModal from "@/features/money-trail/ShareCardModal";
 import BrutalistButton from "@/components/ui/BrutalistButton";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 interface ScamDetailClientProps {
   scam: ScamCase;
 }
 
 export default function ScamDetailClient({ scam }: ScamDetailClientProps) {
+  const isMobile = useIsMobile();
   const [shareModalOpen, setShareModalOpen] = useState(false);
 
   const isInfrastructure = scam.category === "Infrastructure Overpricing" || Boolean(scam.benchmark_cost_actual);
@@ -219,33 +221,35 @@ export default function ScamDetailClient({ scam }: ScamDetailClientProps) {
           </span>
         </div>
 
-        <div className="h-80 w-full pt-2">
+        <div className={`w-full ${isMobile ? "h-64" : "h-80"} pt-2`}>
           <ResponsiveContainer width="100%" height="100%">
             <BarChart
               data={isInfrastructure ? infraBarData : welfareBarData}
-              margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
+              margin={{ top: 20, right: isMobile ? 15 : 30, left: isMobile ? 5 : 20, bottom: 20 }}
             >
               <CartesianGrid strokeDasharray="3 3" stroke="#CCCCCC" />
               <XAxis
                 dataKey="name"
-                tick={{ fill: "#0D0D0D", fontSize: 11, fontWeight: "bold" }}
+                tick={{ fill: "#0D0D0D", fontSize: isMobile ? 9 : 11, fontWeight: "bold" }}
                 stroke="#0D0D0D"
               />
               <YAxis
-                tick={{ fill: "#0D0D0D", fontSize: 11, fontWeight: "bold" }}
+                tick={{ fill: "#0D0D0D", fontSize: isMobile ? 9 : 11, fontWeight: "bold" }}
                 stroke="#0D0D0D"
                 unit={isInfrastructure ? " Cr" : "%"}
               />
               <RechartsTooltip
+                wrapperStyle={{ zIndex: 100, outline: "none" }}
+                isAnimationActive={false}
                 content={({ active, payload }) => {
                   if (active && payload && payload.length) {
                     const data = payload[0].payload;
                     return (
-                      <div className="bg-surface border-2.5 border-ink p-3 shadow-hard-sm font-mono text-xs space-y-1">
-                        <div className="font-display font-black text-ink uppercase text-sm">
+                      <div className="bg-surface border-2.5 border-ink p-2.5 shadow-hard-sm font-mono text-xs space-y-1 max-w-[200px] pointer-events-none z-50 break-words">
+                        <div className="font-display font-black text-ink uppercase text-xs truncate">
                           {data.name}
                         </div>
-                        <div className="font-black text-brand-red text-base">
+                        <div className="font-black text-brand-red text-sm">
                           {isInfrastructure ? `₹${data.cost} Crore/km` : `${data.rate}% Disbursed`}
                         </div>
                       </div>

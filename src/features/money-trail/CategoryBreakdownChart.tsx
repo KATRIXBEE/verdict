@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip as RechartsTooltip } from "recharts";
 import { PieChart as PieIcon, Info, TrendingUp, AlertTriangle } from "lucide-react";
 import { formatINR } from "@/lib/utils";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 const CATEGORY_BREAKDOWN = [
   { name: "State Fund Misuse (Missing UCs)", amount: 229099, percent: 47.4, color: "#FF4336" },
@@ -15,6 +16,7 @@ const CATEGORY_BREAKDOWN = [
 ];
 
 export default function CategoryBreakdownChart() {
+  const isMobile = useIsMobile();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const activeCategory = activeIndex !== null ? CATEGORY_BREAKDOWN[activeIndex] : null;
@@ -36,7 +38,7 @@ export default function CategoryBreakdownChart() {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         {/* Recharts Pie Chart (7 cols) */}
-        <div className="lg:col-span-7 h-72 sm:h-80 w-full relative">
+        <div className={`lg:col-span-7 ${isMobile ? "h-64" : "h-72 sm:h-80"} w-full relative`}>
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
               <Pie
@@ -45,8 +47,8 @@ export default function CategoryBreakdownChart() {
                 nameKey="name"
                 cx="50%"
                 cy="50%"
-                innerRadius={65}
-                outerRadius={115}
+                innerRadius={isMobile ? 50 : 65}
+                outerRadius={isMobile ? 85 : 115}
                 paddingAngle={3}
                 stroke="#0D0D0D"
                 strokeWidth={2.5}
@@ -62,19 +64,21 @@ export default function CategoryBreakdownChart() {
                 ))}
               </Pie>
               <RechartsTooltip
+                wrapperStyle={{ zIndex: 100, outline: "none" }}
+                isAnimationActive={false}
                 content={({ active, payload }) => {
                   if (active && payload && payload.length) {
                     const data = payload[0].payload;
                     return (
-                      <div className="bg-surface border-2.5 border-ink p-3 shadow-hard-sm font-mono text-xs space-y-1">
-                        <div className="font-display font-black text-ink uppercase text-sm">
+                      <div className="bg-surface border-2.5 border-ink p-2.5 shadow-hard-sm font-mono text-xs space-y-1 max-w-[200px] break-words pointer-events-none z-50">
+                        <div className="font-display font-black text-ink uppercase text-xs truncate">
                           {data.name}
                         </div>
-                        <div className="font-bold text-brand-red text-base">
+                        <div className="font-bold text-brand-red text-sm">
                           {formatINR(data.amount * 10000000, { short: true })}
                         </div>
                         <div className="text-[10px] text-gray-600 font-bold">
-                          {data.percent}% of total exposed public funds
+                          {data.percent}% of total
                         </div>
                       </div>
                     );

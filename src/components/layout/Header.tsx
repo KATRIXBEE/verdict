@@ -51,14 +51,14 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-40 transition-all duration-300",
+        "navbar sticky top-0 z-[1000] transition-all duration-300 min-h-[56px] sm:min-h-[64px]",
         scrolled
           ? "bg-surface/95 border-b-2 border-ink backdrop-blur-sm shadow-hard-md"
           : "bg-surface border-b-3 border-ink shadow-hard-md"
       )}
     >
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20 gap-2 sm:gap-4">
+        <div className="flex items-center justify-between h-14 sm:h-20 gap-2 sm:gap-4">
           {/* Logo Brand */}
           <Link href="/" className="flex items-center space-x-2.5 sm:space-x-3 group shrink-0">
             <div className="bg-brand-red text-white p-1.5 sm:p-2 border-2.5 border-ink shadow-hard-sm group-hover:-translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">

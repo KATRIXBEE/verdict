@@ -23,6 +23,7 @@ import {
   Globe2,
 } from "lucide-react";
 import { RUPEE_HISTORICAL_DATA, CurrencyData } from "@/data/rupee-data";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 const CURRENCY_KEYS = ["usd", "gbp", "eur", "jpy", "cny", "aed", "sar", "cad", "sgd"] as const;
 type CurrencyKey = (typeof CURRENCY_KEYS)[number];
@@ -50,7 +51,7 @@ function CustomRupeeTooltip({ active, payload, label, currency }: CustomTooltipP
   if (active && payload && payload.length) {
     const dataPoint = payload[0].payload;
     return (
-      <div className="bg-surface border-2.5 border-ink p-3 shadow-hard-md font-mono text-xs max-w-xs">
+      <div className="bg-surface border-2.5 border-ink p-2.5 shadow-hard-md font-mono text-xs max-w-[220px] pointer-events-none z-50 break-words">
         <div className="flex items-center justify-between border-b border-ink/20 pb-1 mb-1.5">
           <span className="font-extrabold text-ink">YEAR: {label}</span>
           <span className="text-[10px] font-bold px-1.5 py-0.2 bg-brand-yellow border border-ink">
@@ -61,7 +62,7 @@ function CustomRupeeTooltip({ active, payload, label, currency }: CustomTooltipP
           Rate: <span className="text-brand-red font-black">₹{dataPoint.rate}</span>
         </div>
         {dataPoint.annotation && (
-          <div className="mt-1 text-[11px] text-black bg-brand-pink/30 p-1 border border-ink/40 font-bold inline-flex items-center gap-1.5 w-full">
+          <div className="mt-1 text-[10px] text-black bg-brand-pink/30 p-1 border border-ink/40 font-bold inline-flex items-center gap-1 w-full leading-tight">
             <Zap className="w-3 h-3 text-black stroke-[2.5] shrink-0" aria-hidden="true" />
             <span>{dataPoint.annotation}</span>
           </div>
@@ -73,6 +74,7 @@ function CustomRupeeTooltip({ active, payload, label, currency }: CustomTooltipP
 }
 
 export default function RupeeTracker() {
+  const isMobile = useIsMobile();
   const [selectedCurrencyKey, setSelectedCurrencyKey] = useState<CurrencyKey>("usd");
 
   const currency = RUPEE_HISTORICAL_DATA[selectedCurrencyKey] || RUPEE_HISTORICAL_DATA.usd;
@@ -231,22 +233,26 @@ export default function RupeeTracker() {
         </div>
 
         {/* Recharts Container */}
-        <div className="w-full h-72 sm:h-96 pt-2">
+        <div className={`w-full ${isMobile ? "h-64" : "h-72 sm:h-96"} pt-2`}>
           <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={chartData} margin={{ top: 15, right: 20, left: 0, bottom: 5 }}>
+            <LineChart data={chartData} margin={{ top: 15, right: isMobile ? 10 : 20, left: isMobile ? -15 : 0, bottom: 5 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
               <XAxis
                 dataKey="year"
                 stroke="#111111"
-                tick={{ fontSize: 11, fontWeight: "bold", fontFamily: "monospace" }}
+                tick={{ fontSize: isMobile ? 9 : 11, fontWeight: "bold", fontFamily: "monospace" }}
               />
               <YAxis
                 stroke="#111111"
-                tick={{ fontSize: 11, fontWeight: "bold", fontFamily: "monospace" }}
+                tick={{ fontSize: isMobile ? 9 : 11, fontWeight: "bold", fontFamily: "monospace" }}
                 domain={["dataMin - 5", "dataMax + 5"]}
                 unit="₹"
               />
-              <Tooltip content={<CustomRupeeTooltip currency={currency} />} />
+              <Tooltip 
+                content={<CustomRupeeTooltip currency={currency} />} 
+                wrapperStyle={{ zIndex: 100, outline: "none" }}
+                isAnimationActive={false}
+              />
               <Line
                 type="monotone"
                 dataKey="rate"
