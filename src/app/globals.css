@@ -219,49 +219,34 @@ header, .navbar {
   z-index: 1000;
 }
 
+/* Ensure horizontal overflow is clipped to 100vw while allowing vertical dropdowns to float */
+header.overflow-x-hidden,
+.navbar.overflow-x-hidden {
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
 /* =============================================
    Navbar Overflow & Responsiveness Rules
    ============================================= */
-.navbar-container {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+@media (min-width: 768px) {
+  .navbar-search {
+    flex-shrink: 1;
+    min-width: 140px;
+    max-width: 280px;
+  }
 }
 
-.navbar-container::-webkit-scrollbar {
-  display: none;
-}
-
-.navbar-search {
-  flex-shrink: 1;
-  min-width: 140px;
-  max-width: 280px;
+@media (max-width: 767px) {
+  .navbar-search {
+    flex-shrink: 0;
+    min-width: auto;
+  }
 }
 
 .navbar-nav-link {
   flex-shrink: 0;
   white-space: nowrap;
-}
-
-@media (max-width: 1450px) {
-  .navbar-secondary-links {
-    display: none !important;
-  }
-  .navbar-overflow-menu-trigger {
-    display: flex !important;
-  }
-}
-
-@media (min-width: 1451px) {
-  .navbar-secondary-links {
-    display: flex !important;
-  }
-  .navbar-overflow-menu-trigger {
-    display: none !important;
-  }
 }
 
 @media (max-width: 768px) {

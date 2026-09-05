@@ -164,45 +164,45 @@ export function GlobalSearch() {
       )}
 
       {/* Desktop Search Input Box */}
-      <div
-        className="navbar-search hidden md:flex h-10 lg:h-11 min-w-[140px] max-w-[280px] w-full flex-shrink items-center bg-surface border-2.5 border-ink shadow-hard-xs focus-within:shadow-hard-sm transition-all"
-      >
-        <div className="pl-2.5 pr-1.5 text-gray-500 flex items-center justify-center">
-          <Search className="w-3.5 h-3.5 stroke-[2.5]" />
-        </div>
-
-        <input
-          ref={!mobileExpanded ? inputRef : undefined}
-          type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          onFocus={() => query.trim().length >= 2 && setIsOpen(true)}
-          onKeyDown={(e) => {
-            if (e.key === "Enter" && query.trim().length >= 2) {
-              handleNavigate(`/search?q=${encodeURIComponent(query.trim())}`);
-            }
-          }}
-          placeholder='Search neta... (Press "/")'
-          className="navbar-search-input w-full bg-transparent py-1.5 px-1.5 text-xs font-bold text-ink placeholder:text-gray-400 focus:outline-none min-w-0"
-        />
-
-        {query && (
-          <button
-            type="button"
-            onClick={() => {
-              setQuery("");
-              inputRef.current?.focus();
+      <div className="hidden md:flex relative items-center flex-shrink min-w-0">
+        <div className="relative flex items-center flex-shrink min-w-0">
+          <input
+            ref={!mobileExpanded ? inputRef : undefined}
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            onFocus={() => query.trim().length >= 2 && setIsOpen(true)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && query.trim().length >= 2) {
+                handleNavigate(`/search?q=${encodeURIComponent(query.trim())}`);
+              }
             }}
-            className="p-1 text-gray-500 hover:text-brand-red mr-1"
-            aria-label="Clear query"
-          >
-            <X className="w-3.5 h-3.5" />
-          </button>
-        )}
+            placeholder="Search neta... (/)"
+            className="w-36 sm:w-44 md:w-52 lg:w-56 xl:w-64 pl-8 pr-7 py-1.5 text-xs font-mono bg-white text-black border-[2px] border-black shadow-[2px_2px_0px_0px_#000] focus:outline-none focus:ring-0 placeholder:text-neutral-500"
+          />
 
-        <kbd className="hidden lg:inline-block mr-2 bg-surface-muted border border-ink px-1.5 py-0.5 text-[10px] font-extrabold text-gray-500 shadow-hard-xs">
-          /
-        </kbd>
+          <div className="absolute left-2.5 pointer-events-none text-neutral-500 flex items-center justify-center">
+            <Search className="w-3.5 h-3.5 stroke-[2.5]" />
+          </div>
+
+          {query ? (
+            <button
+              type="button"
+              onClick={() => {
+                setQuery("");
+                inputRef.current?.focus();
+              }}
+              className="absolute right-2 p-0.5 text-neutral-500 hover:text-brand-red cursor-pointer"
+              aria-label="Clear query"
+            >
+              <X className="w-3.5 h-3.5" />
+            </button>
+          ) : (
+            <kbd className="hidden lg:inline-block absolute right-2 bg-surface-muted border border-ink px-1.5 py-0.2 text-[10px] font-extrabold text-gray-500 shadow-hard-xs pointer-events-none">
+              /
+            </kbd>
+          )}
+        </div>
       </div>
 
       {/* Autocomplete Dropdown */}

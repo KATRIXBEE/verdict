@@ -181,9 +181,9 @@ export default function SearchBar({
   return (
     <div className={`w-full font-mono relative ${className || ""}`} ref={searchContainerRef}>
       {/* Search Input Container */}
-      <form onSubmit={handleFormSubmit} className="relative z-30">
-        <div className="flex items-center bg-surface border-3 border-ink shadow-hard-lg focus-within:shadow-hard-xl transition-all">
-          <div className="bg-brand-yellow px-3 sm:px-4 py-3.5 sm:py-4 border-r-2.5 border-ink flex items-center justify-center">
+      <form onSubmit={handleFormSubmit} className="relative z-30 flex-shrink min-w-0">
+        <div className="relative flex items-center bg-surface border-3 border-ink shadow-hard-lg focus-within:shadow-hard-xl transition-all flex-shrink min-w-0">
+          <div className="bg-brand-yellow px-3 sm:px-4 py-3.5 sm:py-4 border-r-2.5 border-ink flex items-center justify-center shrink-0">
             <Search className="w-5 h-5 sm:w-6 sm:h-6 text-black stroke-[2.5]" />
           </div>
 
@@ -197,7 +197,7 @@ export default function SearchBar({
             }}
             onFocus={() => setIsOpen(true)}
             placeholder="Search Neta by Name, Constituency, Party, or State (e.g. Narendra Modi, Varanasi, BJP)..."
-            className="w-full bg-transparent px-3 sm:px-4 py-3 sm:py-4 text-xs sm:text-base font-bold text-ink placeholder:text-gray-400 focus:outline-none"
+            className="w-full min-w-0 bg-transparent px-3 sm:px-4 py-3 sm:py-4 text-xs sm:text-base font-bold text-ink placeholder:text-gray-400 focus:outline-none flex-shrink"
           />
 
           {query && (
