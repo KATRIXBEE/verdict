@@ -164,8 +164,8 @@ export default function Header() {
           })}
         </div>
 
-        {/* Priority 3 Links: Visible on 2xl+ */}
-        <div className="hidden 2xl:flex items-center gap-1 xl:gap-1.5">
+        {/* Priority 3 Links: Visible on xl+ */}
+        <div className="hidden xl:flex items-center gap-1 xl:gap-1.5">
           {priority3Links.map((link) => {
             const Icon = link.icon;
             const isActive = pathname === link.href;
@@ -187,8 +187,8 @@ export default function Header() {
           })}
         </div>
 
-        {/* Overflow "••• MORE" Menu Trigger: Visible when some links are collapsed (hidden on 2xl) */}
-        <div className="2xl:hidden relative shrink-0" ref={overflowRef}>
+        {/* Overflow "••• MORE" Menu Trigger: Visible when some links are collapsed (hidden on xl) */}
+        <div className="xl:hidden relative shrink-0" ref={overflowRef}>
           <button
             type="button"
             onClick={() => setOverflowOpen(!overflowOpen)}
@@ -212,10 +212,9 @@ export default function Header() {
               <div className="text-[10px] font-extrabold uppercase px-2 py-0.5 text-gray-500 border-b border-ink/20 mb-1">
                 EXPLORE VERDICT
               </div>
-              {overflowLinks.map((link, idx) => {
+              {overflowLinks.map((link) => {
                 const Icon = link.icon;
                 const isActive = pathname === link.href;
-                const isHiddenOnXl = idx < 2;
                 return (
                   <Link
                     key={link.href}
@@ -223,7 +222,6 @@ export default function Header() {
                     onClick={() => setOverflowOpen(false)}
                     className={cn(
                       "flex items-center space-x-2 px-2 py-1.5 border border-transparent transition-all uppercase text-[11px] font-bold",
-                      isHiddenOnXl && "xl:hidden",
                       isActive
                         ? "bg-brand-yellow text-black border-ink shadow-hard-xs"
                         : "hover:bg-surface-muted hover:border-ink text-ink"
@@ -240,8 +238,8 @@ export default function Header() {
       </nav>
 
       {/* Right Action: Global Search & Mobile Hamburger */}
-      <div className="flex items-center space-x-2 flex-shrink min-w-0">
-        {/* Global Search Bar (Responsive flex-shrink container) */}
+      <div className="navbar-search-slot flex items-center space-x-2 shrink-0 ml-auto">
+        {/* Global Search Bar (Compact Icon Button with Expand on Focus) */}
         <GlobalSearch />
 
         {/* Mobile Menu Button (hidden on lg and above) */}

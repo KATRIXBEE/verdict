@@ -2,23 +2,18 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { Search, X, MapPin, ArrowRight } from "lucide-react";
-import { useDebounce } from "@/hooks/useDebounce";
-import { cn, getPoliticianImageSrc } from "@/lib/utils";
+import { Search, X } from "lucide-react";
 
 export function GlobalSearch() {
+  const [expanded, setExpanded] = useState(false);
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<any[]>([]);
   const [isOpen, setIsOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
-  const [mobileExpanded, setMobileExpanded] = useState(false);
-  
-  const debouncedQuery = useDebounce(query, 300);
-  const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
-  // Keyboard shortcut: "/" to focus, "Escape" to dismiss
+  // Keyboard shortcut "/" expands AND focuses
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (
@@ -26,244 +21,256 @@ export function GlobalSearch() {
         !["INPUT", "TEXTAREA"].includes((e.target as HTMLElement)?.tagName)
       ) {
         e.preventDefault();
-        setMobileExpanded(true);
+        setExpanded(true);
         setTimeout(() => inputRef.current?.focus(), 50);
       }
       if (e.key === "Escape") {
+        setExpanded(false);
         setIsOpen(false);
-        inputRef.current?.blur();
-        setMobileExpanded(false);
+        setQuery("");
       }
     };
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  // Close dropdown when clicking outside
+  // Click outside collapses the search back to icon-only
+  // (only if empty — don't collapse mid-search accidentally)
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(e.target as Node) &&
+        query.length === 0
+      ) {
+        setExpanded(false);
         setIsOpen(false);
-        if (query.trim() === "") {
-          setMobileExpanded(false);
-        }
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [query]);
 
-  // Fetch search results on debounced query change
   useEffect(() => {
-    if (debouncedQuery.trim().length < 2) {
+    if (query.length < 2) {
       setResults([]);
       setIsOpen(false);
       return;
     }
-
-    let isMounted = true;
-    const search = async () => {
-      setIsLoading(true);
-      try {
-        const res = await fetch(
-          `/api/search?q=${encodeURIComponent(debouncedQuery.trim())}&limit=5`
-        );
-        if (!res.ok) throw new Error("Search fetch failed");
-        const data = await res.json();
-        if (isMounted) {
+    const timeout = setTimeout(() => {
+      fetch(`/api/search?q=${encodeURIComponent(query.trim())}&limit=5`)
+        .then((res) => res.json())
+        .then((data) => {
           setResults(data.results || []);
           setIsOpen(true);
-        }
-      } catch {
-        if (isMounted) setResults([]);
-      } finally {
-        if (isMounted) setIsLoading(false);
-      }
-    };
+        })
+        .catch(() => setResults([]));
+    }, 300);
+    return () => clearTimeout(timeout);
+  }, [query]);
 
-    search();
-    return () => {
-      isMounted = false;
-    };
-  }, [debouncedQuery]);
+  const handleExpand = () => {
+    setExpanded(true);
+    setTimeout(() => inputRef.current?.focus(), 50);
+  };
 
-  const handleNavigate = (url: string) => {
-    router.push(url);
+  const handleClose = () => {
+    setExpanded(false);
     setIsOpen(false);
     setQuery("");
-    setMobileExpanded(false);
   };
 
   return (
-    <div
-      ref={containerRef}
-      className={cn(
-        "navbar-search relative font-mono text-xs",
-        mobileExpanded ? "w-full" : "w-auto flex items-center"
-      )}
-    >
-      {/* Mobile Trigger Button */}
-      {!mobileExpanded && (
+    <div ref={containerRef} className="navbar-search-slot relative flex items-center">
+      {!expanded ? (
+        // COLLAPSED STATE — just an icon button, ~36px wide
         <button
           type="button"
-          onClick={() => {
-            setMobileExpanded(true);
-            setTimeout(() => inputRef.current?.focus(), 50);
+          onClick={handleExpand}
+          aria-label="Search"
+          title='Search (Press "/")'
+          style={{
+            width: 36,
+            height: 36,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            background: "#1A1A1A",
+            border: "1px solid #2E2E2E",
+            color: "#AAAAAA",
+            cursor: "pointer",
+            flexShrink: 0,
+            transition: "border-color 0.15s",
           }}
-          className="md:hidden p-2 min-h-[40px] min-w-[40px] bg-surface border-2 border-ink text-ink shadow-hard-xs hover:bg-brand-yellow transition-colors flex items-center justify-center"
-          aria-label="Open search input"
+          onMouseEnter={(e) => (e.currentTarget.style.borderColor = "#FF4545")}
+          onMouseLeave={(e) => (e.currentTarget.style.borderColor = "#2E2E2E")}
         >
-          <Search className="w-4 h-4 stroke-[2.5]" />
+          <Search size={16} />
         </button>
-      )}
-
-      {/* Mobile Full-Width Overlay Search Box (Prevents Navbar Overflow/Overlap) */}
-      {mobileExpanded && (
-        <div className="md:hidden fixed inset-x-2 top-2 z-[1001] h-10 flex items-center bg-surface border-2.5 border-ink shadow-hard-md">
-          <div className="pl-3 pr-2 text-gray-500 flex items-center justify-center">
-            <Search className="w-4 h-4 stroke-[2.5]" />
-          </div>
+      ) : (
+        // EXPANDED STATE — animates open to a reasonable width
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            width: "min(260px, 40vw)",
+            background: "#1A1A1A",
+            border: "1px solid #FF4545",
+            animation: "expandSearch 0.15s ease-out",
+          }}
+        >
+          <style>{`
+            @keyframes expandSearch {
+              from { width: 36px; opacity: 0.6; }
+              to { width: min(260px, 40vw); opacity: 1; }
+            }
+          `}</style>
+          <Search
+            size={14}
+            style={{
+              marginLeft: 10,
+              color: "#666",
+              flexShrink: 0,
+            }}
+          />
           <input
             ref={inputRef}
-            type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            onFocus={() => query.trim().length >= 2 && setIsOpen(true)}
             onKeyDown={(e) => {
               if (e.key === "Enter" && query.trim().length >= 2) {
-                handleNavigate(`/search?q=${encodeURIComponent(query.trim())}`);
+                router.push(`/search?q=${encodeURIComponent(query.trim())}`);
+                handleClose();
               }
             }}
-            placeholder='Search neta by name, party...'
-            className="w-full bg-transparent h-full py-2 px-1 text-xs font-bold text-ink placeholder:text-gray-400 focus:outline-none"
+            placeholder="Search neta..."
+            style={{
+              flex: 1,
+              minWidth: 0, // critical for flex shrink
+              background: "transparent",
+              border: "none",
+              outline: "none",
+              color: "#FFFFFF",
+              fontSize: 12,
+              padding: "8px 6px",
+            }}
           />
-          {query && (
-            <button
-              type="button"
-              onClick={() => {
-                setQuery("");
-                inputRef.current?.focus();
-              }}
-              className="p-2 text-gray-500 hover:text-brand-red"
-              aria-label="Clear query"
-            >
-              <X className="w-4 h-4" />
-            </button>
-          )}
           <button
             type="button"
-            onClick={() => {
-              setMobileExpanded(false);
-              setIsOpen(false);
-            }}
-            className="px-2.5 h-full bg-surface-muted hover:bg-brand-red hover:text-white border-l-2 border-ink text-ink font-bold text-xs flex items-center justify-center transition-colors"
+            onClick={handleClose}
             aria-label="Close search"
+            style={{
+              background: "none",
+              border: "none",
+              color: "#666",
+              cursor: "pointer",
+              padding: "0 10px",
+              flexShrink: 0,
+            }}
           >
-            <X className="w-4 h-4 stroke-[2.5]" />
+            <X size={14} />
           </button>
         </div>
       )}
 
-      {/* Desktop Search Input Box */}
-      <div className="navbar-search-wrapper hidden md:flex relative items-center flex-1 min-w-[120px] max-w-[280px] mr-1">
-        <div className="relative w-full flex items-center">
-          <div className="absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-neutral-500 flex items-center justify-center">
-            <Search className="w-3.5 h-3.5 stroke-[2.5]" />
-          </div>
-
-          <input
-            ref={!mobileExpanded ? inputRef : undefined}
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            onFocus={() => query.trim().length >= 2 && setIsOpen(true)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" && query.trim().length >= 2) {
-                handleNavigate(`/search?q=${encodeURIComponent(query.trim())}`);
-              }
-            }}
-            placeholder="Search neta..."
-            className="navbar-search-input w-full min-w-0 box-border pl-8 pr-9 py-1.5 text-xs sm:text-[13px] font-mono bg-white text-black border-[2px] border-black shadow-[2px_2px_0px_0px_#000] focus:outline-none focus:ring-0 placeholder:text-neutral-500 overflow-hidden text-ellipsis whitespace-nowrap"
-          />
-
-          {query ? (
-            <button
-              type="button"
-              onClick={() => {
-                setQuery("");
-                inputRef.current?.focus();
-              }}
-              className="absolute right-2 top-1/2 -translate-y-1/2 p-0.5 text-neutral-500 hover:text-brand-red cursor-pointer flex items-center justify-center"
-              aria-label="Clear query"
-            >
-              <X className="w-3.5 h-3.5" />
-            </button>
-          ) : (
-            <kbd className="absolute right-2 top-1/2 -translate-y-1/2 bg-surface-muted border border-ink px-1.5 py-0.5 text-[10px] font-extrabold text-gray-500 shadow-hard-xs pointer-events-none flex items-center justify-center leading-none">
-              /
-            </kbd>
-          )}
-        </div>
-      </div>
-
-      {/* Autocomplete Dropdown */}
+      {/* Results dropdown — only renders when open */}
       {isOpen && results.length > 0 && (
-        <div className="absolute top-full right-0 mt-1 bg-surface border-2.5 border-ink shadow-hard-xl z-[1002] max-h-[380px] overflow-y-auto w-[calc(100vw-24px)] md:w-full md:min-w-[320px] max-w-[420px]">
-          <div className="bg-ink text-white px-3 py-1.5 text-[10px] font-bold uppercase flex justify-between items-center">
-            <span>RESULTS ({results.length})</span>
-            {isLoading && <span className="text-brand-yellow">SEARCHING...</span>}
-          </div>
+        <div
+          style={{
+            position: "absolute",
+            top: "110%",
+            right: 0,
+            width: "min(320px, 90vw)", // never exceeds viewport
+            background: "#1A1A1A",
+            border: "1px solid #FF4545",
+            zIndex: 9999,
+            maxHeight: 360,
+            overflowY: "auto",
+          }}
+        >
+          {results.map((p: any) => {
+            const score =
+              typeof p.verdict_score === "number"
+                ? p.verdict_score.toFixed(1)
+                : p.calculatedVerdictScore
+                ? p.calculatedVerdictScore.toFixed(1)
+                : p.verdict_score || "N/A";
+            const party = p.current_party || p.currentParty || p.partyAbbr || "";
+            const name = p.name || p.fullName || "";
+            const photoUrl = p.photo_url || p.photoUrl;
 
-          <div className="divide-y border-t border-ink">
-            {results.map((p: any) => {
-              const score = typeof p.verdict_score === "number" ? p.verdict_score : (p.calculatedVerdictScore || 0);
-              const party = p.current_party || p.currentParty || p.partyAbbr || "IND";
-              const constituency = p.constituency || p.currentConstituency?.name || "";
-              const state = p.state || p.currentConstituency?.state || "";
-
-              return (
-                <div
-                  key={p.id || p.slug}
-                  onClick={() => handleNavigate(`/politician/${p.slug}`)}
-                  className="p-2.5 hover:bg-brand-yellow/20 cursor-pointer flex items-center justify-between transition-colors group"
-                >
-                  <div className="flex items-center space-x-2.5 truncate">
-                    <img
-                      src={getPoliticianImageSrc(p.photo_url || p.photoUrl)}
-                      alt={p.name || p.fullName}
-                      className="w-8 h-8 object-cover border border-ink grayscale shrink-0 bg-gray-200"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).src = "/images/default-politician.svg";
-                      }}
-                    />
-                    <div className="truncate">
-                      <div className="font-display font-black text-xs text-ink uppercase group-hover:text-brand-red truncate">
-                        {p.name || p.fullName}
-                      </div>
-                      <div className="text-[10px] text-gray-600 font-mono flex items-center space-x-1 truncate">
-                        <span className="font-bold">{party}</span>
-                        {constituency && <span>• {constituency}</span>}
-                        {state && <span>({state})</span>}
-                      </div>
-                    </div>
+            return (
+              <div
+                key={p.id || p.slug}
+                onClick={() => {
+                  router.push(`/politician/${p.slug}`);
+                  handleClose();
+                }}
+                style={{
+                  padding: "10px 12px",
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 10,
+                  borderBottom: "1px solid #2E2E2E",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = "#2E2E2E")}
+                onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
+              >
+                <img
+                  src={
+                    photoUrl
+                      ? `/api/proxy-image?url=${encodeURIComponent(photoUrl)}`
+                      : "/images/default-politician.svg"
+                  }
+                  alt={name}
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "/images/default-politician.svg";
+                  }}
+                  style={{ width: 30, height: 30, objectFit: "cover", flexShrink: 0 }}
+                />
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div
+                    style={{
+                      color: "#FFF",
+                      fontSize: 12,
+                      fontWeight: "bold",
+                      whiteSpace: "nowrap",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                    }}
+                  >
+                    {name}
                   </div>
-
-                  <div className="ml-2 shrink-0 text-right">
-                    <span className="font-mono font-black text-xs px-1.5 py-0.5 bg-brand-yellow border border-ink text-black">
-                      {score > 0 ? score.toFixed(1) : "N/A"}
-                    </span>
-                  </div>
+                  <div style={{ color: "#888", fontSize: 10 }}>{party}</div>
                 </div>
-              );
-            })}
-          </div>
-
+                <div
+                  style={{
+                    color: "#FF4545",
+                    fontWeight: "bold",
+                    fontSize: 12,
+                    flexShrink: 0,
+                  }}
+                >
+                  {score}
+                </div>
+              </div>
+            );
+          })}
           <div
-            onClick={() => handleNavigate(`/search?q=${encodeURIComponent(query.trim())}`)}
-            className="p-2 bg-surface-muted hover:bg-brand-yellow/30 text-brand-red text-center font-bold text-[11px] border-t-2 border-ink cursor-pointer transition-colors inline-flex items-center justify-center gap-1.5 w-full"
+            onClick={() => {
+              router.push(`/search?q=${encodeURIComponent(query.trim())}`);
+              handleClose();
+            }}
+            style={{
+              padding: "10px",
+              textAlign: "center",
+              color: "#FF4545",
+              fontSize: 11,
+              cursor: "pointer",
+            }}
           >
-            <span>View all results for &quot;{query}&quot;</span>
-            <ArrowRight className="w-3.5 h-3.5 stroke-[2.5]" aria-hidden="true" />
+            View all results →
           </div>
         </div>
       )}
@@ -272,3 +279,4 @@ export function GlobalSearch() {
 }
 
 export default GlobalSearch;
+

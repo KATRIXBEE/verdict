@@ -262,6 +262,11 @@ header.overflow-x-clip,
   white-space: nowrap;
 }
 
+.navbar-search-slot {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
 .navbar-nav-link {
   flex-shrink: 0;
   white-space: nowrap;
